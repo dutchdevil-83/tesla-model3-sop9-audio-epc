@@ -132,7 +132,7 @@ function renderInspector(){
  $('#kvEndpoint').textContent=selected.x;$('#kvZone').textContent=selected.zone;$('#kvRole').textContent=selected.role;
  $('#kvCoverage').textContent=selected.loc?'VERIFIED':'METADATA ONLY';$('#kvCoverage').style.color=selected.loc?'var(--green)':'var(--amber)';
  const box=$('#mediaBox');
- if(selected.loc){box.innerHTML=`<img src="${url(`Target_Assets/connectors/${selected.x}/location.jpg`)}" alt="${selected.x} connector location" onerror="this.parentElement.innerHTML='<div class=\'media-placeholder\'>Location asset is not available through the published target path.<br>Open metadata for source evidence.</div>'">`}
+if(selected.loc){box.innerHTML=`<img src="${url(`Target_Assets/connectors/${selected.x}/location.jpg`)}" alt="${selected.x} connector location">`;box.querySelector('img').onerror=()=>{box.innerHTML='<div class="media-placeholder">Location asset is not available through the published target path.<br>Open metadata for source evidence.</div>'}}
  else box.innerHTML='<div class="media-placeholder">No published/retrievable target location image for X566.<br>Metadata is preserved in the repository.</div>';
 }
 function setAsset(kind){
