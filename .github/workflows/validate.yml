@@ -1,0 +1,47 @@
+name: Validate repository
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Reject nested/distributable archives
+        shell: bash
+        run: |
+          set -euo pipefail
+          bad=$(find . -type f \( -iname '*.zip' -o -iname '*.rar' -o -iname '*.7z' \) -not -path './.git/*' -print)
+          if [ -n "$bad" ]; then
+            echo 'Archive files are not allowed in the repository:'
+            echo "$bad"
+            exit 1
+          fi
+
+      - name: Check required baseline files
+        shell: bash
+        run: |
+          set -euo pipefail
+          required=(
+            "Tesla_SOP9_Audio_EPC_Playground_v2.1.0_Final.html"
+            "Tesla_Model_3_Highland_SOP9_Audio_BOM_v2.1.0.xlsx"
+            "Tesla_SOP9_Audio_EPC_v2.1.0_QA.md"
+            "PROVENANCE.json"
+            "SHA256SUMS.txt"
+          )
+          for file in "${required[@]}"; do
+            test -f "$file" || { echo "Missing required file: $file"; exit 1; }
+          done
+
+      - name: Check JavaScript renderer markers
+        shell: bash
+        run: |
+          set -euo pipefail
+          html="Tesla_SOP9_Audio_EPC_Playground_v2.1.0_Final.html"
+          grep -q 'function renderInspector' "$html"
+          grep -q 'function renderConnector' "$html"
+          grep -q 'function renderSuppliers' "$html"
