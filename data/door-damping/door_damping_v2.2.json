@@ -1,0 +1,192 @@
+{
+  "version": "2.2.0",
+  "checked": "2026-09-10",
+  "currency": "EUR",
+  "reference_kits": [
+    {
+      "scenario": "FRONT ONLY",
+      "name": "Bünde Lautsprecher dämmsetPRO",
+      "price_eur": 199.0,
+      "url": "https://www.carhifi-store-buende.de/lautsprecher-daemmsetpro"
+    },
+    {
+      "scenario": "ALL 4 DOORS",
+      "name": "Bünde Lautsprecher dämmsetXTREME",
+      "price_eur": 299.0,
+      "url": "https://www.carhifi-store-buende.de/lautsprecher-daemmsetxtreme"
+    }
+  ],
+  "materials": [
+    {
+      "material": "STP Aero Bomb",
+      "layer": "1 - local CLD",
+      "function": "Outer door skin directly behind woofer; high-loss local vibration damping / panel stiffening",
+      "bunde_size": "530 x 375 x 4.2 mm",
+      "current_size": "530 x 375 mm",
+      "thickness_mm": 4.2,
+      "unit_price_eur": 17.99,
+      "source": "PimpMySound DE",
+      "url": "https://pimpmysound.com/StP-Bomb-Aero-Matte",
+      "equivalence": "STRICT",
+      "gate": "Heavy high-loss automotive CLD around 4.2 mm; about 6 kg/m2; published MLF >=0.45 around 10 C; strong metal adhesion and automotive temperature suitability. Generic foam/roof/bitumen sheet is not equivalent."
+    },
+    {
+      "material": "STP Black Gold",
+      "layer": "2 - distributed CLD",
+      "function": "Outer + inner door metal / carrier; general resonance control",
+      "bunde_size": "750 x 500 x 2.3 mm",
+      "current_size": "750 x 500 mm",
+      "thickness_mm": 2.3,
+      "unit_price_eur": 14.9,
+      "source": "Carmedia-Shop DE",
+      "url": "https://www.carmedia-shop.de/STP-Black-Gold-Daemmung-1-Matte-0375-m",
+      "equivalence": "ALTERNATIVES ALLOWED",
+      "gate": "Butyl/aluminium automotive CLD around 2.0-2.5 mm; baseline foil 100 um; baseline areal mass 3.2-4.7 kg/m2; baseline MLF 0.33; durable self-adhesive automotive construction. Prefer published MLF and foil thickness."
+    },
+    {
+      "material": "STP Accent 10",
+      "layer": "3 - absorber / decoupler",
+      "function": "Outer door skin acoustic absorption/decoupling after CLD; wet-zone capable",
+      "bunde_size": "500 x 375 x 10 mm",
+      "current_size": "500 x 375 mm",
+      "thickness_mm": 10.0,
+      "unit_price_eur": 14.0,
+      "source": "CarHifi-Store Bünde DE",
+      "url": "https://www.carhifi-store-buende.de/stp-accent-10",
+      "equivalence": "ALTERNATIVES ALLOWED",
+      "gate": "Around 10 mm self-adhesive automotive absorber/decoupler; moisture/wet-zone suitable; water resistant/non-hygroscopic or protected against moisture; stable adhesive; useful mid/high frequency absorption. Thickness alone is insufficient."
+    },
+    {
+      "material": "STP Sonora",
+      "layer": "4 - inner carrier barrier/absorber",
+      "function": "Second layer over CLD on inner door/carrier; moisture-exposed door cavity",
+      "bunde_size": "470 x 375 x 5.2 mm",
+      "current_size": "470 x 375 mm official; Bünde listing may differ slightly",
+      "thickness_mm": 5.2,
+      "unit_price_eur": 14.0,
+      "source": "CarHifi-Store Bünde DE",
+      "url": "https://www.carhifi-store-buende.de/stp-sonora",
+      "equivalence": "STRICT",
+      "gate": "About 5 mm multilayer non-hygroscopic/moisture-resistant foam plus dense barrier membrane; about 31 dB air-noise index or comparable published test data; high-adhesion automotive adhesive. Plain 5 mm foam is not equivalent."
+    },
+    {
+      "material": "STP Bromo",
+      "layer": "5 - door-card barrier/absorber",
+      "function": "Door trim/card treatment; combined absorption + heavy sound barrier",
+      "bunde_size": "500 x 375 x 10 mm (Bünde kit text)",
+      "current_size": "470 x 375 x 7 mm current product",
+      "thickness_mm": 7.0,
+      "unit_price_eur": 19.0,
+      "source": "CarHifi-Store Bünde DE",
+      "url": "https://www.carhifi-store-buende.de/stp-bromo",
+      "equivalence": "STRICT",
+      "gate": "Heavy multilayer barrier + soft absorber; current product around 7 mm; >=4 kg/m2; about 31 dB air-noise index or comparable published test data; automotive adhesive and moisture suitability. Bünde kit text still shows an older 10 mm / 500x375 specification."
+    },
+    {
+      "material": "STP pressure roller",
+      "layer": "Installation tool",
+      "function": "Press CLD firmly onto metal and remove trapped air",
+      "thickness_mm": 0,
+      "unit_price_eur": 15.0,
+      "source": "CarHifi-Store Bünde DE",
+      "url": "https://www.carhifi-store-buende.de/lautsprecher-daemmsetpro",
+      "equivalence": "GENERIC TOOL ALLOWED",
+      "gate": "Any suitable hard pressure roller that can apply uniform pressure without damaging foil is functionally acceptable."
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "FRONT ONLY",
+      "quantities": {
+        "STP Aero Bomb": 1,
+        "STP Black Gold": 4,
+        "STP Accent 10": 2,
+        "STP Sonora": 2,
+        "STP Bromo": 2,
+        "STP pressure roller": 0
+      },
+      "reference_kit_eur": 199.0
+    },
+    {
+      "name": "ALL 4 DOORS",
+      "quantities": {
+        "STP Aero Bomb": 2,
+        "STP Black Gold": 4,
+        "STP Accent 10": 4,
+        "STP Sonora": 2,
+        "STP Bromo": 4,
+        "STP pressure roller": 1
+      },
+      "reference_kit_eur": 299.0
+    }
+  ],
+  "alternatives": [
+    {
+      "baseline": "STP Black Gold",
+      "candidate": "CTK Premium 2.2 mm",
+      "market": "NL",
+      "price_eur": 6.9,
+      "package": "1 sheet 370x500 mm / 0.185 m2; 15-sheet pack EUR 95.50",
+      "technical": "2.2 mm; 100 um aluminium; MLF 0.36; 3.07 kg/m2; automotive butyl CLD",
+      "decision": "APPROVED - HIGH",
+      "reason": "Closest documented functional alternative. Same CLD function, near-identical thickness/foil and published MLF exceeds Black Gold baseline 0.33. Smaller sheets require more seams.",
+      "url": "https://www.toraz.nl/dempmateriaal",
+      "official": "https://www.ctk.eu.com/products/vibrodamping/ctk-premium-2-2mm-370500/"
+    },
+    {
+      "baseline": "STP Black Gold",
+      "candidate": "Reckhorn ABX-tra 2.5 mm",
+      "market": "DE",
+      "price_eur": 34.99,
+      "package": "0.4 x 5 m roll / 2.0 m2",
+      "technical": "2.5 mm; aluminium + butyl; about 4.5 kg/m2; self-adhesive; no bitumen",
+      "decision": "CONDITIONAL - MEDIUM",
+      "reason": "Good mass/thickness/value, but published MLF and foil thickness were not found. Verify those before declaring equivalence.",
+      "url": "https://reckhorn.com/products/abx-tra-2-5mm-alubutyl"
+    },
+    {
+      "baseline": "STP Black Gold",
+      "candidate": "Reckhorn ABX 2.0 mm",
+      "market": "DE",
+      "price_eur": 29.99,
+      "package": "0.4 x 5 m roll / 2.0 m2",
+      "technical": "2.0 mm; aluminium + butyl; about 3.5 kg/m2; self-adhesive; no bitumen",
+      "decision": "CONDITIONAL - MEDIUM",
+      "reason": "Very economical plausible CLD candidate, but thinner than baseline and lacks published MLF/foil data.",
+      "url": "https://reckhorn.com/products/reckhorn-abx-2mm-alubutyl"
+    },
+    {
+      "baseline": "STP Black Gold",
+      "candidate": "AliExpress butyl/aluminium #1005012838442561",
+      "market": "AliExpress",
+      "price_usd": 12.05,
+      "technical": "Indexed listing claims butyl rubber + aluminium foil; exact thickness, areal mass, foil thickness and MLF not verified",
+      "decision": "NOT APPROVED - LOW",
+      "reason": "Search lead only. Require exact variant data, automotive temperature/adhesive specification and preferably published MLF before use.",
+      "url": "https://no.pricearchive.org/aliexpress.com/item/1005012838442561"
+    },
+    {
+      "baseline": "STP Accent 10",
+      "candidate": "CTK SilenceFix 10 mm",
+      "market": "DE/EU",
+      "price_eur": 109.0,
+      "package": "12 sheets 500x400 mm / 2.4 m2",
+      "technical": "10 mm; 0.216 kg/m2; polymer-treated sound absorber; moisture protected; door/door-panel application",
+      "decision": "APPROVED FUNCTIONAL - HIGH",
+      "reason": "Strong documented functional absorber/decoupler alternative. Different construction from Accent, so this is functional rather than material-identical equivalence.",
+      "url": "https://just-sound.de/CTK",
+      "official": "https://www.ctk.eu.com/products/sound-insulation-materials-group/ctk-silencefix-10-mm-500400/"
+    },
+    {
+      "baseline": "STP Accent 10",
+      "candidate": "AliExpress closed-cell foam 5/10 mm #1005010659008580",
+      "market": "AliExpress",
+      "price_usd": 10.93,
+      "package": "200 x 50 cm; listing includes 5/10 mm variants",
+      "technical": "Closed-cell foam listing; exact selected 10 mm variant and density/absorption/adhesive data not verified",
+      "decision": "CONDITIONAL - LOW",
+      "reason": "Potential budget lead only. Verify actual 10 mm variant, closed-cell/water behavior, adhesive heat range, density and suitability inside a wet door cavity before purchase.",
+      "url": "https://ms.pricearchive.org/aliexpress.com/item/1005010659008580"
+    }
+  ]
+}
