@@ -45,3 +45,6 @@ jobs:
           grep -q 'function renderInspector' "$html"
           grep -q 'function renderConnector' "$html"
           grep -q 'function renderSuppliers' "$html"
+
+      - name: Validate public audio workspace and repo asset bindings
+        run: python3 scripts/validate_docs_workspace.py
