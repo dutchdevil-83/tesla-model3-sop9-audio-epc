@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Tesla Model 3 Highland SOP9 audio upgrade engineering reference, EPC, BOM, sourcing and door acoustic treatment research.">
+  <title>Tesla Model 3 Highland SOP9 Audio EPC</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1018;--panel:#121a27;--line:#243247;--text:#edf2f7;--muted:#9cabbd;--accent:#70a7ff;--good:#7bd89c;--warn:#f0c96b;--bad:#ef8e8e}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    header,main,footer{width:min(1180px,calc(100% - 36px));margin:auto}
+    header{padding:58px 0 34px;border-bottom:1px solid var(--line)} h1{font-size:clamp(30px,5vw,52px);line-height:1.05;margin:0 0 14px;max-width:850px;letter-spacing:-.035em}
+    header p{max-width:780px;color:var(--muted);font-size:17px;margin:0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.button{display:inline-block;padding:10px 15px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--text);font-weight:650}.button.primary{background:#1d4f91;border-color:#3975c7}
+    main{padding:34px 0 60px}.section{margin:0 0 38px}.section h2{font-size:22px;margin:0 0 14px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:18px}.card h3{margin:0 0 8px;font-size:17px}.card p{color:var(--muted);margin:0}.metric{font-size:25px;font-weight:750;margin:5px 0}.good{color:var(--good)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+    table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line)}th,td{text-align:left;vertical-align:top;padding:11px 12px;border-bottom:1px solid var(--line)}th{color:#cbd7e5;font-size:13px}td{color:#e1e8f0}.small{color:var(--muted);font-size:13px}.tag{font-size:12px;font-weight:750;letter-spacing:.03em}.tag.good{color:var(--good)}.tag.warn{color:var(--warn)}.tag.bad{color:var(--bad)}
+    footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:13px}
+    @media(max-width:820px){.grid{grid-template-columns:1fr}header{padding-top:36px}.tablewrap{overflow:auto}table{min-width:820px}}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Tesla Model 3 Highland SOP9 Audio EPC</h1>
+  <p>Engineering reference for the 2026 LHD audio upgrade: interactive Tesla source views, channel architecture, BOM, EU sourcing and optional door acoustic treatment.</p>
+  <div class="actions">
+    <a class="button primary" href="catalog.html">Open interactive EPC</a>
+    <a class="button" href="https://github.com/dutchdevil-83/tesla-model3-sop9-audio-epc/raw/refs/heads/main/Tesla_Model_3_Highland_SOP9_Audio_BOM_v2.2.0.xlsx">Download engineering workbook v2.2.0</a>
+    <a class="button" href="https://github.com/dutchdevil-83/tesla-model3-sop9-audio-epc">GitHub repository</a>
+  </div>
+</header>
+<main>
+  <section class="section">
+    <h2>Current baseline</h2>
+    <div class="grid">
+      <article class="card"><h3>Interactive catalog</h3><div class="metric">v2.1.0</div><p>Validated renderer baseline with original Tesla source assets preserved.</p></article>
+      <article class="card"><h3>Engineering / sourcing data</h3><div class="metric good">v2.2.0</div><p>Adds door-treatment BOMs and functional-equivalence sourcing research.</p></article>
+      <article class="card"><h3>Door-treatment scope</h3><div class="metric">2 scenarios</div><p>Front doors only, or all four doors. Treatment remains optional.</p></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Door acoustic treatment</h2>
+    <div class="grid">
+      <article class="card"><h3>Front only</h3><div class="metric">€199</div><p>Bünde PRO reference kit. Useful first phase while the front doors are already open for speaker installation.</p></article>
+      <article class="card"><h3>All four doors</h3><div class="metric">€299</div><p>Bünde XTREME reference kit, including pressure roller. Material quantity and vehicle weight increase accordingly.</p></article>
+      <article class="card"><h3>Equivalence rule</h3><div class="metric warn">Function first</div><p>Thickness alone does not qualify an alternative. CLD loss factor, foil/mass, moisture behavior, material architecture and automotive adhesive matter.</p></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Alternative screening</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Baseline</th><th>Candidate</th><th>Decision</th><th>Reason</th></tr></thead>
+        <tbody>
+          <tr><td>STP Black Gold</td><td>CTK Premium 2.2 mm</td><td><span class="tag good">APPROVED - HIGH</span></td><td>2.2 mm, 100 µm aluminium, published MLF 0.36 and automotive butyl CLD construction. Closest documented functional alternative.</td></tr>
+          <tr><td>STP Black Gold</td><td>Reckhorn ABX-tra 2.5 mm</td><td><span class="tag warn">CONDITIONAL</span></td><td>Attractive mass/thickness/cost, but MLF and foil-thickness evidence still needs verification.</td></tr>
+          <tr><td>STP Black Gold</td><td>AliExpress butyl/aluminium lead</td><td><span class="tag bad">NOT APPROVED</span></td><td>Indexed listing confirms only the broad material claim. Exact variant, mass, foil, adhesive/temperature and MLF remain unverified.</td></tr>
+          <tr><td>STP Accent 10</td><td>CTK SilenceFix 10 mm</td><td><span class="tag good">APPROVED FUNCTIONAL</span></td><td>Documented automotive 10 mm absorber for doors/door panels with moisture protection. Functional, not material-identical, equivalence.</td></tr>
+          <tr><td>STP Accent 10</td><td>AliExpress 5/10 mm closed-cell foam lead</td><td><span class="tag warn">CONDITIONAL - LOW</span></td><td>Potential budget option only after the exact 10 mm variant, water behavior, adhesive heat range and material/density data are confirmed.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Aero Bomb, Sonora and Bromo remain strict-gate materials: no generic substitute is currently approved.</p>
+  </section>
+
+  <section class="section">
+    <h2>Project data</h2>
+    <p><a href="https://github.com/dutchdevil-83/tesla-model3-sop9-audio-epc/blob/main/data/door-damping/door_damping_v2.2.json">Door damping v2.2 structured source</a> · <a href="https://github.com/dutchdevil-83/tesla-model3-sop9-audio-epc/blob/main/README.md">Project README</a> · <a href="https://github.com/dutchdevil-83/tesla-model3-sop9-audio-epc/blob/main/CHANGELOG.md">Changelog</a></p>
+  </section>
+</main>
+<footer>
+  Independent engineering project. Not affiliated with or endorsed by Tesla, Audison, Audiotec Fischer / HELIX / MATCH, Focal, Pioneer, STP, CTK, or MB Car Audio. Prices and availability are snapshots and must be rechecked before ordering.
+</footer>
+</body>
+</html>
