@@ -1,0 +1,70 @@
+name: Build v2.2 engineering workbook
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/update-door-damping-workbook.py"
+      - "data/door-damping/**"
+      - ".github/workflows/build-workbook-v2.2.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build-workbook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install workbook dependency
+        run: python -m pip install --disable-pip-version-check openpyxl==3.1.5
+
+      - name: Build v2.2 workbook
+        run: python scripts/update-door-damping-workbook.py
+
+      - name: Validate generated workbook
+        run: |
+          python - <<'PY'
+          from openpyxl import load_workbook
+          path = "Tesla_Model_3_Highland_SOP9_Audio_BOM_v2.2.0.xlsx"
+          wb = load_workbook(path, data_only=False)
+          required = {"Door_Damping_BOM", "Door_Damping_Equiv", "EU_Price_Matrix_v2.2"}
+          missing = required.difference(wb.sheetnames)
+          if missing:
+              raise SystemExit(f"Missing required sheets: {sorted(missing)}")
+          if wb["Door_Damping_BOM"]["C5"].value != "STP Aero Bomb":
+              raise SystemExit("Door damping baseline check failed")
+          errors = []
+          for ws in wb.worksheets:
+              for row in ws.iter_rows():
+                  for cell in row:
+                      value = cell.value
+                      if isinstance(value, str) and value.startswith("="):
+                          if any(token in value for token in ("#REF!", "#DIV/0!", "#VALUE!", "#NAME?")):
+                              errors.append(f"{ws.title}!{cell.coordinate}")
+          if errors:
+              raise SystemExit("Formula error tokens found: " + ", ".join(errors[:20]))
+          print(f"PASS: {len(wb.sheetnames)} sheets; required door-damping sheets present")
+          PY
+
+      - name: Commit generated workbook
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Tesla_Model_3_Highland_SOP9_Audio_BOM_v2.2.0.xlsx
+          if git diff --cached --quiet; then
+            echo "Generated workbook is unchanged."
+          else
+            git commit -m "build: generate v2.2.0 engineering workbook"
+            git push
+          fi
