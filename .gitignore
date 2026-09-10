@@ -1,0 +1,20 @@
+# Local / temporary files
+*.tmp
+*.temp
+*.bak
+*.log
+.DS_Store
+Thumbs.db
+
+# Never commit distributable archives; repository stores expanded content
+*.zip
+*.rar
+*.7z
+
+# Local tooling / editors
+.vscode/
+.idea/
+
+# Office lock files
+~$*.xlsx
+~$*.docx
