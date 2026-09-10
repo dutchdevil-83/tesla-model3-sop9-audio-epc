@@ -1,0 +1,22 @@
+{
+  "connectorID": "X030B",
+  "connectorColor": "WH",
+  "deviceName": "Body Controller Left",
+  "harnessDesignator": "A",
+  "harnessName": "LH Body",
+  "harnessPN": "2897315-XX-X",
+  "teslaPN": "1506907-01-A",
+  "terminalFaceview": "faceviews/sumitomo_6098-8947.svg",
+  "cavities": [
+    {
+      "cavityID": "11",
+      "cavityName": "TRAILER_ECU",
+      "wireColor": "RD",
+      "wireSize": "4.8x0.8F",
+      "destConnectorID": "X041",
+      "destCavityID": "3",
+      "destCavityName": "VBAT",
+      "destDeviceName": "Trailer Light Controller"
+    }
+  ]
+}

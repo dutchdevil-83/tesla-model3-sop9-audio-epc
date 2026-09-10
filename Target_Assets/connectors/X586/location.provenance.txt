@@ -1,0 +1,1 @@
+Recovered from the prior built-in EPC playground capture because the 2026-09-10 collector request returned HTTP 403.

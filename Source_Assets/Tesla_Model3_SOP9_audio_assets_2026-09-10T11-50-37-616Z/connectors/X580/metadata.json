@@ -1,0 +1,32 @@
+{
+  "connectorID": "X580",
+  "connectorColor": "BK",
+  "deviceName": "Speaker Front Right Door 80mm",
+  "harnessDesignator": "DT",
+  "harnessName": "Front Door Trim",
+  "harnessPN": "1764461-XX-X",
+  "teslaPN": "1679742-00-A",
+  "terminalFaceview": "faceviews/delphi_35328464.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "11",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X923F",
+      "destCavityID": "11",
+      "destCavityName": "11",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "20",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X923F",
+      "destCavityID": "20",
+      "destCavityName": "20",
+      "destDeviceName": ""
+    }
+  ]
+}

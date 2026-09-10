@@ -1,0 +1,242 @@
+{
+  "connectorID": "X059",
+  "connectorColor": "WH",
+  "deviceName": "Body Controller Right",
+  "harnessDesignator": "B",
+  "harnessName": "RH Body",
+  "harnessPN": "1897316-XX-X",
+  "teslaPN": "1047432-00-A",
+  "terminalFaceview": "faceviews/sumitomo_6098-4740.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "LIFTGATE_STRUT_ENCODER_A",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X354",
+      "destCavityID": "2",
+      "destCavityName": "Hall Sensor Output #1",
+      "destDeviceName": "Liftgate Power Strut RH"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "LIFTGATE_STRUT_ENCODER_B",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X354",
+      "destCavityID": "3",
+      "destCavityName": "Hall Sensor Output #2",
+      "destDeviceName": "Liftgate Power Strut RH"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "SEAT_FRONT_AUTOMATIC_LOCKING_RETRACTOR_SENSOR_GND",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X213",
+      "destCavityID": "2",
+      "destCavityName": "Return",
+      "destDeviceName": "Retractor - FR"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "SEAT_FRONT_AUTOMATIC_LOCKING_RETRACTOR_SENSOR",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X213",
+      "destCavityID": "1",
+      "destCavityName": "Power In",
+      "destDeviceName": "Retractor - FR"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "AUDIO_TWEETER_FRONT_DOOR_PASSTHROUGH_P",
+      "wireColor": "VT/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X171",
+      "destCavityID": "2",
+      "destCavityName": "AMP2_1P",
+      "destDeviceName": "MCU (LHD)"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "AUDIO_TWEETER_FRONT_DOOR_PASSTHROUGH_N",
+      "wireColor": "BU/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X171",
+      "destCavityID": "1",
+      "destCavityName": "AMP2_1N",
+      "destDeviceName": "MCU (LHD)"
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "RESTRAINT_CONTROL_MODULE_PASSTHROUGH_2",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X908M",
+      "destCavityID": "15",
+      "destCavityName": "15",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "16",
+      "cavityName": "LIFTGATE_STRUT_SENSOR_POWER",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X354",
+      "destCavityID": "1",
+      "destCavityName": "Hall Signal Power Supply",
+      "destDeviceName": "Liftgate Power Strut RH"
+    },
+    {
+      "cavityID": "17",
+      "cavityName": "LIFTGATE_SHARED_GND",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X354",
+      "destCavityID": "4",
+      "destCavityName": "Hall Signal Ground",
+      "destDeviceName": "Liftgate Power Strut RH"
+    },
+    {
+      "cavityID": "18",
+      "cavityName": "TRUNK_INTERIOR_LED",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X297",
+      "destCavityID": "1",
+      "destCavityName": "PWR",
+      "destDeviceName": "Trunk Internal Illumination Right"
+    },
+    {
+      "cavityID": "19",
+      "cavityName": "INTERIOR_CAMERA_LED_FAN",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X962M",
+      "destCavityID": "3",
+      "destCavityName": "3",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "20",
+      "cavityName": "LIFTGATE_SHUTFACE_SWITCH_LED",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X954M",
+      "destCavityID": "18",
+      "destCavityName": "18",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "21",
+      "cavityName": "LIFTGATE_SHUTFACE_SWITCH",
+      "wireColor": "BN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X954M",
+      "destCavityID": "19",
+      "destCavityName": "19",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "22",
+      "cavityName": "LIFTGATE_LATCH_SWITCH_3",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X954M",
+      "destCavityID": "17",
+      "destCavityName": "17",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "23",
+      "cavityName": "LIFTGATE_LATCH_SWITCH_2",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X954M",
+      "destCavityID": "16",
+      "destCavityName": "16",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "24",
+      "cavityName": "REAR_FASCIA_LIGHTS_RIGHT_FAULT",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X949M",
+      "destCavityID": "9",
+      "destCavityName": "9",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "25",
+      "cavityName": "REAR_FASCIA_LIGHTS_LEFT_FAULT",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X949M",
+      "destCavityID": "2",
+      "destCavityName": "2",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "27",
+      "cavityName": "DOOR_REAR_LATCH_OPEN_SWITCH",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X926F",
+      "destCavityID": "18",
+      "destCavityName": "18",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "30",
+      "cavityName": "RESTRAINT_CONTROL_MODULE_PASSTHROUGH_1",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X908M",
+      "destCavityID": "10",
+      "destCavityName": "10",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "32",
+      "cavityName": "DAMPER_VALVE_REAR_RIGHT_RETURN",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X163A",
+      "destCavityID": "2",
+      "destCavityName": "Control -",
+      "destDeviceName": "EPB and Adaptive Damper Valve RR"
+    },
+    {
+      "cavityID": "33",
+      "cavityName": "DAMPER_VALVE_REAR_RIGHT",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X163A",
+      "destCavityID": "1",
+      "destCavityName": "Control +",
+      "destDeviceName": "EPB and Adaptive Damper Valve RR"
+    },
+    {
+      "cavityID": "35",
+      "cavityName": "DAMPER_VALVE_REAR_LEFT",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X935M",
+      "destCavityID": "1",
+      "destCavityName": "1",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "36",
+      "cavityName": "DAMPER_VALVE_REAR_LEFT_RETURN",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X935M",
+      "destCavityID": "2",
+      "destCavityName": "2",
+      "destDeviceName": ""
+    }
+  ]
+}

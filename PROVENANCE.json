@@ -1,0 +1,24 @@
+{
+  "package": "Tesla_SOP9_Audio_EPC_Package_v2.1.0_Full",
+  "version": "2.1.0",
+  "generated": "2026-09-10",
+  "vehicle": "Tesla Model 3 2026 Premium LR RWD / SOP9 / LHD",
+  "basis": "v2.0.1 renderer-hotfix package",
+  "new_inputs": [
+    "MB Car Audio cart screenshot 2026-09-10",
+    "owner-provided phone consultation notes",
+    "web research snapshot 2026-09-10"
+  ],
+  "web_research_scope": [
+    "Netherlands",
+    "Germany",
+    "Belgium",
+    "France"
+  ],
+  "price_method": "lowest captured current/indexed price per market; average uses available country-low values; missing markets left blank",
+  "notes": [
+    "No nested archives",
+    "Tesla source assets preserved",
+    "Online manufacturer docs indexed by URL; user-supplied manufacturer files retained locally"
+  ]
+}

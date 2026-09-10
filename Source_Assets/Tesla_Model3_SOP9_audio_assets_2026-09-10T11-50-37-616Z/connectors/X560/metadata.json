@@ -1,0 +1,132 @@
+{
+  "connectorID": "X560",
+  "connectorColor": "WH",
+  "deviceName": "Premium Amp Audio",
+  "harnessDesignator": "B",
+  "harnessName": "RH Body",
+  "harnessPN": "1897316-XX-X",
+  "teslaPN": "1042593-00-A",
+  "terminalFaceview": "faceviews/sumitomo_6098-5713.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "15",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X936M",
+      "destCavityID": "15",
+      "destCavityName": "15",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "1",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X936M",
+      "destCavityID": "1",
+      "destCavityName": "1",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "14",
+      "wireColor": "RD/WH",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X926F",
+      "destCavityID": "14",
+      "destCavityName": "14",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "26",
+      "wireColor": "BK/WH",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X926F",
+      "destCavityID": "26",
+      "destCavityName": "26",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "Right Parcel Shelf Speaker N",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X970M",
+      "destCavityID": "2",
+      "destCavityName": "2",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "Right Parcel Shelf Speaker P",
+      "wireColor": "GY",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X970M",
+      "destCavityID": "1",
+      "destCavityName": "1",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "Right Front Door A3E N",
+      "wireColor": "VT/WH",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X051",
+      "destCavityID": "36",
+      "destCavityName": "AUDIO_80MM_SPEAKER_FRONT_DOOR_PASSTHROUGH_N",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "8",
+      "cavityName": "Right Front Door A3E P",
+      "wireColor": "GN/WH",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X051",
+      "destCavityID": "20",
+      "destCavityName": "AUDIO_80MM_SPEAKER_FRONT_DOOR_PASSTHROUGH_P",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "9",
+      "cavityName": "Left Front Door A3E P",
+      "wireColor": "GN",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X935M",
+      "destCavityID": "5",
+      "destCavityName": "5",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "Left Front Door A3E N",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X935M",
+      "destCavityID": "6",
+      "destCavityName": "6",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "Left Parcel Shelf Speaker N",
+      "wireColor": "WH",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X970M",
+      "destCavityID": "4",
+      "destCavityName": "4",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "Left Parcel Shelf Speaker P",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X970M",
+      "destCavityID": "3",
+      "destCavityName": "3",
+      "destDeviceName": ""
+    }
+  ]
+}

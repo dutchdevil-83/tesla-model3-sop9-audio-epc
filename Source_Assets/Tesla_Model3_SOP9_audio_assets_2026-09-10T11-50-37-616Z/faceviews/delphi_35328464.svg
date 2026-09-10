@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="768" viewBox="0,0 48071,65416" width="1024" xml:space="preserve">   
+<defs>
+<style type="text/css">
+
+.A,.B{fill:none;fill-opacity:0.0;font-family:sans-serif;stroke-width:117px;}
+.C{font-size:9255px;fill:#000;fill-opacity:1.0;font-family:Lucida Sans;stroke-width:3px;}
+.C,.A,.B{fill-rule:evenodd;font-style:normal;font-weight:normal;stroke:#000;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1.0;}
+.a_{stroke:red;}
+.b_{fill:red;}
+.c_{stroke:#FA0;}
+.d_{fill:#FA0;}
+
+</style>
+</defs>
+<g>
+<path class="A" d="M47922,8h-46988v24025m39174,0v-14513l-2125,-4596h-9571l-3077,3074h11458v5483h-6982v2774h-10764v-2774h-6982v-5483h11458l-3077,-3074h-9571l-2125,4596v14513m-7882,11487h-13v-1877l16,-5404l65,-4205h7813l-61,4205l-16,5404h3393m24729,2516v-22679l-247,9769h-24234l-247,-9769v22679m0,-638h-11197l9,638h172m11171,925v-925h-11171l19,1568v7602h16l3,-8244h182m0,20745v-20745h46316m335,-13052v-24025l94,91m-41899,58205h-5320l472,-472h5320m0,7106v-7106l-472,472v7103m41469,-7575h-5320v7106l472,469v-7103h5320l-472,-472v-20745h182l3,8244h16v-7602l19,-1568h172l9,-638h13v-1877l-16,-5404l-65,-4205h-7813l61,4205l16,5404h-3393m5946,31764h-36621l472,-469h35676m5541,-28778h-11171v925m-156,0l58,-13834m-24221,0l58,13834m-3690,-8847h-7817m41397,29593l472,472m-41935,-48816l29,-9388m6,0l94,-91m47053,28230h-7817m7853,-28139l29,9388m-61,26033h-11197m-28123,-1877h-7817m47206,-24155v48816m-47261,-48816v48816m39389,-24661h7817"/>
+<path class="B" d="M37571,49584v11266v-11266h-11266h11266l-3442,3442 z"/>
+<path class="A" d="M29748,53026v4381v-4381l-3442,-3442l3442,3442h4381h-4381h4381v4381v-4381v4381l3442,3442l-3442,-3442h-4381h4381"/>
+<path class="B" d="M29748,57408l-3442,3442h11266h-11266v-11266v11266 z"/>
+<path class="B" d="M21924,49584v11266v-11266h-11266h11266l-3442,3442 z"/>
+<path class="A" d="M14100,53026v4381v-4381l-3442,-3442l3442,3442h4381h-4381h4381v4381v-4381v4381l3442,3442l-3442,-3442h-4381h4381"/>
+<path class="B" d="M14100,57408l-3442,3442h11266h-11266v-11266v11266 z"/>
+<g><desc>chs.cof.logical.schem.PinList UIDfc5e59-17827e4b7cc-ffdc6cbeac3ac5c42a2de732fb981fe8 UIDfc5e59-17827e4b7ca-ffdc6cbeac3ac5c42a2de732fb981fe8</desc>
+<text class="C" x="11865" y="47712">2</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc5e59-17827e4b7cc-ffdc6cbeac3ac5c42a2de732fb981fe8 UIDfc5e59-17827e4b7ca-ffdc6cbeac3ac5c42a2de732fb981fe8</desc>
+<text class="C" x="33145" y="47712">1</text>
+</g>
+</g></svg>

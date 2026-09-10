@@ -1,0 +1,92 @@
+{
+  "connectorID": "X155A",
+  "connectorColor": "BK",
+  "deviceName": "Wheel Speed Sensor, Accelerometer and Adaptive Damper Valve RF Inline",
+  "harnessDesignator": "W",
+  "harnessName": "Frunk",
+  "harnessPN": "2897330-XX-X",
+  "teslaPN": "1516302-00-A",
+  "terminalFaceview": "faceviews/molex_33482-4801.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "AN",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X057",
+      "destCavityID": "21",
+      "destCavityName": "SUSPENSION_ACCELEROMETER_FRONT_A2B_N",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "AP",
+      "wireColor": "GN",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X057",
+      "destCavityID": "20",
+      "destCavityName": "SUSPENSION_ACCELEROMETER_FRONT_A2B_P",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "BP",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X154A",
+      "destCavityID": "2",
+      "destCavityName": "AP",
+      "destDeviceName": "Wheel Speed Sensor, Accelerometer and Adaptive Damper Valve LF Inline"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "BN",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X154A",
+      "destCavityID": "1",
+      "destCavityName": "AN",
+      "destDeviceName": "Wheel Speed Sensor, Accelerometer and Adaptive Damper Valve LF Inline"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "Control +",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X057",
+      "destCavityID": "5",
+      "destCavityName": "DAMPER_VALVE_FRONT_RIGHT",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "Control -",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X057",
+      "destCavityID": "4",
+      "destCavityName": "DAMPER_VALVE_FRONT_RIGHT_RETURN",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "WSSA1",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X151",
+      "destCavityID": "21",
+      "destCavityName": "WSP_FR",
+      "destDeviceName": "HCU/ESP"
+    },
+    {
+      "cavityID": "8",
+      "cavityName": "WSSA2",
+      "wireColor": "GY",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X151",
+      "destCavityID": "26",
+      "destCavityName": "WSS_FR",
+      "destDeviceName": "HCU/ESP"
+    }
+  ]
+}

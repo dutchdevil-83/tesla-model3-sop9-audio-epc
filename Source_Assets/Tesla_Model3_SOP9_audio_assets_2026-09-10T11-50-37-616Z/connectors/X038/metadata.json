@@ -1,0 +1,52 @@
+{
+  "connectorID": "X038",
+  "connectorColor": "GY",
+  "deviceName": "Body Controller Left",
+  "harnessDesignator": "J",
+  "harnessName": "IP",
+  "harnessPN": "Far Side Airbag",
+  "teslaPN": "1100245-00-A",
+  "terminalFaceview": "faceviews/yazaki_7283-6469-40.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "HVAC_BLOWER_PHASE_C",
+      "wireColor": "WH",
+      "wireSize": "6.3x0.8F",
+      "destConnectorID": "X536",
+      "destCavityID": "1",
+      "destCavityName": "Phase 3 (W)",
+      "destDeviceName": "Blower Motor"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "HVAC_BLOWER_PHASE_B",
+      "wireColor": "BK",
+      "wireSize": "6.3x0.8F",
+      "destConnectorID": "X536",
+      "destCavityID": "2",
+      "destCavityName": "Phase 2 (V)",
+      "destDeviceName": "Blower Motor"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "HVAC_BLOWER_MOTOR_GROUND_SHIELD",
+      "wireColor": "SI",
+      "wireSize": "6.3x0.8F",
+      "destConnectorID": "",
+      "destCavityID": "",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "HVAC_BLOWER_PHASE_A",
+      "wireColor": "RD",
+      "wireSize": "6.3x0.8F",
+      "destConnectorID": "X536",
+      "destCavityID": "4",
+      "destCavityName": "Phase 1 (U)",
+      "destDeviceName": "Blower Motor"
+    }
+  ]
+}

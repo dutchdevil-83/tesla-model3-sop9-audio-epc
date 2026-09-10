@@ -1,0 +1,32 @@
+{
+  "connectorID": "X579",
+  "connectorColor": "BK",
+  "deviceName": "Speaker Headliner Right",
+  "harnessDesignator": "K",
+  "harnessName": "Headliner",
+  "harnessPN": "2) Splices may be split across pages for visual clarity with respect to the function",
+  "teslaPN": "1015004-00-B",
+  "terminalFaceview": "faceviews/delphi_13649797.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "Speaker P",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X981F",
+      "destCavityID": "10",
+      "destCavityName": "10",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "Speaker N",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X981F",
+      "destCavityID": "18",
+      "destCavityName": "18",
+      "destDeviceName": ""
+    }
+  ]
+}

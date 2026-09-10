@@ -1,0 +1,32 @@
+{
+  "connectorID": "X603A",
+  "connectorColor": "BK",
+  "deviceName": "Speaker Emergency Audio (RHD)",
+  "harnessDesignator": "W",
+  "harnessName": "Frunk",
+  "harnessPN": "2897330-XX-X",
+  "teslaPN": "1015004-00-B",
+  "terminalFaceview": "faceviews/delphi_13649797.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "Speaker P",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X120A",
+      "destCavityID": "20",
+      "destCavityName": "EMERG-AUD-OUT_P",
+      "destDeviceName": "Autopilot ECU (RHD)"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "Speaker N",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X120A",
+      "destCavityID": "11",
+      "destCavityName": "EMERG-AUD-OUT_N",
+      "destDeviceName": "Autopilot ECU (RHD)"
+    }
+  ]
+}

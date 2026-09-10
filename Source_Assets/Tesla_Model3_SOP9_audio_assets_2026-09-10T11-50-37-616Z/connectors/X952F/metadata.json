@@ -1,0 +1,132 @@
+{
+  "connectorID": "X952F",
+  "connectorColor": "BK",
+  "deviceName": "",
+  "harnessDesignator": "X",
+  "harnessName": "Rear Subframe",
+  "harnessPN": "1897329-XX-X",
+  "teslaPN": "2067059-00-A",
+  "terminalFaceview": "faceviews/molex_33472-8255.svg",
+  "cavities": [
+    {
+      "cavityID": "2",
+      "cavityName": "2",
+      "wireColor": "TN",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X156A",
+      "destCavityID": "7",
+      "destCavityName": "WSSA1",
+      "destDeviceName": "Wheel Speed Sensor and Accelerometer LR Inline"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "3",
+      "wireColor": "GN",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X156A",
+      "destCavityID": "8",
+      "destCavityName": "WSSA2",
+      "destDeviceName": "Wheel Speed Sensor and Accelerometer LR Inline"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "4",
+      "wireColor": "WH",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X157A",
+      "destCavityID": "7",
+      "destCavityName": "WSSA1",
+      "destDeviceName": "Wheel Speed Sensor and Accelerometer RR Inline"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "5",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X157A",
+      "destCavityID": "8",
+      "destCavityName": "WSSA2",
+      "destDeviceName": "Wheel Speed Sensor and Accelerometer RR Inline"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "6",
+      "wireColor": "BU/WH",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X090",
+      "destCavityID": "12",
+      "destCavityName": "CAN+",
+      "destDeviceName": "Drive Inverter Rear Logic"
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "7",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X090",
+      "destCavityID": "2",
+      "destCavityName": "CAN-",
+      "destDeviceName": "Drive Inverter Rear Logic"
+    },
+    {
+      "cavityID": "8",
+      "cavityName": "8",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X092",
+      "destCavityID": "3",
+      "destCavityName": "Ground",
+      "destDeviceName": "Drive Unit Oil Pump Rear"
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "10",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X092",
+      "destCavityID": "1",
+      "destCavityName": "Power",
+      "destDeviceName": "Drive Unit Oil Pump Rear"
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "11",
+      "wireColor": "GY",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X157A",
+      "destCavityID": "2",
+      "destCavityName": "AP",
+      "destDeviceName": "Wheel Speed Sensor and Accelerometer RR Inline"
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "12",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X157A",
+      "destCavityID": "1",
+      "destCavityName": "AN",
+      "destDeviceName": "Wheel Speed Sensor and Accelerometer RR Inline"
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "14",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X090",
+      "destCavityID": "13",
+      "destCavityName": "GND",
+      "destDeviceName": "Drive Inverter Rear Logic"
+    },
+    {
+      "cavityID": "15",
+      "cavityName": "15",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X090",
+      "destCavityID": "3",
+      "destCavityName": "Switched +12V",
+      "destDeviceName": "Drive Inverter Rear Logic"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "connectorID": "X287",
+  "connectorColor": "BK",
+  "deviceName": "Rear Maplight Right",
+  "harnessDesignator": "K",
+  "harnessName": "Headliner",
+  "harnessPN": "2) Splices may be split across pages for visual clarity with respect to the function",
+  "teslaPN": "1015005-00-B",
+  "terminalFaceview": "faceviews/delphi_13623681.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "Power",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X299",
+      "destCavityID": "10",
+      "destCavityName": "RR Overhead Light Power",
+      "destDeviceName": "Front Overhead Module"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "LIN",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X299",
+      "destCavityID": "5",
+      "destCavityName": "RR Overhead Light LIN",
+      "destDeviceName": "Front Overhead Module"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "Ground",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X299",
+      "destCavityID": "6",
+      "destCavityName": "RR Overhead Light Ground",
+      "destDeviceName": "Front Overhead Module"
+    }
+  ]
+}

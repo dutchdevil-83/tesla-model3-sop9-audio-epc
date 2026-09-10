@@ -1,0 +1,128 @@
+[
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X052.jpg",
+    "connectorId": "X052",
+    "purpose": "connector location image",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  },
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X057.jpg",
+    "connectorId": "X057",
+    "purpose": "connector location image",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  },
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X566.jpg",
+    "connectorId": "X566",
+    "purpose": "connector location image",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  },
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X586.jpg",
+    "connectorId": "X586",
+    "purpose": "connector location image",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  },
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X595.jpg",
+    "connectorId": "X595",
+    "purpose": "connector location image",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  },
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X602.jpg",
+    "connectorId": "X602",
+    "purpose": "connector location image",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  },
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X908M.jpg",
+    "connectorId": "X908M",
+    "purpose": "connector location image",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  },
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6098-4740.svg",
+    "connectorId": "X039",
+    "purpose": "terminal faceview",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  },
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6098-6203.svg",
+    "connectorId": "X171",
+    "purpose": "terminal faceview",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  },
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6098-5713.svg",
+    "connectorId": "X560",
+    "purpose": "terminal faceview",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  },
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/delphi_35126363.svg",
+    "connectorId": "X602",
+    "purpose": "terminal faceview",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  },
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/molex_33482-3601.svg",
+    "connectorId": "X901M",
+    "purpose": "terminal faceview",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  },
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/amp_1-2005091-1.svg",
+    "connectorId": "X935M",
+    "purpose": "terminal faceview",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  },
+  {
+    "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6098-5686.svg",
+    "connectorId": "X970M",
+    "purpose": "terminal faceview",
+    "required": false,
+    "httpStatus": 403,
+    "statusText": "Forbidden",
+    "error": "HTTP 403 Forbidden"
+  }
+]

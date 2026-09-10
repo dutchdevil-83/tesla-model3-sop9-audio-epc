@@ -1,0 +1,32 @@
+{
+  "connectorID": "X601",
+  "connectorColor": "GN",
+  "deviceName": "Speaker Subwoofer Left Parcel Shelf",
+  "harnessDesignator": "B",
+  "harnessName": "RH Body",
+  "harnessPN": "1897316-XX-X",
+  "teslaPN": "1075244-00-A",
+  "terminalFaceview": "faceviews/yazaki_7283-6444-60.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "Speaker P",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X561",
+      "destCavityID": "4",
+      "destCavityName": "Subwoofer VC2 P",
+      "destDeviceName": "Premium Amp Audio"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "Speaker N",
+      "wireColor": "BN",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X561",
+      "destCavityID": "10",
+      "destCavityName": "Subwoofer VC2 N",
+      "destDeviceName": "Premium Amp Audio"
+    }
+  ]
+}

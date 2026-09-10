@@ -1,0 +1,122 @@
+{
+  "connectorID": "X927F",
+  "connectorColor": "BK",
+  "deviceName": "",
+  "harnessDesignator": "RT",
+  "harnessName": "Rear Door Trim",
+  "harnessPN": "5) Wire Specification: 60V, thin-wall PVC (ISO type or equivalent).",
+  "teslaPN": "1849224-01-C",
+  "terminalFaceview": "faceviews/kse_k20f01122.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "1",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X591",
+      "destCavityID": "1",
+      "destCavityName": "Speaker P",
+      "destDeviceName": "Speaker Rear Right Door"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "5",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X466",
+      "destCavityID": "1",
+      "destCavityName": "PWR",
+      "destDeviceName": "Puddle LED Rear Right"
+    },
+    {
+      "cavityID": "8",
+      "cavityName": "8",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X462",
+      "destCavityID": "1",
+      "destCavityName": "LED",
+      "destDeviceName": "Window Switch RR"
+    },
+    {
+      "cavityID": "9",
+      "cavityName": "9",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X456",
+      "destCavityID": "3",
+      "destCavityName": "Switch",
+      "destDeviceName": "Interior Open Switch Rear Right"
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "10",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X456",
+      "destCavityID": "2",
+      "destCavityName": "Illumination",
+      "destDeviceName": "Interior Open Switch Rear Right"
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "12",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X591",
+      "destCavityID": "2",
+      "destCavityName": "Speaker N",
+      "destDeviceName": "Speaker Rear Right Door"
+    },
+    {
+      "cavityID": "13",
+      "cavityName": "13",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "",
+      "destCavityID": "",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "14",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X465",
+      "destCavityID": "1",
+      "destCavityName": "Power",
+      "destDeviceName": "Door Map Pocket LED Rear Right"
+    },
+    {
+      "cavityID": "16",
+      "cavityName": "16",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X462",
+      "destCavityID": "2",
+      "destCavityName": "Switch",
+      "destDeviceName": "Window Switch RR"
+    },
+    {
+      "cavityID": "18",
+      "cavityName": "18",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X464",
+      "destCavityID": "3",
+      "destCavityName": "LIN IN",
+      "destDeviceName": "Ambient Light - Rear Right Door"
+    },
+    {
+      "cavityID": "19",
+      "cavityName": "19",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X464",
+      "destCavityID": "1",
+      "destCavityName": "PWR",
+      "destDeviceName": "Ambient Light - Rear Right Door"
+    }
+  ]
+}

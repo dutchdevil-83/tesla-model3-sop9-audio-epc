@@ -1,0 +1,62 @@
+{
+  "connectorID": "X607",
+  "connectorColor": "BK",
+  "deviceName": "TCU",
+  "harnessDesignator": "B",
+  "harnessName": "RH Body",
+  "harnessPN": "1897316-XX-X",
+  "teslaPN": "1660464-00-A",
+  "terminalFaceview": "faceviews/hirose_gt25-8ds-hu.svg",
+  "cavities": [
+    {
+      "cavityID": "3",
+      "cavityName": "A2B_OUT_UP_P",
+      "wireColor": "VT",
+      "wireSize": "0.64F",
+      "destConnectorID": "X175A",
+      "destCavityID": "16",
+      "destCavityName": "A2B-A-OUT_P",
+      "destDeviceName": "MCU (RHD)"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "A2B_OUT_UP_N",
+      "wireColor": "WH",
+      "wireSize": "0.64F",
+      "destConnectorID": "X175A",
+      "destCavityID": "15",
+      "destCavityName": "A2B-A-OUT_N",
+      "destDeviceName": "MCU (RHD)"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "VBAT",
+      "wireColor": "RD",
+      "wireSize": "0.64F",
+      "destConnectorID": "X171",
+      "destCavityID": "14",
+      "destCavityName": "PVBAT-TCU",
+      "destDeviceName": "MCU (LHD)"
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "A2B_OUT_DOWN_N",
+      "wireColor": "BN",
+      "wireSize": "0.64F",
+      "destConnectorID": "X936M",
+      "destCavityID": "8",
+      "destCavityName": "8",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "8",
+      "cavityName": "A2B_OUT_DOWN_P",
+      "wireColor": "GN",
+      "wireSize": "0.64F",
+      "destConnectorID": "X936M",
+      "destCavityID": "7",
+      "destCavityName": "7",
+      "destDeviceName": ""
+    }
+  ]
+}

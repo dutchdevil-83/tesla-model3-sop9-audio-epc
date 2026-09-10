@@ -1,0 +1,232 @@
+{
+  "connectorID": "X057",
+  "connectorColor": "GY",
+  "deviceName": "Body Controller Right",
+  "harnessDesignator": "W",
+  "harnessName": "Frunk",
+  "harnessPN": "2897330-XX-X",
+  "teslaPN": "1849226-02-C",
+  "terminalFaceview": "faceviews/kse_k20f01223.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "RESTRAINT_CONTROL_MODULE",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X908F",
+      "destCavityID": "15",
+      "destCavityName": "15",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "FRONT_EFUSE_LOCKOUT",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X010",
+      "destCavityID": "21",
+      "destCavityName": "EFUSE_LOCKOUT",
+      "destDeviceName": "Body Controller Front"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "DAMPER_VALVE_FRONT_RIGHT_RETURN",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X155A",
+      "destCavityID": "6",
+      "destCavityName": "Control -",
+      "destDeviceName": "Wheel Speed Sensor, Accelerometer and Adaptive Damper Valve RF Inline"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "DAMPER_VALVE_FRONT_RIGHT",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X155A",
+      "destCavityID": "5",
+      "destCavityName": "Control +",
+      "destDeviceName": "Wheel Speed Sensor, Accelerometer and Adaptive Damper Valve RF Inline"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "LIFTGATE_EXTERIOR_SWITCH_PASSTHROUGH",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X010",
+      "destCavityID": "68",
+      "destCavityName": "TRUNK_EXTERIOR_SWITCH",
+      "destDeviceName": "Body Controller Front"
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "STANDBY_POWER_PCS_LOCKOUT_SWITCHED",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X010",
+      "destCavityID": "65",
+      "destCavityName": "FRONT_TO_PCS_ENABLE",
+      "destDeviceName": "Body Controller Front"
+    },
+    {
+      "cavityID": "8",
+      "cavityName": "VEHICLE_CAN_P",
+      "wireColor": "BN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X037",
+      "destCavityID": "17",
+      "destCavityName": "VEHICLE_CAN_P",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "9",
+      "cavityName": "VEHICLE_CAN_N",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X037",
+      "destCavityID": "16",
+      "destCavityName": "VEHICLE_CAN_N",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "VEHICLE_CAN_N",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X170A",
+      "destCavityID": "2",
+      "destCavityName": "VEH-CAN_N",
+      "destDeviceName": "MCU (RHD)"
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "VEHICLE_CAN_P",
+      "wireColor": "BN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X170A",
+      "destCavityID": "1",
+      "destCavityName": "VEH-CAN_P",
+      "destDeviceName": "MCU (RHD)"
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "HV_CONTACTORS",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X918F",
+      "destCavityID": "1",
+      "destCavityName": "HV Disconnect",
+      "destDeviceName": "HV Contactor Disconnect"
+    },
+    {
+      "cavityID": "16",
+      "cavityName": "DAMPER_VALVE_FRONT_LEFT",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X154A",
+      "destCavityID": "5",
+      "destCavityName": "Control +",
+      "destDeviceName": "Wheel Speed Sensor, Accelerometer and Adaptive Damper Valve LF Inline"
+    },
+    {
+      "cavityID": "17",
+      "cavityName": "DAMPER_VALVE_FRONT_LEFT_RETURN",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X154A",
+      "destCavityID": "6",
+      "destCavityName": "Control -",
+      "destDeviceName": "Wheel Speed Sensor, Accelerometer and Adaptive Damper Valve LF Inline"
+    },
+    {
+      "cavityID": "18",
+      "cavityName": "AMBIENT_AIR_TEMP_GROUND",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X905F",
+      "destCavityID": "10",
+      "destCavityName": "10",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "19",
+      "cavityName": "AMBIENT_AIR_TEMP",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X905F",
+      "destCavityID": "9",
+      "destCavityName": "9",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "20",
+      "cavityName": "SUSPENSION_ACCELEROMETER_FRONT_A2B_P",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X155A",
+      "destCavityID": "2",
+      "destCavityName": "AP",
+      "destDeviceName": "Wheel Speed Sensor, Accelerometer and Adaptive Damper Valve RF Inline"
+    },
+    {
+      "cavityID": "21",
+      "cavityName": "SUSPENSION_ACCELEROMETER_FRONT_A2B_N",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X155A",
+      "destCavityID": "1",
+      "destCavityName": "AN",
+      "destDeviceName": "Wheel Speed Sensor, Accelerometer and Adaptive Damper Valve RF Inline"
+    },
+    {
+      "cavityID": "22",
+      "cavityName": "VEHICLE_CAN_N",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X120A",
+      "destCavityID": "13",
+      "destCavityName": "VH-CAN-L-Ex",
+      "destDeviceName": "Autopilot ECU (RHD)"
+    },
+    {
+      "cavityID": "23",
+      "cavityName": "VEHICLE_CAN_P",
+      "wireColor": "BN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X120A",
+      "destCavityID": "12",
+      "destCavityName": "VH-CAN-H-Ex",
+      "destDeviceName": "Autopilot ECU (RHD)"
+    },
+    {
+      "cavityID": "24",
+      "cavityName": "DI_FRONT_PRIVATE_CAN_N",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X911F",
+      "destCavityID": "3",
+      "destCavityName": "3",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "25",
+      "cavityName": "DI_FRONT_PRIVATE_CAN_P",
+      "wireColor": "BU/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X911F",
+      "destCavityID": "2",
+      "destCavityName": "2",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "26",
+      "cavityName": "HV_CONTACTORS_FRUNK_CUTLOOP_PASSTHROUGH_IN",
+      "wireColor": "TN",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X918M",
+      "destCavityID": "1",
+      "destCavityName": "HV Disconnect",
+      "destDeviceName": "HV Contactor Disconnect"
+    }
+  ]
+}

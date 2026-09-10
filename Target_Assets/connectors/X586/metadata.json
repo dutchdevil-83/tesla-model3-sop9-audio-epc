@@ -1,0 +1,32 @@
+{
+  "connectorID": "X586",
+  "connectorColor": "BK",
+  "deviceName": "Speaker Rear Left Door",
+  "harnessDesignator": "RT",
+  "harnessName": "Rear Door Trim",
+  "harnessPN": "5) Wire Specification: 60V, thin-wall PVC (ISO type or equivalent).",
+  "teslaPN": "1679742-00-A",
+  "terminalFaceview": "faceviews/delphi_35328464.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "Speaker P",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X925F",
+      "destCavityID": "1",
+      "destCavityName": "1",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "Speaker N",
+      "wireColor": "BK",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X925F",
+      "destCavityID": "12",
+      "destCavityName": "12",
+      "destDeviceName": ""
+    }
+  ]
+}

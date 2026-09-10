@@ -1,0 +1,52 @@
+{
+  "connectorID": "X562",
+  "connectorColor": "WH",
+  "deviceName": "Radio Tuner",
+  "harnessDesignator": "B",
+  "harnessName": "RH Body",
+  "harnessPN": "1897316-XX-X",
+  "teslaPN": "1118256-00-A",
+  "terminalFaceview": "faceviews/amp_2302475-2.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "ACC",
+      "wireColor": "RD",
+      "wireSize": "0.50x0.40F",
+      "destConnectorID": "X050",
+      "destCavityID": "45",
+      "destCavityName": "RADIO_TUNER",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "Ground",
+      "wireColor": "BK",
+      "wireSize": "0.50x0.40F",
+      "destConnectorID": "G042",
+      "destCavityID": "10",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "BR+",
+      "wireColor": "GY",
+      "wireSize": "0.50x0.40F",
+      "destConnectorID": "X175A",
+      "destCavityID": "11",
+      "destCavityName": "RADIO-BR-ETH_P",
+      "destDeviceName": "MCU (RHD)"
+    },
+    {
+      "cavityID": "9",
+      "cavityName": "BR-",
+      "wireColor": "BU",
+      "wireSize": "0.50x0.40F",
+      "destConnectorID": "X175A",
+      "destCavityID": "12",
+      "destCavityName": "RADIO-BR-ETH_N",
+      "destDeviceName": "MCU (RHD)"
+    }
+  ]
+}

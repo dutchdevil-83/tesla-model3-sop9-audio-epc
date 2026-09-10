@@ -1,0 +1,22 @@
+{
+  "connectorID": "X845",
+  "connectorColor": "WH",
+  "deviceName": "Antenna - FM/DAB",
+  "harnessDesignator": "Q",
+  "harnessName": "Parcel Shelf",
+  "harnessPN": "specific connector.",
+  "teslaPN": "1043845-01-A",
+  "terminalFaceview": "faceviews/rosenberger_59z113-000-b.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "FM/DAB 2 OUT",
+      "wireColor": "BK",
+      "wireSize": "COAXF",
+      "destConnectorID": "X818",
+      "destCavityID": "1",
+      "destCavityName": "FM/DAB 2 IN",
+      "destDeviceName": "Radio Tuner"
+    }
+  ]
+}

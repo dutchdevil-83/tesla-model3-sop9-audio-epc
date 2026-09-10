@@ -1,0 +1,122 @@
+{
+  "connectorID": "X949M",
+  "connectorColor": "BK",
+  "deviceName": "",
+  "harnessDesignator": "B",
+  "harnessName": "RH Body",
+  "harnessPN": "1897316-XX-X",
+  "teslaPN": "1003238-00-B",
+  "terminalFaceview": "faceviews/molex_33482-6201.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "1",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X050",
+      "destCavityID": "47",
+      "destCavityName": "REAR_FASCIA_TURN_SIGNAL_LEFT",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "2",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X059",
+      "destCavityID": "25",
+      "destCavityName": "REAR_FASCIA_LIGHTS_LEFT_FAULT",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "3",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X051",
+      "destCavityID": "41",
+      "destCavityName": "REAR_FASCIA_TAIL_LIGHT_LEFT_RIGHT",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "4",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X051",
+      "destCavityID": "39",
+      "destCavityName": "REAR_FASCIA_FOG_LIGHT_LEFT_RIGHT",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "5",
+      "wireColor": "GY",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X051",
+      "destCavityID": "24",
+      "destCavityName": "REAR_FASCIA_TURN_SIGNAL_RIGHT",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "6",
+      "wireColor": "BN",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X171A",
+      "destCavityID": "15",
+      "destCavityName": "RPWS-AUD-OUT_N",
+      "destDeviceName": "MCU (RHD)"
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "7",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "G042",
+      "destCavityID": "7",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "9",
+      "cavityName": "9",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X059",
+      "destCavityID": "24",
+      "destCavityName": "REAR_FASCIA_LIGHTS_RIGHT_FAULT",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "10",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X051",
+      "destCavityID": "9",
+      "destCavityName": "REAR_FASCIA_REVERSE_LIGHT_LEFT_RIGHT",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "11",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "G042",
+      "destCavityID": "15",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "12",
+      "wireColor": "GN",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X171A",
+      "destCavityID": "16",
+      "destCavityName": "RPWS-AUD-OUT_P",
+      "destDeviceName": "MCU (RHD)"
+    }
+  ]
+}

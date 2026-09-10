@@ -1,0 +1,32 @@
+{
+  "connectorID": "X056",
+  "connectorColor": "NA",
+  "deviceName": "Body Controller Right",
+  "harnessDesignator": "W",
+  "harnessName": "Frunk",
+  "harnessPN": "2897330-XX-X",
+  "teslaPN": "1848841-00-A",
+  "terminalFaceview": "faceviews/kse_k20f70101.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "Power",
+      "wireColor": "RD",
+      "wireSize": "6.3x0.8F",
+      "destConnectorID": "X015",
+      "destCavityID": "1",
+      "destCavityName": "RIGHT_CONTROLLER",
+      "destDeviceName": "Body Controller Front"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "Ground",
+      "wireColor": "BK",
+      "wireSize": "6.3x0.8F",
+      "destConnectorID": "G024",
+      "destCavityID": "1",
+      "destCavityName": "",
+      "destDeviceName": ""
+    }
+  ]
+}

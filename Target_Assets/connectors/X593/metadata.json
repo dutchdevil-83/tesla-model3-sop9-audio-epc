@@ -1,0 +1,32 @@
+{
+  "connectorID": "X593",
+  "connectorColor": "BK",
+  "deviceName": "Speaker Parcel Shelf Right",
+  "harnessDesignator": "Q",
+  "harnessName": "Parcel Shelf",
+  "harnessPN": "specific connector.",
+  "teslaPN": "1679742-00-A",
+  "terminalFaceview": "faceviews/delphi_35328464.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "1",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X970F",
+      "destCavityID": "1",
+      "destCavityName": "1",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "2",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X970F",
+      "destCavityID": "2",
+      "destCavityName": "2",
+      "destDeviceName": ""
+    }
+  ]
+}

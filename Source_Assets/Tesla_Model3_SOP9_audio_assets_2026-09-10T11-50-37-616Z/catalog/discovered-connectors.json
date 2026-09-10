@@ -1,0 +1,814 @@
+[
+  {
+    "connectorId": "X010",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X030A",
+    "reasons": [
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X030B",
+    "reasons": [
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X031",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X032",
+    "reasons": [
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X033A",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X033B",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X035",
+    "reasons": [
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X037",
+    "reasons": [
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X038",
+    "reasons": [
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X039",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X050",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X050A",
+    "reasons": [
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": false
+  },
+  {
+    "connectorId": "X050B",
+    "reasons": [
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": false
+  },
+  {
+    "connectorId": "X051",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X052",
+    "reasons": [
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X053A",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X053B",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X055",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X056",
+    "reasons": [
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X057",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X058",
+    "reasons": [
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X059",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X060",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X120",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X120A",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X155A",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X171",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X171A",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X175",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X175A",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X274",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X286",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X287",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X289",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X290",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X299",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X560",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X561",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X562",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X563",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X565",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X566",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X567",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X568",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X569",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X570",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X575",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X576",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X577",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X578",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X579",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X580",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X586",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X588",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X591",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X593",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X595",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X600",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X601",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X602",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X603",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X603A",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X604",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X607",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X608",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X609",
+    "reasons": [
+      "audio-related connector metadata",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X818",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X845",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X901F",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X901M",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X901M",
+    "reasons": [
+      "inline mate of X901F",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X908F",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X908M",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X908M",
+    "reasons": [
+      "inline mate of X908F",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X922F",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X922M",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X922M",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X922F",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X923F",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X923M",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X923M",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X923F",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X924F",
+    "reasons": [
+      "inline mate of X924M",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X924M",
+    "reasons": [
+      "inline mate of X924F",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X925F",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X925M",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X925M",
+    "reasons": [
+      "inline mate of X925F",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X926F",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X926M",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X926M",
+    "reasons": [
+      "inline mate of X926F",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X927F",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X927M",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X927M",
+    "reasons": [
+      "inline mate of X927F",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X935F",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X935M",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X935M",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X935F",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X936F",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X936M",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X936M",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X936F",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X949F",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X949M",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X949M",
+    "reasons": [
+      "inline mate of X949F",
+      "referenced by audio_lhd.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X952F",
+    "reasons": [
+      "inline mate of X952M"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X952M",
+    "reasons": [
+      "audio-related connector metadata"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X970F",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X970M",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X970M",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X970F",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X981F",
+    "reasons": [
+      "audio-related connector metadata",
+      "inline mate of X981M",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  },
+  {
+    "connectorId": "X981M",
+    "reasons": [
+      "inline mate of X981F",
+      "referenced by audio_lhd.svg",
+      "referenced by audio_premium_amp.svg"
+    ],
+    "metadataFound": true
+  }
+]

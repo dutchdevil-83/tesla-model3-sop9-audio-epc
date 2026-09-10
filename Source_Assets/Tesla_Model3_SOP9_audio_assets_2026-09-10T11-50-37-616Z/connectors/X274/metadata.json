@@ -1,0 +1,32 @@
+{
+  "connectorID": "X274",
+  "connectorColor": "BK",
+  "deviceName": "CHMSL",
+  "harnessDesignator": "Q",
+  "harnessName": "Parcel Shelf",
+  "harnessPN": "specific connector.",
+  "teslaPN": "1508585-00-A",
+  "terminalFaceview": "faceviews/molex_5051510200.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "7",
+      "wireColor": "BK",
+      "wireSize": "0.5",
+      "destConnectorID": "X970F",
+      "destCavityID": "7",
+      "destCavityName": "7",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "6",
+      "wireColor": "BU",
+      "wireSize": "0.5",
+      "destConnectorID": "X970F",
+      "destCavityID": "6",
+      "destCavityName": "6",
+      "destDeviceName": ""
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Changelog
 
-## v2.1.0 - 2026-09-10
+## v2.1.0 — 2026-09-10
 
 - Added actual MB Car Audio hardware quote (EUR 4,010.90 hardware-only) and quote screenshot evidence.
 - Replaced obsolete MBC shopping-list assumptions with the received Focal/Audison/MATCH basket.
@@ -12,7 +12,9 @@
 - Preserved all original Tesla source assets and v2.0.1 renderer fix.
 - Kept archive flat: no ZIP/RAR/7z files inside the distributable ZIP.
 
-## v2.0.1 - 2026-09-10
+# Changelog
+
+## v2.0.1 — 2026-09-10
 
 - Restored the missing renderer block that caused v1.9.1 through v2.0 to stop rendering service views after `renderInspector()`.
 - Preserved the v2.0 Tesla target assets, source-capture data, BOM and sourcing content.

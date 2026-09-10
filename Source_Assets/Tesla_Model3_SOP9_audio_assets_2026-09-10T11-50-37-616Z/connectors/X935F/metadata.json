@@ -1,0 +1,272 @@
+{
+  "connectorID": "X935F",
+  "connectorColor": "NA",
+  "deviceName": "",
+  "harnessDesignator": "A",
+  "harnessName": "LH Body",
+  "harnessPN": "2897315-XX-X",
+  "teslaPN": "1484695-00-C",
+  "terminalFaceview": "faceviews/amp_1-2321525-1.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "1",
+      "wireColor": "BU",
+      "wireSize": "",
+      "destConnectorID": "X162A",
+      "destCavityID": "1",
+      "destCavityName": "Control +",
+      "destDeviceName": "EPB and Adaptive Damper Valve LR"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "2",
+      "wireColor": "BN",
+      "wireSize": "",
+      "destConnectorID": "X162A",
+      "destCavityID": "2",
+      "destCavityName": "Control -",
+      "destDeviceName": "EPB and Adaptive Damper Valve LR"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "3",
+      "wireColor": "TN",
+      "wireSize": "",
+      "destConnectorID": "X096",
+      "destCavityID": "5",
+      "destCavityName": "CP_LATCH_EN",
+      "destDeviceName": "Charge Port ECU"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "4",
+      "wireColor": "YE",
+      "wireSize": "",
+      "destConnectorID": "X096",
+      "destCavityID": "6",
+      "destCavityName": "HVC_CP_nFAULT",
+      "destDeviceName": "Charge Port ECU"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "5",
+      "wireColor": "GN",
+      "wireSize": "",
+      "destConnectorID": "X031",
+      "destCavityID": "36",
+      "destCavityName": "5",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "6",
+      "wireColor": "VT",
+      "wireSize": "",
+      "destConnectorID": "X031",
+      "destCavityID": "35",
+      "destCavityName": "6",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "9",
+      "cavityName": "9",
+      "wireColor": "BU",
+      "wireSize": "",
+      "destConnectorID": "X030A",
+      "destCavityID": "19",
+      "destCavityName": "2R_SEAT_CENTER_BUCKLE_SENSOR",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "10",
+      "wireColor": "RD",
+      "wireSize": "",
+      "destConnectorID": "X486",
+      "destCavityID": "3",
+      "destCavityName": "12V",
+      "destDeviceName": "Radar Interior"
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "11",
+      "wireColor": "VT",
+      "wireSize": "",
+      "destConnectorID": "X201",
+      "destCavityID": "37",
+      "destCavityName": "Right B-Pillar Impact Sensor Low",
+      "destDeviceName": "Restraints Controller"
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "12",
+      "wireColor": "BN",
+      "wireSize": "",
+      "destConnectorID": "X201",
+      "destCavityID": "38",
+      "destCavityName": "Right B-Pillar Impact Sensor High",
+      "destDeviceName": "Restraints Controller"
+    },
+    {
+      "cavityID": "13",
+      "cavityName": "13",
+      "wireColor": "RD",
+      "wireSize": "",
+      "destConnectorID": "X030A",
+      "destCavityID": "27",
+      "destCavityName": "REAR_DRIVE_INVERTER",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "14",
+      "wireColor": "BU",
+      "wireSize": "",
+      "destConnectorID": "X031",
+      "destCavityID": "12",
+      "destCavityName": "14",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "15",
+      "cavityName": "15",
+      "wireColor": "YE",
+      "wireSize": "",
+      "destConnectorID": "X031",
+      "destCavityID": "11",
+      "destCavityName": "15",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "16",
+      "cavityName": "16",
+      "wireColor": "VT",
+      "wireSize": "",
+      "destConnectorID": "X039",
+      "destCavityID": "15",
+      "destCavityName": "AUDIO_TWEETER_FRONT_DOOR_PASSTHROUGH_P",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "17",
+      "cavityName": "17",
+      "wireColor": "WH",
+      "wireSize": "",
+      "destConnectorID": "X201",
+      "destCavityID": "20",
+      "destCavityName": "Second Row Right Outboard Retractor Pretensioner Low",
+      "destDeviceName": "Restraints Controller"
+    },
+    {
+      "cavityID": "18",
+      "cavityName": "18",
+      "wireColor": "GY",
+      "wireSize": "",
+      "destConnectorID": "X201",
+      "destCavityID": "19",
+      "destCavityName": "Second Row Right Outboard Retractor Pretensioner High",
+      "destDeviceName": "Restraints Controller"
+    },
+    {
+      "cavityID": "19",
+      "cavityName": "19",
+      "wireColor": "GN",
+      "wireSize": "",
+      "destConnectorID": "X096",
+      "destCavityID": "8",
+      "destCavityName": "CP_CAN_P",
+      "destDeviceName": "Charge Port ECU"
+    },
+    {
+      "cavityID": "20",
+      "cavityName": "20",
+      "wireColor": "BK",
+      "wireSize": "",
+      "destConnectorID": "X096",
+      "destCavityID": "7",
+      "destCavityName": "CP_CAN_N",
+      "destDeviceName": "Charge Port ECU"
+    },
+    {
+      "cavityID": "21",
+      "cavityName": "21",
+      "wireColor": "BU",
+      "wireSize": "",
+      "destConnectorID": "X039",
+      "destCavityID": "20",
+      "destCavityName": "BLE_B_PILLAR_RIGHT_UART_P",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "22",
+      "cavityName": "22",
+      "wireColor": "GN",
+      "wireSize": "",
+      "destConnectorID": "X039",
+      "destCavityID": "21",
+      "destCavityName": "BLE_B_PILLAR_RIGHT_UART_N",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "25",
+      "cavityName": "25",
+      "wireColor": "BN",
+      "wireSize": "",
+      "destConnectorID": "X039",
+      "destCavityID": "11",
+      "destCavityName": "2R_SEAT_SHARED_GROUND_RETURN",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "26",
+      "cavityName": "26",
+      "wireColor": "YE/LTBU",
+      "wireSize": "",
+      "destConnectorID": "X031",
+      "destCavityID": "43",
+      "destCavityName": "PARTY_CAN_P",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "27",
+      "cavityName": "27",
+      "wireColor": "YE",
+      "wireSize": "",
+      "destConnectorID": "X031",
+      "destCavityID": "42",
+      "destCavityName": "PARTY_CAN_N",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "28",
+      "cavityName": "28",
+      "wireColor": "WH",
+      "wireSize": "",
+      "destConnectorID": "X201",
+      "destCavityID": "56",
+      "destCavityName": "ENS1",
+      "destDeviceName": "Restraints Controller"
+    },
+    {
+      "cavityID": "31",
+      "cavityName": "31",
+      "wireColor": "RD",
+      "wireSize": "",
+      "destConnectorID": "X031",
+      "destCavityID": "10",
+      "destCavityName": "31",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "32",
+      "cavityName": "32",
+      "wireColor": "BU",
+      "wireSize": "",
+      "destConnectorID": "X039",
+      "destCavityID": "14",
+      "destCavityName": "AUDIO_TWEETER_FRONT_DOOR_PASSTHROUGH_N",
+      "destDeviceName": "Body Controller Left"
+    }
+  ]
+}

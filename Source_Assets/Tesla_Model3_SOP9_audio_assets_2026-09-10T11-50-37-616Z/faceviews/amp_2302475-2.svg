@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no' ?>  
+ <svg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' height='768' viewBox='0,0 65416,30538' width='1024' xmlns:xlink='http://www.w3.org/1999/xlink'>   
+<defs>
+<style type='text/css'>
+<![CDATA[
+.A,.B{fill:none;fill-opacity:0.0;font-family:sans-serif;stroke-width:79px;}
+.C{font-size:4962px;stroke-width:2px;}
+.D{font-size:4700px;stroke-width:1px;}
+.D,.C{fill:#000;fill-opacity:1.0;font-family:Lucida Sans;}
+.D,.C,.A,.B{fill-rule:evenodd;font-style:normal;font-weight:normal;stroke:#000;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1.0;}
+.a_{stroke:red;}
+.b_{fill:red;}
+.c_{stroke:#FA0;}
+.d_{fill:#FA0;}
+]]>
+</style>
+</defs>
+<g>
+<path class='A' d='M57378,19631l-4984,11v-2713l4980,13v2691m-7625,-2l-4984,11v-2713l4980,13v2691m-7625,-2l-4984,11v-2713l4980,13v2691m-7625,-2l-4984,11v-2713l4980,13v2691m-7625,-2l-4984,11v-2713l4980,13v2691m-72,-6422l-4984,11v-2713l4980,13v2691m7634,-2l-4984,11v-2713l4980,13v2691m7634,-2l-4984,11v-2713l4980,13v2691m7634,-2l-4984,11v-2713l4980,13v2691m7634,-2l-4984,11v-2713l4980,13v2691m-49010,7989v847h-3814v-13563h3814v847m1909,0v14411h-847v-2543h-1059v-11868m0,11868h-3390v-11868h4450v11868h847m0,-16107v4238h-847v-2543m0,-1695v1695h847m-638,-6781h5404l-527,527l-320,333v2953h7629v-2967m0,-847h-6781v3814m43659,26704h1273v-13563h3073m847,0v4662h-3920m3073,-8053v3390h847v-3390h-3920v-13563h105m3814,3814v3814h-3920m-48825,21617h-1512v1271m-8477,-22041h1271v13563h-1271m9989,-20769h-1512v-1271m55849,6358h-1271v17802h1271m-64327,-2119v-13563M2351,22051 C2351,23962 3110,25795 4462,27146 L4462,27146 C5813,28497 7646,29256 9557,29256 M9557,1281 C7646,1281 5813,2040 4462,3391 L4462,3391 C3110,4743 2351,6576 2351,8487 M9559,9 C7310,9 5154,903 3563,2493 L3563,2493 C1973,4083 1080,6240 1080,8489 M65407,6367v17802M1080,22048 C1080,24297 1973,26454 3563,28044 L3563,28044 C5154,29635 7310,30528 9559,30528 M21744,1281h-6781M63815,3825 C63816,2813 63414,1842 62698,1126 L62698,1126 C61982,411 61012,9 60000,9 M65407,6370 C65408,4333 64433,2419 62785,1222 M64135,6367 C64135,5774 64032,5185 63829,4628 M59932,29179 C62363,28751 64136,26638 64135,24170 M59934,30466 C63073,30025 65407,27339 65407,24170 M14962,29256h6781M9347,25438 C9347,26788 9883,28083 10838,29038 L10838,29038 C11792,29992 13087,30528 14437,30528 M14434,30528v-527m-5086,-4558h847m-847,0v-1695m0,-18650h847M14437,9 C13087,9 11792,545 10838,1500 L10838,1500 C9883,2454 9347,3749 9347,5099 M14434,9v527M10195,25439 C10195,27666 11918,29513 14139,29668 M10195,25442v-1695M14139,869 C11918,1024 10195,2871 10195,5098 '/>
+<rect class='B' x='36579' y='9' width='6781' height='3814'/>
+<path class='A' d='M21744,857h14862m23288,0h-16528'/>
+<rect class='B' x='21744' y='9' width='14862' height='847'/>
+<rect class='B' x='43361' y='9' width='16533' height='847'/>
+<rect class='B' x='36579' y='29256' width='6781' height='1225'/>
+<rect class='B' x='21744' y='30524' width='16524' height='4'/>
+<path class='A' d='M36625,29680h-14881v-2967h-7629v2956l320,331l527,527h-5404m5404,-3814v3814h43661m-36879,-847v847h38150'/>
+<rect class='B' x='36579' y='26713' width='6781' height='3814'/>
+<path class='A' d='M59947,29676h-16531'/>
+<rect class='B' x='36579' y='9' width='6781' height='1225'/>
+<g><desc>chs.cof.logical.schem.CAFPinList UID446ea2-159ad407daa-bca6c92f74070836cb1c6256cb1a48f1 UID446ea2-159ad407da8-bca6c92f74070836cb1c6256cb1a48f1</desc>
+<text class='C' x='54773' y='9133'>2</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID446ea2-159ad407daa-bca6c92f74070836cb1c6256cb1a48f1 UID446ea2-159ad407da8-bca6c92f74070836cb1c6256cb1a48f1</desc>
+<text class='D' x='54485' y='24960'>1</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID446ea2-159ad407daa-bca6c92f74070836cb1c6256cb1a48f1 UID446ea2-159ad407da8-bca6c92f74070836cb1c6256cb1a48f1</desc>
+<text class='D' x='46855' y='24960'>3</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID446ea2-159ad407daa-bca6c92f74070836cb1c6256cb1a48f1 UID446ea2-159ad407da8-bca6c92f74070836cb1c6256cb1a48f1</desc>
+<text class='C' x='46719' y='9133'>4</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID446ea2-159ad407daa-bca6c92f74070836cb1c6256cb1a48f1 UID446ea2-159ad407da8-bca6c92f74070836cb1c6256cb1a48f1</desc>
+<text class='C' x='38242' y='25240'>5</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID446ea2-159ad407daa-bca6c92f74070836cb1c6256cb1a48f1 UID446ea2-159ad407da8-bca6c92f74070836cb1c6256cb1a48f1</desc>
+<text class='D' x='38802' y='8852'>6</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID446ea2-159ad407daa-bca6c92f74070836cb1c6256cb1a48f1 UID446ea2-159ad407da8-bca6c92f74070836cb1c6256cb1a48f1</desc>
+<text class='C' x='31036' y='25240'>7</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID446ea2-159ad407daa-bca6c92f74070836cb1c6256cb1a48f1 UID446ea2-159ad407da8-bca6c92f74070836cb1c6256cb1a48f1</desc>
+<text class='D' x='21597' y='8852'>10</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID446ea2-159ad407daa-bca6c92f74070836cb1c6256cb1a48f1 UID446ea2-159ad407da8-bca6c92f74070836cb1c6256cb1a48f1</desc>
+<text class='C' x='23830' y='25240'>9</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID446ea2-159ad407daa-bca6c92f74070836cb1c6256cb1a48f1 UID446ea2-159ad407da8-bca6c92f74070836cb1c6256cb1a48f1</desc>
+<text class='D' x='31172' y='8852'>8</text>
+</g>
+</g></svg>

@@ -1,0 +1,82 @@
+{
+  "connectorID": "X120A",
+  "connectorColor": "GY",
+  "deviceName": "Autopilot ECU (RHD)",
+  "harnessDesignator": "W",
+  "harnessName": "Frunk",
+  "harnessPN": "2897330-XX-X",
+  "teslaPN": "1815599-01-A",
+  "terminalFaceview": "faceviews/sumitomo_6099-0401.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "VBAT-A",
+      "wireColor": "WH",
+      "wireSize": "4.8x0.8F",
+      "destConnectorID": "X011",
+      "destCavityID": "6",
+      "destCavityName": "AUTOPILOT_2",
+      "destDeviceName": "Body Controller Front"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "CH-CAN-H-Ex",
+      "wireColor": "DKGN/WH",
+      "wireSize": "1.0x0.64F",
+      "destConnectorID": "",
+      "destCavityID": "",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "CH-CAN-L-Ex",
+      "wireColor": "GN",
+      "wireSize": "1.0x0.64F",
+      "destConnectorID": "",
+      "destCavityID": "",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "EMERG-AUD-OUT_N",
+      "wireColor": "GY",
+      "wireSize": "1.0x0.64F",
+      "destConnectorID": "X603A",
+      "destCavityID": "2",
+      "destCavityName": "Speaker N",
+      "destDeviceName": "Speaker Emergency Audio (RHD)"
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "VH-CAN-H-Ex",
+      "wireColor": "BN/WH",
+      "wireSize": "1.0x0.64F",
+      "destConnectorID": "X057",
+      "destCavityID": "23",
+      "destCavityName": "VEHICLE_CAN_P",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "13",
+      "cavityName": "VH-CAN-L-Ex",
+      "wireColor": "BN",
+      "wireSize": "1.0x0.64F",
+      "destConnectorID": "X057",
+      "destCavityID": "22",
+      "destCavityName": "VEHICLE_CAN_N",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "20",
+      "cavityName": "EMERG-AUD-OUT_P",
+      "wireColor": "RD",
+      "wireSize": "1.0x0.64F",
+      "destConnectorID": "X603A",
+      "destCavityID": "1",
+      "destCavityName": "Speaker P",
+      "destDeviceName": "Speaker Emergency Audio (RHD)"
+    }
+  ]
+}

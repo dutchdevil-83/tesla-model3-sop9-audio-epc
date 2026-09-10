@@ -1,0 +1,242 @@
+{
+  "connectorID": "X039",
+  "connectorColor": "WH",
+  "deviceName": "Body Controller Left",
+  "harnessDesignator": "A",
+  "harnessName": "LH Body",
+  "harnessPN": "2897315-XX-X",
+  "teslaPN": "1047432-00-A",
+  "terminalFaceview": "faceviews/sumitomo_6098-4740.svg",
+  "cavities": [
+    {
+      "cavityID": "4",
+      "cavityName": "DOOR_REAR_LATCH_OPEN_SWITCH",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X924F",
+      "destCavityID": "18",
+      "destCavityName": "18",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "2R_SEAT_LEFT_BUCKLE_SENSOR",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X673",
+      "destCavityID": "1",
+      "destCavityName": "Power In",
+      "destDeviceName": "2R Seatbelt Buckle Switch Left"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "2R_SEAT_RIGHT_CUSHION_TEMP_GROUND",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X686",
+      "destCavityID": "10",
+      "destCavityName": "NTC -",
+      "destDeviceName": "2R Heat Pad Cushion"
+    },
+    {
+      "cavityID": "9",
+      "cavityName": "FRONT_OVERHEAD_MODULE_GROUND_RETURN",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X981M",
+      "destCavityID": "16",
+      "destCavityName": "16",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "LIFTGATE_STRUT_ENCODER_A",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X353",
+      "destCavityID": "2",
+      "destCavityName": "Hall Sensor Output #1",
+      "destDeviceName": "Liftgate Power Strut LH"
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "2R_SEAT_SHARED_GROUND_RETURN",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X935F",
+      "destCavityID": "25",
+      "destCavityName": "25",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "LIFTGATE_STRUT_ENCODER_B",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X353",
+      "destCavityID": "3",
+      "destCavityName": "Hall Sensor Output #2",
+      "destDeviceName": "Liftgate Power Strut LH"
+    },
+    {
+      "cavityID": "13",
+      "cavityName": "LIFTGATE_SHARED_GROUND_RETURN",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X353",
+      "destCavityID": "4",
+      "destCavityName": "Hall Signal Ground",
+      "destDeviceName": "Liftgate Power Strut LH"
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "AUDIO_TWEETER_FRONT_DOOR_PASSTHROUGH_N",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X935F",
+      "destCavityID": "32",
+      "destCavityName": "32",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "15",
+      "cavityName": "AUDIO_TWEETER_FRONT_DOOR_PASSTHROUGH_P",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X935F",
+      "destCavityID": "16",
+      "destCavityName": "16",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "16",
+      "cavityName": "BLE_B_PILLAR_LEFT_UART_P",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X493",
+      "destCavityID": "6",
+      "destCavityName": "CANH",
+      "destDeviceName": "Authentication and Heater Left B-Pillar"
+    },
+    {
+      "cavityID": "17",
+      "cavityName": "BLE_B_PILLAR_LEFT_UART_N",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X493",
+      "destCavityID": "3",
+      "destCavityName": "CANL",
+      "destDeviceName": "Authentication and Heater Left B-Pillar"
+    },
+    {
+      "cavityID": "18",
+      "cavityName": "BLE_HEADER_UART_P",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X490",
+      "destCavityID": "1",
+      "destCavityName": "CANH",
+      "destDeviceName": "Authentication Endpoint Interior"
+    },
+    {
+      "cavityID": "19",
+      "cavityName": "BLE_HEADER_UART_N",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X490",
+      "destCavityID": "3",
+      "destCavityName": "CANL",
+      "destDeviceName": "Authentication Endpoint Interior"
+    },
+    {
+      "cavityID": "20",
+      "cavityName": "BLE_B_PILLAR_RIGHT_UART_P",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X935F",
+      "destCavityID": "21",
+      "destCavityName": "21",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "21",
+      "cavityName": "BLE_B_PILLAR_RIGHT_UART_N",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X935F",
+      "destCavityID": "22",
+      "destCavityName": "22",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "23",
+      "cavityName": "BLE_REAR_CENTER_UART_P",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X497",
+      "destCavityID": "2",
+      "destCavityName": "CANH",
+      "destDeviceName": "Authentication Endpoint Rear Center"
+    },
+    {
+      "cavityID": "24",
+      "cavityName": "BLE_REAR_CENTER_UART_N",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X497",
+      "destCavityID": "1",
+      "destCavityName": "CANL",
+      "destDeviceName": "Authentication Endpoint Rear Center"
+    },
+    {
+      "cavityID": "25",
+      "cavityName": "B_PILLAR_HEATER",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X493",
+      "destCavityID": "1",
+      "destCavityName": "Heater +",
+      "destDeviceName": "Authentication and Heater Left B-Pillar"
+    },
+    {
+      "cavityID": "28",
+      "cavityName": "WIRELESS_CHARGER_UART_P",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X930F",
+      "destCavityID": "15",
+      "destCavityName": "15",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "29",
+      "cavityName": "WIRELESS_CHARGER_UART_N",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X930F",
+      "destCavityID": "14",
+      "destCavityName": "14",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "31",
+      "cavityName": "DOOR_REAR_RGB",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X924F",
+      "destCavityID": "22",
+      "destCavityName": "22",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "34",
+      "cavityName": "LIFTGATE_SENSOR_POWER",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X353",
+      "destCavityID": "1",
+      "destCavityName": "Hall Signal Power Supply",
+      "destDeviceName": "Liftgate Power Strut LH"
+    }
+  ]
+}

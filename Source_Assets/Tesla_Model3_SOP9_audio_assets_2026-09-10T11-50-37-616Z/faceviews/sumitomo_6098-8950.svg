@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="768" viewBox="0,0 65416,36096" width="1024" xml:space="preserve">   
+<defs>
+<style type="text/css">
+
+.A,.B{fill:none;fill-opacity:0.0;font-family:sans-serif;stroke-width:32px;}
+.C{font-size:1966px;fill:black;fill-opacity:1.0;font-family:Lucida Sans;stroke-width:0.5px;}
+.C,.A,.B{fill-rule:evenodd;font-style:normal;font-weight:normal;stroke:black;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1.0;}
+.a_{stroke:black;}
+.b_{fill:black;}
+.c_{stroke:black;}
+.d_{fill:black;}
+
+</style>
+</defs>
+<g>
+<path class="A" d="M61922,2534v1950m0,27126v1950M1108,28952 C1108,30421 2299,31611 3768,31611 M1108,7144v21807M3768,4484 C2299,4484 1108,5675 1108,7144 M9707,5903v-1418M5807,5903 C3995,5903 2527,7371 2527,9183 M2527,26913v-17729M2527,26913 C2527,28724 3995,30193 5807,30193 M9707,30193v1418m55128,-6116v4343m-2647,-7756h3191"/>
+<rect class="B" height="2526" width="893" x="61915" y="8"/>
+<path class="A" d="M61915,8h-1854l-531,177v2349h-3191v-1285l3191,-1063"/>
+<rect class="B" height="4609" width="3191" x="54919" y="10424"/>
+<rect class="B" height="4609" width="3191" x="51018" y="10424"/>
+<rect class="B" height="4609" width="3191" x="54919" y="15743"/>
+<path class="A" d="M56337,1249l-2393,797v2437h8244v17597h3191v7756h-1241v1773h1241v-1773"/>
+<rect class="B" height="4609" width="3191" x="47118" y="10424"/>
+<rect class="B" height="4609" width="3191" x="51018" y="15743"/>
+<rect class="B" height="4609" width="3191" x="43217" y="10424"/>
+<rect class="B" height="4609" width="3191" x="47118" y="15743"/>
+<rect class="B" height="4609" width="3191" x="39316" y="10424"/>
+<rect class="B" height="5407" width="5318" x="51018" y="22081"/>
+<path class="A" d="M19281,4484h9574v709h11701v1196h13386v-1905"/>
+<rect class="B" height="4609" width="3191" x="43217" y="15743"/>
+<path class="A" d="M59529,35911l-3191,-1063v-1285h3191v2349l531,177h1854v-2526h893v2526h-893m-7971,-4476v2437l2393,797"/>
+<rect class="B" height="4609" width="3191" x="39316" y="15743"/>
+<rect class="B" height="5407" width="5318" x="44990" y="22081"/>
+<rect class="B" height="4609" width="3191" x="31515" y="10424"/>
+<rect class="B" height="4609" width="3191" x="35416" y="15743"/>
+<rect class="B" height="4609" width="3191" x="27615" y="10424"/>
+<rect class="B" height="5407" width="5318" x="38962" y="22081"/>
+<rect class="B" height="4609" width="3191" x="31515" y="15743"/>
+<rect class="B" height="4609" width="3191" x="23714" y="10424"/>
+<rect class="B" height="4609" width="3191" x="27615" y="15743"/>
+<rect class="B" height="5407" width="5318" x="32934" y="22081"/>
+<rect class="B" height="4609" width="3191" x="19813" y="10424"/>
+<rect class="B" height="4609" width="3191" x="23714" y="15743"/>
+<path class="A" d="M5807,5903h7446v-1418"/>
+<rect class="B" height="4609" width="3191" x="15913" y="10424"/>
+<rect class="B" height="5407" width="5318" x="26905" y="22081"/>
+<path class="A" d="M15735,4484h-11967"/>
+<rect class="B" height="4609" width="3191" x="19813" y="15743"/>
+<rect class="B" height="4609" width="3191" x="12012" y="10424"/>
+<rect class="B" height="4609" width="3191" x="15913" y="15743"/>
+<rect class="B" height="5407" width="5318" x="20877" y="22081"/>
+<rect class="B" height="4609" width="3191" x="8112" y="10424"/>
+<rect class="B" height="4609" width="3191" x="12012" y="15743"/>
+<rect class="B" height="4609" width="3191" x="8112" y="15743"/>
+<rect class="B" height="5407" width="5319" x="8821" y="22081"/>
+<path class="A" d="M3768,31611h9485m-7446,-1418h7446v1418h27304v-1905h13386v1905h10194m1241,-6116h-3191v2304h-43261v-3900h-2836v3900h-11169v-3368h1684v-2836h-1684v-13297h10815v-3900h3545v3900h16311v5318h2836v-5318h23758"/>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="9433" y="13527">1</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="13333" y="13527">2</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="17234" y="13527">3</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="28758" y="13527">6</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="24858" y="13527">5</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="20957" y="13527">4</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="32836" y="13527">7</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="40638" y="13527">8</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="44538" y="13527">9</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="47552" y="13527">10</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="51453" y="13527">11</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="55353" y="13527">12</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="8901" y="18846">13</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="12801" y="18846">14</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="16702" y="18846">15</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="20425" y="18846">16</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="24326" y="18846">17</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="28227" y="18846">18</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="32304" y="18846">19</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="40106" y="18846">21</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="44006" y="18846">22</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="47730" y="18846">23</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="51630" y="18846">24</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="55531" y="18846">25</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="36028" y="18846">20</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="10497" y="25583">26</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="22730" y="25583">27</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="28581" y="25583">28</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="34609" y="25583">29</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="40460" y="25583">30</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="46666" y="25583">31</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UID097290-1695990767e-7737a6077888d31dc8d8d866487d4c01 UID097290-1695990767d-7737a6077888d31dc8d8d866487d4c01</desc>
+<text class="C" x="52517" y="25583">32</text>
+</g>
+</g></svg>

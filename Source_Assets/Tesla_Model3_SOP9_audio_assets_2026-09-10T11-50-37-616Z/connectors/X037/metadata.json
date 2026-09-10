@@ -1,0 +1,262 @@
+{
+  "connectorID": "X037",
+  "connectorColor": "NA",
+  "deviceName": "Body Controller Left",
+  "harnessDesignator": "W",
+  "harnessName": "Frunk",
+  "harnessPN": "2897330-XX-X",
+  "teslaPN": "1043176-00-A",
+  "terminalFaceview": "faceviews/sumitomo_6098-4756.svg",
+  "cavities": [
+    {
+      "cavityID": "3",
+      "cavityName": "CHASSIS_CAN_PASSTHROUGH_P",
+      "wireColor": "DKGN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "",
+      "destCavityID": "",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "CHASSIS_CAN_PASSTHROUGH_N",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "",
+      "destCavityID": "",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "VEHICLE_CAN_N",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X010",
+      "destCavityID": "33",
+      "destCavityName": "VEH_CAN_N",
+      "destDeviceName": "Body Controller Front"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "VEHICLE_CAN_P",
+      "wireColor": "BN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X010",
+      "destCavityID": "18",
+      "destCavityName": "VEH_CAN_P",
+      "destDeviceName": "Body Controller Front"
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "FRONT_LEFT_SATELLITE_IMPACT_HIGH",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X202",
+      "destCavityID": "1",
+      "destCavityName": "PCS+",
+      "destDeviceName": "Impact Sensor - FEM Bracket Left"
+    },
+    {
+      "cavityID": "8",
+      "cavityName": "FRONT_LEFT_SATELLITE_IMPACT_LOW",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X202",
+      "destCavityID": "2",
+      "destCavityName": "PCS-",
+      "destDeviceName": "Impact Sensor - FEM Bracket Left"
+    },
+    {
+      "cavityID": "9",
+      "cavityName": "OBD_FRUNK_GROUND_RETURN",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X181",
+      "destCavityID": "4",
+      "destCavityName": "Chassis Ground",
+      "destDeviceName": "OBD"
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "OBD_FRUNK_GROUND_RETURN",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X181",
+      "destCavityID": "5",
+      "destCavityName": "Ground",
+      "destDeviceName": "OBD"
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "CHASSIS_CAN_PASSTHROUGH_N",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X151",
+      "destCavityID": "25",
+      "destCavityName": "CAN2M",
+      "destDeviceName": "HCU/ESP"
+    },
+    {
+      "cavityID": "13",
+      "cavityName": "CHASSIS_CAN_PASSTHROUGH_P",
+      "wireColor": "DKGN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X151",
+      "destCavityID": "11",
+      "destCavityName": "CAN2P",
+      "destDeviceName": "HCU/ESP"
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "CHASSIS_CAN_PASSTHROUGH_P",
+      "wireColor": "",
+      "wireSize": "",
+      "destConnectorID": "",
+      "destCavityID": "",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "15",
+      "cavityName": "CHASSIS_CAN_PASSTHROUGH_N",
+      "wireColor": "",
+      "wireSize": "",
+      "destConnectorID": "",
+      "destCavityID": "",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "16",
+      "cavityName": "VEHICLE_CAN_N",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X057",
+      "destCavityID": "9",
+      "destCavityName": "VEHICLE_CAN_N",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "17",
+      "cavityName": "VEHICLE_CAN_P",
+      "wireColor": "BN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X057",
+      "destCavityID": "8",
+      "destCavityName": "VEHICLE_CAN_P",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "18",
+      "cavityName": "PEDPRO_RIGHT_PRESSURE_SENSOR_PASSTHROUGH_P",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X253",
+      "destCavityID": "1",
+      "destCavityName": "PTS+",
+      "destDeviceName": "Pressure Tube - RH"
+    },
+    {
+      "cavityID": "19",
+      "cavityName": "PEDPRO_RIGHT_PRESSURE_SENSOR_PASSTHROUGH_N",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X253",
+      "destCavityID": "2",
+      "destCavityName": "PTS-",
+      "destDeviceName": "Pressure Tube - RH"
+    },
+    {
+      "cavityID": "20",
+      "cavityName": "FRONT_RIGHT_SATELLITE_IMPACT_HIGH",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X203",
+      "destCavityID": "1",
+      "destCavityName": "PCS+",
+      "destDeviceName": "Impact Sensor - FEM Bracket Right"
+    },
+    {
+      "cavityID": "21",
+      "cavityName": "FRONT_RIGHT_SATELLITE_IMPACT_LOW",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X203",
+      "destCavityID": "2",
+      "destCavityName": "PCS-",
+      "destDeviceName": "Impact Sensor - FEM Bracket Right"
+    },
+    {
+      "cavityID": "22",
+      "cavityName": "OBD_CAN_N",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X181",
+      "destCavityID": "14",
+      "destCavityName": "CAN L",
+      "destDeviceName": "OBD"
+    },
+    {
+      "cavityID": "23",
+      "cavityName": "OBD_CAN_P",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X181",
+      "destCavityID": "6",
+      "destCavityName": "CAN H",
+      "destDeviceName": "OBD"
+    },
+    {
+      "cavityID": "24",
+      "cavityName": "PEDPRO_LEFT_PRESSURE_SENSOR_PASSTHROUGH_P",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X252",
+      "destCavityID": "1",
+      "destCavityName": "PTS+",
+      "destDeviceName": "Pressure Tube - LH"
+    },
+    {
+      "cavityID": "25",
+      "cavityName": "PEDPRO_LEFT_PRESSURE_SENSOR_PASSTHROUGH_N",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X252",
+      "destCavityID": "2",
+      "destCavityName": "PTS-",
+      "destDeviceName": "Pressure Tube - LH"
+    },
+    {
+      "cavityID": "26",
+      "cavityName": "OBD_ETHERNET_ACTIVATION_SIGNAL",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X181",
+      "destCavityID": "8",
+      "destCavityName": "Activation Line",
+      "destDeviceName": "OBD"
+    },
+    {
+      "cavityID": "27",
+      "cavityName": "ACCESSORY_FEED_3",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X181",
+      "destCavityID": "16",
+      "destCavityName": "VBATT",
+      "destDeviceName": "OBD"
+    },
+    {
+      "cavityID": "28",
+      "cavityName": "RESTRAINT_CONTROL_MODULE",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X908F",
+      "destCavityID": "10",
+      "destCavityName": "10",
+      "destDeviceName": ""
+    }
+  ]
+}

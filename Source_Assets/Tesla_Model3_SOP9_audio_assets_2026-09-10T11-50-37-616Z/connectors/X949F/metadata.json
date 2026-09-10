@@ -1,0 +1,122 @@
+{
+  "connectorID": "X949F",
+  "connectorColor": "BK",
+  "deviceName": "",
+  "harnessDesignator": "G",
+  "harnessName": "Rear Fascia",
+  "harnessPN": "1897319-XX-X",
+  "teslaPN": "1055819-00-A",
+  "terminalFaceview": "faceviews/molex_33472-1206.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "1",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X264",
+      "destCavityID": "2",
+      "destCavityName": "1",
+      "destDeviceName": "Rear Fascia Lamp LH"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "2",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X264",
+      "destCavityID": "3",
+      "destCavityName": "2",
+      "destDeviceName": "Rear Fascia Lamp LH"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "3",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X264",
+      "destCavityID": "4",
+      "destCavityName": "3",
+      "destDeviceName": "Rear Fascia Lamp LH"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "4",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X265",
+      "destCavityID": "6",
+      "destCavityName": "4",
+      "destDeviceName": "Rear Fascia Lamp RH"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "5",
+      "wireColor": "GY",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X265",
+      "destCavityID": "2",
+      "destCavityName": "5",
+      "destDeviceName": "Rear Fascia Lamp RH"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "6",
+      "wireColor": "BN",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X604",
+      "destCavityID": "2",
+      "destCavityName": "Speaker N",
+      "destDeviceName": "Speaker Pedestrian Warning Rear"
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "7",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X264",
+      "destCavityID": "8",
+      "destCavityName": "7",
+      "destDeviceName": "Rear Fascia Lamp LH"
+    },
+    {
+      "cavityID": "9",
+      "cavityName": "9",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X265",
+      "destCavityID": "3",
+      "destCavityName": "9",
+      "destDeviceName": "Rear Fascia Lamp RH"
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "10",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X265",
+      "destCavityID": "1",
+      "destCavityName": "10",
+      "destDeviceName": "Rear Fascia Lamp RH"
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "11",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X265",
+      "destCavityID": "8",
+      "destCavityName": "11",
+      "destDeviceName": "Rear Fascia Lamp RH"
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "12",
+      "wireColor": "GN",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X604",
+      "destCavityID": "1",
+      "destCavityName": "Speaker P",
+      "destDeviceName": "Speaker Pedestrian Warning Rear"
+    }
+  ]
+}

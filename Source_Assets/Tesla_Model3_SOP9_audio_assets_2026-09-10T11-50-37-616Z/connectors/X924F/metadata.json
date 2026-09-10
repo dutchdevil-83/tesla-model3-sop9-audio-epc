@@ -1,0 +1,242 @@
+{
+  "connectorID": "X924F",
+  "connectorColor": "BK",
+  "deviceName": "",
+  "harnessDesignator": "A",
+  "harnessName": "LH Body",
+  "harnessPN": "2897315-XX-X",
+  "teslaPN": "1849226-01-C",
+  "terminalFaceview": "faceviews/kse_k20f01222.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "1",
+      "wireColor": "WH",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X031",
+      "destCavityID": "1",
+      "destCavityName": "WINDOW_LIFT_REAR_UP",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "2",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X030A",
+      "destCavityID": "11",
+      "destCavityName": "DOOR_REAR_INTERIOR_HANDLE_SWITCH",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "3",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X030A",
+      "destCavityID": "14",
+      "destCavityName": "WINDOW_SWITCH_REAR",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "4",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X031",
+      "destCavityID": "20",
+      "destCavityName": "DOOR_REAR_SHARED_GROUND_RETURN",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "5",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X030A",
+      "destCavityID": "17",
+      "destCavityName": "WINDOW_LIFT_REAR_ENCODER_A",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "6",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X030A",
+      "destCavityID": "18",
+      "destCavityName": "WINDOW_LIFT_REAR_ENCODER_B",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "9",
+      "cavityName": "9",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X031",
+      "destCavityID": "24",
+      "destCavityName": "DOOR_REAR_PUDDLE_LED",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "10",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X030A",
+      "destCavityID": "8",
+      "destCavityName": "DOOR_REAR_RGB_LIN",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "11",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X030A",
+      "destCavityID": "22",
+      "destCavityName": "DOOR_REAR_EXTERIOR_HANDLE_SENSOR",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "12",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X031",
+      "destCavityID": "19",
+      "destCavityName": "DOOR_REAR_LATCH_RELEASE",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "13",
+      "cavityName": "13",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X031",
+      "destCavityID": "4",
+      "destCavityName": "DOOR_REAR_LATCH_RESET",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "14",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X936F",
+      "destCavityID": "1",
+      "destCavityName": "1",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "15",
+      "cavityName": "15",
+      "wireColor": "GN",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X031",
+      "destCavityID": "15",
+      "destCavityName": "WINDOW_LIFT_REAR_DOWN",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "16",
+      "cavityName": "16",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X031",
+      "destCavityID": "23",
+      "destCavityName": "DOOR_REAR_INTERIOR_HANDLE_SWITCH_LED",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "18",
+      "cavityName": "18",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X039",
+      "destCavityID": "4",
+      "destCavityName": "DOOR_REAR_LATCH_OPEN_SWITCH",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "19",
+      "cavityName": "19",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X030A",
+      "destCavityID": "13",
+      "destCavityName": "DOOR_REAR_LATCH_ENDSTOP_SWITCH",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "20",
+      "cavityName": "20",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X201",
+      "destCavityID": "44",
+      "destCavityName": "Left Rear Door Pressure Impact Sensor Low",
+      "destDeviceName": "Restraints Controller"
+    },
+    {
+      "cavityID": "21",
+      "cavityName": "21",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X201",
+      "destCavityID": "43",
+      "destCavityName": "Left Rear Door Pressure Impact Sensor High",
+      "destDeviceName": "Restraints Controller"
+    },
+    {
+      "cavityID": "22",
+      "cavityName": "22",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X039",
+      "destCavityID": "31",
+      "destCavityName": "DOOR_REAR_RGB",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "23",
+      "cavityName": "23",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X030A",
+      "destCavityID": "23",
+      "destCavityName": "DOOR_REAR_EXTERIOR_HANDLE_SENSOR_5V",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "24",
+      "cavityName": "24",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X031",
+      "destCavityID": "7",
+      "destCavityName": "DOOR_REAR_MAP_POCKET_LED",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "25",
+      "cavityName": "25",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X031",
+      "destCavityID": "8",
+      "destCavityName": "DOOR_REAR_WINDOW_SWITCH_LED",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "26",
+      "cavityName": "26",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X936F",
+      "destCavityID": "15",
+      "destCavityName": "15",
+      "destDeviceName": ""
+    }
+  ]
+}

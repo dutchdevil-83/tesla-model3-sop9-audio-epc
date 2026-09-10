@@ -1,0 +1,72 @@
+{
+  "connectorID": "X970F",
+  "connectorColor": "WH",
+  "deviceName": "",
+  "harnessDesignator": "Q",
+  "harnessName": "Parcel Shelf",
+  "harnessPN": "specific connector.",
+  "teslaPN": "1042591-00-A",
+  "terminalFaceview": "faceviews/sumitomo_6098-5695.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "1",
+      "wireColor": "GY",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X593",
+      "destCavityID": "1",
+      "destCavityName": "1",
+      "destDeviceName": "Speaker Parcel Shelf Right"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "2",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X593",
+      "destCavityID": "2",
+      "destCavityName": "2",
+      "destDeviceName": "Speaker Parcel Shelf Right"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "3",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X588",
+      "destCavityID": "1",
+      "destCavityName": "3",
+      "destDeviceName": "Speaker Parcel Shelf Left"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "4",
+      "wireColor": "WH",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X588",
+      "destCavityID": "2",
+      "destCavityName": "4",
+      "destDeviceName": "Speaker Parcel Shelf Left"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "6",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X274",
+      "destCavityID": "2",
+      "destCavityName": "6",
+      "destDeviceName": "CHMSL"
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "7",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X274",
+      "destCavityID": "1",
+      "destCavityName": "7",
+      "destDeviceName": "CHMSL"
+    }
+  ]
+}

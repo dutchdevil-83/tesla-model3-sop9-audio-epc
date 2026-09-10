@@ -1,0 +1,122 @@
+{
+  "connectorID": "X925M",
+  "connectorColor": "BK",
+  "deviceName": "",
+  "harnessDesignator": "R",
+  "harnessName": "Rear Door Left",
+  "harnessPN": "4) Wire sizes are specified in mm^2 cross-sectional area (CSA) per SAE 1127/8",
+  "teslaPN": "1849225-01-B",
+  "terminalFaceview": "faceviews/kse_k30m31012.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "1",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.6M",
+      "destConnectorID": "X924M",
+      "destCavityID": "14",
+      "destCavityName": "14",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "5",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X924M",
+      "destCavityID": "9",
+      "destCavityName": "9",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "8",
+      "cavityName": "8",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X924M",
+      "destCavityID": "25",
+      "destCavityName": "25",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "9",
+      "cavityName": "9",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X924M",
+      "destCavityID": "2",
+      "destCavityName": "2",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "10",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X924M",
+      "destCavityID": "16",
+      "destCavityName": "16",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "12",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.6M",
+      "destConnectorID": "X924M",
+      "destCavityID": "26",
+      "destCavityName": "26",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "13",
+      "cavityName": "13",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "",
+      "destCavityID": "",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "14",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X924M",
+      "destCavityID": "24",
+      "destCavityName": "24",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "16",
+      "cavityName": "16",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X924M",
+      "destCavityID": "3",
+      "destCavityName": "3",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "18",
+      "cavityName": "18",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X924M",
+      "destCavityID": "10",
+      "destCavityName": "10",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "19",
+      "cavityName": "19",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X924M",
+      "destCavityID": "22",
+      "destCavityName": "22",
+      "destDeviceName": ""
+    }
+  ]
+}

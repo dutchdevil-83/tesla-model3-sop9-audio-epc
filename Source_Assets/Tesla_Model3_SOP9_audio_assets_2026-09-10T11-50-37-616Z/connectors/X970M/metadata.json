@@ -1,0 +1,72 @@
+{
+  "connectorID": "X970M",
+  "connectorColor": "WH",
+  "deviceName": "",
+  "harnessDesignator": "B",
+  "harnessName": "RH Body",
+  "harnessPN": "1897316-XX-X",
+  "teslaPN": "1042590-00-A",
+  "terminalFaceview": "faceviews/sumitomo_6098-5686.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "1",
+      "wireColor": "GY",
+      "wireSize": "1.5x0.6M",
+      "destConnectorID": "X560",
+      "destCavityID": "6",
+      "destCavityName": "Right Parcel Shelf Speaker P",
+      "destDeviceName": "Premium Amp Audio"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "2",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.6M",
+      "destConnectorID": "X560",
+      "destCavityID": "5",
+      "destCavityName": "Right Parcel Shelf Speaker N",
+      "destDeviceName": "Premium Amp Audio"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "3",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.6M",
+      "destConnectorID": "X560",
+      "destCavityID": "12",
+      "destCavityName": "Left Parcel Shelf Speaker P",
+      "destDeviceName": "Premium Amp Audio"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "4",
+      "wireColor": "WH",
+      "wireSize": "1.5x0.6M",
+      "destConnectorID": "X560",
+      "destCavityID": "11",
+      "destCavityName": "Left Parcel Shelf Speaker N",
+      "destDeviceName": "Premium Amp Audio"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "6",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.6M",
+      "destConnectorID": "X050",
+      "destCavityID": "23",
+      "destCavityName": "CHMSL_BRAKE_LIGHT",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "7",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.6M",
+      "destConnectorID": "G042",
+      "destCavityID": "11",
+      "destCavityName": "",
+      "destDeviceName": ""
+    }
+  ]
+}

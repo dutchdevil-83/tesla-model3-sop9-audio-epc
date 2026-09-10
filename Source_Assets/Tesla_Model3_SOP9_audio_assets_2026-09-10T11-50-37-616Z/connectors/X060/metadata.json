@@ -1,0 +1,32 @@
+{
+  "connectorID": "X060",
+  "connectorColor": "NA",
+  "deviceName": "Body Controller Right",
+  "harnessDesignator": "B",
+  "harnessName": "RH Body",
+  "harnessPN": "1897316-XX-X",
+  "teslaPN": "1938328-00-B",
+  "terminalFaceview": "faceviews/kse_k20f02011.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "PREMIUM_AMP_ECU",
+      "wireColor": "RD",
+      "wireSize": "4.8x0.8F",
+      "destConnectorID": "X561",
+      "destCavityID": "6",
+      "destCavityName": "VbatAccIn14v0",
+      "destDeviceName": "Premium Amp Audio"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "REAR_GLASS_HEATER",
+      "wireColor": "BU",
+      "wireSize": "4.8x0.8F",
+      "destConnectorID": "X309",
+      "destCavityID": "1",
+      "destCavityName": "Defrost+",
+      "destDeviceName": "Glass Heater - Rear Defrost"
+    }
+  ]
+}

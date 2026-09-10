@@ -1,0 +1,32 @@
+{
+  "connectorID": "X567",
+  "connectorColor": "GN",
+  "deviceName": "Speaker Front Left Door Prem Woofer",
+  "harnessDesignator": "D",
+  "harnessName": "Front Door Left",
+  "harnessPN": "Seat Belt Reminder Switch",
+  "teslaPN": "1075244-00-A",
+  "terminalFaceview": "faceviews/yazaki_7283-6444-60.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "Speaker P",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X033B",
+      "destCavityID": "3",
+      "destCavityName": "AUDIO_SPEAKER_FRONT_DOOR_PASSTHROUGH_P",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "Speaker N",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X033B",
+      "destCavityID": "4",
+      "destCavityName": "AUDIO_SPEAKER_FRONT_DOOR_PASSTHROUGH_N",
+      "destDeviceName": "Body Controller Left"
+    }
+  ]
+}

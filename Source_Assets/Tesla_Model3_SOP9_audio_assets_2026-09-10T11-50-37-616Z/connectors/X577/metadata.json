@@ -1,0 +1,32 @@
+{
+  "connectorID": "X577",
+  "connectorColor": "GN",
+  "deviceName": "Speaker Front Right Door Prem Woofer",
+  "harnessDesignator": "P",
+  "harnessName": "Front Door Right",
+  "harnessPN": "There is no overall reference in this document for the signals routed to a",
+  "teslaPN": "1075244-00-A",
+  "terminalFaceview": "faceviews/yazaki_7283-6444-60.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "Speaker P",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X053B",
+      "destCavityID": "2",
+      "destCavityName": "AUDIO_SPEAKER_FRONT_DOOR_PASSTHROUGH_P",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "Speaker N",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X053B",
+      "destCavityID": "1",
+      "destCavityName": "AUDIO_SPEAKER_FRONT_DOOR_PASSTHROUGH_N",
+      "destDeviceName": "Body Controller Right"
+    }
+  ]
+}

@@ -1,0 +1,412 @@
+{
+  "connectorID": "X050",
+  "connectorColor": "GY",
+  "deviceName": "Body Controller Right",
+  "harnessDesignator": "B",
+  "harnessName": "RH Body",
+  "harnessPN": "1897316-XX-X",
+  "teslaPN": "1517048-00-A",
+  "terminalFaceview": "faceviews/yazaki_7289-4104-40.svg",
+  "cavities": [
+    {
+      "cavityID": "12",
+      "cavityName": "LIFTGATE_LATCH_A",
+      "wireColor": "GY",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X954M",
+      "destCavityID": "20",
+      "destCavityName": "20",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "13",
+      "cavityName": "LIFTGATE_LATCH_B",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X954M",
+      "destCavityID": "11",
+      "destCavityName": "11",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "2R_SEAT_SHARED_GROUND",
+      "wireColor": "BN",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X674",
+      "destCavityID": "2",
+      "destCavityName": "RH Buckle - Hall Out",
+      "destDeviceName": "2R Seatbelt Buckle Switch Right and Center"
+    },
+    {
+      "cavityID": "15",
+      "cavityName": "DOOR_REAR_SHARED_GROUND",
+      "wireColor": "BN",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X926F",
+      "destCavityID": "4",
+      "destCavityName": "4",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "16",
+      "cavityName": "LIGHT_AND_HUMIDITY_SENSOR_GROUND",
+      "wireColor": "BN",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X962M",
+      "destCavityID": "9",
+      "destCavityName": "9",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "17",
+      "cavityName": "MIRROR_REAR_VIEW_GROUND",
+      "wireColor": "WH",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X962M",
+      "destCavityID": "2",
+      "destCavityName": "2",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "19",
+      "cavityName": "HV_CONTACTORS_FRUNK_CUTLOOP_PASSTHROUGH_OUT",
+      "wireColor": "TN",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X098",
+      "destCavityID": "18",
+      "destCavityName": "VEH-12V-CONTACTOR-POWER",
+      "destDeviceName": "HV Battery"
+    },
+    {
+      "cavityID": "20",
+      "cavityName": "BLE_B_PILLAR",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X494",
+      "destCavityID": "2",
+      "destCavityName": "VBAT (BLE)",
+      "destDeviceName": "Authentication and Heater Right B-Pillar"
+    },
+    {
+      "cavityID": "23",
+      "cavityName": "CHMSL_BRAKE_LIGHT",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X970M",
+      "destCavityID": "6",
+      "destCavityName": "6",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "25",
+      "cavityName": "WINDOW_LIFT_REAR_ENCODER_B",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X926F",
+      "destCavityID": "6",
+      "destCavityName": "6",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "26",
+      "cavityName": "ACCELERATOR_PEDAL_SIGNAL_2",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X167A",
+      "destCavityID": "2",
+      "destCavityName": "Accel_Sig2",
+      "destDeviceName": "Accel Pedal Sensor (RHD)"
+    },
+    {
+      "cavityID": "27",
+      "cavityName": "ACCELERATOR_PEDAL_5V_1",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X167A",
+      "destCavityID": "6",
+      "destCavityName": "Accel_Ref1",
+      "destDeviceName": "Accel Pedal Sensor (RHD)"
+    },
+    {
+      "cavityID": "28",
+      "cavityName": "ACCELERATOR_PEDAL_SIGNAL_1_GND_RETURN",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X167A",
+      "destCavityID": "4",
+      "destCavityName": "Accel_Rtn1",
+      "destDeviceName": "Accel Pedal Sensor (RHD)"
+    },
+    {
+      "cavityID": "29",
+      "cavityName": "DOOR_REAR_INTERIOR_HANDLE_SWITCH",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X926F",
+      "destCavityID": "2",
+      "destCavityName": "2",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "30",
+      "cavityName": "DOOR_REAR_LATCH_ENDSTOP_SWITCH",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X926F",
+      "destCavityID": "19",
+      "destCavityName": "19",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "31",
+      "cavityName": "DOOR_REAR_LATCH_RELEASE",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X926F",
+      "destCavityID": "12",
+      "destCavityName": "12",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "32",
+      "cavityName": "LIFTGATE_RIGHT_TURN_SIGNAL",
+      "wireColor": "BU/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X954M",
+      "destCavityID": "3",
+      "destCavityName": "3",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "33",
+      "cavityName": "VEHICLE_CAN_N",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X098",
+      "destCavityID": "15",
+      "destCavityName": "VEHICLE-CAN-L",
+      "destDeviceName": "HV Battery"
+    },
+    {
+      "cavityID": "34",
+      "cavityName": "VEHICLE_CAN_P",
+      "wireColor": "BN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X098",
+      "destCavityID": "16",
+      "destCavityName": "VEHICLE-CAN-H",
+      "destDeviceName": "HV Battery"
+    },
+    {
+      "cavityID": "36",
+      "cavityName": "LIFTGATE_RIGHT_BRAKE_TAIL_INTENSITY",
+      "wireColor": "RD/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X954M",
+      "destCavityID": "15",
+      "destCavityName": "15",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "37",
+      "cavityName": "LIFTGATE_RIGHT_BRAKE_TAIL_PWR",
+      "wireColor": "YE/GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X954M",
+      "destCavityID": "14",
+      "destCavityName": "14",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "38",
+      "cavityName": "LIFTGATE_EXTERIOR_SWITCH",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X954M",
+      "destCavityID": "5",
+      "destCavityName": "5",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "39",
+      "cavityName": "HV_CONTROLLER",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X098",
+      "destCavityID": "8",
+      "destCavityName": "VEH-12V-BAT",
+      "destDeviceName": "HV Battery"
+    },
+    {
+      "cavityID": "45",
+      "cavityName": "RADIO_TUNER",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X562",
+      "destCavityID": "1",
+      "destCavityName": "ACC",
+      "destDeviceName": "Radio Tuner"
+    },
+    {
+      "cavityID": "47",
+      "cavityName": "REAR_FASCIA_TURN_SIGNAL_LEFT",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X949M",
+      "destCavityID": "1",
+      "destCavityName": "1",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "48",
+      "cavityName": "WINDOW_LIFT_REAR_ENCODER_A",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X926F",
+      "destCavityID": "5",
+      "destCavityName": "5",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "49",
+      "cavityName": "ACCELERATOR_PEDAL_SIGNAL_1",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X167A",
+      "destCavityID": "5",
+      "destCavityName": "Accel_Sig1",
+      "destDeviceName": "Accel Pedal Sensor (RHD)"
+    },
+    {
+      "cavityID": "50",
+      "cavityName": "ACCELERATOR_PEDAL_5V_2",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X167A",
+      "destCavityID": "1",
+      "destCavityName": "Accel_Ref2",
+      "destDeviceName": "Accel Pedal Sensor (RHD)"
+    },
+    {
+      "cavityID": "51",
+      "cavityName": "ACCELERATOR_PEDAL_SIGNAL_2_GND_RETURN",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X167A",
+      "destCavityID": "3",
+      "destCavityName": "Accel_Rtn2",
+      "destDeviceName": "Accel Pedal Sensor (RHD)"
+    },
+    {
+      "cavityID": "52",
+      "cavityName": "LIFTGATE_LATCH_SWITCH_1",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X954M",
+      "destCavityID": "4",
+      "destCavityName": "4",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "53",
+      "cavityName": "WINDOW_SWITCH_REAR",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X926F",
+      "destCavityID": "3",
+      "destCavityName": "3",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "54",
+      "cavityName": "DOOR_REAR_LATCH_RESET",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X926F",
+      "destCavityID": "13",
+      "destCavityName": "13",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "55",
+      "cavityName": "VEHICLE_CAN_N",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X179",
+      "destCavityID": "10",
+      "destCavityName": "BD CAN N",
+      "destDeviceName": "CAN Port"
+    },
+    {
+      "cavityID": "56",
+      "cavityName": "VEHICLE_CAN_P",
+      "wireColor": "BN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X179",
+      "destCavityID": "9",
+      "destCavityName": "BD CAN P",
+      "destDeviceName": "CAN Port"
+    },
+    {
+      "cavityID": "57",
+      "cavityName": "DI_REAR_PRIVATE_CAN_N",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X952M",
+      "destCavityID": "7",
+      "destCavityName": "7",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "58",
+      "cavityName": "DI_REAR_PRIVATE_CAN_P",
+      "wireColor": "BU/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X952M",
+      "destCavityID": "6",
+      "destCavityName": "6",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "59",
+      "cavityName": "SUSPENSION_ACCELEROMETER_REAR_A2B_N",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X952M",
+      "destCavityID": "12",
+      "destCavityName": "12",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "60",
+      "cavityName": "SUSPENSION_ACCELEROMETER_REAR_A2B_P",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X952M",
+      "destCavityID": "11",
+      "destCavityName": "11",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "62",
+      "cavityName": "LIFTGATE_STRUT_CLOSE",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X354",
+      "destCavityID": "8",
+      "destCavityName": "Motor Terminal Close/Retract",
+      "destDeviceName": "Liftgate Power Strut RH"
+    },
+    {
+      "cavityID": "63",
+      "cavityName": "LIFTGATE_STRUT_OPEN",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X354",
+      "destCavityID": "5",
+      "destCavityName": "Motor Terminal Open/Extension",
+      "destDeviceName": "Liftgate Power Strut RH"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="768" viewBox="0,0 65416,45472" width="1024" xml:space="preserve">   
+<defs>
+<style type="text/css">
+
+.A,.B{fill:none;fill-opacity:0.0;font-family:sans-serif;stroke:black;stroke-width:46px;}
+.C{font-size:1556px;}
+.D{font-size:1167px;}
+.D,.C{fill:black;fill-opacity:1.0;font-family:Lucida Sans;stroke:black;stroke-width:0.5px;}
+.D,.C,.A,.B{fill-rule:evenodd;font-style:normal;font-weight:normal;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1.0;}
+.a_{stroke:black;}
+.b_{fill:black;}
+.c_{stroke:black;}
+.d_{fill:black;}
+
+</style>
+</defs>
+<g>
+<path class="A" d="M2732,32332v-23485m1912,0v23485M64879,35349 C65173,35286 65382,35026 65379,34726 L65379,34726 C65376,34426 65163,34169 64868,34111 M64879,11358 C65173,11295 65382,11035 65379,10735 L65379,10735 C65376,10435 65163,10178 64868,10121 "/>
+<rect class="B" height="1894" width="1894" x="55720" y="14213"/>
+<path class="A" d="M35959,6195h8333v2651"/>
+<rect class="B" height="1894" width="1894" x="50164" y="14213"/>
+<rect class="B" height="1894" width="1894" x="55720" y="21789"/>
+<path class="A" d="M64874,25514h-2777v7323h2777v-12879"/>
+<rect class="B" height="1894" width="1894" x="44608" y="14213"/>
+<rect class="B" height="1894" width="1894" x="50164" y="21789"/>
+<rect class="B" height="1894" width="1894" x="39052" y="14213"/>
+<rect class="B" height="1894" width="1894" x="44608" y="21789"/>
+<rect class="B" height="1894" width="4419" x="52437" y="30375"/>
+<rect class="B" height="1894" width="1894" x="33496" y="14213"/>
+<rect class="B" height="1894" width="1894" x="39052" y="21789"/>
+<rect class="B" height="1894" width="4419" x="44355" y="30375"/>
+<rect class="B" height="1894" width="1894" x="27941" y="14213"/>
+<rect class="B" height="1894" width="1894" x="33496" y="21789"/>
+<rect class="B" height="1894" width="1894" x="22385" y="14213"/>
+<rect class="B" height="1894" width="1894" x="27941" y="21789"/>
+<rect class="B" height="1894" width="4419" x="36274" y="30375"/>
+<rect class="B" height="1894" width="1894" x="16829" y="14213"/>
+<rect class="B" height="1894" width="1894" x="22385" y="21789"/>
+<path class="A" d="M15758,4301h-8809v4545m28504,27778v2651h8838v-2651"/>
+<rect class="B" height="1894" width="4419" x="28193" y="30375"/>
+<rect class="B" height="1894" width="1894" x="11273" y="14213"/>
+<rect class="B" height="1894" width="1894" x="16829" y="21789"/>
+<rect class="B" height="1894" width="4419" x="20112" y="30375"/>
+<rect class="B" height="1894" width="1894" x="11273" y="21789"/>
+<rect class="B" height="1894" width="4419" x="12031" y="30375"/>
+<path class="A" d="M19512,36625v4545h-12563v-4545m-1546,-27778v23485h-4293v-23485h14647v-4545h20202v4545h22601v-8838h6313v19950h-2777v-7323h2777m-63765,19697v4293h19697v4545h13889v-4545h23864v8838h6313v-12626"/>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="C" x="54459" y="32106">1</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="C" x="46378" y="32106">2</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="C" x="38297" y="32106">3</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="C" x="30216" y="32106">4</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="C" x="22135" y="32106">5</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="C" x="14054" y="32106">6</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="56668" y="23355">7</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="51112" y="23355">8</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="45557" y="23355">9</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="39496" y="23355">10</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="33940" y="23355">11</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="28384" y="23355">12</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="22828" y="23355">13</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="17273" y="23355">14</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="11717" y="23355">15</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="56163" y="15779">16</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="50607" y="15779">17</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="45052" y="15779">18</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="39496" y="15779">19</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="33940" y="15779">20</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="28384" y="15779">21</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="22828" y="15779">22</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="17273" y="15779">23</text>
+</g>
+<g><desc>chs.cof.logical.schem.PinList UIDfc7169-17f24051ee0-d048a6f0e74f182bb20da1816bae039f UIDfc7169-17f24051edf-d048a6f0e74f182bb20da1816bae039f</desc>
+<text class="D" x="11717" y="15779">24</text>
+</g>
+</g></svg>

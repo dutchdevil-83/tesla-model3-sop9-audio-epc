@@ -1,0 +1,32 @@
+{
+  "connectorID": "X290",
+  "connectorColor": "WH",
+  "deviceName": "Vanity LED Right",
+  "harnessDesignator": "K",
+  "harnessName": "Headliner",
+  "harnessPN": "2) Splices may be split across pages for visual clarity with respect to the function",
+  "teslaPN": "1015004-01-B",
+  "terminalFaceview": "faceviews/delphi_13649799.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "POWER",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X299",
+      "destCavityID": "3",
+      "destCavityName": "Right Vanity Power",
+      "destDeviceName": "Front Overhead Module"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "GND",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X299",
+      "destCavityID": "14",
+      "destCavityName": "Right Visor Ground",
+      "destDeviceName": "Front Overhead Module"
+    }
+  ]
+}

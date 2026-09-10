@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no' ?>  
+ <svg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' height='768' viewBox='0,0 65416,33896' width='1024' xmlns:xlink='http://www.w3.org/1999/xlink'>   
+<defs>
+<style type='text/css'>
+<![CDATA[
+.A,.B{fill:none;fill-opacity:0.0;font-family:sans-serif;stroke-width:40px;}
+.C{font-size:3191px;fill:#000;fill-opacity:1.0;font-family:Lucida Sans;stroke-width:1px;}
+.C,.A,.B{fill-rule:evenodd;font-style:normal;font-weight:normal;stroke:#000;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1.0;}
+.a_{stroke:red;}
+.b_{fill:red;}
+.c_{stroke:#FA0;}
+.d_{fill:#FA0;}
+]]>
+</style>
+</defs>
+<g>
+<path class='A' d='M46284,8v1942m2398,-1942v4747m2572,-4747v11869m1999,-11869v11869M62999,2406 C61770,889 59923,8 57971,8 M63026,2438l954,1192M65396,7560 C65371,6118 64864,4725 63957,3604 M3059,31988 C3860,33176 5200,33889 6633,33888 M59854,33888 C61288,33889 62627,33176 63429,31988 M59851,33888h-53215m-3591,-1921l-1955,-2933M2530,3604 C1623,4725 1117,6118 1091,7560 M3462,2438l-954,1192M8517,8 C6565,8 4717,889 3488,2406 M13233,8v11869m1999,-11869v11869m2572,-11869v4747m2398,-4747v1942m3329,7768h19422m-6474,-3750h-6474'/>
+<rect class='B' x='56874' y='15287' width='3237' height='1381'/>
+<path class='A' d='M49645,6913v4963h12516v-2158'/>
+<rect class='B' x='49968' y='15287' width='3237' height='1381'/>
+<rect class='B' x='56874' y='22192' width='3237' height='1381'/>
+<path class='A' d='M65398,9719h-3237v-2158h3237v21472l-1955,2933'/>
+<rect class='B' x='44423' y='15718' width='1380' height='1381'/>
+<rect class='B' x='49968' y='22192' width='3237' height='1381'/>
+<path class='A' d='M36481,5187h-6474v-431h6474v1726h6474v5395h3452v-4963'/>
+<rect class='B' x='39675' y='15718' width='1380' height='1381'/>
+<rect class='B' x='44423' y='22192' width='1380' height='1381'/>
+<rect class='B' x='34927' y='15718' width='1380' height='1381'/>
+<path class='A' d='M42955,7561h-19422v-1079h6474v-1294m12948,3539h2373v-5913h-24169v5913h2373'/>
+<rect class='B' x='30180' y='15718' width='1380' height='1381'/>
+<rect class='B' x='34927' y='22192' width='1380' height='1381'/>
+<path class='A' d='M46408,4755v2158h3237v-2158h-3237v-2805h-26327v2805h-3237v2158h3237v-2158m21903,24277h-3237v-6474h3237v6474h23414m-7427,-29025h-49454m11563,6905v4963h3452v-4316'/>
+<rect class='B' x='25432' y='15718' width='1380' height='1381'/>
+<rect class='B' x='30180' y='22192' width='1380' height='1381'/>
+<rect class='B' x='20684' y='15718' width='1380' height='1381'/>
+<rect class='B' x='20684' y='22192' width='1380' height='1381'/>
+<rect class='B' x='13282' y='15287' width='3237' height='1381'/>
+<path class='A' d='M4326,9719h-3237v-2158h3237v4316h12516v-4963m21903,22119h-11005v-6474h-3237v6474h3237'/>
+<rect class='B' x='13282' y='22192' width='3237' height='1381'/>
+<rect class='B' x='6376' y='15287' width='3237' height='1381'/>
+<rect class='B' x='6376' y='22192' width='3237' height='1381'/>
+<path class='A' d='M24504,29033h-23414v-19314'/>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='14324' y='20152'>2</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='6987' y='20152'>1</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='20917' y='20098'>3</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='25762' y='20152'>4</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='30294' y='20152'>5</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='35041' y='20152'>6</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='44536' y='20152'>8</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='39908' y='20098'>7</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='56837' y='20152'>10</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='51226' y='20152'>9</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='43634' y='27368'>16</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='50011' y='27314'>17</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='56747' y='27368'>18</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='34139' y='27368'>15</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='29391' y='27368'>14</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='19152' y='27314'>13</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='12724' y='27368'>12</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e2173e8-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e2173e7-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='5988' y='27314'>11</text>
+</g>
+</g></svg>

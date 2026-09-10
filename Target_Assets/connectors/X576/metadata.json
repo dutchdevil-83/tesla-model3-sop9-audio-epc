@@ -1,0 +1,32 @@
+{
+  "connectorID": "X576",
+  "connectorColor": "BK",
+  "deviceName": "Speaker IP Right",
+  "harnessDesignator": "J",
+  "harnessName": "IP",
+  "harnessPN": "Far Side Airbag",
+  "teslaPN": "1679742-00-A",
+  "terminalFaceview": "faceviews/delphi_35328464.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "Speaker P",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X055",
+      "destCavityID": "35",
+      "destCavityName": "RIGHT_DASHBOARD_SPEAKER_PASSTHROUGH_P",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "Speaker N",
+      "wireColor": "BK",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X055",
+      "destCavityID": "36",
+      "destCavityName": "RIGHT_DASHBOARD_SPEAKER_PASSTHROUGH_N",
+      "destDeviceName": "Body Controller Right"
+    }
+  ]
+}

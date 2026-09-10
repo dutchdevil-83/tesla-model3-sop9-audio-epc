@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no' ?>  
+ <svg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' height='768' viewBox='0,0 65416,33147' width='1024' xmlns:xlink='http://www.w3.org/1999/xlink'>   
+<defs>
+<style type='text/css'>
+<![CDATA[
+.A,.B{fill:none;fill-opacity:0.0;font-family:sans-serif;stroke-width:36px;}
+.C{font-size:2890px;fill:#000;fill-opacity:1.0;font-family:Lucida Sans;stroke-width:1px;}
+.C,.A,.B{fill-rule:evenodd;font-style:normal;font-weight:normal;stroke:#000;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1.0;}
+.a_{stroke:red;}
+.b_{fill:red;}
+.c_{stroke:#FA0;}
+.d_{fill:#FA0;}
+]]>
+</style>
+</defs>
+<g>
+<path class='A' d='M16172,8 C15831,7 15495,97 15200,268 M13396,1310l1801,-1040M12422,1571 C12763,1571 13099,1482 13395,1311 M4021,1571h8397M4023,1571 C3245,1571 2499,1880 1948,2431 L1948,2431 C1398,2981 1089,3727 1089,4506 M1089,4503v19644M1089,24145 C1089,24923 1398,25670 1948,26220 L1948,26220 C2499,26770 3245,27079 4023,27079 M62465,27079h-9089M62462,27079 C63240,27079 63987,26770 64537,26220 L64537,26220 C65088,25670 65397,24923 65397,24145 M65397,24147v-19644M65397,4506 C65397,3727 65088,2981 64537,2431 L64537,2431 C63987,1880 63240,1571 62462,1571 M54067,1571h8397M53091,1311 C53387,1482 53722,1572 54064,1571 M51289,269l1800,1040M51287,268 C50992,97 50656,7 50314,8 M49991,8412v-8404m-33495,8404v-8404m4042,31607h-5472m33425,-23202v-8404m-30493,8404v-8404m781,1954v-1954m1501,1954v-1954m25925,1954v-1954m1501,1954v-1954m-34597,31176v-4104m0,4104l9,41l28,41l46,41l64,39l82,37l98,36l114,33l129,31l141,28l154,25l163,21l173,18l181,14l186,10l189,6l191,2m36356,0l191,-2l190,-6l186,-10l180,-14l173,-18l164,-21l153,-25l142,-28l128,-31l115,-33l98,-36l81,-37l65,-39l45,-41l28,-41l9,-41m-1954,1954h-5472m-21696,-27560h17982m0,-1172h-17982M13110,31185 C13110,31703 13316,32200 13682,32566 L13682,32566 C14049,32933 14546,33139 15064,33139 M22492,30207v2931m21500,-2931v2931M51422,33139 C51940,33139 52437,32933 52803,32566 L52803,32566 C53170,32200 53376,31703 53376,31185 M15065,27079v6059m30883,-1524h5472v-4535m0,4535v1524'/>
+<rect class='B' x='8908' y='11599' width='2931' height='1250'/>
+<rect class='B' x='15162' y='11599' width='2931' height='1250'/>
+<rect class='B' x='8908' y='17854' width='2931' height='1250'/>
+<rect class='B' x='21867' y='11990' width='1251' height='1250'/>
+<rect class='B' x='15162' y='17854' width='2931' height='1250'/>
+<rect class='B' x='26167' y='11990' width='1251' height='1250'/>
+<rect class='B' x='21867' y='17854' width='1251' height='1250'/>
+<rect class='B' x='30468' y='11990' width='1251' height='1250'/>
+<rect class='B' x='34768' y='11990' width='1251' height='1250'/>
+<rect class='B' x='30468' y='17854' width='1251' height='1250'/>
+<path class='A' d='M50311,8h-34135'/>
+<rect class='B' x='39068' y='11990' width='1251' height='1250'/>
+<rect class='B' x='43368' y='11990' width='1251' height='1250'/>
+<path class='A' d='M29236,27079v2150h-8698v3909h-5472'/>
+<rect class='B' x='43368' y='17854' width='1251' height='1250'/>
+<rect class='B' x='48391' y='11599' width='2931' height='1250'/>
+<path class='A' d='M30213,30207v-2345h6059v2345'/>
+<rect class='B' x='48391' y='17854' width='2931' height='1250'/>
+<rect class='B' x='54646' y='11599' width='2931' height='1250'/>
+<rect class='B' x='54646' y='17854' width='2931' height='1250'/>
+<path class='A' d='M4021,27079h49354v4104m-32837,1954h25410v-3909h-8698v-2150m8698,3127h-25410'/>
+<path class='B' d='M41061,24147h21403v-19644h-3127v3909h-11141v-6450h-3225v6450h-2736v-5766h-17982v5766h-2736v-6450h-3225v6450h-11141v-3909h-3127v19644h21403v-5863h2736v5863h10164v-5863h2736 z'/>
+<rect class='B' x='34768' y='17854' width='1251' height='1250'/>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='49313' y='16110'>2</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='55763' y='16110'>1</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='43537' y='16061'>3</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='39149' y='16110'>4</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='35044' y='16110'>5</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='30744' y='16110'>6</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='21948' y='16110'>8</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='26336' y='16061'>7</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='8633' y='16110'>10</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='15693' y='16110'>9</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='54690' y='22597'>11</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='48589' y='22646'>12</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='33493' y='22646'>14</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='42767' y='22597'>13</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='20592' y='22646'>16</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='29193' y='22646'>15</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='14816' y='22597'>17</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e217237-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e217236-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='8715' y='22646'>18</text>
+</g>
+</g></svg>

@@ -1,0 +1,52 @@
+{
+  "connectorID": "X901F",
+  "connectorColor": "BK",
+  "deviceName": "",
+  "harnessDesignator": "F",
+  "harnessName": "Front Fascia",
+  "harnessPN": "2897318-XX-X",
+  "teslaPN": "1061984-00-A",
+  "terminalFaceview": "faceviews/molex_33472-0606.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "1",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X356",
+      "destCavityID": "1",
+      "destCavityName": "Ground",
+      "destDeviceName": "Frunk Access Post"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "2",
+      "wireColor": "GN",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X602",
+      "destCavityID": "1",
+      "destCavityName": "Speaker P",
+      "destDeviceName": "Speaker Superhorn"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "3",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X602",
+      "destCavityID": "2",
+      "destCavityName": "Speaker N",
+      "destDeviceName": "Speaker Superhorn"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "5",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X355",
+      "destCavityID": "1",
+      "destCavityName": "Power",
+      "destDeviceName": "Frunk Access Post"
+    }
+  ]
+}

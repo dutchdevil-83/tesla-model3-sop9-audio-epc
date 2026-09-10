@@ -1,0 +1,1578 @@
+{
+  "schemaVersion": "1.0",
+  "packageVersion": "2.1.0",
+  "generated": "2026-09-10",
+  "fileCount": 314,
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1678,
+      "sha256": "72858dc2865df40015ff7f89b1aef33cb969e5c216621f60c0842cd9420d8450"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 786,
+      "sha256": "54117c819c0115a5f84bc6e74d9c1487a0b600e3d5472fbaf13e8fbcc961da99"
+    },
+    {
+      "path": "Reference_Assets/Audiotec_Fischer/DIRECTOR/3D/AUDIOTEC FISCHER DIRECTOR - 3D MODEL.stp",
+      "bytes": 1227733,
+      "sha256": "39375a14b360252b54b577c9943c58b4eb4e65c9665c84adb8facb86753c033a"
+    },
+    {
+      "path": "Reference_Assets/Audiotec_Fischer/DIRECTOR/3D/AUDIOTEC FISCHER DIRECTOR PCB ONLY - 3D MODEL.step",
+      "bytes": 10906878,
+      "sha256": "76d9aeb65ec61134bd92662c53229fc182c33d3773b0c97e25600e4486e0d4f3"
+    },
+    {
+      "path": "Reference_Assets/Audiotec_Fischer/DIRECTOR/BA_DIRECTOR_Benutzeroberflaeche_A4_06-2017.pdf",
+      "bytes": 1730670,
+      "sha256": "fb40183e941d7863bfc1098fa931c5d62a99963335f7b2f2586417a88a950ce5"
+    },
+    {
+      "path": "Reference_Assets/Audiotec_Fischer/HELIX_NEXT_DSP_ULTRA_XT/EISA-2026-2027-News-Pic-Reduziert.jpg",
+      "bytes": 384006,
+      "sha256": "38ec021213d64284df62fa0f858b8cfea11ca25f0596af507f1b8ab94560a09c"
+    },
+    {
+      "path": "Reference_Assets/Audiotec_Fischer/HELIX_NEXT_DSP_ULTRA_XT/HELIX_NEXT_DSP-ULTRA-XT_Manual_11-05-2026.pdf",
+      "bytes": 1515968,
+      "sha256": "b1370b04e4c2bdd22a98ef76884caa70c348352e89c97e827c7046074e4f71e0"
+    },
+    {
+      "path": "Reference_Assets/Audiotec_Fischer/HELIX_V_EIGHTEEN_DSP/HELIX_V-EIGHTEEN-DSP_148x210mm_16-01-2024.pdf",
+      "bytes": 1735970,
+      "sha256": "565bc4f0d391a794dc8d7a4ee441a1afe9e98231d7f329a3efec69c0c6ddfacf"
+    },
+    {
+      "path": "Reference_Assets/Audiotec_Fischer/MATCH/PP_TES_1.7B_Highland/MATCH_PP-TES_1.7B_Highland_Documentation.md",
+      "bytes": 721,
+      "sha256": "76ee3b3507605aa78f986414c9068c806521271a91d564b6ee22a068212f0c31"
+    },
+    {
+      "path": "Reference_Assets/Audison/AF_Forza_MB_Proposal/Audison_MB_Proposal_Documentation_Index.md",
+      "bytes": 1741,
+      "sha256": "5872cda13ad90e12cafdaff6e607966b5cb362fbc963521753aa6020019a1e8c"
+    },
+    {
+      "path": "Reference_Assets/Focal/T3Y/Focal_T3Y_Documentation_Index.md",
+      "bytes": 1838,
+      "sha256": "f20ab7caf3dd45501463e90a1e66b9aacaaf85c26e9c94be200f69c2a25e0450"
+    },
+    {
+      "path": "Reference_Assets/MATCH/PP_TES_1.7B_Highland/MAPPTES1.7BRyz_01.jpg",
+      "bytes": 52771,
+      "sha256": "16dcc410fd74ee7cfcb64a5c36b855f50c72ebd5fe3549b236563f2495db78ce"
+    },
+    {
+      "path": "Reference_Assets/MATCH/PP_TES_1.7B_Highland/MATCH-PP-TES-1-7B-Highland.webp",
+      "bytes": 58572,
+      "sha256": "5e00448604adbbbf513f9b48554a4157a2dc027f73750edeb7e20ac775fe4e62"
+    },
+    {
+      "path": "Reference_Assets/MB_Car_Audio_Proposal_2026-09-10/MB_Car_Audio_quote_cart_2026-09-10.png",
+      "bytes": 217090,
+      "sha256": "6e8e6f21ed843a98cd483f2ff69518fac4007528415495c6db7e6a6edd6b7eb6"
+    },
+    {
+      "path": "Reference_Assets/MB_Car_Audio_Proposal_2026-09-10/README.md",
+      "bytes": 1425,
+      "sha256": "7b870d56b1a43df27a21e556577ddcaea9330bf1e5a483b056359d1a5764aed3"
+    },
+    {
+      "path": "Reference_Assets/Pioneer/TS_WX1220AH/Pioneer_TS-WX1220AH_Donor_Documentation.md",
+      "bytes": 1222,
+      "sha256": "71f97e559ba82e71e90f06e59456c38521a15ef8ee71bf97454218d7e25a0077"
+    },
+    {
+      "path": "Reference_Assets/README.md",
+      "bytes": 565,
+      "sha256": "95d3616a50895d7324ce92c85299ecc340cac600b415033ad3d838a9bb71c07b"
+    },
+    {
+      "path": "Reference_Assets/Web_Research_2026-09-10/DSP_Tuning_Audison_vs_HELIX_2026-09-10.md",
+      "bytes": 1269,
+      "sha256": "943a3383611bc9143649611f109430b2443242ed698eb3948f45b1596236e61c"
+    },
+    {
+      "path": "Reference_Assets/Web_Research_2026-09-10/EU_Price_Research_2026-09-10.md",
+      "bytes": 1017,
+      "sha256": "3566add0f3df6599fe92dab12849bc24e2ab8116b72ff58ef0025da663c20965"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/README.txt",
+      "bytes": 805,
+      "sha256": "2928948547747ff43d6161c1c1f307ffdc2376de6ff2d7932d49825c9e06fb23"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/catalog/discovered-connectors.json",
+      "bytes": 17455,
+      "sha256": "2757e87f76a286b79577901c2bf9b8efd4f19807823674747e4996a8356d6423"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X010/location.jpg",
+      "bytes": 441659,
+      "sha256": "b5aa132c0bdf0202ff0d2e473c09542bba049c25ce0ce27bbd6e2a6cb2c99ea5"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X010/metadata.json",
+      "bytes": 15398,
+      "sha256": "c93827703b239217f92f6d572abb630ea9039e80c062a75549f365f1ebcd46e3"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X030A/location.jpg",
+      "bytes": 392754,
+      "sha256": "04b29783647985c512fd9bf179cccd8c04c428d72fc0fc77e1a26ca0f3ed57e1"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X030A/metadata.json",
+      "bytes": 7392,
+      "sha256": "08eb37c5103effcdfc244a0266dd9363008c3f0fcd3999f3c21ac0827629c6e4"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X030B/location.jpg",
+      "bytes": 392754,
+      "sha256": "ed82202a5d9f7e7a3b867d80c6e42b806d10ec061e39aeb3f01ca40c94cbbcb2"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X030B/metadata.json",
+      "bytes": 558,
+      "sha256": "ba241bc9f4316bbb3d9983cd11bd55763df314a21c2e73152741dcded44d62d7"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X031/location.jpg",
+      "bytes": 393083,
+      "sha256": "a68f7674b137374af93808e15e4c471216b65d401a79818a91dc05147fa16279"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X031/metadata.json",
+      "bytes": 10188,
+      "sha256": "6deee48c1acb61ea3bcc2915a6c70f4c930fa77ccbe25bfc1cfd4d8b2d7400a5"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X032/location.jpg",
+      "bytes": 362464,
+      "sha256": "6c91adad9733e048b41640ab1655f805e9c1bfd3c7202bbf08124a0e8b374f6e"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X032/metadata.json",
+      "bytes": 10653,
+      "sha256": "aeee3ef4625f3ea66f642a90cb55c9617e587af794243b9cc82b78aad6b722d4"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X033A/location.jpg",
+      "bytes": 377283,
+      "sha256": "badffcc6f704132b123964ea0723a7d41e858706c9c9018c0435d138610e8427"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X033A/metadata.json",
+      "bytes": 6032,
+      "sha256": "3de5338e94c9045a5a288071a0be8738b29c0244efa5d7607a91d19b4c615bbe"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X033B/location.jpg",
+      "bytes": 377283,
+      "sha256": "f8d60cb3e00df1442cbb2467934fdf4454971fd4c6a12f0feb2cc5aa36c5eed7"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X033B/metadata.json",
+      "bytes": 6961,
+      "sha256": "961639b257be1187d580bb89aff8ef5c177cea093c1aeb9aa95d2f5332dc903e"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X035/location.jpg",
+      "bytes": 583065,
+      "sha256": "a47e0df0ea019ef53688d7b9853cec8b564f164d42cc4b7a0ba3cdefbd8332f5"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X035/metadata.json",
+      "bytes": 11820,
+      "sha256": "1b7a576ee0afb3275f07aeddb6197a1ec28695802dd1d6aa89860c43aa4ddcc8"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X037/location.jpg",
+      "bytes": 332991,
+      "sha256": "5b55575c57895caf866660dd0bd48ced85f62ac03965518e9d10b25c16708242"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X037/metadata.json",
+      "bytes": 7169,
+      "sha256": "abad0e2a6c7d2d1a70387ecaa48f97d78bbb80e1eb04184f95eeafb3d6673b08"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X038/location.jpg",
+      "bytes": 448149,
+      "sha256": "f0dee5e4f4eda4c0e7fe6cfb83dfac27cf62377eaf52156805fd8b5abe49fee0"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X038/metadata.json",
+      "bytes": 1358,
+      "sha256": "1df7b3cf2036afedc12170f7a26c4354b2bcccba1f024f80f92462391c494419"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X039/location.jpg",
+      "bytes": 479216,
+      "sha256": "6c99fce8a4f6fcc9f8cf85556b88eb63a53add886155c88d2e48711be24aa2b9"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X039/metadata.json",
+      "bytes": 6777,
+      "sha256": "e6ae88a8a5124816e0c04f1f13a376a113fb22f8e35159bf15480ffaf766d796"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X050/location.jpg",
+      "bytes": 646674,
+      "sha256": "d9dbcce9f9b740ffd28182da8fd0ea438c18c4beefbd9a9a01c55a83b13cdb20"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X050/metadata.json",
+      "bytes": 11197,
+      "sha256": "0642df01b7f4fd73b10d41e71b5b1c560cf2c2f946f9da6ab2675f52856b1595"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X050A/location.jpg",
+      "bytes": 646674,
+      "sha256": "74628e3057fee4577ab735e7095e79c288f34cb381244e485bb7eb6e89de385a"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X050A/metadata.json",
+      "bytes": 28,
+      "sha256": "de703336bd9b144011c0c0bb71b411eb0a28211edee61017bf66b780eb8f4c63"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X050B/location.jpg",
+      "bytes": 432012,
+      "sha256": "c675dfcd68cd6d7ec960141c7150bfb5e4ee298b23ba558a189b89c76b8aac55"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X050B/metadata.json",
+      "bytes": 28,
+      "sha256": "2c0a1ddcdb75944a5113c4dd0be12bfbf5356931f1c1015d4ece994d282f66d4"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X051/location.jpg",
+      "bytes": 311389,
+      "sha256": "62ae1168e894f8964ec71460bf21991531442df171c58dd224f2854dacd2cf12"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X051/metadata.json",
+      "bytes": 12300,
+      "sha256": "1bd687b964ce8e06c1e332ec3246e64b0354b86f26afa5a632cb2c01b34291ff"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X052/metadata.json",
+      "bytes": 12188,
+      "sha256": "9df14a4916f3b20c2d8fd56d247f9586dd997efdf4a4bc1a34790ea1d666a806"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X053A/location.jpg",
+      "bytes": 628010,
+      "sha256": "4730eb4b9542baafe143749fa1a6e0146b7f521f80c4d8d7017d76348ac22a97"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X053A/metadata.json",
+      "bytes": 7067,
+      "sha256": "db0d783d1cc573224945fc2889131220156c613ad94066dcc1a5fe70f5556e25"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X053B/location.jpg",
+      "bytes": 386394,
+      "sha256": "27e8f445ace31740d1acfd432ac601ab4f1aa6762e26f18c12733140e3d9508a"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X053B/metadata.json",
+      "bytes": 6035,
+      "sha256": "63e9a52ebcfb53cd55442d6deb020a98589b7b2d743871477875e13b7f44a588"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X055/location.jpg",
+      "bytes": 238358,
+      "sha256": "9e108c5483c0a2072e16630104499f48db852a5e68fdcd176d04d81eb018178d"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X055/metadata.json",
+      "bytes": 11563,
+      "sha256": "a74d20ec99e0da6b1edde8f96a211e28d583935a13a02c46eafda7f7f1c3a77b"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X056/location.jpg",
+      "bytes": 388007,
+      "sha256": "c3792b1738753152bc407cc4d90abfe1c99d123b61fd6cda0b6f230ea0afff28"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X056/metadata.json",
+      "bytes": 789,
+      "sha256": "64c0ef7ee099ce92cd82d4d6a2e919dcf3dabb856eb53c059889a0f1a5dcef69"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X057/metadata.json",
+      "bytes": 6754,
+      "sha256": "d75e4d104af1fba83cfeac85d221011db0ad032d693e6538c352e71af0d05d2c"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X058/location.jpg",
+      "bytes": 426062,
+      "sha256": "94e5a00456ba0e2e7bad448a9c403e265e202f6e3b1ff9cb8df0e3a26a5681d0"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X058/metadata.json",
+      "bytes": 5823,
+      "sha256": "8317123e32019442a4796b7fee3a78237325a3df1e1ae341fd78b5014721f002"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X059/location.jpg",
+      "bytes": 645773,
+      "sha256": "53defade24ad866a6480d48daa1534aa9e96583d4ca71ad62ca969fd0b7112ae"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X059/metadata.json",
+      "bytes": 6727,
+      "sha256": "dde07bade5984211795b95b3f9138fc33af564e397f8984290fcd0c863a35e74"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X060/location.jpg",
+      "bytes": 629653,
+      "sha256": "6a3e52a31379edd004b57bc382293e6d5627b6e47a4fefbfe334fc6a2cb1a1c5"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X060/metadata.json",
+      "bytes": 840,
+      "sha256": "db3b620ec645ec04171ed1ee0703acea12bb4440a21269fd17eba5b97388ef00"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X120/location.jpg",
+      "bytes": 323740,
+      "sha256": "493b613b5f76bec755d0e71f47ca7679343d387af4feced3d2da1b9c50f1130e"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X120/metadata.json",
+      "bytes": 2160,
+      "sha256": "1c8f2d1a5ed65610270dab01f2344326b884dd6e412b7793d97ea13563d4a9f7"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X120A/location.jpg",
+      "bytes": 319858,
+      "sha256": "ba59c6fc02eb4b6e620083ab865d5376cdec01122808ec41023395505b8c7c95"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X120A/metadata.json",
+      "bytes": 2163,
+      "sha256": "2de35db68bb0f26b872e597784ba786691e853e25b8713b668230e8a219d5a73"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X155A/location.jpg",
+      "bytes": 341633,
+      "sha256": "a58695f3ff2b81866ddd28c1166ad0a8bed058dd75414dffcfdf64d7d2e218bd"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X155A/metadata.json",
+      "bytes": 2594,
+      "sha256": "e7e1d4bafe33563e9384c7a9647b4f654ee7495114d03820c907569cf730a7db"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X171/location.jpg",
+      "bytes": 421067,
+      "sha256": "3a9915146ce57ad4c07e88f9c37100395db216555a62fda828418b3bc33368ad"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X171/metadata.json",
+      "bytes": 3429,
+      "sha256": "c8223af18d584ed66838fec6e873f73c6d976ed3fee420bb141166caf9cc999b"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X171A/location.jpg",
+      "bytes": 376907,
+      "sha256": "b526c7cff1f521f812e452104425d050aeb86b489d7788798e9c017de204e77a"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X171A/metadata.json",
+      "bytes": 3443,
+      "sha256": "a9ef17769dbdadbebe8ac9626793150ec399961e5a8141dfbdd5058ff70bce4f"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X175/location.jpg",
+      "bytes": 591533,
+      "sha256": "08f44e3d3adb1f5afc54e700a05f04df8dfabc14cd32b4db2179693234d3c6ac"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X175/metadata.json",
+      "bytes": 3971,
+      "sha256": "ad2058dfec05c0cee920b66f6e54f23f79aa0fc8c66f3735a5cbaf265f463e7c"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X175A/location.jpg",
+      "bytes": 522547,
+      "sha256": "e8764e39b124cf099e0a037e9b75304297486fff78aad33cdcfb64c9e6014c49"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X175A/metadata.json",
+      "bytes": 3972,
+      "sha256": "e3e8da54609cf5693070c9edfeeecf4c23552089474ebaea4e2cf02437f12d1f"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X274/location.jpg",
+      "bytes": 347213,
+      "sha256": "5846db7d090c2049030ec49374005306031556c007f9d2da72b64c6410eae820"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X274/metadata.json",
+      "bytes": 738,
+      "sha256": "82f042ee5a36a0eb3cbee37acee2a4d285b76ab89895d377fc82f41ef4f39f25"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X286/location.jpg",
+      "bytes": 265021,
+      "sha256": "d0a78dcbbacfa6de2904e7082b8fad8470a6611b7ce89ebd04f59640b3abdc11"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X286/metadata.json",
+      "bytes": 1199,
+      "sha256": "ad882ebd0907f82d9036cd7f276160d62d1a257282c59a8d1419e61b81575ca1"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X287/location.jpg",
+      "bytes": 265316,
+      "sha256": "5f8796ae015f718eb35a89bad6e6afd3fa0c0c71cf2f47659bff3ac89dbafa60"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X287/metadata.json",
+      "bytes": 1199,
+      "sha256": "f394cdd084a8e7d40836858ece8c3ad5013e70392e68de88202b821d0a27dfe3"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X289/location.jpg",
+      "bytes": 361969,
+      "sha256": "74189069dcc6804d532826b2cb658801e5a77694b1d1440fe3dc04cba00f6a7a"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X289/metadata.json",
+      "bytes": 902,
+      "sha256": "8b71fc45b748181a10e8854958660b7bfd7dfa15153d4af6d5a606c7e10244b3"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X290/location.jpg",
+      "bytes": 362163,
+      "sha256": "c97633014f97759839e9c3106f8c987c2a87fcebe8a285d0f3eb29183c863482"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X290/metadata.json",
+      "bytes": 905,
+      "sha256": "12bae92f533130578382545ce0cf3ce0d70a16365622e77e5c743cbbba42ae40"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X299/location.jpg",
+      "bytes": 265622,
+      "sha256": "24fe0ac539c6937cb92b4e4c87a1ec70bedd8cf438efed19b55b14bc671faf77"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X299/metadata.json",
+      "bytes": 4383,
+      "sha256": "46bddd05c504e87245605560cb4546fa02dad7a38a2da10bca42a7db86515088"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X560/location.jpg",
+      "bytes": 399667,
+      "sha256": "432a8339a4f98fd5b46144e5c060eecc662b2c584844e71a1cb5577cf35c018f"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X560/metadata.json",
+      "bytes": 3430,
+      "sha256": "f8df86458101778901bc440bcccf53d5bc6984a22f1add64d073f5b2bdd93901"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X561/location.jpg",
+      "bytes": 399844,
+      "sha256": "5885533e4d48961367ed36b866edc71fc2e42b9cbbb80f1640ca3371fc448a1f"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X561/metadata.json",
+      "bytes": 3108,
+      "sha256": "2b7a10274a25c1c6ba2c0cb4ab12dd4a419b00f0971abcf1bc5fdd082274a76a"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X562/location.jpg",
+      "bytes": 365123,
+      "sha256": "639deadab1a2cca831a0da6778abae10329a0b816d25e1ba3a18463f4c61550a"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X562/metadata.json",
+      "bytes": 1300,
+      "sha256": "5140dd16d06b0a9a2c4f5f611c5b16c7fe6964fe9d709d762fd911c88052ae42"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X563/location.jpg",
+      "bytes": 399334,
+      "sha256": "4b0e2ce95d3e37390103b23a666b85da9c94d973e9d76ea74e04c977cba6eeab"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X563/metadata.json",
+      "bytes": 763,
+      "sha256": "dc4987b02c10bbf2c5bbcf0cbd651873a1390fa798c18b0dea59c4329e1d0d6c"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X565/location.jpg",
+      "bytes": 300010,
+      "sha256": "2edb5cee33e3a5ae1fbfcfb8fbbe4c51b1782890d8a8232d9b22b05311c8c463"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X565/metadata.json",
+      "bytes": 792,
+      "sha256": "97cc00548f8946ac119c8f5ed602ff09de1d4e6134198a177e5ae3d9be890fd7"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X566/metadata.json",
+      "bytes": 875,
+      "sha256": "a7ae03c149ba0221d71c9376fbf3380312f7963f0305055eda9c46e04f1f0120"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X567/location.jpg",
+      "bytes": 300393,
+      "sha256": "37a6de032f2fc4be91b4ece2f334f13ae5b19fde0dbc4bd14b4e67cf8a603e82"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X567/metadata.json",
+      "bytes": 920,
+      "sha256": "a8d61e0de7c01cee2e20bf61362f9b0174d6fa29e78f5d402a5ab76d72c0e4e4"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X568/location.jpg",
+      "bytes": 377435,
+      "sha256": "01c6b173337c1f4cf7897685d52d8800d0cf7e18731218f6de664e3b745b98c2"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X568/metadata.json",
+      "bytes": 913,
+      "sha256": "4a791d7f763f16d20997f330084c54508951d37c9acf641910d20fc971f71d72"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X569/location.jpg",
+      "bytes": 362024,
+      "sha256": "ced579f18f164a9b76a4647f33eef592c4d6d45e3ccf0f23bb66d9a9af0eeb54"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X569/metadata.json",
+      "bytes": 848,
+      "sha256": "e8ef7c49eab50026e9a00f853fb4207188968880c05f431f90373df7c7c92075"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X570/location.jpg",
+      "bytes": 397559,
+      "sha256": "384678389525851d031c023daad68e7e4556d684d818b66c32f2ffbab3139aa8"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X570/metadata.json",
+      "bytes": 777,
+      "sha256": "9ca5ef51fc746b9ac2d21384f8f76d730b435507278e415d45a3c8a293553aeb"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X575/location.jpg",
+      "bytes": 319343,
+      "sha256": "64589a2b925e1974b56996830b00063f4b67e942e732a7583bdf85ac1e4d412e"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X575/metadata.json",
+      "bytes": 793,
+      "sha256": "ecc42172720aeddb2c4fe671b9adfd16ef57180d4b5e855e7428853ccf5d781c"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X576/location.jpg",
+      "bytes": 450482,
+      "sha256": "08e4f0aabb20439ddbfd8b3194f5765d28bbc8bea1e317ee82c40bafd17f4d89"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X576/metadata.json",
+      "bytes": 878,
+      "sha256": "e693b498e7afe65f6bf6d2987cdbbc302b81b0588760c8962d0abd4e68806fda"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X577/location.jpg",
+      "bytes": 386540,
+      "sha256": "d9b20c3975e09d505c99c79e92edc62e063f1315b7819e14b8e77605ab989cc5"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X577/metadata.json",
+      "bytes": 973,
+      "sha256": "a857045cd2c020057f77aa2482d7387c99736d263f42204704c31a998cf710fe"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X578/location.jpg",
+      "bytes": 386540,
+      "sha256": "bdeff0d446ad94d5e89ba32671201effc4785306878cdca581d8d4d03f1965ad"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X578/metadata.json",
+      "bytes": 966,
+      "sha256": "a0a9d7279610c78928616ee24905da78af9906c0842b1f5195e670bd87d73a8e"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X579/location.jpg",
+      "bytes": 361927,
+      "sha256": "253f81a835899a4495d72f6c6b3f1133d60f4a6a4ea3102a31da150a49f4bf95"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X579/metadata.json",
+      "bytes": 851,
+      "sha256": "0aa2c6533e71e1c365699c350a0e28239171d85018ae9efea9e8fc967b404cac"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X580/location.jpg",
+      "bytes": 407213,
+      "sha256": "f0cafa2077903c08616636a915a4a6a06025a9d2490221ed48c9d78d7936db5b"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X580/metadata.json",
+      "bytes": 778,
+      "sha256": "157e5b345cbe15dd0e01730ba24fb33d0396781b1c7f594c93ae3292d8880803"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X586/metadata.json",
+      "bytes": 837,
+      "sha256": "a60580c410cdac035b29eecff831adee344d7fe74a044d79de537d4ecb75332d"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X588/location.jpg",
+      "bytes": 263520,
+      "sha256": "d5dea041e412e37973376d542d7da36910369607296d51a3865f43e81db298c8"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X588/metadata.json",
+      "bytes": 771,
+      "sha256": "83a59a9cb847993b407924fa87aae70b7c980f4e190077e9d2d9ce9fcc8fdce1"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X591/location.jpg",
+      "bytes": 199285,
+      "sha256": "9d2330f67f7937169342f16212113d323208d29d272a44c7e1f5f56a2bf865cb"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X591/metadata.json",
+      "bytes": 838,
+      "sha256": "486a80ff7daa183e7a11d49d06a0bbfdba35709b2c1a0ab30d97cf121a38bc1a"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X593/location.jpg",
+      "bytes": 263099,
+      "sha256": "e0b6c96a57b5cd165eb19b340ab3b99f57395e6273e958787a641a4feca9086e"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X593/metadata.json",
+      "bytes": 772,
+      "sha256": "1e3cc88b7c6f5191874f027f740e890c2a33a71364e56d8b08a087d575d0dbd8"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X595/metadata.json",
+      "bytes": 881,
+      "sha256": "887f59baadb1e235330e539c92aa1d36d8439f16989881ff77b24e114aebba2f"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X600/location.jpg",
+      "bytes": 349060,
+      "sha256": "281f8ef82a8c4a8ce4e9b2d556458fb74caf49803d980e78b048fd38f2c35145"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X600/metadata.json",
+      "bytes": 846,
+      "sha256": "a68cb1a44b6b35ed07e63e0d1e4350d1d5018fc20926e43b6c0fcc2bd603b4ee"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X601/location.jpg",
+      "bytes": 349074,
+      "sha256": "797e82dc30f52f93d1a2cca898fed999f637de2ab662440ea1df6c4e51fb288f"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X601/metadata.json",
+      "bytes": 846,
+      "sha256": "57745d8799737604616b251f0b70e4641b8093d5248ddb6c87172a8badb89e63"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X602/metadata.json",
+      "bytes": 770,
+      "sha256": "a6efb71df267fe15e73516f1d5710b1365ef943cc2a9308a620e5b8520c9fe11"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X603/location.jpg",
+      "bytes": 387178,
+      "sha256": "abafb8a248203b2687cf2be81e4ef9cec010f7291284b509495aa9282acdd354"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X603/metadata.json",
+      "bytes": 843,
+      "sha256": "0073df3e164e47cd95c91c7f82010f08b329aa0710422c426f2776abff540053"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X603A/location.jpg",
+      "bytes": 346987,
+      "sha256": "e528e1d8ea55fc9c2b2ec0688c08c30d2c13c2d04ce38d1825285fff4414e864"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X603A/metadata.json",
+      "bytes": 846,
+      "sha256": "638c6304ecc9111caea7889ded651fa798fc762dc8d83a5df2542606e9ac4805"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X604/location.jpg",
+      "bytes": 279973,
+      "sha256": "1e472d1c74eeea13c89436382fa4b2b793f59d00461e474bb22787755d234dc5"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X604/metadata.json",
+      "bytes": 785,
+      "sha256": "9e202d124af174bceed77bb4db70f457b8f69539f38e58c9fe566ca01fd5c8c1"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X607/location.jpg",
+      "bytes": 427641,
+      "sha256": "5022d5e4f3d821fc6850a18adbe81d39fed02b1c5900e9796c0f6d6b5a39ee47"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X607/metadata.json",
+      "bytes": 1528,
+      "sha256": "edb38175255336f07faa1abdebe18247bc699a3c7c968f1e344f6b9824f2f4a7"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X608/location.jpg",
+      "bytes": 265419,
+      "sha256": "a8f0e97d9188924a0e0142055cddf069626ef1cdebfcde653978129ebf79f033"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X608/metadata.json",
+      "bytes": 1599,
+      "sha256": "533818b1f09f8db5828ecc312e3473381056f15cf4023f4f8efebbb5ce91586d"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X609/location.jpg",
+      "bytes": 265586,
+      "sha256": "18a81fcec3a1364c84297424450e4e2ca480581442080621135dfdb1561b7a1c"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X609/metadata.json",
+      "bytes": 1603,
+      "sha256": "72c723c9bd9ccc1cdad7d7a9d3825cde25d9d7f950c567619687cdd498104b80"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X818/location.jpg",
+      "bytes": 263365,
+      "sha256": "d1b3bfde4c1176c0c5975833059670206a066b798c3d6408a960211fd01e97a8"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X818/metadata.json",
+      "bytes": 563,
+      "sha256": "1d179671bacdb47805f3bd6994294ed265fe94f7c0d5a352afbf81583c328359"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X845/location.jpg",
+      "bytes": 263332,
+      "sha256": "507057b0867cc2da1a997f25859efdc3ea1562db8f7cd16b21818de4b95bc352"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X845/metadata.json",
+      "bytes": 562,
+      "sha256": "5bf6504a4600c708969dd8a230cadfc1f05d16bdf2625d4ca38956503eb568a0"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X901F/location.jpg",
+      "bytes": 206093,
+      "sha256": "3ffa412a6ff6fff9e9ed7b04cc39a2719d8574fc1286057525b25f83c4186bcc"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X901F/metadata.json",
+      "bytes": 1292,
+      "sha256": "603485b472d87aa2e20b159412f658a14bd674528f25ed2ae44529bcfaf157e9"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X901M/location.jpg",
+      "bytes": 390267,
+      "sha256": "9cb1d886eb66a81e87f4772fbf84276d8f6cecd710dfa88a4dab686f2d6f9743"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X901M/metadata.json",
+      "bytes": 1231,
+      "sha256": "80f333fb2c8214442875beae50910590f0c560d32f8ace69644683389f85e590"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X908F/location.jpg",
+      "bytes": 387445,
+      "sha256": "318d8d75c4cb843bdd5038ce292fa15b6f660d529a551ba3a575a8ac0795bb9b"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X908F/metadata.json",
+      "bytes": 4052,
+      "sha256": "18c885f5f8518b51124dc468c1cfb1bcc73ee8e6996fb318c4f1929d7760e011"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X908M/metadata.json",
+      "bytes": 4110,
+      "sha256": "2d063606a324e6746d3a635189ee3ec2a41281d762142c5a2a0d2e7362117716"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X922F/location.jpg",
+      "bytes": 399372,
+      "sha256": "cbf637c9886b65cb9c3b70aeeb759ab60de5b0c3403ac18a11fff02605291d73"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X922F/metadata.json",
+      "bytes": 4758,
+      "sha256": "3e1065e433e5a1dac8a30b30e4640935a54bd61504527786bac84ff7633ed45a"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X922M/location.jpg",
+      "bytes": 398756,
+      "sha256": "445a2ea69ac8551c9cb338ea9744c27621962826a1fb4e86a0dbb72960d74a19"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X922M/metadata.json",
+      "bytes": 5060,
+      "sha256": "cb367c146b16c503cc519166e7cf14a9a709de35f48efbf2c58533956eae1237"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X923F/location.jpg",
+      "bytes": 408895,
+      "sha256": "30b88cd6947cd8096cc083006ecfdf2f21140523f0d9f495016a6b4fed2a58fb"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X923F/metadata.json",
+      "bytes": 4872,
+      "sha256": "d96fb7fdb688881e3b9cd3af8b4f32f605be4c340477fe90add0d96c4404b0d7"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X923M/location.jpg",
+      "bytes": 408289,
+      "sha256": "80d888d72f76ac2ae4e84532d1d91624f387cc99c6eaa7455121d87a2873ec59"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X923M/metadata.json",
+      "bytes": 5125,
+      "sha256": "bddfebb4855a56fe0948317ea0ebd915ee588ad47beb5f181cb1b79b34ff715a"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X924F/location.jpg",
+      "bytes": 284416,
+      "sha256": "9412c35487ee2df2a8262b7073631ea7baa04b572cc06e438b610daf9557eb45"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X924F/metadata.json",
+      "bytes": 6661,
+      "sha256": "6d2abd4422e8a9884644627d8af847551bacfb3ef8fdbb75a02f4e7c4acbfffa"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X924M/location.jpg",
+      "bytes": 376191,
+      "sha256": "12cf2663988940f6c4084a1cccccaa6199c847e68076ef1b341bb769f40f1d02"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X924M/metadata.json",
+      "bytes": 6129,
+      "sha256": "b02422b6085c033998071d7a6047860f8369fe5d4a661dbd9f06772393f51708"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X925F/location.jpg",
+      "bytes": 375466,
+      "sha256": "4b982d8cc21a6d9def2990ac8a46de6f903ab50b3c340a6869db58c0119b9d50"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X925F/metadata.json",
+      "bytes": 3203,
+      "sha256": "3ca4862f77a6f8ade0e6bd0345c0fa25fbfcb4b0fd0512d3aa99c0a63d1e0a2a"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X925M/location.jpg",
+      "bytes": 374935,
+      "sha256": "254fa8d7c938c025bb5ad9169a812bfbf75cda56095cfb24b8e5d2a393472f17"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X925M/metadata.json",
+      "bytes": 2937,
+      "sha256": "d02003098d37e7f4a68c2eec7b7beff6a5e907621074d40e944aac95128730c4"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X926F/location.jpg",
+      "bytes": 451413,
+      "sha256": "d9642432d57ca6ab9f126c535f0d7a58019fce562e2e1456bdb65f40b734bcf2"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X926F/metadata.json",
+      "bytes": 6587,
+      "sha256": "d835d2dcf8aa88c857d0dbd294b06018edfc35ce30def5261fa2667c77b6060d"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X926M/location.jpg",
+      "bytes": 385623,
+      "sha256": "9327e58893770b1e474aaf0cebd9c0772055025dc82dfb6723945f8a821e6cfa"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X926M/metadata.json",
+      "bytes": 6144,
+      "sha256": "977a81bff54f1c2fca1dc82a6bb80b17b2c098b7864f3778590e99f13057d93d"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X927F/location.jpg",
+      "bytes": 385042,
+      "sha256": "17ad79eb7ee0ad2220fe7d40c4076bb577a039eafbc7d01dda4127da39edd6e7"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X927F/metadata.json",
+      "bytes": 3211,
+      "sha256": "0a263800ee3abfa79b5e5cbeaf78b29648f2b7cdf5a87d442f88bdbf6144fdee"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X927M/location.jpg",
+      "bytes": 375384,
+      "sha256": "ed0b7d1a29b77eda2c8acfc4f14a303ced6ced223efa3ae33d76f396fd00308a"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X927M/metadata.json",
+      "bytes": 2942,
+      "sha256": "5450fa380835c1769a61a08be283b6c7163b2132136c53605cafae71b1fc6b93"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X935F/location.jpg",
+      "bytes": 450655,
+      "sha256": "770e98bd9dec756f8453016740d0c1db653f2d0dc5890f647a4be83f66f90dd8"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X935F/metadata.json",
+      "bytes": 7118,
+      "sha256": "7d5f8d1ff8cc27ec15161fb59e9ccbc0bb7692f32c5c75c73cc095fcb6e9bf3c"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X935M/location.jpg",
+      "bytes": 427394,
+      "sha256": "f7c83fb38f1e0e4db9650554de4faf5daa484aad7d8f6a1337a8c13b8f0bf1fb"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X935M/metadata.json",
+      "bytes": 7105,
+      "sha256": "39e559af97d761e8dbb404567e8ff723d879601bee2d1a7fafc3e8b19a91314c"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X936F/location.jpg",
+      "bytes": 451070,
+      "sha256": "ff0e2265c786f937443cdacb9b564a390f9a64ec24a6dd9c67c4119f40cac403"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X936F/metadata.json",
+      "bytes": 7162,
+      "sha256": "70e7693b7fde89a61c50d5adcae3a13b959fe9cf49f62b99cb71f4ff5277e077"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X936M/location.jpg",
+      "bytes": 427104,
+      "sha256": "e465fa37d99a611f20ac3865bab98d74dd6ec453a4419052f085850d5eda5646"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X936M/metadata.json",
+      "bytes": 7057,
+      "sha256": "62b8f35d023646e00472f5f9ae86a3328193e7671040d44a91a2a3c2579acac0"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X949F/location.jpg",
+      "bytes": 277444,
+      "sha256": "cae5badb39898743f20b3e748cef5d41eddbe7a34c79d3e3dfbe0a8a902af453"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X949F/metadata.json",
+      "bytes": 3079,
+      "sha256": "7c6864db265a25e807011c084570b16474021804257147374c36fa7f59d5cba3"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X949M/location.jpg",
+      "bytes": 347240,
+      "sha256": "e52ffc6832260119f60323dc5aa23dc81b87a5c00f20fffcf0923685318ba7df"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X949M/metadata.json",
+      "bytes": 3234,
+      "sha256": "fbe09fafb7e38b4a4d98a3a45c5e20fa8b33f7856be60c185dd5eb8e071e2372"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X952F/location.jpg",
+      "bytes": 336474,
+      "sha256": "b8cd7191d9046450d67df20144252fb558419ace6e37424bd22e04e55fa8c109"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X952F/metadata.json",
+      "bytes": 3548,
+      "sha256": "17f09872a50893f2af1358cdb7041c6f9b12078688e873c7f284765c802e709f"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X952M/location.jpg",
+      "bytes": 346599,
+      "sha256": "83adc361707aa7a64db3223754c62c4c0571cdaa2ee70f3f20fb67cee1667d5b"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X952M/metadata.json",
+      "bytes": 3313,
+      "sha256": "f8a305e7c1f9f8901eb9ca9f9076bf4c4d4b11a9343d3b167f3a8b3917fa6cdd"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X970F/location.jpg",
+      "bytes": 94500,
+      "sha256": "c522ca63d825b4cfe52067c2fe8b802903fcb27eaf4247209c4e153139f7baa9"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X970F/metadata.json",
+      "bytes": 1790,
+      "sha256": "435368e0c929a165770e392fc3e61c94436c193feee437f37aadce4b742a8a30"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X970M/location.jpg",
+      "bytes": 365303,
+      "sha256": "77c6d7167a10cfb6c162f6cce11dca3ff79463b3eec63a990c2f01026ed8d81e"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X970M/metadata.json",
+      "bytes": 1874,
+      "sha256": "84bab9d971f27872f3cb1dd3874ea5da2e6033854a8c4bc58588ccd0234d9902"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X981F/location.jpg",
+      "bytes": 265184,
+      "sha256": "5b8198d5ec75204da95b97fe788b803129af104dd5b9d0f09fc8744b84324317"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X981F/metadata.json",
+      "bytes": 3248,
+      "sha256": "4281577fb147d14aa135fbc2968a2ee0da6f076751b74d2e96143d8799fc7e5d"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X981M/location.jpg",
+      "bytes": 357040,
+      "sha256": "62727c7a3addb9ff7b8ef114ad654b965720a6ac6ec9c8367f4cb7211876d2e1"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/connectors/X981M/metadata.json",
+      "bytes": 3010,
+      "sha256": "9f7e386400b008582147f1008239c1566c010292c2eec22042de5c6345e6ee0c"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/core/audio_lhd.svg",
+      "bytes": 591825,
+      "sha256": "686b0e884796d228d8dd05eaa5b25edd0ffefe48eab14d6844da9d21453683f5"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/core/audio_premium_amp.svg",
+      "bytes": 442420,
+      "sha256": "a75b04378ba0d03d0c61e5db597883b06a51502ea67c460b7740e5be5ff0e24d"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/core/connector_reference_export.json",
+      "bytes": 704935,
+      "sha256": "f3f01054a7922b35509ddc0169ed9e43f290182a7b9a3d9e9a72361b5e1fb27e"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/core/index_devices.csv",
+      "bytes": 434632,
+      "sha256": "88e563334bdc85ca5bfa9caebbc7dd41a2dbb3bf49321435cf7ac601998d9617"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/core/index_explorer.csv",
+      "bytes": 336378,
+      "sha256": "e1424a5623945d4adab259d67f2f2ea8b733bc5cd2bf45d9e6b876566a21a11d"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/core/index_pages.csv",
+      "bytes": 3084,
+      "sha256": "5859725972f094a2bde8bea91b12b88e379f9ac353cd940001d556a91e0d0ec7"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/amp_1-2321525-1.svg",
+      "bytes": 17545,
+      "sha256": "65ccab8a993bd18b0d8de13a734c32d9585dd0a7396fa2307eb726499f663c21"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/amp_2141404-1.svg",
+      "bytes": 15530,
+      "sha256": "39bdcd67c3bbbba422c2bebcc8c0f210d94c5ed8e16694c1d8f3af2ffe24335d"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/amp_2177586-1.svg",
+      "bytes": 11878,
+      "sha256": "d5a6cd7ed6652e54708e09af800e3460dd1d8fed15fb969f10a4f7ad9ebbc0e4"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/amp_2302475-2.svg",
+      "bytes": 5448,
+      "sha256": "82d9397c3070212ab8c5330710cb8616f5180f042c55471ef71a4922633f3c81"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/delphi_13623681.svg",
+      "bytes": 3863,
+      "sha256": "3d5235379cfd823e23051b9a6ff5046347dee481d4c1ac0c3905e5102cb15d45"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/delphi_13649797.svg",
+      "bytes": 3065,
+      "sha256": "eef5cee675bf4a8cb555cd440696ed5eb59ed74e8997a1fd03bee082810746ff"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/delphi_13649799.svg",
+      "bytes": 2670,
+      "sha256": "00d0e40b8ec4cc46b2e2a58fa4e43136315b68b09b442fb85584455b4a1640af"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/delphi_35328464.svg",
+      "bytes": 2538,
+      "sha256": "d117c4660903345d2408da73962832522d462e73f46fdc0e4ecc6fdcdf727f11"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/delphi_35550570.svg",
+      "bytes": 68455,
+      "sha256": "5816156461b1723bd9da3f6862fd627fb22e3f9c8bda138aa0e748dd3986177d"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/hirose_gt25-16ds-hu.svg",
+      "bytes": 10268,
+      "sha256": "da4b3b6a28c5964f07e2a0c3f36c4e48a38a15c911da6d7419389e308c7bb297"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/hirose_gt25-8ds-hu.svg",
+      "bytes": 8366,
+      "sha256": "2e15d5d935302fb113f83edcd90ffb18d30614982b91f598a2f13d97c6c6728e"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/kse_k20f01112.svg",
+      "bytes": 27920,
+      "sha256": "733c7c8b4f37562e1146dba4143709aefa66183e11029200a626f8b1f81ad8e0"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/kse_k20f01122.svg",
+      "bytes": 27920,
+      "sha256": "d53613b076189c5d499efddba21028ba712584b00972739664fb2f3989a727ab"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/kse_k20f01222.svg",
+      "bytes": 37878,
+      "sha256": "426321cb73ae246b04236232e4c362f5a3b3ba79f16c749bd4c7ffc8c59d756c"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/kse_k20f01223.svg",
+      "bytes": 37878,
+      "sha256": "6aa419c26ab83bdba8c3b8ac50752d4e5f3ba1596be7529029215073cf6b871b"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/kse_k20f02011.svg",
+      "bytes": 11678,
+      "sha256": "1dbaca0b7610916a15abf343a4241079b91c20b3af8b7c2cd7faab8afa5aabd4"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/kse_k20f70101.svg",
+      "bytes": 63258,
+      "sha256": "94c99e483915118a3708f3b6f89ac3cee8ab03d1111e92428546be3aadcc19e3"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/kse_k30m31012.svg",
+      "bytes": 44772,
+      "sha256": "e4924fc69bff9cdcf1b5729ac74f520310ff1deba53594da5dc7455a27c66621"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/kse_k30m31112.svg",
+      "bytes": 47644,
+      "sha256": "d6e890cd9ae68448111a93fe9b1377f083d3ecba6a163543d9e7d3f838b60ce6"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/kse_k30m31113.svg",
+      "bytes": 47644,
+      "sha256": "f0b0acada2fc07ee3bdbe57f2d1d5b8e2dc57f0f08826cd6a2c5f68c7e1dd046"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/molex_33472-0606.svg",
+      "bytes": 19461,
+      "sha256": "eac29c9dc51d220f3678a32c019a33abfd0436692e0d2021b33534e6996ad937"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/molex_33472-1206.svg",
+      "bytes": 17055,
+      "sha256": "4ffd2946e17c30ba7aa9985de778f652ebbed6d8ce2d3a6d9bb483cd4abc82b5"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/molex_33472-8255.svg",
+      "bytes": 14092,
+      "sha256": "b544d5b250fe960aa8f3645ce16c3fd75240776ea9bcb70836de1fbad8906bdf"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/molex_33482-4801.svg",
+      "bytes": 8627,
+      "sha256": "3f66790f0f73910570c9747ee13bfe2f83f233fd7bf0144b55e9061971564fc4"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/molex_33482-6201.svg",
+      "bytes": 7575,
+      "sha256": "01385a2fb72896fad2353c3a983cbbb5eaaae8cd94f2d86b31aec93c297428fe"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/molex_33482-8993.svg",
+      "bytes": 9558,
+      "sha256": "213395c8d0c7fffdcbd6d2b67a1a62b1e11e46e508c9b2cab4ad9f6105975c87"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/molex_5051510200.svg",
+      "bytes": 3262,
+      "sha256": "e317f7bd83c1405f5fba2cf4fe7aa08381ebd0f9c9ee8c038ca3771183520adc"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/molex_560123-0500.svg",
+      "bytes": 3472,
+      "sha256": "b6c0f92512c586015f36dd4db94bf801ddf9d72a042bc9b095764997d97009b5"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/rosenberger_59k27d-1m4z4-b.svg",
+      "bytes": 13160,
+      "sha256": "a3dd65df9ab53b5b499c8d58bd6799a60f686adaac8e4cf48e149ac518065c81"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/rosenberger_59z113-000-b.svg",
+      "bytes": 18110,
+      "sha256": "2880eefa9a00c35823cef1a8ed2d82757c11e47460ff39811f7adc7c8b1dd7af"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/sumitomo_6098-4756.svg",
+      "bytes": 9521,
+      "sha256": "b138c3f132bca116b961e17a820eedaf03ee41a782497b7b39c811c819da3a0a"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/sumitomo_6098-4831.svg",
+      "bytes": 13165,
+      "sha256": "e4f7bf39cf451d8fd671468980a724f5ce817e48dea32e080e22b84f755be237"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/sumitomo_6098-5594.svg",
+      "bytes": 7610,
+      "sha256": "17d08ad9cfecdcaebc8816f11978b17aab974adef95753df735bc2a4ea81f615"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/sumitomo_6098-5604.svg",
+      "bytes": 6901,
+      "sha256": "7dc02c0d4f5bf75f35f08018bcb6a46fa13dcb5acc7cf6411ea6777179b91b8d"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/sumitomo_6098-5695.svg",
+      "bytes": 3929,
+      "sha256": "e913965f3270bf2e471557f86aae56caf00af21cfb5a7988671e4d6c65286599"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/sumitomo_6098-8119.svg",
+      "bytes": 17549,
+      "sha256": "9cf68c52ab34fc2c7c8748652dfa2b86aebf26826e2f6abdf3f16973865c6b8f"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/sumitomo_6098-8947.svg",
+      "bytes": 4375,
+      "sha256": "2acbb11405cb286702d423eb24f0ad962615deb58ba89bec484730139d5c67e9"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/sumitomo_6098-8950.svg",
+      "bytes": 10388,
+      "sha256": "d0e2d3a3248edf06653d13af3faf1209343c28a51c7e0bacc941861aa80a2447"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/sumitomo_6098-8975.svg",
+      "bytes": 16865,
+      "sha256": "f3ccae20d9a16366f437010e7c775f3cc5cd7d0b9e3db3a10e0754fff01ec0e5"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/sumitomo_6099-0401.svg",
+      "bytes": 17511,
+      "sha256": "525fdba15e34ebb99f1845f8c5f406f87d91a3e00b7adde98733b0c0af3cfa8f"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/yazaki_7283-6443-40.svg",
+      "bytes": 2580,
+      "sha256": "ac1b161b614f4fea62458d981cb955b3c9707df1391337edf4550238beb12c53"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/yazaki_7283-6444-60.svg",
+      "bytes": 4717,
+      "sha256": "2ac60c7a22741460620c40e30e833d93cb74ad1c55de28c03c3163a1fd8c0bb2"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/yazaki_7283-6467-40.svg",
+      "bytes": 15017,
+      "sha256": "6d596c7bd6b80d27b3ce7700175f4d9c797bab6bfbe9f53488f065d5df2eb525"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/yazaki_7283-6469-40.svg",
+      "bytes": 4031,
+      "sha256": "311f87e6170994dff4dc00ce151512cc49480723702dfcc5c3438effaf0044f7"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/yazaki_7287-1673.svg",
+      "bytes": 7854,
+      "sha256": "397a0fac75f6a7e02438634ba8d63495380a7a9928b64691f99b52a293663ac5"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/yazaki_7287-1674.svg",
+      "bytes": 7540,
+      "sha256": "4426592e267994c0cfa6c2737580f4606ce972c148a9429ecc5d2d81e33b14cd"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/faceviews/yazaki_7289-4104-40.svg",
+      "bytes": 19778,
+      "sha256": "73b80f7dfa908406774c2672b8eb7f70def674792f13fa7096747975946086a1"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/manifest.json",
+      "bytes": 131826,
+      "sha256": "a914ff2fabee38237d35e6f88c0b7e05d03b0b1c884b8ac3c9526d87c56763b0"
+    },
+    {
+      "path": "Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/missing-assets.json",
+      "bytes": 4108,
+      "sha256": "ea0c71cd5c727de442691486926abf533a746593b445d178a1bd5fdcf49a4d22"
+    },
+    {
+      "path": "Supplier_Feedback_and_Sourcing_2026-09-10_v2.1.md",
+      "bytes": 15769,
+      "sha256": "0b7f44342d5d02268db2b73d40a040bff47ea432f7ebb4834ef3074ba728d28a"
+    },
+    {
+      "path": "Target_Assets/README.md",
+      "bytes": 913,
+      "sha256": "746d0207c34f3c0c22fc15c10c330add4e8f4483b40a099891705d6a668637c8"
+    },
+    {
+      "path": "Target_Assets/Tesla_SOP9_Target_Asset_Coverage_v2.0.csv",
+      "bytes": 4415,
+      "sha256": "a763ed439d38acf094e7760acf3c074b2336da88adca17d1b3e3105f02de7e32"
+    },
+    {
+      "path": "Target_Assets/connectors/X565/location.jpg",
+      "bytes": 300010,
+      "sha256": "2edb5cee33e3a5ae1fbfcfb8fbbe4c51b1782890d8a8232d9b22b05311c8c463"
+    },
+    {
+      "path": "Target_Assets/connectors/X565/metadata.json",
+      "bytes": 792,
+      "sha256": "97cc00548f8946ac119c8f5ed602ff09de1d4e6134198a177e5ae3d9be890fd7"
+    },
+    {
+      "path": "Target_Assets/connectors/X566/metadata.json",
+      "bytes": 875,
+      "sha256": "a7ae03c149ba0221d71c9376fbf3380312f7963f0305055eda9c46e04f1f0120"
+    },
+    {
+      "path": "Target_Assets/connectors/X567/location.jpg",
+      "bytes": 300393,
+      "sha256": "37a6de032f2fc4be91b4ece2f334f13ae5b19fde0dbc4bd14b4e67cf8a603e82"
+    },
+    {
+      "path": "Target_Assets/connectors/X567/metadata.json",
+      "bytes": 920,
+      "sha256": "a8d61e0de7c01cee2e20bf61362f9b0174d6fa29e78f5d402a5ab76d72c0e4e4"
+    },
+    {
+      "path": "Target_Assets/connectors/X569/location.jpg",
+      "bytes": 362024,
+      "sha256": "ced579f18f164a9b76a4647f33eef592c4d6d45e3ccf0f23bb66d9a9af0eeb54"
+    },
+    {
+      "path": "Target_Assets/connectors/X569/metadata.json",
+      "bytes": 848,
+      "sha256": "e8ef7c49eab50026e9a00f853fb4207188968880c05f431f90373df7c7c92075"
+    },
+    {
+      "path": "Target_Assets/connectors/X570/location.jpg",
+      "bytes": 397559,
+      "sha256": "384678389525851d031c023daad68e7e4556d684d818b66c32f2ffbab3139aa8"
+    },
+    {
+      "path": "Target_Assets/connectors/X570/metadata.json",
+      "bytes": 777,
+      "sha256": "9ca5ef51fc746b9ac2d21384f8f76d730b435507278e415d45a3c8a293553aeb"
+    },
+    {
+      "path": "Target_Assets/connectors/X575/location.jpg",
+      "bytes": 319343,
+      "sha256": "64589a2b925e1974b56996830b00063f4b67e942e732a7583bdf85ac1e4d412e"
+    },
+    {
+      "path": "Target_Assets/connectors/X575/metadata.json",
+      "bytes": 793,
+      "sha256": "ecc42172720aeddb2c4fe671b9adfd16ef57180d4b5e855e7428853ccf5d781c"
+    },
+    {
+      "path": "Target_Assets/connectors/X576/location.jpg",
+      "bytes": 450482,
+      "sha256": "08e4f0aabb20439ddbfd8b3194f5765d28bbc8bea1e317ee82c40bafd17f4d89"
+    },
+    {
+      "path": "Target_Assets/connectors/X576/metadata.json",
+      "bytes": 878,
+      "sha256": "e693b498e7afe65f6bf6d2987cdbbc302b81b0588760c8962d0abd4e68806fda"
+    },
+    {
+      "path": "Target_Assets/connectors/X577/location.jpg",
+      "bytes": 386540,
+      "sha256": "d9b20c3975e09d505c99c79e92edc62e063f1315b7819e14b8e77605ab989cc5"
+    },
+    {
+      "path": "Target_Assets/connectors/X577/metadata.json",
+      "bytes": 973,
+      "sha256": "a857045cd2c020057f77aa2482d7387c99736d263f42204704c31a998cf710fe"
+    },
+    {
+      "path": "Target_Assets/connectors/X579/location.jpg",
+      "bytes": 361927,
+      "sha256": "253f81a835899a4495d72f6c6b3f1133d60f4a6a4ea3102a31da150a49f4bf95"
+    },
+    {
+      "path": "Target_Assets/connectors/X579/metadata.json",
+      "bytes": 851,
+      "sha256": "0aa2c6533e71e1c365699c350a0e28239171d85018ae9efea9e8fc967b404cac"
+    },
+    {
+      "path": "Target_Assets/connectors/X580/location.jpg",
+      "bytes": 407213,
+      "sha256": "f0cafa2077903c08616636a915a4a6a06025a9d2490221ed48c9d78d7936db5b"
+    },
+    {
+      "path": "Target_Assets/connectors/X580/metadata.json",
+      "bytes": 778,
+      "sha256": "157e5b345cbe15dd0e01730ba24fb33d0396781b1c7f594c93ae3292d8880803"
+    },
+    {
+      "path": "Target_Assets/connectors/X586/location.jpg",
+      "bytes": 73824,
+      "sha256": "96afdb15393fe80e8c06f8ed582f1ceb86d4a0a1c50de93f8fc0751e409d2080"
+    },
+    {
+      "path": "Target_Assets/connectors/X586/location.provenance.txt",
+      "bytes": 117,
+      "sha256": "762c6d7afb7794509e644f7e37538fbcc40322a0c64168c0eb8db700da19bd0f"
+    },
+    {
+      "path": "Target_Assets/connectors/X586/metadata.json",
+      "bytes": 837,
+      "sha256": "a60580c410cdac035b29eecff831adee344d7fe74a044d79de537d4ecb75332d"
+    },
+    {
+      "path": "Target_Assets/connectors/X588/location.jpg",
+      "bytes": 263520,
+      "sha256": "d5dea041e412e37973376d542d7da36910369607296d51a3865f43e81db298c8"
+    },
+    {
+      "path": "Target_Assets/connectors/X588/metadata.json",
+      "bytes": 771,
+      "sha256": "83a59a9cb847993b407924fa87aae70b7c980f4e190077e9d2d9ce9fcc8fdce1"
+    },
+    {
+      "path": "Target_Assets/connectors/X591/location.jpg",
+      "bytes": 199285,
+      "sha256": "9d2330f67f7937169342f16212113d323208d29d272a44c7e1f5f56a2bf865cb"
+    },
+    {
+      "path": "Target_Assets/connectors/X591/metadata.json",
+      "bytes": 838,
+      "sha256": "486a80ff7daa183e7a11d49d06a0bbfdba35709b2c1a0ab30d97cf121a38bc1a"
+    },
+    {
+      "path": "Target_Assets/connectors/X593/location.jpg",
+      "bytes": 263099,
+      "sha256": "e0b6c96a57b5cd165eb19b340ab3b99f57395e6273e958787a641a4feca9086e"
+    },
+    {
+      "path": "Target_Assets/connectors/X593/metadata.json",
+      "bytes": 772,
+      "sha256": "1e3cc88b7c6f5191874f027f740e890c2a33a71364e56d8b08a087d575d0dbd8"
+    },
+    {
+      "path": "Target_Assets/connectors/X595/location.jpg",
+      "bytes": 450196,
+      "sha256": "35a167583c64571324cf7dbd640f12cfead80498d2808855ca5503363836e702"
+    },
+    {
+      "path": "Target_Assets/connectors/X595/location.provenance.txt",
+      "bytes": 117,
+      "sha256": "762c6d7afb7794509e644f7e37538fbcc40322a0c64168c0eb8db700da19bd0f"
+    },
+    {
+      "path": "Target_Assets/connectors/X595/metadata.json",
+      "bytes": 881,
+      "sha256": "887f59baadb1e235330e539c92aa1d36d8439f16989881ff77b24e114aebba2f"
+    },
+    {
+      "path": "Target_Assets/core/audio_lhd.svg",
+      "bytes": 591825,
+      "sha256": "686b0e884796d228d8dd05eaa5b25edd0ffefe48eab14d6844da9d21453683f5"
+    },
+    {
+      "path": "Target_Assets/core/audio_premium_amp.svg",
+      "bytes": 442420,
+      "sha256": "a75b04378ba0d03d0c61e5db597883b06a51502ea67c460b7740e5be5ff0e24d"
+    },
+    {
+      "path": "Target_Assets/core/connector_reference_export.json",
+      "bytes": 704935,
+      "sha256": "f3f01054a7922b35509ddc0169ed9e43f290182a7b9a3d9e9a72361b5e1fb27e"
+    },
+    {
+      "path": "Target_Assets/core/index_devices.csv",
+      "bytes": 434632,
+      "sha256": "88e563334bdc85ca5bfa9caebbc7dd41a2dbb3bf49321435cf7ac601998d9617"
+    },
+    {
+      "path": "Target_Assets/core/index_explorer.csv",
+      "bytes": 336378,
+      "sha256": "e1424a5623945d4adab259d67f2f2ea8b733bc5cd2bf45d9e6b876566a21a11d"
+    },
+    {
+      "path": "Target_Assets/core/index_pages.csv",
+      "bytes": 3084,
+      "sha256": "5859725972f094a2bde8bea91b12b88e379f9ac353cd940001d556a91e0d0ec7"
+    },
+    {
+      "path": "Target_Assets/coverage.json",
+      "bytes": 9324,
+      "sha256": "08859c9036ad0938ba2280e5ee5293971545f273a03cd37329cfbb886d9e657b"
+    },
+    {
+      "path": "Target_Assets/faceviews/delphi_13649797.svg",
+      "bytes": 3065,
+      "sha256": "eef5cee675bf4a8cb555cd440696ed5eb59ed74e8997a1fd03bee082810746ff"
+    },
+    {
+      "path": "Target_Assets/faceviews/delphi_35328464.svg",
+      "bytes": 2538,
+      "sha256": "d117c4660903345d2408da73962832522d462e73f46fdc0e4ecc6fdcdf727f11"
+    },
+    {
+      "path": "Target_Assets/faceviews/yazaki_7283-6444-60.svg",
+      "bytes": 4717,
+      "sha256": "2ac60c7a22741460620c40e30e833d93cb74ad1c55de28c03c3163a1fd8c0bb2"
+    },
+    {
+      "path": "Tesla_Model_3_Highland_SOP9_Audio_BOM_v2.1.0.xlsx",
+      "bytes": 211305,
+      "sha256": "5e44b217be834f35dd085189c00f68acbfafaf2d0c7b6cb1c5fc5872f6a4a9f2"
+    },
+    {
+      "path": "Tesla_SOP9_Audio_EPC_Package_v2.1.0_README.md",
+      "bytes": 1645,
+      "sha256": "1dc3481cf073e4a70928308211bc07a1ac599186997e41e4ed5b401798cf89c9"
+    },
+    {
+      "path": "Tesla_SOP9_Audio_EPC_Playground_v2.1.0_Final.html",
+      "bytes": 12999325,
+      "sha256": "66bacf103c3e29fd176a9be9546043bb7541818adb324a0461a8a5698ec58c92"
+    },
+    {
+      "path": "Tesla_SOP9_Audio_EPC_v2.1.0_QA.md",
+      "bytes": 1063,
+      "sha256": "f48c12ca4072a1bba67422abc7a345b9e4827a10e1fe3384efeb180210f69666"
+    },
+    {
+      "path": "Tesla_SOP9_Target_Asset_Coverage_v2.0.csv",
+      "bytes": 4415,
+      "sha256": "a763ed439d38acf094e7760acf3c074b2336da88adca17d1b3e3105f02de7e32"
+    },
+    {
+      "path": "Tools/Tesla_SOP9_Asset_Collector_v1.1.6/Tesla_SOP9_Asset_Collector_v1.1.6.user.js",
+      "bytes": 26503,
+      "sha256": "cc64795737c7de96145244e6e68c878a6b4686c4995c3c46381ded1ff47b2bdb"
+    },
+    {
+      "path": "Tools/Tesla_SOP9_Asset_Collector_v1.1.6/Tesla_SOP9_Asset_Collector_v1.1.6_README.md",
+      "bytes": 1375,
+      "sha256": "4c928beabe5976889d951851a124895f5ad655b76ef514754c7bf95e47ef8a9d"
+    }
+  ]
+}

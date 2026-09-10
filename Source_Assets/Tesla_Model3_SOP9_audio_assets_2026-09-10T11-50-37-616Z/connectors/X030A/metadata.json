@@ -1,0 +1,272 @@
+{
+  "connectorID": "X030A",
+  "connectorColor": "WH",
+  "deviceName": "Body Controller Left",
+  "harnessDesignator": "A",
+  "harnessName": "LH Body",
+  "harnessPN": "2897315-XX-X",
+  "teslaPN": "1506907-02-A",
+  "terminalFaceview": "faceviews/sumitomo_6098-8950.svg",
+  "cavities": [
+    {
+      "cavityID": "3",
+      "cavityName": "CHASSIS_CAN_PASSTHROUGH_N",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X201",
+      "destCavityID": "53",
+      "destCavityName": "CAN1L (Chassis)",
+      "destDeviceName": "Restraints Controller"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "CHASSIS_CAN_PASSTHROUGH_P",
+      "wireColor": "DKGN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X201",
+      "destCavityID": "54",
+      "destCavityName": "CAN1H (Chassis)",
+      "destDeviceName": "Restraints Controller"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "2R_SEAT_RIGHT_OCCUPANCY_SENSOR",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X685",
+      "destCavityID": "3",
+      "destCavityName": "Right Occupant Switch",
+      "destDeviceName": "2R Occupancy Sensor"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "FRONT_OVERHEAD_MODULE_LIN",
+      "wireColor": "YE/GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X981M",
+      "destCavityID": "8",
+      "destCavityName": "8",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "TRAILER_LIGHT_ECU_LIN",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X041",
+      "destCavityID": "2",
+      "destCavityName": "LIN",
+      "destDeviceName": "Trailer Light Controller"
+    },
+    {
+      "cavityID": "8",
+      "cavityName": "DOOR_REAR_RGB_LIN",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X924F",
+      "destCavityID": "10",
+      "destCavityName": "10",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "DOOR_REAR_INTERIOR_HANDLE_SWITCH",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X924F",
+      "destCavityID": "2",
+      "destCavityName": "2",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "BLE_B_PILLAR",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X493",
+      "destCavityID": "2",
+      "destCavityName": "VBAT (BLE)",
+      "destDeviceName": "Authentication and Heater Left B-Pillar"
+    },
+    {
+      "cavityID": "13",
+      "cavityName": "DOOR_REAR_LATCH_ENDSTOP_SWITCH",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X924F",
+      "destCavityID": "19",
+      "destCavityName": "19",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "WINDOW_SWITCH_REAR",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X924F",
+      "destCavityID": "3",
+      "destCavityName": "3",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "15",
+      "cavityName": "VEHICLE_CAN_P",
+      "wireColor": "BN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X486",
+      "destCavityID": "8",
+      "destCavityName": "CAN-H (Low Power)",
+      "destDeviceName": "Radar Interior"
+    },
+    {
+      "cavityID": "16",
+      "cavityName": "VEHICLE_CAN_N",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X486",
+      "destCavityID": "7",
+      "destCavityName": "CAN-L (Low Power)",
+      "destDeviceName": "Radar Interior"
+    },
+    {
+      "cavityID": "17",
+      "cavityName": "WINDOW_LIFT_REAR_ENCODER_A",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X924F",
+      "destCavityID": "5",
+      "destCavityName": "5",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "18",
+      "cavityName": "WINDOW_LIFT_REAR_ENCODER_B",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X924F",
+      "destCavityID": "6",
+      "destCavityName": "6",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "19",
+      "cavityName": "2R_SEAT_CENTER_BUCKLE_SENSOR",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X935F",
+      "destCavityID": "9",
+      "destCavityName": "9",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "21",
+      "cavityName": "BLE_INTERIOR",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X490",
+      "destCavityID": "2",
+      "destCavityName": "VBAT",
+      "destDeviceName": "Authentication Endpoint Interior"
+    },
+    {
+      "cavityID": "22",
+      "cavityName": "DOOR_REAR_EXTERIOR_HANDLE_SENSOR",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X924F",
+      "destCavityID": "11",
+      "destCavityName": "11",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "23",
+      "cavityName": "DOOR_REAR_EXTERIOR_HANDLE_SENSOR_5V",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X924F",
+      "destCavityID": "23",
+      "destCavityName": "23",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "24",
+      "cavityName": "BLE_REAR_LEFT",
+      "wireColor": "",
+      "wireSize": "",
+      "destConnectorID": "",
+      "destCavityID": "",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "25",
+      "cavityName": "BLE_REAR",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X497",
+      "destCavityID": "4",
+      "destCavityName": "VBAT",
+      "destDeviceName": "Authentication Endpoint Rear Center"
+    },
+    {
+      "cavityID": "26",
+      "cavityName": "FRONT_OVERHEAD_MODULE",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X981M",
+      "destCavityID": "13",
+      "destCavityName": "13",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "27",
+      "cavityName": "REAR_DRIVE_INVERTER",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X935F",
+      "destCavityID": "13",
+      "destCavityName": "13",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "28",
+      "cavityName": "CHARGE_PORT_ECU",
+      "wireColor": "TN",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X096",
+      "destCavityID": "10",
+      "destCavityName": "VBAT_PROT",
+      "destDeviceName": "Charge Port ECU"
+    },
+    {
+      "cavityID": "29",
+      "cavityName": "2R_SEAT_RIGHT_CUSHION_HEAT",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X686",
+      "destCavityID": "3",
+      "destCavityName": "Heater +12V RH",
+      "destDeviceName": "2R Heat Pad Cushion"
+    },
+    {
+      "cavityID": "31",
+      "cavityName": "2R_SEAT_LEFT_CUSHION_HEAT",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X686",
+      "destCavityID": "1",
+      "destCavityName": "Heater +12V LH",
+      "destDeviceName": "2R Heat Pad Cushion"
+    },
+    {
+      "cavityID": "32",
+      "cavityName": "2R_SEAT_LEFT_BACKREST_HEAT",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X676",
+      "destCavityID": "2",
+      "destCavityName": "Heater + 12V",
+      "destDeviceName": "2R Heat Pad Backrest Left"
+    }
+  ]
+}

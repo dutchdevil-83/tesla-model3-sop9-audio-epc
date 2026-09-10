@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no' ?>  
+ <svg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' height='768' viewBox='0,0 49774,65416' width='1024' xmlns:xlink='http://www.w3.org/1999/xlink'>   
+<defs>
+<style type='text/css'>
+<![CDATA[
+.A,.B{fill:none;fill-opacity:0.0;font-family:sans-serif;stroke-width:62px;}
+.C{font-size:4921px;fill:#000;fill-opacity:1.0;font-family:Lucida Sans;stroke-width:1px;}
+.C,.A,.B{fill-rule:evenodd;font-style:normal;font-weight:normal;stroke:#000;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1.0;}
+.a_{stroke:red;}
+.b_{fill:red;}
+.c_{stroke:#FA0;}
+.d_{fill:#FA0;}
+]]>
+</style>
+</defs>
+<g>
+<path class='A' d='M14811,26687h-1996m22964,0h1996m-7821,0h3910m-17140,0h3910m21134,3440v-7155M7323,8 C3739,8 833,2914 832,6499 M43267,8h-35945M49758,6499 C49757,2914 46851,8 43266,8 M41770,8578 C41770,7409 41305,6287 40478,5459 L40478,5459 C39651,4632 38529,4168 37359,4168 M37360,4168h-24129M13231,4168 C12061,4168 10939,4632 10112,5459 L10112,5459 C9285,6287 8820,7409 8820,8578 M4493,47269v-11648m15809,-25793h9984m-15476,1331h665m19636,0h665m-6906,5163h-7155m14061,7467h1996m-22964,0h-1996m28955,-15211v4409h7987v-6490m-7987,6490v9984h7987v-9984m-15892,4825h1248v-7987m416,-1331l-1497,-2329h-17473l-1497,2329m20052,0h-19636v1331h18388m3910,1331h2496v-2662h-5158v1331h-1248v20302h1913v-19470h1996v19470h5117v5491h6864v-12647m-34280,-14477h-5158v2662h2496m2662,-1331v7987h1248m13229,5975v6339h-2163v-4992h-4992v2496h4992m-11066,-17806v13963h3910v-3706h1081v-8700h7155v8700h1081v3706h3910m9027,28804h3203v-16974m-18305,-5491h-4992v-2496m-2163,-3843v6339h2163m-13978,-21550v4409h-7987v-6490'/>
+<rect class='B' x='28207' y='40113' width='5824' height='2995'/>
+<path class='A' d='M832,12988v9984h7987m0,-9984v17140'/>
+<rect class='B' x='16558' y='40113' width='5824' height='2995'/>
+<path class='A' d='M7697,47269h-5408v18138h6323v-8154m29579,0l-3827,4493h-18138l-3827,-4493m-11565,-34280v12647h1456m5408,-5491v5491h4285v4992h-4285v16641h35196v-13312h-4285v-8320h4285m-35196,0h-5408v-5491h10525v-19470h1996v19470h1913v-6339'/>
+<g><desc>chs.cof.logical.schem.CAFPinList UID9a097e-150a5e24146-1a6b787ba6b20c566802bc367fcf6e11 UID9a097e-150a5e24145-1a6b787ba6b20c566802bc367fcf6e11</desc>
+<text class='C' x='19070' y='49837'>2</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID9a097e-150a5e24146-1a6b787ba6b20c566802bc367fcf6e11 UID9a097e-150a5e24145-1a6b787ba6b20c566802bc367fcf6e11</desc>
+<text class='C' x='30355' y='50010'>1</text>
+</g>
+</g></svg>

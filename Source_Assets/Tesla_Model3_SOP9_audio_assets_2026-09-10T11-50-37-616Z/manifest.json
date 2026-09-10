@@ -1,0 +1,3487 @@
+{
+  "schemaVersion": 2,
+  "collector": {
+    "name": "Tesla Model 3 SOP9 Audio Asset Collector",
+    "version": "1.1.6"
+  },
+  "generatedAt": "2026-09-10T11:50:22.583Z",
+  "sourceRoot": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/",
+  "sourcePage": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/connector/g001/index.html",
+  "privacy": "Uses the current same-origin authenticated browser session. Cookies, authorization headers and tokens are never written to the ZIP.",
+  "discovery": {
+    "method": "audio schematic connector references + audio-related connector metadata + automatic inline F/M mate discovery",
+    "connectorCount": 97,
+    "connectors": [
+      {
+        "connectorId": "X010",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X030A",
+        "reasons": [
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X030B",
+        "reasons": [
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X031",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X032",
+        "reasons": [
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X033A",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X033B",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X035",
+        "reasons": [
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X037",
+        "reasons": [
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X038",
+        "reasons": [
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X039",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X050",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X050A",
+        "reasons": [
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": false
+      },
+      {
+        "connectorId": "X050B",
+        "reasons": [
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": false
+      },
+      {
+        "connectorId": "X051",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X052",
+        "reasons": [
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X053A",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X053B",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X055",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X056",
+        "reasons": [
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X057",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X058",
+        "reasons": [
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X059",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X060",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X120",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X120A",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X155A",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X171",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X171A",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X175",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X175A",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X274",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X286",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X287",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X289",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X290",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X299",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X560",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X561",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X562",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X563",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X565",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X566",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X567",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X568",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X569",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X570",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X575",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X576",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X577",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X578",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X579",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X580",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X586",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X588",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X591",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X593",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X595",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X600",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X601",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X602",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X603",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X603A",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X604",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X607",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X608",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X609",
+        "reasons": [
+          "audio-related connector metadata",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X818",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X845",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X901F",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X901M",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X901M",
+        "reasons": [
+          "inline mate of X901F",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X908F",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X908M",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X908M",
+        "reasons": [
+          "inline mate of X908F",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X922F",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X922M",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X922M",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X922F",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X923F",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X923M",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X923M",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X923F",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X924F",
+        "reasons": [
+          "inline mate of X924M",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X924M",
+        "reasons": [
+          "inline mate of X924F",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X925F",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X925M",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X925M",
+        "reasons": [
+          "inline mate of X925F",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X926F",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X926M",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X926M",
+        "reasons": [
+          "inline mate of X926F",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X927F",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X927M",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X927M",
+        "reasons": [
+          "inline mate of X927F",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X935F",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X935M",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X935M",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X935F",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X936F",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X936M",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X936M",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X936F",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X949F",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X949M",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X949M",
+        "reasons": [
+          "inline mate of X949F",
+          "referenced by audio_lhd.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X952F",
+        "reasons": [
+          "inline mate of X952M"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X952M",
+        "reasons": [
+          "audio-related connector metadata"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X970F",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X970M",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X970M",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X970F",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X981F",
+        "reasons": [
+          "audio-related connector metadata",
+          "inline mate of X981M",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      },
+      {
+        "connectorId": "X981M",
+        "reasons": [
+          "inline mate of X981F",
+          "referenced by audio_lhd.svg",
+          "referenced by audio_premium_amp.svg"
+        ],
+        "metadataFound": true
+      }
+    ]
+  },
+  "assets": [
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/svg/audio_lhd.svg",
+      "connectorId": null,
+      "purpose": "core discovery source",
+      "zipPath": "core/audio_lhd.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 591825,
+      "sha256": "686b0e884796d228d8dd05eaa5b25edd0ffefe48eab14d6844da9d21453683f5",
+      "httpStatus": 200,
+      "elapsedMs": 708
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/svg/audio_premium_amp.svg",
+      "connectorId": null,
+      "purpose": "core discovery source",
+      "zipPath": "core/audio_premium_amp.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 442420,
+      "sha256": "a75b04378ba0d03d0c61e5db597883b06a51502ea67c460b7740e5be5ff0e24d",
+      "httpStatus": 200,
+      "elapsedMs": 457
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": null,
+      "purpose": "core discovery source",
+      "zipPath": "core/connector_reference_export.json",
+      "mimeType": "application/json",
+      "byteSize": 704935,
+      "sha256": "f3f01054a7922b35509ddc0169ed9e43f290182a7b9a3d9e9a72361b5e1fb27e",
+      "httpStatus": 200,
+      "elapsedMs": 678
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/csv/index_devices.csv",
+      "connectorId": null,
+      "purpose": "core discovery source",
+      "zipPath": "core/index_devices.csv",
+      "mimeType": "text/csv",
+      "byteSize": 434632,
+      "sha256": "88e563334bdc85ca5bfa9caebbc7dd41a2dbb3bf49321435cf7ac601998d9617",
+      "httpStatus": 200,
+      "elapsedMs": 339
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/csv/index_pages.csv",
+      "connectorId": null,
+      "purpose": "core discovery source",
+      "zipPath": "core/index_pages.csv",
+      "mimeType": "text/csv",
+      "byteSize": 3084,
+      "sha256": "5859725972f094a2bde8bea91b12b88e379f9ac353cd940001d556a91e0d0ec7",
+      "httpStatus": 200,
+      "elapsedMs": 244
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/csv/index_explorer.csv",
+      "connectorId": null,
+      "purpose": "core discovery source",
+      "zipPath": "core/index_explorer.csv",
+      "mimeType": "text/csv",
+      "byteSize": 336378,
+      "sha256": "e1424a5623945d4adab259d67f2f2ea8b733bc5cd2bf45d9e6b876566a21a11d",
+      "httpStatus": 200,
+      "elapsedMs": 575
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": null,
+      "purpose": "automatic connector discovery result",
+      "zipPath": "catalog/discovered-connectors.json",
+      "mimeType": "application/json",
+      "byteSize": 17455,
+      "sha256": "2757e87f76a286b79577901c2bf9b8efd4f19807823674747e4996a8356d6423",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X010",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X010/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 15398,
+      "sha256": "c93827703b239217f92f6d572abb630ea9039e80c062a75549f365f1ebcd46e3",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X030A",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X030A/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 7392,
+      "sha256": "08eb37c5103effcdfc244a0266dd9363008c3f0fcd3999f3c21ac0827629c6e4",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X030B",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X030B/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 558,
+      "sha256": "ba241bc9f4316bbb3d9983cd11bd55763df314a21c2e73152741dcded44d62d7",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X031",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X031/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 10188,
+      "sha256": "6deee48c1acb61ea3bcc2915a6c70f4c930fa77ccbe25bfc1cfd4d8b2d7400a5",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X032",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X032/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 10653,
+      "sha256": "aeee3ef4625f3ea66f642a90cb55c9617e587af794243b9cc82b78aad6b722d4",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X033A",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X033A/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 6032,
+      "sha256": "3de5338e94c9045a5a288071a0be8738b29c0244efa5d7607a91d19b4c615bbe",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X033B",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X033B/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 6961,
+      "sha256": "961639b257be1187d580bb89aff8ef5c177cea093c1aeb9aa95d2f5332dc903e",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X035",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X035/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 11820,
+      "sha256": "1b7a576ee0afb3275f07aeddb6197a1ec28695802dd1d6aa89860c43aa4ddcc8",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X037",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X037/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 7169,
+      "sha256": "abad0e2a6c7d2d1a70387ecaa48f97d78bbb80e1eb04184f95eeafb3d6673b08",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X038",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X038/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 1358,
+      "sha256": "1df7b3cf2036afedc12170f7a26c4354b2bcccba1f024f80f92462391c494419",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X039",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X039/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 6777,
+      "sha256": "e6ae88a8a5124816e0c04f1f13a376a113fb22f8e35159bf15480ffaf766d796",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X050",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X050/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 11197,
+      "sha256": "0642df01b7f4fd73b10d41e71b5b1c560cf2c2f946f9da6ab2675f52856b1595",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X050A",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X050A/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 28,
+      "sha256": "de703336bd9b144011c0c0bb71b411eb0a28211edee61017bf66b780eb8f4c63",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X050B",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X050B/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 28,
+      "sha256": "2c0a1ddcdb75944a5113c4dd0be12bfbf5356931f1c1015d4ece994d282f66d4",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X051",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X051/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 12300,
+      "sha256": "1bd687b964ce8e06c1e332ec3246e64b0354b86f26afa5a632cb2c01b34291ff",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X052",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X052/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 12188,
+      "sha256": "9df14a4916f3b20c2d8fd56d247f9586dd997efdf4a4bc1a34790ea1d666a806",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X053A",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X053A/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 7067,
+      "sha256": "db0d783d1cc573224945fc2889131220156c613ad94066dcc1a5fe70f5556e25",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X053B",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X053B/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 6035,
+      "sha256": "63e9a52ebcfb53cd55442d6deb020a98589b7b2d743871477875e13b7f44a588",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X055",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X055/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 11563,
+      "sha256": "a74d20ec99e0da6b1edde8f96a211e28d583935a13a02c46eafda7f7f1c3a77b",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X056",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X056/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 789,
+      "sha256": "64c0ef7ee099ce92cd82d4d6a2e919dcf3dabb856eb53c059889a0f1a5dcef69",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X057",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X057/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 6754,
+      "sha256": "d75e4d104af1fba83cfeac85d221011db0ad032d693e6538c352e71af0d05d2c",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X058",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X058/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 5823,
+      "sha256": "8317123e32019442a4796b7fee3a78237325a3df1e1ae341fd78b5014721f002",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X059",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X059/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 6727,
+      "sha256": "dde07bade5984211795b95b3f9138fc33af564e397f8984290fcd0c863a35e74",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X060",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X060/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 840,
+      "sha256": "db3b620ec645ec04171ed1ee0703acea12bb4440a21269fd17eba5b97388ef00",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X120",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X120/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 2160,
+      "sha256": "1c8f2d1a5ed65610270dab01f2344326b884dd6e412b7793d97ea13563d4a9f7",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X120A",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X120A/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 2163,
+      "sha256": "2de35db68bb0f26b872e597784ba786691e853e25b8713b668230e8a219d5a73",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X155A",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X155A/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 2594,
+      "sha256": "e7e1d4bafe33563e9384c7a9647b4f654ee7495114d03820c907569cf730a7db",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X171",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X171/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3429,
+      "sha256": "c8223af18d584ed66838fec6e873f73c6d976ed3fee420bb141166caf9cc999b",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X171A",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X171A/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3443,
+      "sha256": "a9ef17769dbdadbebe8ac9626793150ec399961e5a8141dfbdd5058ff70bce4f",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X175",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X175/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3971,
+      "sha256": "ad2058dfec05c0cee920b66f6e54f23f79aa0fc8c66f3735a5cbaf265f463e7c",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X175A",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X175A/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3972,
+      "sha256": "e3e8da54609cf5693070c9edfeeecf4c23552089474ebaea4e2cf02437f12d1f",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X274",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X274/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 738,
+      "sha256": "82f042ee5a36a0eb3cbee37acee2a4d285b76ab89895d377fc82f41ef4f39f25",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X286",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X286/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 1199,
+      "sha256": "ad882ebd0907f82d9036cd7f276160d62d1a257282c59a8d1419e61b81575ca1",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X287",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X287/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 1199,
+      "sha256": "f394cdd084a8e7d40836858ece8c3ad5013e70392e68de88202b821d0a27dfe3",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X289",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X289/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 902,
+      "sha256": "8b71fc45b748181a10e8854958660b7bfd7dfa15153d4af6d5a606c7e10244b3",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X290",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X290/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 905,
+      "sha256": "12bae92f533130578382545ce0cf3ce0d70a16365622e77e5c743cbbba42ae40",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X299",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X299/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 4383,
+      "sha256": "46bddd05c504e87245605560cb4546fa02dad7a38a2da10bca42a7db86515088",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X560",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X560/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3430,
+      "sha256": "f8df86458101778901bc440bcccf53d5bc6984a22f1add64d073f5b2bdd93901",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X561",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X561/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3108,
+      "sha256": "2b7a10274a25c1c6ba2c0cb4ab12dd4a419b00f0971abcf1bc5fdd082274a76a",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X562",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X562/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 1300,
+      "sha256": "5140dd16d06b0a9a2c4f5f611c5b16c7fe6964fe9d709d762fd911c88052ae42",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X563",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X563/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 763,
+      "sha256": "dc4987b02c10bbf2c5bbcf0cbd651873a1390fa798c18b0dea59c4329e1d0d6c",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X565",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X565/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 792,
+      "sha256": "97cc00548f8946ac119c8f5ed602ff09de1d4e6134198a177e5ae3d9be890fd7",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X566",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X566/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 875,
+      "sha256": "a7ae03c149ba0221d71c9376fbf3380312f7963f0305055eda9c46e04f1f0120",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X567",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X567/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 920,
+      "sha256": "a8d61e0de7c01cee2e20bf61362f9b0174d6fa29e78f5d402a5ab76d72c0e4e4",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X568",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X568/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 913,
+      "sha256": "4a791d7f763f16d20997f330084c54508951d37c9acf641910d20fc971f71d72",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X569",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X569/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 848,
+      "sha256": "e8ef7c49eab50026e9a00f853fb4207188968880c05f431f90373df7c7c92075",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X570",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X570/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 777,
+      "sha256": "9ca5ef51fc746b9ac2d21384f8f76d730b435507278e415d45a3c8a293553aeb",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X575",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X575/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 793,
+      "sha256": "ecc42172720aeddb2c4fe671b9adfd16ef57180d4b5e855e7428853ccf5d781c",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X576",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X576/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 878,
+      "sha256": "e693b498e7afe65f6bf6d2987cdbbc302b81b0588760c8962d0abd4e68806fda",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X577",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X577/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 973,
+      "sha256": "a857045cd2c020057f77aa2482d7387c99736d263f42204704c31a998cf710fe",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X578",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X578/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 966,
+      "sha256": "a0a9d7279610c78928616ee24905da78af9906c0842b1f5195e670bd87d73a8e",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X579",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X579/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 851,
+      "sha256": "0aa2c6533e71e1c365699c350a0e28239171d85018ae9efea9e8fc967b404cac",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X580",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X580/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 778,
+      "sha256": "157e5b345cbe15dd0e01730ba24fb33d0396781b1c7f594c93ae3292d8880803",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X586",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X586/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 837,
+      "sha256": "a60580c410cdac035b29eecff831adee344d7fe74a044d79de537d4ecb75332d",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X588",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X588/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 771,
+      "sha256": "83a59a9cb847993b407924fa87aae70b7c980f4e190077e9d2d9ce9fcc8fdce1",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X591",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X591/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 838,
+      "sha256": "486a80ff7daa183e7a11d49d06a0bbfdba35709b2c1a0ab30d97cf121a38bc1a",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X593",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X593/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 772,
+      "sha256": "1e3cc88b7c6f5191874f027f740e890c2a33a71364e56d8b08a087d575d0dbd8",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X595",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X595/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 881,
+      "sha256": "887f59baadb1e235330e539c92aa1d36d8439f16989881ff77b24e114aebba2f",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X600",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X600/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 846,
+      "sha256": "a68cb1a44b6b35ed07e63e0d1e4350d1d5018fc20926e43b6c0fcc2bd603b4ee",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X601",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X601/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 846,
+      "sha256": "57745d8799737604616b251f0b70e4641b8093d5248ddb6c87172a8badb89e63",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X602",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X602/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 770,
+      "sha256": "a6efb71df267fe15e73516f1d5710b1365ef943cc2a9308a620e5b8520c9fe11",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X603",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X603/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 843,
+      "sha256": "0073df3e164e47cd95c91c7f82010f08b329aa0710422c426f2776abff540053",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X603A",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X603A/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 846,
+      "sha256": "638c6304ecc9111caea7889ded651fa798fc762dc8d83a5df2542606e9ac4805",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X604",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X604/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 785,
+      "sha256": "9e202d124af174bceed77bb4db70f457b8f69539f38e58c9fe566ca01fd5c8c1",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X607",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X607/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 1528,
+      "sha256": "edb38175255336f07faa1abdebe18247bc699a3c7c968f1e344f6b9824f2f4a7",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X608",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X608/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 1599,
+      "sha256": "533818b1f09f8db5828ecc312e3473381056f15cf4023f4f8efebbb5ce91586d",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X609",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X609/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 1603,
+      "sha256": "72c723c9bd9ccc1cdad7d7a9d3825cde25d9d7f950c567619687cdd498104b80",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X818",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X818/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 563,
+      "sha256": "1d179671bacdb47805f3bd6994294ed265fe94f7c0d5a352afbf81583c328359",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X845",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X845/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 562,
+      "sha256": "5bf6504a4600c708969dd8a230cadfc1f05d16bdf2625d4ca38956503eb568a0",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X901F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X901F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 1292,
+      "sha256": "603485b472d87aa2e20b159412f658a14bd674528f25ed2ae44529bcfaf157e9",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X901M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X901M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 1231,
+      "sha256": "80f333fb2c8214442875beae50910590f0c560d32f8ace69644683389f85e590",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X908F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X908F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 4052,
+      "sha256": "18c885f5f8518b51124dc468c1cfb1bcc73ee8e6996fb318c4f1929d7760e011",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X908M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X908M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 4110,
+      "sha256": "2d063606a324e6746d3a635189ee3ec2a41281d762142c5a2a0d2e7362117716",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X922F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X922F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 4758,
+      "sha256": "3e1065e433e5a1dac8a30b30e4640935a54bd61504527786bac84ff7633ed45a",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X922M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X922M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 5060,
+      "sha256": "cb367c146b16c503cc519166e7cf14a9a709de35f48efbf2c58533956eae1237",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X923F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X923F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 4872,
+      "sha256": "d96fb7fdb688881e3b9cd3af8b4f32f605be4c340477fe90add0d96c4404b0d7",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X923M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X923M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 5125,
+      "sha256": "bddfebb4855a56fe0948317ea0ebd915ee588ad47beb5f181cb1b79b34ff715a",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X924F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X924F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 6661,
+      "sha256": "6d2abd4422e8a9884644627d8af847551bacfb3ef8fdbb75a02f4e7c4acbfffa",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X924M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X924M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 6129,
+      "sha256": "b02422b6085c033998071d7a6047860f8369fe5d4a661dbd9f06772393f51708",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X925F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X925F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3203,
+      "sha256": "3ca4862f77a6f8ade0e6bd0345c0fa25fbfcb4b0fd0512d3aa99c0a63d1e0a2a",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X925M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X925M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 2937,
+      "sha256": "d02003098d37e7f4a68c2eec7b7beff6a5e907621074d40e944aac95128730c4",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X926F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X926F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 6587,
+      "sha256": "d835d2dcf8aa88c857d0dbd294b06018edfc35ce30def5261fa2667c77b6060d",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X926M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X926M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 6144,
+      "sha256": "977a81bff54f1c2fca1dc82a6bb80b17b2c098b7864f3778590e99f13057d93d",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X927F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X927F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3211,
+      "sha256": "0a263800ee3abfa79b5e5cbeaf78b29648f2b7cdf5a87d442f88bdbf6144fdee",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X927M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X927M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 2942,
+      "sha256": "5450fa380835c1769a61a08be283b6c7163b2132136c53605cafae71b1fc6b93",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X935F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X935F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 7118,
+      "sha256": "7d5f8d1ff8cc27ec15161fb59e9ccbc0bb7692f32c5c75c73cc095fcb6e9bf3c",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X935M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X935M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 7105,
+      "sha256": "39e559af97d761e8dbb404567e8ff723d879601bee2d1a7fafc3e8b19a91314c",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X936F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X936F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 7162,
+      "sha256": "70e7693b7fde89a61c50d5adcae3a13b959fe9cf49f62b99cb71f4ff5277e077",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X936M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X936M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 7057,
+      "sha256": "62b8f35d023646e00472f5f9ae86a3328193e7671040d44a91a2a3c2579acac0",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X949F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X949F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3079,
+      "sha256": "7c6864db265a25e807011c084570b16474021804257147374c36fa7f59d5cba3",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X949M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X949M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3234,
+      "sha256": "fbe09fafb7e38b4a4d98a3a45c5e20fa8b33f7856be60c185dd5eb8e071e2372",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X952F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X952F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3548,
+      "sha256": "17f09872a50893f2af1358cdb7041c6f9b12078688e873c7f284765c802e709f",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X952M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X952M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3313,
+      "sha256": "f8a305e7c1f9f8901eb9ca9f9076bf4c4d4b11a9343d3b167f3a8b3917fa6cdd",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X970F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X970F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 1790,
+      "sha256": "435368e0c929a165770e392fc3e61c94436c193feee437f37aadce4b742a8a30",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X970M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X970M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 1874,
+      "sha256": "84bab9d971f27872f3cb1dd3874ea5da2e6033854a8c4bc58588ccd0234d9902",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X981F",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X981F/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3248,
+      "sha256": "4281577fb147d14aa135fbc2968a2ee0da6f076751b74d2e96143d8799fc7e5d",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/interactive/json/connector_reference_export.json",
+      "connectorId": "X981M",
+      "purpose": "connector metadata extracted from connector reference",
+      "zipPath": "connectors/X981M/metadata.json",
+      "mimeType": "application/json",
+      "byteSize": 3010,
+      "sha256": "9f7e386400b008582147f1008239c1566c010292c2eec22042de5c6345e6ee0c",
+      "httpStatus": null,
+      "generated": true
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X030B.jpg",
+      "connectorId": "X030B",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X030B/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 392754,
+      "sha256": "ed82202a5d9f7e7a3b867d80c6e42b806d10ec061e39aeb3f01ca40c94cbbcb2",
+      "httpStatus": 200,
+      "elapsedMs": 453
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X032.jpg",
+      "connectorId": "X032",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X032/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 362464,
+      "sha256": "6c91adad9733e048b41640ab1655f805e9c1bfd3c7202bbf08124a0e8b374f6e",
+      "httpStatus": 200,
+      "elapsedMs": 654
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X031.jpg",
+      "connectorId": "X031",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X031/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 393083,
+      "sha256": "a68f7674b137374af93808e15e4c471216b65d401a79818a91dc05147fa16279",
+      "httpStatus": 200,
+      "elapsedMs": 727
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X030A.jpg",
+      "connectorId": "X030A",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X030A/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 392754,
+      "sha256": "04b29783647985c512fd9bf179cccd8c04c428d72fc0fc77e1a26ca0f3ed57e1",
+      "httpStatus": 200,
+      "elapsedMs": 734
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X033A.jpg",
+      "connectorId": "X033A",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X033A/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 377283,
+      "sha256": "badffcc6f704132b123964ea0723a7d41e858706c9c9018c0435d138610e8427",
+      "httpStatus": 200,
+      "elapsedMs": 878
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X033B.jpg",
+      "connectorId": "X033B",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X033B/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 377283,
+      "sha256": "f8d60cb3e00df1442cbb2467934fdf4454971fd4c6a12f0feb2cc5aa36c5eed7",
+      "httpStatus": 200,
+      "elapsedMs": 435
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X010.jpg",
+      "connectorId": "X010",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X010/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 441659,
+      "sha256": "b5aa132c0bdf0202ff0d2e473c09542bba049c25ce0ce27bbd6e2a6cb2c99ea5",
+      "httpStatus": 200,
+      "elapsedMs": 920
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X035.jpg",
+      "connectorId": "X035",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X035/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 583065,
+      "sha256": "a47e0df0ea019ef53688d7b9853cec8b564f164d42cc4b7a0ba3cdefbd8332f5",
+      "httpStatus": 200,
+      "elapsedMs": 540
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X037.jpg",
+      "connectorId": "X037",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X037/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 332991,
+      "sha256": "5b55575c57895caf866660dd0bd48ced85f62ac03965518e9d10b25c16708242",
+      "httpStatus": 200,
+      "elapsedMs": 479
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X038.jpg",
+      "connectorId": "X038",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X038/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 448149,
+      "sha256": "f0dee5e4f4eda4c0e7fe6cfb83dfac27cf62377eaf52156805fd8b5abe49fee0",
+      "httpStatus": 200,
+      "elapsedMs": 654
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X050A.jpg",
+      "connectorId": "X050A",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X050A/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 646674,
+      "sha256": "74628e3057fee4577ab735e7095e79c288f34cb381244e485bb7eb6e89de385a",
+      "httpStatus": 200,
+      "elapsedMs": 541
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X039.jpg",
+      "connectorId": "X039",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X039/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 479216,
+      "sha256": "6c99fce8a4f6fcc9f8cf85556b88eb63a53add886155c88d2e48711be24aa2b9",
+      "httpStatus": 200,
+      "elapsedMs": 670
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X051.jpg",
+      "connectorId": "X051",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X051/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 311389,
+      "sha256": "62ae1168e894f8964ec71460bf21991531442df171c58dd224f2854dacd2cf12",
+      "httpStatus": 200,
+      "elapsedMs": 413
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X050.jpg",
+      "connectorId": "X050",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X050/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 646674,
+      "sha256": "d9dbcce9f9b740ffd28182da8fd0ea438c18c4beefbd9a9a01c55a83b13cdb20",
+      "httpStatus": 200,
+      "elapsedMs": 862
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X050B.jpg",
+      "connectorId": "X050B",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X050B/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 432012,
+      "sha256": "c675dfcd68cd6d7ec960141c7150bfb5e4ee298b23ba558a189b89c76b8aac55",
+      "httpStatus": 200,
+      "elapsedMs": 626
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X053B.jpg",
+      "connectorId": "X053B",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X053B/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 386394,
+      "sha256": "27e8f445ace31740d1acfd432ac601ab4f1aa6762e26f18c12733140e3d9508a",
+      "httpStatus": 200,
+      "elapsedMs": 436
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X053A.jpg",
+      "connectorId": "X053A",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X053A/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 628010,
+      "sha256": "4730eb4b9542baafe143749fa1a6e0146b7f521f80c4d8d7017d76348ac22a97",
+      "httpStatus": 200,
+      "elapsedMs": 528
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X056.jpg",
+      "connectorId": "X056",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X056/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 388007,
+      "sha256": "c3792b1738753152bc407cc4d90abfe1c99d123b61fd6cda0b6f230ea0afff28",
+      "httpStatus": 200,
+      "elapsedMs": 584
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X058.jpg",
+      "connectorId": "X058",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X058/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 426062,
+      "sha256": "94e5a00456ba0e2e7bad448a9c403e265e202f6e3b1ff9cb8df0e3a26a5681d0",
+      "httpStatus": 200,
+      "elapsedMs": 465
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X055.jpg",
+      "connectorId": "X055",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X055/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 238358,
+      "sha256": "9e108c5483c0a2072e16630104499f48db852a5e68fdcd176d04d81eb018178d",
+      "httpStatus": 200,
+      "elapsedMs": 728
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X120.jpg",
+      "connectorId": "X120",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X120/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 323740,
+      "sha256": "493b613b5f76bec755d0e71f47ca7679343d387af4feced3d2da1b9c50f1130e",
+      "httpStatus": 200,
+      "elapsedMs": 522
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X120A.jpg",
+      "connectorId": "X120A",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X120A/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 319858,
+      "sha256": "ba59c6fc02eb4b6e620083ab865d5376cdec01122808ec41023395505b8c7c95",
+      "httpStatus": 200,
+      "elapsedMs": 388
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X059.jpg",
+      "connectorId": "X059",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X059/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 645773,
+      "sha256": "53defade24ad866a6480d48daa1534aa9e96583d4ca71ad62ca969fd0b7112ae",
+      "httpStatus": 200,
+      "elapsedMs": 663
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X060.jpg",
+      "connectorId": "X060",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X060/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 629653,
+      "sha256": "6a3e52a31379edd004b57bc382293e6d5627b6e47a4fefbfe334fc6a2cb1a1c5",
+      "httpStatus": 200,
+      "elapsedMs": 685
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X155A.jpg",
+      "connectorId": "X155A",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X155A/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 341633,
+      "sha256": "a58695f3ff2b81866ddd28c1166ad0a8bed058dd75414dffcfdf64d7d2e218bd",
+      "httpStatus": 200,
+      "elapsedMs": 484
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X171.jpg",
+      "connectorId": "X171",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X171/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 421067,
+      "sha256": "3a9915146ce57ad4c07e88f9c37100395db216555a62fda828418b3bc33368ad",
+      "httpStatus": 200,
+      "elapsedMs": 479
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X286.jpg",
+      "connectorId": "X286",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X286/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 265021,
+      "sha256": "d0a78dcbbacfa6de2904e7082b8fad8470a6611b7ce89ebd04f59640b3abdc11",
+      "httpStatus": 200,
+      "elapsedMs": 486
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X171A.jpg",
+      "connectorId": "X171A",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X171A/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 376907,
+      "sha256": "b526c7cff1f521f812e452104425d050aeb86b489d7788798e9c017de204e77a",
+      "httpStatus": 200,
+      "elapsedMs": 757
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X175.jpg",
+      "connectorId": "X175",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X175/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 591533,
+      "sha256": "08f44e3d3adb1f5afc54e700a05f04df8dfabc14cd32b4db2179693234d3c6ac",
+      "httpStatus": 200,
+      "elapsedMs": 655
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X175A.jpg",
+      "connectorId": "X175A",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X175A/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 522547,
+      "sha256": "e8764e39b124cf099e0a037e9b75304297486fff78aad33cdcfb64c9e6014c49",
+      "httpStatus": 200,
+      "elapsedMs": 654
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X274.jpg",
+      "connectorId": "X274",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X274/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 347213,
+      "sha256": "5846db7d090c2049030ec49374005306031556c007f9d2da72b64c6410eae820",
+      "httpStatus": 200,
+      "elapsedMs": 631
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X287.jpg",
+      "connectorId": "X287",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X287/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 265316,
+      "sha256": "5f8796ae015f718eb35a89bad6e6afd3fa0c0c71cf2f47659bff3ac89dbafa60",
+      "httpStatus": 200,
+      "elapsedMs": 560
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X299.jpg",
+      "connectorId": "X299",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X299/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 265622,
+      "sha256": "24fe0ac539c6937cb92b4e4c87a1ec70bedd8cf438efed19b55b14bc671faf77",
+      "httpStatus": 200,
+      "elapsedMs": 511
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X290.jpg",
+      "connectorId": "X290",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X290/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 362163,
+      "sha256": "c97633014f97759839e9c3106f8c987c2a87fcebe8a285d0f3eb29183c863482",
+      "httpStatus": 200,
+      "elapsedMs": 524
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X560.jpg",
+      "connectorId": "X560",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X560/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 399667,
+      "sha256": "432a8339a4f98fd5b46144e5c060eecc662b2c584844e71a1cb5577cf35c018f",
+      "httpStatus": 200,
+      "elapsedMs": 554
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X289.jpg",
+      "connectorId": "X289",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X289/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 361969,
+      "sha256": "74189069dcc6804d532826b2cb658801e5a77694b1d1440fe3dc04cba00f6a7a",
+      "httpStatus": 200,
+      "elapsedMs": 605
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X562.jpg",
+      "connectorId": "X562",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X562/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 365123,
+      "sha256": "639deadab1a2cca831a0da6778abae10329a0b816d25e1ba3a18463f4c61550a",
+      "httpStatus": 200,
+      "elapsedMs": 674
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X561.jpg",
+      "connectorId": "X561",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X561/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 399844,
+      "sha256": "5885533e4d48961367ed36b866edc71fc2e42b9cbbb80f1640ca3371fc448a1f",
+      "httpStatus": 200,
+      "elapsedMs": 777
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X565.jpg",
+      "connectorId": "X565",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X565/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 300010,
+      "sha256": "2edb5cee33e3a5ae1fbfcfb8fbbe4c51b1782890d8a8232d9b22b05311c8c463",
+      "httpStatus": 200,
+      "elapsedMs": 365
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X567.jpg",
+      "connectorId": "X567",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X567/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 300393,
+      "sha256": "37a6de032f2fc4be91b4ece2f334f13ae5b19fde0dbc4bd14b4e67cf8a603e82",
+      "httpStatus": 200,
+      "elapsedMs": 423
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X563.jpg",
+      "connectorId": "X563",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X563/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 399334,
+      "sha256": "4b0e2ce95d3e37390103b23a666b85da9c94d973e9d76ea74e04c977cba6eeab",
+      "httpStatus": 200,
+      "elapsedMs": 725
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X575.jpg",
+      "connectorId": "X575",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X575/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 319343,
+      "sha256": "64589a2b925e1974b56996830b00063f4b67e942e732a7583bdf85ac1e4d412e",
+      "httpStatus": 200,
+      "elapsedMs": 380
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X568.jpg",
+      "connectorId": "X568",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X568/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 377435,
+      "sha256": "01c6b173337c1f4cf7897685d52d8800d0cf7e18731218f6de664e3b745b98c2",
+      "httpStatus": 200,
+      "elapsedMs": 513
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X569.jpg",
+      "connectorId": "X569",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X569/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 362024,
+      "sha256": "ced579f18f164a9b76a4647f33eef592c4d6d45e3ccf0f23bb66d9a9af0eeb54",
+      "httpStatus": 200,
+      "elapsedMs": 574
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X570.jpg",
+      "connectorId": "X570",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X570/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 397559,
+      "sha256": "384678389525851d031c023daad68e7e4556d684d818b66c32f2ffbab3139aa8",
+      "httpStatus": 200,
+      "elapsedMs": 1105
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X579.jpg",
+      "connectorId": "X579",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X579/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 361927,
+      "sha256": "253f81a835899a4495d72f6c6b3f1133d60f4a6a4ea3102a31da150a49f4bf95",
+      "httpStatus": 200,
+      "elapsedMs": 942
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X578.jpg",
+      "connectorId": "X578",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X578/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 386540,
+      "sha256": "bdeff0d446ad94d5e89ba32671201effc4785306878cdca581d8d4d03f1965ad",
+      "httpStatus": 200,
+      "elapsedMs": 953
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X577.jpg",
+      "connectorId": "X577",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X577/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 386540,
+      "sha256": "d9b20c3975e09d505c99c79e92edc62e063f1315b7819e14b8e77605ab989cc5",
+      "httpStatus": 200,
+      "elapsedMs": 1015
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X580.jpg",
+      "connectorId": "X580",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X580/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 407213,
+      "sha256": "f0cafa2077903c08616636a915a4a6a06025a9d2490221ed48c9d78d7936db5b",
+      "httpStatus": 200,
+      "elapsedMs": 900
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X576.jpg",
+      "connectorId": "X576",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X576/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 450482,
+      "sha256": "08e4f0aabb20439ddbfd8b3194f5765d28bbc8bea1e317ee82c40bafd17f4d89",
+      "httpStatus": 200,
+      "elapsedMs": 1656
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X588.jpg",
+      "connectorId": "X588",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X588/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 263520,
+      "sha256": "d5dea041e412e37973376d542d7da36910369607296d51a3865f43e81db298c8",
+      "httpStatus": 200,
+      "elapsedMs": 535
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X591.jpg",
+      "connectorId": "X591",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X591/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 199285,
+      "sha256": "9d2330f67f7937169342f16212113d323208d29d272a44c7e1f5f56a2bf865cb",
+      "httpStatus": 200,
+      "elapsedMs": 584
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X593.jpg",
+      "connectorId": "X593",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X593/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 263099,
+      "sha256": "e0b6c96a57b5cd165eb19b340ab3b99f57395e6273e958787a641a4feca9086e",
+      "httpStatus": 200,
+      "elapsedMs": 577
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X600.jpg",
+      "connectorId": "X600",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X600/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 349060,
+      "sha256": "281f8ef82a8c4a8ce4e9b2d556458fb74caf49803d980e78b048fd38f2c35145",
+      "httpStatus": 200,
+      "elapsedMs": 547
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X601.jpg",
+      "connectorId": "X601",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X601/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 349074,
+      "sha256": "797e82dc30f52f93d1a2cca898fed999f637de2ab662440ea1df6c4e51fb288f",
+      "httpStatus": 200,
+      "elapsedMs": 549
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X603.jpg",
+      "connectorId": "X603",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X603/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 387178,
+      "sha256": "abafb8a248203b2687cf2be81e4ef9cec010f7291284b509495aa9282acdd354",
+      "httpStatus": 200,
+      "elapsedMs": 380
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X603A.jpg",
+      "connectorId": "X603A",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X603A/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 346987,
+      "sha256": "e528e1d8ea55fc9c2b2ec0688c08c30d2c13c2d04ce38d1825285fff4414e864",
+      "httpStatus": 200,
+      "elapsedMs": 480
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X607.jpg",
+      "connectorId": "X607",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X607/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 427641,
+      "sha256": "5022d5e4f3d821fc6850a18adbe81d39fed02b1c5900e9796c0f6d6b5a39ee47",
+      "httpStatus": 200,
+      "elapsedMs": 433
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X818.jpg",
+      "connectorId": "X818",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X818/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 263365,
+      "sha256": "d1b3bfde4c1176c0c5975833059670206a066b798c3d6408a960211fd01e97a8",
+      "httpStatus": 200,
+      "elapsedMs": 302
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X604.jpg",
+      "connectorId": "X604",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X604/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 279973,
+      "sha256": "1e472d1c74eeea13c89436382fa4b2b793f59d00461e474bb22787755d234dc5",
+      "httpStatus": 200,
+      "elapsedMs": 688
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X608.jpg",
+      "connectorId": "X608",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X608/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 265419,
+      "sha256": "a8f0e97d9188924a0e0142055cddf069626ef1cdebfcde653978129ebf79f033",
+      "httpStatus": 200,
+      "elapsedMs": 567
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X609.jpg",
+      "connectorId": "X609",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X609/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 265586,
+      "sha256": "18a81fcec3a1364c84297424450e4e2ca480581442080621135dfdb1561b7a1c",
+      "httpStatus": 200,
+      "elapsedMs": 418
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X901F.jpg",
+      "connectorId": "X901F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X901F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 206093,
+      "sha256": "3ffa412a6ff6fff9e9ed7b04cc39a2719d8574fc1286057525b25f83c4186bcc",
+      "httpStatus": 200,
+      "elapsedMs": 339
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X845.jpg",
+      "connectorId": "X845",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X845/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 263332,
+      "sha256": "507057b0867cc2da1a997f25859efdc3ea1562db8f7cd16b21818de4b95bc352",
+      "httpStatus": 200,
+      "elapsedMs": 544
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X901M.jpg",
+      "connectorId": "X901M",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X901M/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 390267,
+      "sha256": "9cb1d886eb66a81e87f4772fbf84276d8f6cecd710dfa88a4dab686f2d6f9743",
+      "httpStatus": 200,
+      "elapsedMs": 403
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X922F.jpg",
+      "connectorId": "X922F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X922F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 399372,
+      "sha256": "cbf637c9886b65cb9c3b70aeeb759ab60de5b0c3403ac18a11fff02605291d73",
+      "httpStatus": 200,
+      "elapsedMs": 397
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X908F.jpg",
+      "connectorId": "X908F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X908F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 387445,
+      "sha256": "318d8d75c4cb843bdd5038ce292fa15b6f660d529a551ba3a575a8ac0795bb9b",
+      "httpStatus": 200,
+      "elapsedMs": 516
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X922M.jpg",
+      "connectorId": "X922M",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X922M/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 398756,
+      "sha256": "445a2ea69ac8551c9cb338ea9744c27621962826a1fb4e86a0dbb72960d74a19",
+      "httpStatus": 200,
+      "elapsedMs": 414
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X923F.jpg",
+      "connectorId": "X923F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X923F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 408895,
+      "sha256": "30b88cd6947cd8096cc083006ecfdf2f21140523f0d9f495016a6b4fed2a58fb",
+      "httpStatus": 200,
+      "elapsedMs": 424
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X924F.jpg",
+      "connectorId": "X924F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X924F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 284416,
+      "sha256": "9412c35487ee2df2a8262b7073631ea7baa04b572cc06e438b610daf9557eb45",
+      "httpStatus": 200,
+      "elapsedMs": 448
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X923M.jpg",
+      "connectorId": "X923M",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X923M/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 408289,
+      "sha256": "80d888d72f76ac2ae4e84532d1d91624f387cc99c6eaa7455121d87a2873ec59",
+      "httpStatus": 200,
+      "elapsedMs": 467
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X925M.jpg",
+      "connectorId": "X925M",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X925M/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 374935,
+      "sha256": "254fa8d7c938c025bb5ad9169a812bfbf75cda56095cfb24b8e5d2a393472f17",
+      "httpStatus": 200,
+      "elapsedMs": 431
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X924M.jpg",
+      "connectorId": "X924M",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X924M/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 376191,
+      "sha256": "12cf2663988940f6c4084a1cccccaa6199c847e68076ef1b341bb769f40f1d02",
+      "httpStatus": 200,
+      "elapsedMs": 658
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X925F.jpg",
+      "connectorId": "X925F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X925F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 375466,
+      "sha256": "4b982d8cc21a6d9def2990ac8a46de6f903ab50b3c340a6869db58c0119b9d50",
+      "httpStatus": 200,
+      "elapsedMs": 560
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X926F.jpg",
+      "connectorId": "X926F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X926F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 451413,
+      "sha256": "d9642432d57ca6ab9f126c535f0d7a58019fce562e2e1456bdb65f40b734bcf2",
+      "httpStatus": 200,
+      "elapsedMs": 440
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X927F.jpg",
+      "connectorId": "X927F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X927F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 385042,
+      "sha256": "17ad79eb7ee0ad2220fe7d40c4076bb577a039eafbc7d01dda4127da39edd6e7",
+      "httpStatus": 200,
+      "elapsedMs": 506
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X927M.jpg",
+      "connectorId": "X927M",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X927M/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 375384,
+      "sha256": "ed0b7d1a29b77eda2c8acfc4f14a303ced6ced223efa3ae33d76f396fd00308a",
+      "httpStatus": 200,
+      "elapsedMs": 564
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X926M.jpg",
+      "connectorId": "X926M",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X926M/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 385623,
+      "sha256": "9327e58893770b1e474aaf0cebd9c0772055025dc82dfb6723945f8a821e6cfa",
+      "httpStatus": 200,
+      "elapsedMs": 770
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X936F.jpg",
+      "connectorId": "X936F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X936F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 451070,
+      "sha256": "ff0e2265c786f937443cdacb9b564a390f9a64ec24a6dd9c67c4119f40cac403",
+      "httpStatus": 200,
+      "elapsedMs": 509
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X935F.jpg",
+      "connectorId": "X935F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X935F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 450655,
+      "sha256": "770e98bd9dec756f8453016740d0c1db653f2d0dc5890f647a4be83f66f90dd8",
+      "httpStatus": 200,
+      "elapsedMs": 576
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X935M.jpg",
+      "connectorId": "X935M",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X935M/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 427394,
+      "sha256": "f7c83fb38f1e0e4db9650554de4faf5daa484aad7d8f6a1337a8c13b8f0bf1fb",
+      "httpStatus": 200,
+      "elapsedMs": 622
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X936M.jpg",
+      "connectorId": "X936M",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X936M/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 427104,
+      "sha256": "e465fa37d99a611f20ac3865bab98d74dd6ec453a4419052f085850d5eda5646",
+      "httpStatus": 200,
+      "elapsedMs": 477
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X949M.jpg",
+      "connectorId": "X949M",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X949M/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 347240,
+      "sha256": "e52ffc6832260119f60323dc5aa23dc81b87a5c00f20fffcf0923685318ba7df",
+      "httpStatus": 200,
+      "elapsedMs": 315
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X949F.jpg",
+      "connectorId": "X949F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X949F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 277444,
+      "sha256": "cae5badb39898743f20b3e748cef5d41eddbe7a34c79d3e3dfbe0a8a902af453",
+      "httpStatus": 200,
+      "elapsedMs": 427
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X952F.jpg",
+      "connectorId": "X952F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X952F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 336474,
+      "sha256": "b8cd7191d9046450d67df20144252fb558419ace6e37424bd22e04e55fa8c109",
+      "httpStatus": 200,
+      "elapsedMs": 522
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X970F.jpg",
+      "connectorId": "X970F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X970F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 94500,
+      "sha256": "c522ca63d825b4cfe52067c2fe8b802903fcb27eaf4247209c4e153139f7baa9",
+      "httpStatus": 200,
+      "elapsedMs": 537
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X970M.jpg",
+      "connectorId": "X970M",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X970M/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 365303,
+      "sha256": "77c6d7167a10cfb6c162f6cce11dca3ff79463b3eec63a990c2f01026ed8d81e",
+      "httpStatus": 200,
+      "elapsedMs": 695
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X952M.jpg",
+      "connectorId": "X952M",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X952M/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 346599,
+      "sha256": "83adc361707aa7a64db3223754c62c4c0571cdaa2ee70f3f20fb67cee1667d5b",
+      "httpStatus": 200,
+      "elapsedMs": 838
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X981F.jpg",
+      "connectorId": "X981F",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X981F/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 265184,
+      "sha256": "5b8198d5ec75204da95b97fe788b803129af104dd5b9d0f09fc8744b84324317",
+      "httpStatus": 200,
+      "elapsedMs": 637
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/delphi_35550570.svg",
+      "connectorId": "X010",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/delphi_35550570.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 68455,
+      "sha256": "5816156461b1723bd9da3f6862fd627fb22e3f9c8bda138aa0e748dd3986177d",
+      "httpStatus": 200,
+      "elapsedMs": 346
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6098-8950.svg",
+      "connectorId": "X030A",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/sumitomo_6098-8950.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 10388,
+      "sha256": "d0e2d3a3248edf06653d13af3faf1209343c28a51c7e0bacc941861aa80a2447",
+      "httpStatus": 200,
+      "elapsedMs": 332
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/locations/X981M.jpg",
+      "connectorId": "X981M",
+      "purpose": "connector location image",
+      "zipPath": "connectors/X981M/location.jpg",
+      "mimeType": "image/jpeg",
+      "byteSize": 357040,
+      "sha256": "62727c7a3addb9ff7b8ef114ad654b965720a6ac6ec9c8367f4cb7211876d2e1",
+      "httpStatus": 200,
+      "elapsedMs": 722
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6098-8975.svg",
+      "connectorId": "X031",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/sumitomo_6098-8975.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 16865,
+      "sha256": "f3ccae20d9a16366f437010e7c775f3cc5cd7d0b9e3db3a10e0754fff01ec0e5",
+      "httpStatus": 200,
+      "elapsedMs": 246
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6098-8947.svg",
+      "connectorId": "X030B",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/sumitomo_6098-8947.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 4375,
+      "sha256": "2acbb11405cb286702d423eb24f0ad962615deb58ba89bec484730139d5c67e9",
+      "httpStatus": 200,
+      "elapsedMs": 275
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6098-8119.svg",
+      "connectorId": "X032",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/sumitomo_6098-8119.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 17549,
+      "sha256": "9cf68c52ab34fc2c7c8748652dfa2b86aebf26826e2f6abdf3f16973865c6b8f",
+      "httpStatus": 200,
+      "elapsedMs": 263
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/yazaki_7287-1673.svg",
+      "connectorId": "X033A",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/yazaki_7287-1673.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 7854,
+      "sha256": "397a0fac75f6a7e02438634ba8d63495380a7a9928b64691f99b52a293663ac5",
+      "httpStatus": 200,
+      "elapsedMs": 255
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/yazaki_7287-1674.svg",
+      "connectorId": "X033B",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/yazaki_7287-1674.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 7540,
+      "sha256": "4426592e267994c0cfa6c2737580f4606ce972c148a9429ecc5d2d81e33b14cd",
+      "httpStatus": 200,
+      "elapsedMs": 289
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6098-4756.svg",
+      "connectorId": "X037",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/sumitomo_6098-4756.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 9521,
+      "sha256": "b138c3f132bca116b961e17a820eedaf03ee41a782497b7b39c811c819da3a0a",
+      "httpStatus": 200,
+      "elapsedMs": 261
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/yazaki_7283-6469-40.svg",
+      "connectorId": "X038",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/yazaki_7283-6469-40.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 4031,
+      "sha256": "311f87e6170994dff4dc00ce151512cc49480723702dfcc5c3438effaf0044f7",
+      "httpStatus": 200,
+      "elapsedMs": 250
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6098-4831.svg",
+      "connectorId": "X055",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/sumitomo_6098-4831.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 13165,
+      "sha256": "e4f7bf39cf451d8fd671468980a724f5ce817e48dea32e080e22b84f755be237",
+      "httpStatus": 200,
+      "elapsedMs": 243
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/yazaki_7289-4104-40.svg",
+      "connectorId": "X050",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/yazaki_7289-4104-40.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 19778,
+      "sha256": "73b80f7dfa908406774c2672b8eb7f70def674792f13fa7096747975946086a1",
+      "httpStatus": 200,
+      "elapsedMs": 257
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/kse_k20f70101.svg",
+      "connectorId": "X056",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/kse_k20f70101.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 63258,
+      "sha256": "94c99e483915118a3708f3b6f89ac3cee8ab03d1111e92428546be3aadcc19e3",
+      "httpStatus": 200,
+      "elapsedMs": 365
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/kse_k20f02011.svg",
+      "connectorId": "X060",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/kse_k20f02011.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 11678,
+      "sha256": "1dbaca0b7610916a15abf343a4241079b91c20b3af8b7c2cd7faab8afa5aabd4",
+      "httpStatus": 200,
+      "elapsedMs": 254
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6099-0401.svg",
+      "connectorId": "X120",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/sumitomo_6099-0401.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 17511,
+      "sha256": "525fdba15e34ebb99f1845f8c5f406f87d91a3e00b7adde98733b0c0af3cfa8f",
+      "httpStatus": 200,
+      "elapsedMs": 243
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/kse_k20f01223.svg",
+      "connectorId": "X057",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/kse_k20f01223.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 37878,
+      "sha256": "6aa419c26ab83bdba8c3b8ac50752d4e5f3ba1596be7529029215073cf6b871b",
+      "httpStatus": 200,
+      "elapsedMs": 324
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/molex_33482-4801.svg",
+      "connectorId": "X155A",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/molex_33482-4801.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 8627,
+      "sha256": "3f66790f0f73910570c9747ee13bfe2f83f233fd7bf0144b55e9061971564fc4",
+      "httpStatus": 200,
+      "elapsedMs": 319
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/hirose_gt25-16ds-hu.svg",
+      "connectorId": "X175",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/hirose_gt25-16ds-hu.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 10268,
+      "sha256": "da4b3b6a28c5964f07e2a0c3f36c4e48a38a15c911da6d7419389e308c7bb297",
+      "httpStatus": 200,
+      "elapsedMs": 245
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/molex_5051510200.svg",
+      "connectorId": "X274",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/molex_5051510200.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 3262,
+      "sha256": "e317f7bd83c1405f5fba2cf4fe7aa08381ebd0f9c9ee8c038ca3771183520adc",
+      "httpStatus": 200,
+      "elapsedMs": 264
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/delphi_13623681.svg",
+      "connectorId": "X286",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/delphi_13623681.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 3863,
+      "sha256": "3d5235379cfd823e23051b9a6ff5046347dee481d4c1ac0c3905e5102cb15d45",
+      "httpStatus": 200,
+      "elapsedMs": 278
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/amp_2141404-1.svg",
+      "connectorId": "X299",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/amp_2141404-1.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 15530,
+      "sha256": "39bdcd67c3bbbba422c2bebcc8c0f210d94c5ed8e16694c1d8f3af2ffe24335d",
+      "httpStatus": 200,
+      "elapsedMs": 251
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/delphi_13649799.svg",
+      "connectorId": "X289",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/delphi_13649799.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 2670,
+      "sha256": "00d0e40b8ec4cc46b2e2a58fa4e43136315b68b09b442fb85584455b4a1640af",
+      "httpStatus": 200,
+      "elapsedMs": 319
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/yazaki_7283-6467-40.svg",
+      "connectorId": "X561",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/yazaki_7283-6467-40.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 15017,
+      "sha256": "6d596c7bd6b80d27b3ce7700175f4d9c797bab6bfbe9f53488f065d5df2eb525",
+      "httpStatus": 200,
+      "elapsedMs": 250
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/amp_2302475-2.svg",
+      "connectorId": "X562",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/amp_2302475-2.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 5448,
+      "sha256": "82d9397c3070212ab8c5330710cb8616f5180f042c55471ef71a4922633f3c81",
+      "httpStatus": 200,
+      "elapsedMs": 239
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/amp_2177586-1.svg",
+      "connectorId": "X563",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/amp_2177586-1.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 11878,
+      "sha256": "d5a6cd7ed6652e54708e09af800e3460dd1d8fed15fb969f10a4f7ad9ebbc0e4",
+      "httpStatus": 200,
+      "elapsedMs": 282
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/delphi_13649797.svg",
+      "connectorId": "X565",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/delphi_13649797.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 3065,
+      "sha256": "eef5cee675bf4a8cb555cd440696ed5eb59ed74e8997a1fd03bee082810746ff",
+      "httpStatus": 200,
+      "elapsedMs": 256
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/delphi_35328464.svg",
+      "connectorId": "X566",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/delphi_35328464.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 2538,
+      "sha256": "d117c4660903345d2408da73962832522d462e73f46fdc0e4ecc6fdcdf727f11",
+      "httpStatus": 200,
+      "elapsedMs": 258
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/yazaki_7283-6444-60.svg",
+      "connectorId": "X567",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/yazaki_7283-6444-60.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 4717,
+      "sha256": "2ac60c7a22741460620c40e30e833d93cb74ad1c55de28c03c3163a1fd8c0bb2",
+      "httpStatus": 200,
+      "elapsedMs": 274
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/yazaki_7283-6443-40.svg",
+      "connectorId": "X568",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/yazaki_7283-6443-40.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 2580,
+      "sha256": "ac1b161b614f4fea62458d981cb955b3c9707df1391337edf4550238beb12c53",
+      "httpStatus": 200,
+      "elapsedMs": 314
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/hirose_gt25-8ds-hu.svg",
+      "connectorId": "X607",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/hirose_gt25-8ds-hu.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 8366,
+      "sha256": "2e15d5d935302fb113f83edcd90ffb18d30614982b91f598a2f13d97c6c6728e",
+      "httpStatus": 200,
+      "elapsedMs": 272
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/molex_560123-0500.svg",
+      "connectorId": "X608",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/molex_560123-0500.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 3472,
+      "sha256": "b6c0f92512c586015f36dd4db94bf801ddf9d72a042bc9b095764997d97009b5",
+      "httpStatus": 200,
+      "elapsedMs": 293
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/rosenberger_59k27d-1m4z4-b.svg",
+      "connectorId": "X818",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/rosenberger_59k27d-1m4z4-b.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 13160,
+      "sha256": "a3dd65df9ab53b5b499c8d58bd6799a60f686adaac8e4cf48e149ac518065c81",
+      "httpStatus": 200,
+      "elapsedMs": 292
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/rosenberger_59z113-000-b.svg",
+      "connectorId": "X845",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/rosenberger_59z113-000-b.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 18110,
+      "sha256": "2880eefa9a00c35823cef1a8ed2d82757c11e47460ff39811f7adc7c8b1dd7af",
+      "httpStatus": 200,
+      "elapsedMs": 254
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/molex_33472-0606.svg",
+      "connectorId": "X901F",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/molex_33472-0606.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 19461,
+      "sha256": "eac29c9dc51d220f3678a32c019a33abfd0436692e0d2021b33534e6996ad937",
+      "httpStatus": 200,
+      "elapsedMs": 254
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/kse_k20f01122.svg",
+      "connectorId": "X908F",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/kse_k20f01122.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 27920,
+      "sha256": "d53613b076189c5d499efddba21028ba712584b00972739664fb2f3989a727ab",
+      "httpStatus": 200,
+      "elapsedMs": 291
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/kse_k30m31012.svg",
+      "connectorId": "X908M",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/kse_k30m31012.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 44772,
+      "sha256": "e4924fc69bff9cdcf1b5729ac74f520310ff1deba53594da5dc7455a27c66621",
+      "httpStatus": 200,
+      "elapsedMs": 307
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/kse_k20f01112.svg",
+      "connectorId": "X922F",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/kse_k20f01112.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 27920,
+      "sha256": "733c7c8b4f37562e1146dba4143709aefa66183e11029200a626f8b1f81ad8e0",
+      "httpStatus": 200,
+      "elapsedMs": 308
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/kse_k30m31112.svg",
+      "connectorId": "X924M",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/kse_k30m31112.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 47644,
+      "sha256": "d6e890cd9ae68448111a93fe9b1377f083d3ecba6a163543d9e7d3f838b60ce6",
+      "httpStatus": 200,
+      "elapsedMs": 267
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/kse_k20f01222.svg",
+      "connectorId": "X924F",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/kse_k20f01222.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 37878,
+      "sha256": "426321cb73ae246b04236232e4c362f5a3b3ba79f16c749bd4c7ffc8c59d756c",
+      "httpStatus": 200,
+      "elapsedMs": 339
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/amp_1-2321525-1.svg",
+      "connectorId": "X935F",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/amp_1-2321525-1.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 17545,
+      "sha256": "65ccab8a993bd18b0d8de13a734c32d9585dd0a7396fa2307eb726499f663c21",
+      "httpStatus": 200,
+      "elapsedMs": 292
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/kse_k30m31113.svg",
+      "connectorId": "X936M",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/kse_k30m31113.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 47644,
+      "sha256": "f0b0acada2fc07ee3bdbe57f2d1d5b8e2dc57f0f08826cd6a2c5f68c7e1dd046",
+      "httpStatus": 200,
+      "elapsedMs": 311
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/molex_33482-6201.svg",
+      "connectorId": "X949M",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/molex_33482-6201.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 7575,
+      "sha256": "01385a2fb72896fad2353c3a983cbbb5eaaae8cd94f2d86b31aec93c297428fe",
+      "httpStatus": 200,
+      "elapsedMs": 255
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/molex_33472-1206.svg",
+      "connectorId": "X949F",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/molex_33472-1206.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 17055,
+      "sha256": "4ffd2946e17c30ba7aa9985de778f652ebbed6d8ce2d3a6d9bb483cd4abc82b5",
+      "httpStatus": 200,
+      "elapsedMs": 357
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/molex_33472-8255.svg",
+      "connectorId": "X952F",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/molex_33472-8255.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 14092,
+      "sha256": "b544d5b250fe960aa8f3645ce16c3fd75240776ea9bcb70836de1fbad8906bdf",
+      "httpStatus": 200,
+      "elapsedMs": 266
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/molex_33482-8993.svg",
+      "connectorId": "X952M",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/molex_33482-8993.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 9558,
+      "sha256": "213395c8d0c7fffdcbd6d2b67a1a62b1e11e46e508c9b2cab4ad9f6105975c87",
+      "httpStatus": 200,
+      "elapsedMs": 269
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6098-5695.svg",
+      "connectorId": "X970F",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/sumitomo_6098-5695.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 3929,
+      "sha256": "e913965f3270bf2e471557f86aae56caf00af21cfb5a7988671e4d6c65286599",
+      "httpStatus": 200,
+      "elapsedMs": 262
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6098-5594.svg",
+      "connectorId": "X981M",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/sumitomo_6098-5594.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 7610,
+      "sha256": "17d08ad9cfecdcaebc8816f11978b17aab974adef95753df735bc2a4ea81f615",
+      "httpStatus": 200,
+      "elapsedMs": 263
+    },
+    {
+      "url": "https://service.tesla.com/docs/Model3/ElectricalReference/prog-333/faceviews/sumitomo_6098-5604.svg",
+      "connectorId": "X981F",
+      "purpose": "terminal faceview",
+      "zipPath": "faceviews/sumitomo_6098-5604.svg",
+      "mimeType": "image/svg+xml",
+      "byteSize": 6901,
+      "sha256": "7dc02c0d4f5bf75f35f08018bcb6a46fa13dcb5acc7cf6411ea6777179b91b8d",
+      "httpStatus": 200,
+      "elapsedMs": 324
+    }
+  ],
+  "totals": {
+    "assetCount": 241,
+    "missingCount": 14,
+    "uncompressedBytes": 37675903
+  }
+}

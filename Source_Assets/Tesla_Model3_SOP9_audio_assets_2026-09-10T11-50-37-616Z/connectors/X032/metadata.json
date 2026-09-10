@@ -1,0 +1,362 @@
+{
+  "connectorID": "X032",
+  "connectorColor": "GY",
+  "deviceName": "Body Controller Left",
+  "harnessDesignator": "Y",
+  "harnessName": "1R Seat",
+  "harnessPN": "1897333-XX-X",
+  "teslaPN": "1090045-00-A",
+  "terminalFaceview": "faceviews/sumitomo_6098-8119.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "LAP_PRETENSIONER_PASSTHROUGH_N",
+      "wireColor": "BU/YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X215",
+      "destCavityID": "2",
+      "destCavityName": "FLIC -",
+      "destDeviceName": "Lap Pretensioner - FL"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "LAP_PRETENSIONER_PASSTHROUGH_P",
+      "wireColor": "GY/GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X215",
+      "destCavityID": "1",
+      "destCavityName": "FLIC+",
+      "destDeviceName": "Lap Pretensioner - FL"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "SEAT_FRONT_LIFT_ENCODER",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X618L",
+      "destCavityID": "2",
+      "destCavityName": "Hall effect signal",
+      "destDeviceName": "Seat Lift Motor Front Left"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "SEAT_FRONT_BACKREST_ENCODER",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X613L",
+      "destCavityID": "2",
+      "destCavityName": "Hall Effect Signal",
+      "destDeviceName": "Seat Backrest Pitch Front Left"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "SEAT_FRONT_TRACK_ENCODER",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X614L",
+      "destCavityID": "4",
+      "destCavityName": "Hall effect signal",
+      "destDeviceName": "Seat Track Motor Front Left"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "SEAT_FRONT_SHARED_GROUND_RETURN",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "",
+      "destCavityID": "",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "DRIVER_INBOARD_AIRBAG_PASSTHROUGH_N",
+      "wireColor": "GY/GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X244",
+      "destCavityID": "2",
+      "destCavityName": "FLIC-",
+      "destDeviceName": "Airbag - Driver Inboard FL"
+    },
+    {
+      "cavityID": "8",
+      "cavityName": "DRIVER_INBOARD_AIRBAG_PASSTHROUGH_P",
+      "wireColor": "VT/TN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X244",
+      "destCavityID": "1",
+      "destCavityName": "FLIC+",
+      "destDeviceName": "Airbag - Driver Inboard FL"
+    },
+    {
+      "cavityID": "9",
+      "cavityName": "SEAT_FRONT_BACKREST_UP",
+      "wireColor": "GN",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X613L",
+      "destCavityID": "1",
+      "destCavityName": "Power (U+ = SEAT FORWARD, CW)",
+      "destDeviceName": "Seat Backrest Pitch Front Left"
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "SEAT_FRONT_BACKREST_DOWN",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X613L",
+      "destCavityID": "3",
+      "destCavityName": "Power (U+ = SEAT REARWARD, CCW)",
+      "destDeviceName": "Seat Backrest Pitch Front Left"
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "SEAT_FRONT_VENT_FAN_BACKREST",
+      "wireColor": "RD/WH",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X626L",
+      "destCavityID": "1",
+      "destCavityName": "Power",
+      "destDeviceName": "Ventilation Fan Backrest Front Left"
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "SEAT_FRONT_TRACK_FORWARD",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X614L",
+      "destCavityID": "1",
+      "destCavityName": "Fore",
+      "destDeviceName": "Seat Track Motor Front Left"
+    },
+    {
+      "cavityID": "13",
+      "cavityName": "SEAT_FRONT_TRACK_REVERSE",
+      "wireColor": "GY",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X614L",
+      "destCavityID": "5",
+      "destCavityName": "Aft",
+      "destDeviceName": "Seat Track Motor Front Left"
+    },
+    {
+      "cavityID": "16",
+      "cavityName": "SEAT_FRONT_VENT_FAN_CUSHION_SPEED",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X625L",
+      "destCavityID": "2",
+      "destCavityName": "PWM",
+      "destDeviceName": "Ventilation Fan Cushion Front Left"
+    },
+    {
+      "cavityID": "18",
+      "cavityName": "LUMBAR_ECU_LIN",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X619L",
+      "destCavityID": "6",
+      "destCavityName": "ECU LIN",
+      "destDeviceName": "Lumbar Front Left"
+    },
+    {
+      "cavityID": "22",
+      "cavityName": "SEAT_FRONT_HEAT_PAD_CUSHION_TEMP",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X617L",
+      "destCavityID": "3",
+      "destCavityName": "NTC +",
+      "destDeviceName": "Heat Pad Cushion Front Left"
+    },
+    {
+      "cavityID": "24",
+      "cavityName": "SEAT_SIDE_AIRBAG_PASSTHROUGH_N",
+      "wireColor": "GN/GY",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X237",
+      "destCavityID": "2",
+      "destCavityName": "FLIC-",
+      "destDeviceName": "Airbag - Side Seat FL"
+    },
+    {
+      "cavityID": "25",
+      "cavityName": "SEAT_SIDE_AIRBAG_PASSTHROUGH_P",
+      "wireColor": "YE/BU",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X237",
+      "destCavityID": "1",
+      "destCavityName": "FLIC+",
+      "destDeviceName": "Airbag - Side Seat FL"
+    },
+    {
+      "cavityID": "26",
+      "cavityName": "SEAT_FRONT_HEAT_PAD_BACKREST_GROUND_RETURN",
+      "wireColor": "BN",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X616L",
+      "destCavityID": "1",
+      "destCavityName": "Heat GND",
+      "destDeviceName": "Heat Pad Backrest Front Left"
+    },
+    {
+      "cavityID": "27",
+      "cavityName": "SEAT_FRONT_BUCKLE_SENSOR",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X610",
+      "destCavityID": "1",
+      "destCavityName": "Power In",
+      "destDeviceName": "Seatbelt Buckle Switch Front Left"
+    },
+    {
+      "cavityID": "31",
+      "cavityName": "SEAT_FRONT_HEAT_PAD_BACKREST",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X616L",
+      "destCavityID": "2",
+      "destCavityName": "Heat +12V",
+      "destDeviceName": "Heat Pad Backrest Front Left"
+    },
+    {
+      "cavityID": "32",
+      "cavityName": "SEAT_FRONT_HEAT_PAD_CUSHION",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X617L",
+      "destCavityID": "2",
+      "destCavityName": "Heater Supply",
+      "destDeviceName": "Heat Pad Cushion Front Left"
+    },
+    {
+      "cavityID": "33",
+      "cavityName": "SEAT_FRONT_LIFT_UP",
+      "wireColor": "WH",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X618L",
+      "destCavityID": "1",
+      "destCavityName": "Up",
+      "destDeviceName": "Seat Lift Motor Front Left"
+    },
+    {
+      "cavityID": "34",
+      "cavityName": "SEAT_FRONT_LIFT_DOWN",
+      "wireColor": "GN",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X618L",
+      "destCavityID": "3",
+      "destCavityName": "Down",
+      "destDeviceName": "Seat Lift Motor Front Left"
+    },
+    {
+      "cavityID": "35",
+      "cavityName": "SEAT_FRONT_VENT_FAN_CUSHION",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X625L",
+      "destCavityID": "1",
+      "destCavityName": "Power",
+      "destDeviceName": "Ventilation Fan Cushion Front Left"
+    },
+    {
+      "cavityID": "36",
+      "cavityName": "SEAT_FRONT_TILT_DOWN",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X621L",
+      "destCavityID": "1",
+      "destCavityName": "Down",
+      "destDeviceName": "Seat Tilt Motor Front Left"
+    },
+    {
+      "cavityID": "37",
+      "cavityName": "SEAT_FRONT_TILT_UP",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X621L",
+      "destCavityID": "3",
+      "destCavityName": "Up",
+      "destDeviceName": "Seat Tilt Motor Front Left"
+    },
+    {
+      "cavityID": "39",
+      "cavityName": "SEAT_FRONT_VENT_FAN_BACKREST_SPEED",
+      "wireColor": "GY/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X626L",
+      "destCavityID": "2",
+      "destCavityName": "PWM",
+      "destDeviceName": "Ventilation Fan Backrest Front Left"
+    },
+    {
+      "cavityID": "41",
+      "cavityName": "SEAT_FRONT_OCCUPANCY_SENSOR",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X622L",
+      "destCavityID": "1",
+      "destCavityName": "Signal",
+      "destDeviceName": "Occupancy Sensor Front Left"
+    },
+    {
+      "cavityID": "42",
+      "cavityName": "SEAT_FRONT_LUMBAR_SWITCH",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X631",
+      "destCavityID": "3",
+      "destCavityName": "J,K,L,M - lumbar",
+      "destDeviceName": "Seat Switchpack Front Left"
+    },
+    {
+      "cavityID": "43",
+      "cavityName": "SEAT_FRONT_LIFT_TILT_SWITCH",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X631",
+      "destCavityID": "1",
+      "destCavityName": "C,D,G,H - lift/tilt",
+      "destDeviceName": "Seat Switchpack Front Left"
+    },
+    {
+      "cavityID": "44",
+      "cavityName": "SEAT_FRONT_TRACK_BACKREST_SWITCH",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X631",
+      "destCavityID": "2",
+      "destCavityName": "A,B,E,F - Track/backrest",
+      "destDeviceName": "Seat Switchpack Front Left"
+    },
+    {
+      "cavityID": "47",
+      "cavityName": "SEAT_FRONT_TILT_ENCODER",
+      "wireColor": "TN",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X621L",
+      "destCavityID": "4",
+      "destCavityName": "Hall effect signal",
+      "destDeviceName": "Seat Tilt Motor Front Left"
+    },
+    {
+      "cavityID": "48",
+      "cavityName": "SEAT_FRONT_HEAT_PAD_CUSHION_GROUND_RETURN",
+      "wireColor": "BN/WH",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X617L",
+      "destCavityID": "1",
+      "destCavityName": "Heater GND",
+      "destDeviceName": "Heat Pad Cushion Front Left"
+    },
+    {
+      "cavityID": "49",
+      "cavityName": "LUMBAR_ECU",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.64F",
+      "destConnectorID": "X619L",
+      "destCavityID": "1",
+      "destCavityName": "ECU & Pump Power Input",
+      "destDeviceName": "Lumbar Front Left"
+    }
+  ]
+}

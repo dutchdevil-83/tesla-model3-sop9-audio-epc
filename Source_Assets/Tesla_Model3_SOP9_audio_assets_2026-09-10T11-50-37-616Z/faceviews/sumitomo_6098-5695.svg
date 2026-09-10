@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no' ?>  
+ <svg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' height='768' viewBox='0,0 65416,62056' width='1024' xmlns:xlink='http://www.w3.org/1999/xlink'>   
+<defs>
+<style type='text/css'>
+<![CDATA[
+.A,.B{fill:none;fill-opacity:0.0;font-family:sans-serif;stroke-width:75px;}
+.C{font-size:5944px;fill:#000;fill-opacity:1.0;font-family:Lucida Sans;stroke-width:2px;}
+.C,.A,.B{fill-rule:evenodd;font-style:normal;font-weight:normal;stroke:#000;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1.0;}
+.a_{stroke:red;}
+.b_{fill:red;}
+.c_{stroke:#FA0;}
+.d_{fill:#FA0;}
+]]>
+</style>
+</defs>
+<g>
+<path class='A' d='M65397,9796v4019h-6029v-4019h6029v-2813m-59270,-5947v8760m4791,-8842v22106m4467,-22106v3617m23885,7481h-12058m23885,-11099v3617m9259,-3535v8760m-4791,-8842v22106M55071,62048 C57741,62047 60236,60721 61730,58508 M55066,62048h-43647M4755,58508 C6248,60721 8744,62047 11413,62048 M4730,58468l-3642,-5463M7122,954 C5521,953 3986,1589 2855,2721 L2855,2721 C1723,3852 1087,5387 1088,6988 M7225,8v6573m56856,-3357v6573M65397,6988 C65397,5387 64762,3852 63630,2721 L63630,2721 C62498,1589 60963,953 59363,954 M61754,58468l3642,-5463m0,-96h-64309m43810,-33867h-23312'/>
+<rect class='B' x='49521' y='29411' width='6029' height='2570'/>
+<path class='A' d='M39271,10600h-12058v-803h12058v3215h5627v10048h14469v-9244m-52251,-12861h52251m-44212,22106v-18488h36174v18488m-24116,-12459v2411h-5627v2009h23312'/>
+<rect class='B' x='36659' y='29411' width='6029' height='2570'/>
+<rect class='B' x='49521' y='42273' width='6029' height='2570'/>
+<path class='A' d='M44898,17192h4421v-11013h-32154v11013h4421'/>
+<rect class='B' x='23797' y='29411' width='6029' height='2570'/>
+<rect class='B' x='36659' y='42273' width='6029' height='2570'/>
+<path class='A' d='M1088,9796v4019h6029v-4019h-6029v-2813m6029,6832v9244h14469v-8038'/>
+<rect class='B' x='10935' y='29411' width='6029' height='2570'/>
+<rect class='B' x='23797' y='42273' width='6029' height='2570'/>
+<rect class='B' x='10935' y='42273' width='6029' height='2570'/>
+<path class='A' d='M1088,52200v803h64309v-39188m0,38384h-64309v-38384'/>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e219a33-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e219a32-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='25993' y='37768'>2</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e219a33-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e219a32-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='13131' y='37768'>1</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e219a33-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e219a32-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='38675' y='37667'>3</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e219a33-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e219a32-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='51717' y='37768'>4</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e219a33-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e219a32-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='12730' y='50630'>5</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e219a33-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e219a32-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='51717' y='50630'>8</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e219a33-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e219a32-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='38675' y='50529'>7</text>
+</g>
+<g><desc>chs.cof.logical.schem.CAFPinList UID45c779-1454e219a33-1806e32cae4026ea1ab4914c355ce3f7 UID45c779-1454e219a32-1806e32cae4026ea1ab4914c355ce3f7</desc>
+<text class='C' x='25591' y='50630'>6</text>
+</g>
+</g></svg>

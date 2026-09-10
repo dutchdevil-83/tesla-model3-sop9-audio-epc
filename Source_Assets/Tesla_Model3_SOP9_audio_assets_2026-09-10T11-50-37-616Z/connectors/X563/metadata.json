@@ -1,0 +1,32 @@
+{
+  "connectorID": "X563",
+  "connectorColor": "BK",
+  "deviceName": "Premium Amp Audio",
+  "harnessDesignator": "B",
+  "harnessName": "RH Body",
+  "harnessPN": "1897316-XX-X",
+  "teslaPN": "1108466-00-A",
+  "terminalFaceview": "faceviews/amp_2177586-1.svg",
+  "cavities": [
+    {
+      "cavityID": "7",
+      "cavityName": "A2bInP",
+      "wireColor": "VT",
+      "wireSize": "0.50x0.40F",
+      "destConnectorID": "X936M",
+      "destCavityID": "20",
+      "destCavityName": "20",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "8",
+      "cavityName": "A2bInN",
+      "wireColor": "WH",
+      "wireSize": "0.50x0.40F",
+      "destConnectorID": "X936M",
+      "destCavityID": "21",
+      "destCavityName": "21",
+      "destDeviceName": ""
+    }
+  ]
+}

@@ -1,0 +1,572 @@
+{
+  "connectorID": "X010",
+  "connectorColor": "BK",
+  "deviceName": "Body Controller Front",
+  "harnessDesignator": "W",
+  "harnessName": "Frunk",
+  "harnessPN": "2897330-XX-X",
+  "teslaPN": "2119756-00-A",
+  "terminalFaceview": "faceviews/delphi_35550570.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "FRUNK_LED",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X906F",
+      "destCavityID": "7",
+      "destCavityName": "7",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "HOMELINK_ECU",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X905F",
+      "destCavityID": "8",
+      "destCavityName": "8",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "FRONT_DRIVE_INVERTER",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X911F",
+      "destCavityID": "10",
+      "destCavityName": "10",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "BRAKE_MOTOR_ECU_2_WAKE",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X150",
+      "destCavityID": "20",
+      "destCavityName": "Wake",
+      "destDeviceName": "iBooster & DTS (LHD)"
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "SIDE_REPEATER_RIGHT",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X269",
+      "destCavityID": "1",
+      "destCavityName": "TurnIn12v0",
+      "destDeviceName": "Side Repeater Right"
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "SIDE_REPEATER_LEFT",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X268",
+      "destCavityID": "1",
+      "destCavityName": "TurnIn12v0",
+      "destDeviceName": "Side Repeater Left"
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "PARTY_CAN_P",
+      "wireColor": "YE/LTBU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X121",
+      "destCavityID": "15",
+      "destCavityName": "PARTY-CAN-H-Ex",
+      "destDeviceName": "Autopilot ECU (LHD)"
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "PARTY_CAN_P",
+      "wireColor": "YE/LTBU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X151",
+      "destCavityID": "5",
+      "destCavityName": "CAN1P",
+      "destDeviceName": "HCU/ESP"
+    },
+    {
+      "cavityID": "15",
+      "cavityName": "PARTY_CAN_P",
+      "wireColor": "YE/LTBU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X909F",
+      "destCavityID": "13",
+      "destCavityName": "13",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "16",
+      "cavityName": "EPAS_1_WAKE",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X192",
+      "destCavityID": "1",
+      "destCavityName": "WAU1",
+      "destDeviceName": "EPAS (LHD)"
+    },
+    {
+      "cavityID": "17",
+      "cavityName": "EPAS_2_WAKE",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X193",
+      "destCavityID": "1",
+      "destCavityName": "WAU2",
+      "destDeviceName": "EPAS (LHD)"
+    },
+    {
+      "cavityID": "18",
+      "cavityName": "VEH_CAN_P",
+      "wireColor": "BN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X037",
+      "destCavityID": "6",
+      "destCavityName": "VEHICLE_CAN_P",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "21",
+      "cavityName": "EFUSE_LOCKOUT",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X057",
+      "destCavityID": "2",
+      "destCavityName": "FRONT_EFUSE_LOCKOUT",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "27",
+      "cavityName": "PARTY_CAN_N",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X121",
+      "destCavityID": "16",
+      "destCavityName": "PARTY-CAN-L-Ex",
+      "destDeviceName": "Autopilot ECU (LHD)"
+    },
+    {
+      "cavityID": "29",
+      "cavityName": "PARTY_CAN_N",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X151",
+      "destCavityID": "19",
+      "destCavityName": "CAN1M",
+      "destDeviceName": "HCU/ESP"
+    },
+    {
+      "cavityID": "30",
+      "cavityName": "PARTY_CAN_N",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X909F",
+      "destCavityID": "14",
+      "destCavityName": "14",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "33",
+      "cavityName": "VEH_CAN_N",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X037",
+      "destCavityID": "5",
+      "destCavityName": "VEHICLE_CAN_N",
+      "destDeviceName": "Body Controller Left"
+    },
+    {
+      "cavityID": "38",
+      "cavityName": "FRUNK_LATCH_SWITCH_2",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X906F",
+      "destCavityID": "8",
+      "destCavityName": "8",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "40",
+      "cavityName": "PARTY_CAN_P",
+      "wireColor": "YE/LTBU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X192",
+      "destCavityID": "2",
+      "destCavityName": "CAN1_HI",
+      "destDeviceName": "EPAS (LHD)"
+    },
+    {
+      "cavityID": "41",
+      "cavityName": "PARTY_CAN_N",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X192",
+      "destCavityID": "3",
+      "destCavityName": "CAN1_LO",
+      "destDeviceName": "EPAS (LHD)"
+    },
+    {
+      "cavityID": "45",
+      "cavityName": "WINDSHIELD_WIPER_LIN",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X300",
+      "destCavityID": "1",
+      "destCavityName": "LIN",
+      "destDeviceName": "Wiper Motor (LHD)"
+    },
+    {
+      "cavityID": "47",
+      "cavityName": "ACTIVE_LOUVER_GND_SHIELD",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "",
+      "destCavityID": "",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "48",
+      "cavityName": "FRUNK_EMERGENCY_RELEASE_SWITCH",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X906F",
+      "destCavityID": "13",
+      "destCavityName": "13",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "50",
+      "cavityName": "BRAKE_FLUID_LEVEL_SENSOR",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X159",
+      "destCavityID": "2",
+      "destCavityName": "Brake Fluid Level",
+      "destDeviceName": "iBooster & DTS (LHD)"
+    },
+    {
+      "cavityID": "53",
+      "cavityName": "WINDSHIELD_WASHER_FLUID_LEVEL_SWITCH",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X302",
+      "destCavityID": "B",
+      "destCavityName": "Signal",
+      "destDeviceName": "Washer Pump & Level Sensor"
+    },
+    {
+      "cavityID": "54",
+      "cavityName": "PARTY_CAN_P",
+      "wireColor": "YE/LTBU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X150",
+      "destCavityID": "18",
+      "destCavityName": "Party_CAN1 Positive (+)",
+      "destDeviceName": "iBooster & DTS (LHD)"
+    },
+    {
+      "cavityID": "55",
+      "cavityName": "PARTY_CAN_N",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X150",
+      "destCavityID": "10",
+      "destCavityName": "Party_CAN1 Negative (-)",
+      "destDeviceName": "iBooster & DTS (LHD)"
+    },
+    {
+      "cavityID": "56",
+      "cavityName": "FRUNK_LATCH_SWITCH_1",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X906F",
+      "destCavityID": "14",
+      "destCavityName": "14",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "58",
+      "cavityName": "HOMELINK_ECU_LIN",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X905F",
+      "destCavityID": "7",
+      "destCavityName": "7",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "59",
+      "cavityName": "FRUNK_LATCH_SWITCH_RETURN",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X906F",
+      "destCavityID": "12",
+      "destCavityName": "12",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "60",
+      "cavityName": "LV_BATTERY_LIN",
+      "wireColor": "GN/WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X001",
+      "destCavityID": "7",
+      "destCavityName": "LIN",
+      "destDeviceName": "LV Battery"
+    },
+    {
+      "cavityID": "61",
+      "cavityName": "ACTIVE_LOUVER_PHASE_C",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X906F",
+      "destCavityID": "3",
+      "destCavityName": "3",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "62",
+      "cavityName": "ACTIVE_LOUVER_PHASE_B",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X906F",
+      "destCavityID": "1",
+      "destCavityName": "1",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "63",
+      "cavityName": "ACTIVE_LOUVER_PHASE_A",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X906F",
+      "destCavityID": "2",
+      "destCavityName": "2",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "64",
+      "cavityName": "FRUNK_EMERGENCY_RELEASE_SWITCH_RETURN",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X906F",
+      "destCavityID": "9",
+      "destCavityName": "9",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "65",
+      "cavityName": "FRONT_TO_PCS_ENABLE",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X057",
+      "destCavityID": "7",
+      "destCavityName": "STANDBY_POWER_PCS_LOCKOUT_SWITCHED",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "66",
+      "cavityName": "LVBMB_COMM_P",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X001",
+      "destCavityID": "5",
+      "destCavityName": "LVBMB_COMM_P",
+      "destDeviceName": "LV Battery"
+    },
+    {
+      "cavityID": "67",
+      "cavityName": "LVBMB_COMM_N",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X001",
+      "destCavityID": "6",
+      "destCavityName": "LVBMB_COMM_N",
+      "destDeviceName": "LV Battery"
+    },
+    {
+      "cavityID": "68",
+      "cavityName": "TRUNK_EXTERIOR_SWITCH",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X057",
+      "destCavityID": "6",
+      "destCavityName": "LIFTGATE_EXTERIOR_SWITCH_PASSTHROUGH",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "71",
+      "cavityName": "BRAKE_MOTOR_ECU_1_WAKE",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X151",
+      "destCavityID": "36",
+      "destCavityName": "WAU_IN1",
+      "destDeviceName": "HCU/ESP"
+    },
+    {
+      "cavityID": "72",
+      "cavityName": "HEADLIGHT_RIGHT_LIN",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X261",
+      "destCavityID": "2",
+      "destCavityName": "LIN",
+      "destDeviceName": "Headlight Right"
+    },
+    {
+      "cavityID": "75",
+      "cavityName": "HEADLIGHT_LEFT_LIN",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X260",
+      "destCavityID": "2",
+      "destCavityName": "LIN",
+      "destDeviceName": "Headlight Left"
+    },
+    {
+      "cavityID": "76",
+      "cavityName": "MCU_AUDIO",
+      "wireColor": "WH",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X908F",
+      "destCavityID": "20",
+      "destCavityName": "20",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "77",
+      "cavityName": "HEADLIGHT_RIGHT",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X261",
+      "destCavityID": "1",
+      "destCavityName": "Power",
+      "destDeviceName": "Headlight Right"
+    },
+    {
+      "cavityID": "78",
+      "cavityName": "HEADLIGHT_LEFT",
+      "wireColor": "GY",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X260",
+      "destCavityID": "1",
+      "destCavityName": "Power",
+      "destDeviceName": "Headlight Left"
+    },
+    {
+      "cavityID": "79",
+      "cavityName": "FRONT_DRIVE_UNIT_OIL_PUMP",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X911F",
+      "destCavityID": "1",
+      "destCavityName": "1",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "80",
+      "cavityName": "WASHER_FLUID_PUMP_PHASE A",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X301",
+      "destCavityID": "1",
+      "destCavityName": "PUMP 13.5 V Windshield",
+      "destDeviceName": "Washer Pump & Level Sensor"
+    },
+    {
+      "cavityID": "81",
+      "cavityName": "WASHER_FLUID_PUMP_PHASE B",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X301",
+      "destCavityID": "2",
+      "destCavityName": "PUMP 13.5 V Camera",
+      "destDeviceName": "Washer Pump & Level Sensor"
+    },
+    {
+      "cavityID": "82",
+      "cavityName": "FRUNK_LATCH_PRIMARY_RESET",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X906F",
+      "destCavityID": "11",
+      "destCavityName": "11",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "83",
+      "cavityName": "FRUNK_LATCH_PRIMARY_RELEASE",
+      "wireColor": "WH",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X906F",
+      "destCavityID": "10",
+      "destCavityName": "10",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "84",
+      "cavityName": "FRUNK_ACCESS_POST",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X901M",
+      "destCavityID": "5",
+      "destCavityName": "5",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "89",
+      "cavityName": "WINDSHIELD_WIPER_PARK_HEATER",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X304",
+      "destCavityID": "3",
+      "destCavityName": "Windshield Wiper Area",
+      "destDeviceName": "Glass Heater - Windshield (LHD)"
+    },
+    {
+      "cavityID": "90",
+      "cavityName": "WINDSHIELD_UPPER_GLASS_HEATER",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X304",
+      "destCavityID": "1",
+      "destCavityName": "Camera Area Heater",
+      "destDeviceName": "Glass Heater - Windshield (LHD)"
+    },
+    {
+      "cavityID": "91",
+      "cavityName": "HCU_ESP_ABS_VALVE",
+      "wireColor": "WH",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X151",
+      "destCavityID": "30",
+      "destCavityName": "+12V_VR",
+      "destDeviceName": "HCU/ESP"
+    },
+    {
+      "cavityID": "92",
+      "cavityName": "MCU_GAMING",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X170",
+      "destCavityID": "10",
+      "destCavityName": "P12V0-GPU",
+      "destDeviceName": "MCU (LHD)"
+    },
+    {
+      "cavityID": "93",
+      "cavityName": "MCU_LOGIC",
+      "wireColor": "TN",
+      "wireSize": "1.5x0.8F",
+      "destConnectorID": "X170",
+      "destCavityID": "9",
+      "destCavityName": "PVBAT-PRIMARY",
+      "destDeviceName": "MCU (LHD)"
+    }
+  ]
+}

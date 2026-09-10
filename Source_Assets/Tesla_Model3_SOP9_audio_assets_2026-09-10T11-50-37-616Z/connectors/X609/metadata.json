@@ -1,0 +1,62 @@
+{
+  "connectorID": "X609",
+  "connectorColor": "WH",
+  "deviceName": "Microphone - Overhead Right",
+  "harnessDesignator": "K",
+  "harnessName": "Headliner",
+  "harnessPN": "2) Splices may be split across pages for visual clarity with respect to the function",
+  "teslaPN": "1589205-00-A",
+  "terminalFaceview": "faceviews/molex_560123-0500.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "A-",
+      "wireColor": "YE",
+      "wireSize": "0.5F",
+      "destConnectorID": "X608",
+      "destCavityID": "5",
+      "destCavityName": "B-",
+      "destDeviceName": "Microphone - Overhead Left"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "A+",
+      "wireColor": "BU",
+      "wireSize": "0.5F",
+      "destConnectorID": "X608",
+      "destCavityID": "4",
+      "destCavityName": "B+",
+      "destDeviceName": "Microphone - Overhead Left"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "Ground",
+      "wireColor": "BN",
+      "wireSize": "0.5F",
+      "destConnectorID": "X299",
+      "destCavityID": "16",
+      "destCavityName": "Ground",
+      "destDeviceName": "Front Overhead Module"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "B+",
+      "wireColor": "VT",
+      "wireSize": "0.5F",
+      "destConnectorID": "X981F",
+      "destCavityID": "15",
+      "destCavityName": "15",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "B-",
+      "wireColor": "WH",
+      "wireSize": "0.5F",
+      "destConnectorID": "X981F",
+      "destCavityID": "14",
+      "destCavityName": "14",
+      "destDeviceName": ""
+    }
+  ]
+}

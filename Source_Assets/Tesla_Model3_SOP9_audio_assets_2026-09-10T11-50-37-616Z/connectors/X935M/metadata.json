@@ -1,0 +1,272 @@
+{
+  "connectorID": "X935M",
+  "connectorColor": "NA",
+  "deviceName": "",
+  "harnessDesignator": "B",
+  "harnessName": "RH Body",
+  "harnessPN": "1897316-XX-X",
+  "teslaPN": "1739643-00-B",
+  "terminalFaceview": "faceviews/amp_1-2005091-1.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "1",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X059",
+      "destCavityID": "35",
+      "destCavityName": "DAMPER_VALVE_REAR_LEFT",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "2",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X059",
+      "destCavityID": "36",
+      "destCavityName": "DAMPER_VALVE_REAR_LEFT_RETURN",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "3",
+      "wireColor": "TN",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X098",
+      "destCavityID": "11",
+      "destCavityName": "CP-LATCH-EN",
+      "destDeviceName": "HV Battery"
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "4",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X098",
+      "destCavityID": "10",
+      "destCavityName": "CP-FAULT",
+      "destDeviceName": "HV Battery"
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "5",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X560",
+      "destCavityID": "9",
+      "destCavityName": "Left Front Door A3E P",
+      "destDeviceName": "Premium Amp Audio"
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "6",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X560",
+      "destCavityID": "10",
+      "destCavityName": "Left Front Door A3E N",
+      "destDeviceName": "Premium Amp Audio"
+    },
+    {
+      "cavityID": "9",
+      "cavityName": "9",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X674",
+      "destCavityID": "3",
+      "destCavityName": "CTR Buckle - Hall In",
+      "destDeviceName": "2R Seatbelt Buckle Switch Right and Center"
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "10",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X051",
+      "destCavityID": "10",
+      "destCavityName": "INTERIOR_RADAR",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "11",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X207",
+      "destCavityID": "2",
+      "destCavityName": "PCS-",
+      "destDeviceName": "Impact Sensor - B-Pillar Right"
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "12",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X207",
+      "destCavityID": "1",
+      "destCavityName": "PCS+",
+      "destDeviceName": "Impact Sensor - B-Pillar Right"
+    },
+    {
+      "cavityID": "13",
+      "cavityName": "13",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X952M",
+      "destCavityID": "15",
+      "destCavityName": "15",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "14",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X954M",
+      "destCavityID": "1",
+      "destCavityName": "1",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "15",
+      "cavityName": "15",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X954M",
+      "destCavityID": "12",
+      "destCavityName": "12",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "16",
+      "cavityName": "16",
+      "wireColor": "VT",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X171",
+      "destCavityID": "6",
+      "destCavityName": "AMP2_2P",
+      "destDeviceName": "MCU (LHD)"
+    },
+    {
+      "cavityID": "17",
+      "cavityName": "17",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X220",
+      "destCavityID": "2",
+      "destCavityName": "FLIC -",
+      "destDeviceName": "Retractor - RR"
+    },
+    {
+      "cavityID": "18",
+      "cavityName": "18",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X220",
+      "destCavityID": "1",
+      "destCavityName": "FLIC +",
+      "destDeviceName": "Retractor - RR"
+    },
+    {
+      "cavityID": "19",
+      "cavityName": "19",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X098",
+      "destCavityID": "7",
+      "destCavityName": "CP-CAN-H",
+      "destDeviceName": "HV Battery"
+    },
+    {
+      "cavityID": "20",
+      "cavityName": "20",
+      "wireColor": "BK",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X098",
+      "destCavityID": "6",
+      "destCavityName": "CP-CAN-L",
+      "destDeviceName": "HV Battery"
+    },
+    {
+      "cavityID": "21",
+      "cavityName": "21",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X494",
+      "destCavityID": "6",
+      "destCavityName": "CANH",
+      "destDeviceName": "Authentication and Heater Right B-Pillar"
+    },
+    {
+      "cavityID": "22",
+      "cavityName": "22",
+      "wireColor": "GN",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X494",
+      "destCavityID": "3",
+      "destCavityName": "CANL",
+      "destDeviceName": "Authentication and Heater Right B-Pillar"
+    },
+    {
+      "cavityID": "25",
+      "cavityName": "25",
+      "wireColor": "BN",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X674",
+      "destCavityID": "4",
+      "destCavityName": "CTR Buckle - Hall Out",
+      "destDeviceName": "2R Seatbelt Buckle Switch Right and Center"
+    },
+    {
+      "cavityID": "26",
+      "cavityName": "26",
+      "wireColor": "YE/LTBU",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X051",
+      "destCavityID": "14",
+      "destCavityName": "PARTY_CAN_P",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "27",
+      "cavityName": "27",
+      "wireColor": "YE",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X051",
+      "destCavityID": "30",
+      "destCavityName": "PARTY_CAN_N",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "28",
+      "cavityName": "28",
+      "wireColor": "WH",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X098",
+      "destCavityID": "13",
+      "destCavityName": "RCM-ENS-IN",
+      "destDeviceName": "HV Battery"
+    },
+    {
+      "cavityID": "31",
+      "cavityName": "31",
+      "wireColor": "RD",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X954M",
+      "destCavityID": "13",
+      "destCavityName": "13",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "32",
+      "cavityName": "32",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64M",
+      "destConnectorID": "X171",
+      "destCavityID": "5",
+      "destCavityName": "AMP2_2N",
+      "destDeviceName": "MCU (LHD)"
+    }
+  ]
+}

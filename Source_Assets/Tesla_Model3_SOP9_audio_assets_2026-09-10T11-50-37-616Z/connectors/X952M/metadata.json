@@ -1,0 +1,132 @@
+{
+  "connectorID": "X952M",
+  "connectorColor": "BK",
+  "deviceName": "",
+  "harnessDesignator": "B",
+  "harnessName": "RH Body",
+  "harnessPN": "1897316-XX-X",
+  "teslaPN": "2059052-00-A",
+  "terminalFaceview": "faceviews/molex_33482-8993.svg",
+  "cavities": [
+    {
+      "cavityID": "2",
+      "cavityName": "2",
+      "wireColor": "TN",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X908M",
+      "destCavityID": "16",
+      "destCavityName": "16",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "3",
+      "cavityName": "3",
+      "wireColor": "GN",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X908M",
+      "destCavityID": "17",
+      "destCavityName": "17",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "4",
+      "cavityName": "4",
+      "wireColor": "WH",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X908M",
+      "destCavityID": "3",
+      "destCavityName": "3",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "5",
+      "cavityName": "5",
+      "wireColor": "VT",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X908M",
+      "destCavityID": "4",
+      "destCavityName": "4",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "6",
+      "cavityName": "6",
+      "wireColor": "BU/WH",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X050",
+      "destCavityID": "58",
+      "destCavityName": "DI_REAR_PRIVATE_CAN_P",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "7",
+      "cavityName": "7",
+      "wireColor": "BU",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X050",
+      "destCavityID": "57",
+      "destCavityName": "DI_REAR_PRIVATE_CAN_N",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "8",
+      "cavityName": "8",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "G042",
+      "destCavityID": "12",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "10",
+      "cavityName": "10",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X051",
+      "destCavityID": "3",
+      "destCavityName": "OIL_PUMP_REAR_DRIVE_UNIT",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "11",
+      "cavityName": "11",
+      "wireColor": "GY",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X050",
+      "destCavityID": "60",
+      "destCavityName": "SUSPENSION_ACCELEROMETER_REAR_A2B_P",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "12",
+      "cavityName": "12",
+      "wireColor": "YE",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X050",
+      "destCavityID": "59",
+      "destCavityName": "SUSPENSION_ACCELEROMETER_REAR_A2B_N",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "14",
+      "cavityName": "14",
+      "wireColor": "BK",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "G042",
+      "destCavityID": "5",
+      "destCavityName": "",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "15",
+      "cavityName": "15",
+      "wireColor": "RD",
+      "wireSize": "1.5x0.8M",
+      "destConnectorID": "X935M",
+      "destCavityID": "13",
+      "destCavityName": "13",
+      "destDeviceName": ""
+    }
+  ]
+}

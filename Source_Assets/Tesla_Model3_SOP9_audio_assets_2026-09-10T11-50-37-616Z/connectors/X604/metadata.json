@@ -1,0 +1,32 @@
+{
+  "connectorID": "X604",
+  "connectorColor": "BK",
+  "deviceName": "Speaker Pedestrian Warning Rear",
+  "harnessDesignator": "G",
+  "harnessName": "Rear Fascia",
+  "harnessPN": "1897319-XX-X",
+  "teslaPN": "1496687-00-A",
+  "terminalFaceview": "faceviews/delphi_35126363.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "Speaker P",
+      "wireColor": "GN",
+      "wireSize": "1.2x0.6FS",
+      "destConnectorID": "X949F",
+      "destCavityID": "12",
+      "destCavityName": "12",
+      "destDeviceName": ""
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "Speaker N",
+      "wireColor": "BN",
+      "wireSize": "1.2x0.6FS",
+      "destConnectorID": "X949F",
+      "destCavityID": "6",
+      "destCavityName": "6",
+      "destDeviceName": ""
+    }
+  ]
+}

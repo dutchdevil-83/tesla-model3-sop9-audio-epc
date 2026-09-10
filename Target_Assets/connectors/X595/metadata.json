@@ -1,0 +1,32 @@
+{
+  "connectorID": "X595",
+  "connectorColor": "BK",
+  "deviceName": "Speaker IP Center",
+  "harnessDesignator": "J",
+  "harnessName": "IP",
+  "harnessPN": "Far Side Airbag",
+  "teslaPN": "1679742-00-A",
+  "terminalFaceview": "faceviews/delphi_35328464.svg",
+  "cavities": [
+    {
+      "cavityID": "1",
+      "cavityName": "Speaker P",
+      "wireColor": "GY",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X055",
+      "destCavityID": "39",
+      "destCavityName": "CENTER_DASHBOARD_SPEAKER_PASSTHROUGH_P",
+      "destDeviceName": "Body Controller Right"
+    },
+    {
+      "cavityID": "2",
+      "cavityName": "Speaker N",
+      "wireColor": "BU",
+      "wireSize": "0.64x0.64F",
+      "destConnectorID": "X055",
+      "destCavityID": "40",
+      "destCavityName": "CENTER_DASHBOARD_SPEAKER_PASSTHROUGH_N",
+      "destDeviceName": "Body Controller Right"
+    }
+  ]
+}
