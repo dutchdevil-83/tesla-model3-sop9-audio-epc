@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "source": "user-provided HAR export of Tesla Parts Catalog / Audio Speakers",
+  "catalogExternalReference": "47b31c21-3311-4c98-a6fa-423a6997aaba",
+  "systemGroupExternalReference": "f4141a01-51b2-4100-9616-1451fead933e",
+  "title": "Audio Speakers",
+  "generation": "Highland",
+  "sourceImage": {
+    "url": "https://epc.tesla.com/resources/images/Model3/Highland/NL/Audio%20Speakers%20TI-6789_41ee8600-5062-4d1f-acb9-99e40abe74d0.png",
+    "sha256": "86330aae2440487a7cfa524b4b7adc793c87ee45806644cf69f491148d1faf29",
+    "bytes": 349096,
+    "width": 1414,
+    "height": 1000
+  },
+  "sourceSvg": {
+    "sha256": "043e4161ca010de424e97939df669638c458b6ea0287a1e9cc049cd3b5684909",
+    "bytes": 6397764,
+    "coordinateSpace": {"width": 1189, "height": 841}
+  },
+  "callouts": [
+    {"id":1,"annotation":"1","xPct":2.1571,"yPct":58.4205,"confidence":0.96,"anchors":[{"xPct":16.0084,"yPct":52.918},{"xPct":22.6879,"yPct":58.4205}]},
+    {"id":2,"annotation":"5","xPct":49.7602,"yPct":83.0644,"confidence":0.96,"anchors":[{"xPct":29.2018,"yPct":57.336}]},
+    {"id":3,"annotation":"2","xPct":47.237,"yPct":86.2749,"confidence":0.97,"anchors":[{"xPct":34.8074,"yPct":69.8589}]},
+    {"id":4,"annotation":"5","xPct":85.4204,"yPct":15.0502,"confidence":0.96,"anchors":[{"xPct":64.1153,"yPct":23.8102},{"xPct":53.8773,"yPct":18.4493},{"xPct":70.9222,"yPct":32.0555}]},
+    {"id":5,"annotation":"8","xPct":93.158,"yPct":41.6725,"confidence":0.97,"anchors":[{"xPct":86.7712,"yPct":40.6128}]},
+    {"id":6,"annotation":"10","xPct":93.7467,"yPct":36.2415,"confidence":0.96,"anchors":[{"xPct":86.5988,"yPct":36.2415},{"xPct":85.3061,"yPct":33.9648}]},
+    {"id":7,"annotation":"3","xPct":32.9393,"yPct":19.8064,"confidence":0.96,"anchors":[{"xPct":43.736,"yPct":29.058}]},
+    {"id":8,"annotation":"6","xPct":42.359,"yPct":14.2726,"confidence":0.96,"anchors":[{"xPct":46.1391,"yPct":18.6765}]},
+    {"id":9,"annotation":"9","xPct":37.9856,"yPct":14.5745,"confidence":0.95,"anchors":[{"xPct":41.7013,"yPct":18.1547}]},
+    {"id":10,"annotation":"9","xPct":80.7106,"yPct":57.1429,"confidence":0.95,"anchors":[{"xPct":60.1468,"yPct":34.0466}]},
+    {"id":11,"annotation":"4","xPct":76.9259,"yPct":60.1163,"confidence":0.97,"anchors":[{"xPct":68.3106,"yPct":50.3049}]},
+    {"id":12,"annotation":"7","xPct":24.5792,"yPct":91.9824,"confidence":0.96,"anchors":[{"xPct":24.5791,"yPct":84.8199}]},
+    {"id":13,"annotation":"10","xPct":15.3615,"yPct":89.0097,"confidence":0.96,"anchors":[{"xPct":22.9449,"yPct":79.9778}]},
+    {"id":14,"annotation":"10","xPct":33.1075,"yPct":91.2689,"confidence":0.96,"anchors":[{"xPct":25.7256,"yPct":80.6641}]},
+    {"id":15,"annotation":"6","xPct":84.9999,"yPct":56.0727,"confidence":0.96,"anchors":[{"xPct":68.0627,"yPct":37.5199}]},
+    {"id":16,"annotation":"5","xPct":19.3169,"yPct":28.1298,"confidence":0.96,"anchors":[{"xPct":28.8085,"yPct":36.7937}]},
+    {"id":17,"annotation":"5","xPct":63.8056,"yPct":70.6412,"confidence":0.96,"anchors":[{"xPct":51.8604,"yPct":56.5898}]},
+    {"id":18,"annotation":"5","xPct":8.8855,"yPct":41.6851,"confidence":0.96,"anchors":[{"xPct":14.6319,"yPct":47.2583}]}
+  ],
+  "annotationMappings": {
+    "1":{"targets":["SPK12","SPK13"],"confidence":"direct-location-family","note":"Tesla 200 mm parcel-shelf woofer pair. Current staged upgrade data differs in planned driver size; verify physical/VIN fitment."},
+    "3":{"targets":["SPK01","SPK02"],"confidence":"variant-family","note":"BASE 200 mm woofer family. Variant-family reference, not a left/right unique identifier."},
+    "4":{"targets":["SPK01","SPK02"],"confidence":"variant-family","note":"PREMIUM 200 mm woofer family. Variant-family reference, not a left/right unique identifier."},
+    "5":{"targets":["SPK05","SPK06","SPK07","SPK08","SPK09","SPK10","SPK11"],"confidence":"location-count-candidate","note":"Tesla 100 mm full-range family has seven physical leaders. SPK08/SPK09 are currently planned as 80 mm and require fitment reconciliation."},
+    "6":{"targets":["SPK03","SPK04"],"confidence":"strong-family-match","note":"Active 25 mm tweeter family appears twice and maps strongly to the left/right tweeter pair."},
+    "9":{"targets":["SPK14","SPK15"],"confidence":"probable-location-pair","note":"60 mm full-range pair is the probable headliner/effect family. Current plan uses 50 mm replacements; confirm physical fitment."},
+    "2":{"targets":[],"confidence":"non-cabin-component","note":"Premium audio amplifier; system component, not one of the 15 cabin speaker targets."},
+    "7":{"targets":[],"confidence":"non-cabin-component","note":"Pedestrian warning speaker; outside the 15 cabin audio-upgrade targets."},
+    "8":{"targets":[],"confidence":"unmapped-speaker-family","note":"Super horn shown by the Parts Catalog; not mapped into the 15-target architecture without stronger evidence."},
+    "10":{"targets":[],"confidence":"hardware","note":"Fastener/hardware callout."}
+  },
+  "parts": [
+    {"annotation":"1","partNumber":"1853681-00-A","description":"WOOFER,200MM,PARCELSHELF,AUDIO","quantity":2,"currencyCode":"EUR","price":123.97},
+    {"annotation":"2","partNumber":"2065912-10-A","description":"PREMIUM AUDIO AMPLIFIER, TLA","quantity":1,"currencyCode":"EUR","price":706.61},
+    {"annotation":"3","partNumber":"1079743-00-F","description":"AUDIO,SPEAKER,WOOFER,BASE,200MM","quantity":2,"currencyCode":"EUR","price":194.21},
+    {"annotation":"4","partNumber":"1079744-00-F","description":"AUDIO,SPEAKER,WOOFER,PREMIUM,200MM","quantity":1,"currencyCode":"EUR","price":190.08,"notes":"For the car LR AWD or Performance"},
+    {"annotation":"5","partNumber":"1079742-00-D","description":"AUDIO, SPEAKER, FULL RANGE,100MM","quantity":3,"currencyCode":"EUR","price":107.44},
+    {"annotation":"5","partNumber":"2029785-00-B","description":"AUDIO, SPEAKER, FULL RANGE,100MM,BASE","quantity":3,"currencyCode":"EUR","price":111.57},
+    {"annotation":"6","partNumber":"1079741-00-A","description":"AUDIO,SPEAKER,TWEETER,ACTIVE,25MM","quantity":1,"currencyCode":"EUR","price":59.5},
+    {"annotation":"7","partNumber":"1299965-00-A","description":"PEDESTRIAN WARNING SPEAKER","quantity":1,"currencyCode":"EUR","price":48.76},
+    {"annotation":"8","partNumber":"1671113-00-B","description":"AUDIO, SPEAKER, SUPER HORN, MYSP","quantity":1,"currencyCode":"EUR","price":49.59},
+    {"annotation":"9","partNumber":"1486488-00-A","description":"AUDIO, SPEAKER, FULL RANGE, 60MM","quantity":2,"currencyCode":"EUR","price":76.03},
+    {"annotation":"10","partNumber":"1012809-00-A","description":"DPTS,PF,50-1.8x20,[CS],G1109,R","quantity":3,"currencyCode":"EUR","price":0.54}
+  ],
+  "mappingWarning":"Tesla EPC annotation numbers identify parts/families and repeat across physical callouts. Internal SPKxx mappings are an engineering cross-reference, not OEM Tesla endpoint identifiers."
+}
