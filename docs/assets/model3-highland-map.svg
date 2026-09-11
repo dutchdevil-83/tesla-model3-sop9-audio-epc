@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Model 3 Highland interactive vehicle map base</title>
+  <desc id="desc">Custom engineering visualization of a Model 3 Highland cabin from above. Not Tesla OEM artwork.</desc>
+  <defs>
+    <clipPath id="bodyClip"><path d="M350 32C244 32 176 61 139 127c-24 44-34 98-40 171L72 760c-5 92 6 168 48 227 43 60 117 81 230 81s187-21 230-81c42-59 53-135 48-227L601 298c-6-73-16-127-40-171C524 61 456 32 350 32Z"/></clipPath>
+  </defs>
+  <rect width="700" height="1100" fill="#fff"/>
+  <g fill="none" stroke="#9aa2ab" stroke-width="3">
+    <path d="M350 32C244 32 176 61 139 127c-24 44-34 98-40 171L72 760c-5 92 6 168 48 227 43 60 117 81 230 81s187-21 230-81c42-59 53-135 48-227L601 298c-6-73-16-127-40-171C524 61 456 32 350 32Z" fill="#f5f7f9" stroke="#515a64" stroke-width="5"/>
+    <path d="M183 126C230 85 282 70 350 70s120 15 167 56c25 22 42 61 51 112l18 155-35 6-24-139c-10-57-27-92-54-112-34-25-75-36-123-36s-89 11-123 36c-27 20-44 55-54 112l-24 139-35-6 18-155c9-51 26-90 51-112Z" fill="#eef2f5"/>
+    <path d="M202 217C245 175 292 158 350 158s105 17 148 59l31 193-39 15-280 0-39-15 31-193Z" fill="#dde4ea" stroke="#7f8994"/>
+    <path d="M219 244C256 207 298 192 350 192s94 15 131 52l20 132H199l20-132Z" fill="#eef3f6" stroke="#b2bac2"/>
+    <path d="M213 434H487l13 267H200l13-267Z" fill="#edf1f4" stroke="#aeb6bf"/>
+    <path d="M205 704H495l28 195c4 31-3 62-20 86-28 38-76 52-153 52s-125-14-153-52c-17-24-24-55-20-86l28-195Z" fill="#e8edf1" stroke="#9da6af"/>
+    <path d="M235 478h102v176H235c-28 0-48-23-48-51v-74c0-28 20-51 48-51Z" fill="#d7dde2"/>
+    <path d="M465 478H363v176h102c28 0 48-23 48-51v-74c0-28-20-51-48-51Z" fill="#d7dde2"/>
+    <path d="M258 499c33-14 61 5 66 35v82c-6 23-24 32-46 31-26-1-44-15-48-42v-66c3-20 12-33 28-40Z" fill="#c8d0d7" stroke="#8d98a3"/>
+    <path d="M442 499c-33-14-61 5-66 35v82c6 23 24 32 46 31 26-1 44-15 48-42v-66c-3-20-12-33-28-40Z" fill="#c8d0d7" stroke="#8d98a3"/>
+    <path d="M321 476h58v203h-58Z" fill="#cbd3da" stroke="#89939e"/>
+    <rect x="331" y="503" width="38" height="76" rx="9" fill="#20262d" stroke="#20262d"/>
+    <rect x="337" y="590" width="26" height="52" rx="5" fill="#aeb8c1" stroke="#7f8a95"/>
+    <path d="M205 712h290l-12 177c-2 32-16 58-42 77-28 20-59 28-91 28s-63-8-91-28c-26-19-40-45-42-77l-12-177Z" fill="#d9e0e5"/>
+    <path d="M226 741h248v106c-34 27-75 40-124 40s-90-13-124-40V741Z" fill="#c7d0d7" stroke="#87929e"/>
+    <path d="M240 763c31-20 68-30 110-30s79 10 110 30v77c-32 18-69 27-110 27s-78-9-110-27v-77Z" fill="#bfc8d0" stroke="#7f8b96"/>
+    <path d="M104 302 72 760c-3 61 2 116 18 161l70-21 21-467-77-131Z" fill="#f3f5f7"/>
+    <path d="m596 302 32 458c3 61-2 116-18 161l-70-21-21-467 77-131Z" fill="#f3f5f7"/>
+    <path d="M164 418 126 456l-20 315 62-7 25-304-29-42Z" fill="#e2e8ed"/>
+    <path d="m536 418 38 38 20 315-62-7-25-304 29-42Z" fill="#e2e8ed"/>
+    <path d="M152 407 108 384l-41 13 52 35 33-25Z" fill="#d6dde3" stroke="#697480"/>
+    <path d="m548 407 44-23 41 13-52 35-33-25Z" fill="#d6dde3" stroke="#697480"/>
+    <path d="M178 423 160 900M522 423l18 477M198 700h304M181 430h338M199 378h302" stroke="#8f99a4"/>
+    <path d="M272 406h156" stroke="#626d78" stroke-width="7"/>
+    <rect x="333" y="388" width="75" height="42" rx="3" fill="#d3dae0" stroke="#707b86" transform="rotate(-2 333 388)"/>
+    <circle cx="273" cy="413" r="38" fill="#e6ebef" stroke="#707b86" stroke-width="4"/>
+    <circle cx="273" cy="413" r="27"/>
+    <path d="M273 386v54M246 413h54" stroke="#707b86" stroke-width="3"/>
+    <path d="M155 238c-9 42-15 92-19 150M545 238c9 42 15 92 19 150" stroke="#c3c9cf"/>
+    <path d="M137 902c21 75 83 111 213 111s192-36 213-111" stroke="#6e7883" stroke-width="4"/>
+    <path d="M137 939c31 76 102 103 213 103s182-27 213-103" stroke="#b6bdc5"/>
+    <path d="M128 202c32-47 71-78 117-94M572 202c-32-47-71-78-117-94" stroke="#c6ccd2"/>
+    <path d="M184 966c-32-18-54-43-65-76l66-15 26 80-27 11ZM516 966c32-18 54-43 65-76l-66-15-26 80 27 11Z" fill="#dfe4e8" stroke="#707b86"/>
+    <path d="M190 934 151 919M510 934l39-15" stroke="#d71920" stroke-width="6"/>
+    <path d="M145 191 118 290M555 191l27 99" stroke="#7e8994"/>
+    <path d="M108 312h-22M592 312h22M97 546H73M603 546h24M91 782H69M609 782h22" stroke="#606a74" stroke-width="6"/>
+  </g>
+  <g fill="#47515c" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="2">
+    <text x="350" y="24" text-anchor="middle">FRONT</text>
+    <text x="350" y="1092" text-anchor="middle">REAR</text>
+  </g>
+  <g fill="#7f8994" font-family="Arial, sans-serif" font-size="16" font-weight="700">
+    <text x="30" y="560" transform="rotate(-90 30 560)" text-anchor="middle">LEFT</text>
+    <text x="670" y="560" transform="rotate(90 670 560)" text-anchor="middle">RIGHT</text>
+  </g>
+  <g clip-path="url(#bodyClip)" opacity=".22" stroke="#9aa3ad" stroke-width="1">
+    <path d="M95 500h510M95 600h510M95 800h510M170 100v900M250 80v960M450 80v960M530 100v900"/>
+  </g>
+</svg>

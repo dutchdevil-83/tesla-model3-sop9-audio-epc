@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tesla Model 3 SOP9 Audio Engineering Workspace</title>
 <link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/vehicle-map.css">
 </head>
 <body>
 <div class="app">
@@ -18,7 +19,7 @@
 <div class="shell">
 <aside class="rail">
   <div class="rail-label">Workspace</div>
-  <button class="rail-btn active" data-view="system"><span class="rail-dot"></span><span>Audio system</span></button>
+  <button class="rail-btn active" data-view="system"><span class="rail-dot"></span><span>Vehicle map</span></button>
   <button class="rail-btn" data-view="lhd"><span class="rail-dot"></span><span>Signal / LHD</span></button>
   <button class="rail-btn" data-view="premium"><span class="rail-dot"></span><span>Premium amp</span></button>
   <button class="rail-btn" data-view="connectors"><span class="rail-dot"></span><span>Connectors</span></button>
@@ -31,7 +32,7 @@
 </aside>
 <main class="main">
   <nav class="tabs">
-    <button class="tab active" data-view="system">SYSTEM</button>
+    <button class="tab active" data-view="system">VEHICLE MAP</button>
     <button class="tab" data-view="lhd">TESLA SERVICE · LHD</button>
     <button class="tab" data-view="premium">PREMIUM AMP</button>
     <button class="tab" data-view="connectors">CONNECTOR EVIDENCE</button>
@@ -47,14 +48,14 @@
   </div>
   <section id="workspaceView">
     <article class="workspace">
-      <div class="workspace-head"><strong id="workspaceTitle">Tesla Service audio source + upgrade navigator</strong><span class="source-pill">REPO SOURCE</span><span class="stage-pill" id="workspaceStage">Core Music 9 + DIRECTOR</span></div>
+      <div class="workspace-head"><strong id="workspaceTitle">Interactive Model 3 Highland vehicle map</strong><span class="source-pill">CUSTOM MAP</span><span class="stage-pill" id="workspaceStage">Core Music 9 + DIRECTOR</span></div>
       <div class="schematic-wrap" id="viewport">
         <div class="schematic-pan" id="pan"><img id="schematic" class="schematic-img" alt="Tesla Service SOP9 audio schematic"></div>
         <div class="schematic-message"><b id="selectedBadge">X567</b><span id="selectedMessage">Front left premium woofer</span></div>
         <div class="zoom"><button id="zMinus">−</button><button id="zPlus">+</button><button id="zReset">FIT</button></div>
       </div>
       <div class="position-dock">
-        <div class="dock-head"><strong>15 cabin positions</strong><span>select a position to inspect its Tesla endpoint and planned hardware</span><div class="dock-legend"><span class="legend-item"><i class="legend-swatch included"></i>in stage</span><span class="legend-item"><i class="legend-swatch deferred"></i>later</span></div></div>
+        <div class="dock-head"><strong>15 cabin positions</strong><span>click a speaker on the car or select a position below</span><div class="dock-legend"><span class="legend-item"><i class="legend-swatch included"></i>in stage</span><span class="legend-item"><i class="legend-swatch deferred"></i>later</span></div></div>
         <div id="positionDock"></div>
       </div>
     </article>
@@ -75,5 +76,6 @@
 <footer class="footer"><span class="footer-dot"></span><strong>241/241 source manifest baseline</strong><span>· target metadata 15/15 · target location images 14/15</span><span class="spacer"></span><span>Independent engineering reference · not affiliated with Tesla or equipment manufacturers</span></footer>
 </div>
 <script src="assets/app.js"></script>
+<script src="assets/vehicle-map.js"></script>
 </body>
 </html>

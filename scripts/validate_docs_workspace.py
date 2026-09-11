@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "docs" / "index.html"
 APP_JS = ROOT / "docs" / "assets" / "app.js"
+MAP_JS = ROOT / "docs" / "assets" / "vehicle-map.js"
+MAP_SVG = ROOT / "docs" / "assets" / "model3-highland-map.svg"
 COVERAGE = ROOT / "Target_Assets" / "coverage.json"
 
 
@@ -20,12 +23,14 @@ def require(condition: bool, message: str) -> None:
         fail(message)
 
 
-for path in (INDEX, APP_JS, COVERAGE):
+for path in (INDEX, APP_JS, MAP_JS, MAP_SVG, COVERAGE):
     require(path.is_file(), f"missing required file: {path.relative_to(ROOT)}")
 
 index = INDEX.read_text(encoding="utf-8")
 app_js = APP_JS.read_text(encoding="utf-8")
-source = index + "\n" + app_js
+map_js = MAP_JS.read_text(encoding="utf-8")
+map_svg = MAP_SVG.read_text(encoding="utf-8")
+source = index + "\n" + app_js + "\n" + map_js
 coverage = json.loads(COVERAGE.read_text(encoding="utf-8-sig"))
 
 require(isinstance(coverage, list) and len(coverage) == 15, "coverage.json must contain exactly 15 target endpoints")
@@ -40,9 +45,20 @@ require(
     "workspace must resolve repository assets through the public raw repo base",
 )
 
-# Never silently reintroduce the generic hand-drawn vehicle placeholder.
+# The default workspace must be an interactive vehicle-location surface, not the legacy generic outline or a wiring sheet.
+require("assets/model3-highland-map.svg" in map_js, "interactive Model 3 vehicle map asset is not referenced")
+require("vehicle-map.js" in index and "vehicle-map.css" in index, "vehicle-map runtime is not loaded by docs/index.html")
+require("VEHICLE MAP" in index and ">Vehicle map<" in index, "vehicle map is not the primary workspace navigation")
+require("NOT TESLA OEM" in map_svg.upper(), "custom vehicle artwork must state that it is not Tesla OEM artwork")
+require("showVehicleMap" in map_js, "vehicle map default-view renderer is missing")
+
+# Never silently reintroduce the old generic hand-drawn renderer from v1.x/v2.0.
 for banned in ("vehicle-svg", '<path class="outline"', "class='outline'"):
     require(banned not in source, f"banned generic vehicle renderer marker returned: {banned}")
+
+# Hotspot table must explicitly cover every target endpoint exactly once.
+hotspot_ids = set(re.findall(r"SPK\d{2}(?=:\{x:)", map_js))
+require(hotspot_ids == expected_ids, f"vehicle-map hotspots differ from target IDs: {sorted(hotspot_ids)}")
 
 for rel in ("Target_Assets/core/audio_lhd.svg", "Target_Assets/core/audio_premium_amp.svg"):
     require((ROOT / rel).is_file(), f"missing Tesla source schematic: {rel}")
@@ -78,6 +94,8 @@ for item in coverage:
 require(location_count == 14, f"expected 14 target location images, found {location_count}")
 print("Public audio workspace validation: PASS")
 print("  target endpoints : 15/15")
+print("  vehicle hotspots : 15/15")
+print("  primary view     : interactive Model 3 vehicle map")
 print("  location images  : 14/15 (X566 documented gap)")
 print("  source schematics: audio_lhd.svg + audio_premium_amp.svg")
 print("  generic vehicle  : rejected")
