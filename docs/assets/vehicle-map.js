@@ -1,6 +1,6 @@
 /* Tesla Parts Catalog Audio Speakers map. Original numbered artwork remains the primary visual. */
 (()=>{
-  const LOCAL_IMAGE='assets/tesla-parts/audio-speakers/audio-speakers.png';
+  const LOCAL_IMAGE='assets/tesla-parts/audio-speakers/audio-speakers.svg';
   const HAR_IMAGE='https://epc.tesla.com/resources/images/Model3/Highland/NL/Audio%20Speakers%20TI-6789_41ee8600-5062-4d1f-acb9-99e40abe74d0.png';
   const CROSSREF='assets/tesla-parts/audio-speakers/epc-crossref.json';
   const IMAGE_SHA='86330aae2440487a7cfa524b4b7adc793c87ee45806644cf69f491148d1faf29';
@@ -143,3 +143,4 @@
   let attempts=0;
   const ready=setInterval(()=>{attempts++;if(Array.isArray(components)&&components.length===15){clearInterval(ready);renderCallouts();showVehicleMap();}else if(attempts>200)clearInterval(ready);},25);
 })();
+
