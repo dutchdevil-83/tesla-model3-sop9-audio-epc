@@ -65,6 +65,8 @@ Tools/               Asset-collector tooling
 *.html               Versioned self-contained interactive EPC builds
 ```
 
+The current source tree is flattened directly under `Source_Assets/`. Historical v2.1 package records in `Tesla_SOP9_Audio_EPC_Package_v2.1.0_manifest.json` and `SHA256SUMS.txt` intentionally retain the older `Source_Assets/Tesla_Model3_SOP9_audio_assets_2026-09-10T11-50-37-616Z/` package paths as immutable provenance. Those paths describe the package-era layout, not the current working tree.
+
 ## GitHub Pages
 
 The repository now contains a classic Pages source under `docs/`.
@@ -109,6 +111,7 @@ The catalog UI remains v2.1.0 while the engineering/procurement workbook has mov
 
 - `main` contains validated baselines.
 - Changes should normally be developed in a branch and merged through a PR.
+- The **Validate repository** workflow must be green on the current PR head before any further UI work is started or merged.
 - Release tags follow semantic versioning, e.g. `v2.1.0`, `v2.2.0`, `v2.2.1`.
 - Do not commit ZIP/RAR/7z archives. Source packages are expanded into normal repository directories.
 
