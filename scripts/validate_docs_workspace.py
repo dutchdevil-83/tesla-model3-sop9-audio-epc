@@ -4,12 +4,16 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "docs" / "index.html"
 APP_JS = ROOT / "docs" / "assets" / "app.js"
 MAP_JS = ROOT / "docs" / "assets" / "vehicle-map.js"
+APP_CSS = ROOT / "docs" / "assets" / "app.css"
+MAP_CSS = ROOT / "docs" / "assets" / "vehicle-map.css"
 EPC_XREF = ROOT / "docs" / "assets" / "tesla-parts" / "audio-speakers" / "epc-crossref.json"
 EPC_SVG = ROOT / "docs" / "assets" / "tesla-parts" / "audio-speakers" / "audio-speakers.svg"
 EPC_PNG = ROOT / "docs" / "assets" / "tesla-parts" / "audio-speakers" / "audio-speakers.png"
@@ -27,7 +31,7 @@ def require(condition: bool, message: str) -> None:
         fail(message)
 
 
-for path in (INDEX, APP_JS, MAP_JS, EPC_XREF, EPC_SVG, COVERAGE):
+for path in (INDEX, APP_JS, MAP_JS, APP_CSS, MAP_CSS, EPC_XREF, EPC_SVG, COVERAGE):
     require(path.is_file(), f"missing required file: {path.relative_to(ROOT)}")
 
 index = INDEX.read_text(encoding="utf-8")
@@ -41,6 +45,9 @@ require(isinstance(coverage, list) and len(coverage) == 15, "coverage.json must 
 expected_ids = {f"SPK{i:02d}" for i in range(1, 16)}
 actual_ids = {str(item.get("ID")) for item in coverage}
 require(actual_ids == expected_ids, f"target IDs differ: expected {sorted(expected_ids)}, got {sorted(actual_ids)}")
+require(len([item.get("ID") for item in coverage]) == len(actual_ids), "project target IDs must remain unique")
+target_numbers = [item.get("#") for item in coverage]
+require(len(target_numbers) == len(set(target_numbers)) and set(target_numbers) == set(range(1, 16)), "project target numbers must remain unique 1-15")
 
 # GitHub Pages publishes /docs only. Service-reference assets outside docs are intentionally resolved via raw GitHub URLs.
 require("../Target_Assets/" not in source, "public workspace contains an out-of-/docs relative Target_Assets path")
@@ -68,12 +75,63 @@ callouts = epc.get("callouts", [])
 require(len(callouts) == 18, f"expected 18 original Tesla callout circles, found {len(callouts)}")
 annotations = {str(item.get("annotation")) for item in callouts}
 require({"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"}.issubset(annotations), f"missing expected Tesla annotations: {sorted(annotations)}")
+annotation_counts = Counter(str(item.get("annotation")) for item in callouts)
+require(any(count > 1 for count in annotation_counts.values()), "repeated Tesla EPC annotations must remain representable")
+require("Tesla EPC" in map_js and "EPC ${" in map_js, "UI must label source annotations as Tesla EPC identifiers")
+require("Project target" in app_js and "SPK" in app_js, "UI must label project identifiers as project targets")
 
 mapped_targets: set[str] = set()
 for item in epc.get("annotationMappings", {}).values():
     mapped_targets.update(str(v) for v in item.get("targets", []))
 require(mapped_targets == expected_ids, f"EPC-to-project cross-reference does not cover all SPK01-SPK15 targets: {sorted(mapped_targets)}")
+for annotation, mapping in epc.get("annotationMappings", {}).items():
+    require(set(str(target) for target in mapping.get("targets", [])).issubset(expected_ids), f"EPC annotation {annotation} maps to an invalid project target")
+require(any(len(mapping.get("targets", [])) > 1 for mapping in epc.get("annotationMappings", {}).values()), "one-to-many EPC mappings must remain representable")
+annotation_one_occurrences = annotation_counts.get("1", 0)
+annotation_one_parts = [part.get("quantity") for part in epc.get("parts", []) if str(part.get("annotation")) == "1"]
+annotation_one_targets = epc.get("annotationMappings", {}).get("1", {}).get("targets", [])
+require(annotation_one_occurrences == 1 and 2 in annotation_one_parts and len(annotation_one_targets) == 2, "quantity, source occurrences and mapped targets must remain distinct evidence values")
 require(len(epc.get("parts", [])) >= 10, "EPC cross-reference lost captured parts rows")
+
+# Readiness is derived from independent evidence dimensions; the historical source field is not an aggregate UI status.
+def evidence_state(value: object) -> str:
+    text = str(value or "").strip().upper()
+    if not text:
+        return "UNKNOWN"
+    if "GAP" in text or "403" in text or "UNAVAILABLE" in text:
+        return "SOURCE GAP"
+    if "VERIFIED" in text:
+        return "VERIFIED"
+    return text
+
+
+def readiness_state(item: dict[str, object]) -> str:
+    mapping_present = any(str(item.get("ID")) in [str(target) for target in mapping.get("targets", [])] for mapping in epc.get("annotationMappings", {}).values())
+    dimensions = (
+        evidence_state(item.get("Metadata")),
+        "VERIFIED" if item.get("Connector") and evidence_state(item.get("Faceview")) == "VERIFIED" else "SOURCE GAP",
+        evidence_state(item.get("Location")),
+        "CAPTURED" if item.get("Cavities / route") else "UNKNOWN",
+        "VERIFIED" if mapping_present else "NOT MAPPED",
+    )
+    return "PARTIAL" if any(state in {"SOURCE GAP", "UNKNOWN", "NOT MAPPED"} for state in dimensions) else "READY"
+
+
+readiness_by_id = {str(item.get("ID")): readiness_state(item) for item in coverage}
+require(readiness_by_id.get("SPK05") == "PARTIAL", "known X566 source gap must produce PARTIAL documentation readiness")
+require("documentationReadiness" in app_js and "Documentation readiness" in app_js, "UI must expose derived documentation readiness")
+require("selected['Engineering status']" not in app_js and 'selected["Engineering status"]' not in app_js, "legacy aggregate Engineering status must not be rendered as readiness")
+require("DEFERRED TO FULL 15" in app_js and "Current upgrade stage" in app_js, "deferred stage inclusion must remain distinct from evidence readiness")
+
+# Viewer semantics are source-level regressions that do not require brittle pixel assertions.
+require("MAX_ZOOM = 16" in app_js, "schematic viewer must retain a substantially larger zoom range")
+for marker in ("fitView", "fitWidth", "zoomTo100", "resetView", "setZoom", "event.clientX", "event.preventDefault()"):
+    require(marker in app_js, f"schematic viewer navigation marker missing: {marker}")
+require("audio-speakers.svg" in map_js and "SOURCE_PNG_FALLBACK" in map_js, "canonical SVG and captured remote fallback behavior must remain present")
+
+# Essential interface text may not regress to the old 8-11px scale.
+css = APP_CSS.read_text(encoding="utf-8") + "\n" + MAP_CSS.read_text(encoding="utf-8")
+require(not re.search(r"font-size\s*:\s*(?:8|9|10|11)px", css), "essential workspace typography regressed below 12px")
 
 # The SVG is the canonical local UI asset and must be pinned byte-for-byte.
 actual_svg_hash = hashlib.sha256(EPC_SVG.read_bytes()).hexdigest()
