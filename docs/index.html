@@ -40,7 +40,10 @@
   </nav>
   <div class="controlbar">
     <div class="stage-select"><label for="stage">Upgrade stage</label><select id="stage"></select></div>
-    <button id="fit">Fit</button><button id="zoomOut" aria-label="Zoom out">−</button><button id="zoomIn" aria-label="Zoom in">+</button>
+    <div class="zoom-controls" aria-label="Engineering drawing navigation">
+      <button id="fit" type="button">Fit</button><button id="fitWidth" type="button">Fit width</button><button id="zoom100" type="button">100%</button><button id="resetView" type="button">Reset</button>
+      <button id="zoomOut" type="button" aria-label="Zoom out">−</button><button id="zoomIn" type="button" aria-label="Zoom in">+</button><output id="zoomLevel" aria-live="polite">100%</output>
+    </div>
     <div class="spacer"></div>
     <div class="metric"><strong id="activeCount">9</strong> / 15 planned positions</div>
     <div class="metric">hardware <strong id="stageCost">€3,065</strong></div>
@@ -52,23 +55,23 @@
       <div class="schematic-wrap" id="viewport">
         <div class="schematic-pan" id="pan"><img id="schematic" class="schematic-img" alt="Tesla Service SOP9 audio schematic"></div>
         <div class="schematic-message"><b id="selectedBadge">X567</b><span id="selectedMessage">Front left premium woofer</span></div>
-        <div class="zoom"><button id="zMinus">−</button><button id="zPlus">+</button><button id="zReset">FIT</button></div>
+        <div class="zoom" aria-label="Canvas zoom controls"><button id="zMinus" type="button" aria-label="Zoom out">−</button><output id="zLevel" aria-live="polite">100%</output><button id="zPlus" type="button" aria-label="Zoom in">+</button><button id="z100" type="button">100%</button><button id="zFit" type="button">FIT</button></div>
       </div>
       <div class="position-dock">
-        <div class="dock-head"><strong>15 cabin positions</strong><span>click an original Tesla EPC callout, then cross-reference it to the project targets below</span><div class="dock-legend"><span class="legend-item"><i class="legend-swatch included"></i>in stage</span><span class="legend-item"><i class="legend-swatch deferred"></i>later</span></div></div>
+        <div class="dock-head"><strong>15 project targets</strong><span>SPK IDs are unique project targets; Tesla EPC callouts use a separate repeated namespace</span><div class="dock-legend"><span class="legend-item"><i class="legend-swatch included"></i>in stage</span><span class="legend-item"><i class="legend-swatch deferred"></i>deferred</span></div></div>
         <div id="positionDock"></div>
       </div>
     </article>
     <div class="summary-strip">
       <section class="summary-card"><div class="summary-label">Upgrade path</div><div class="summary-main" id="planTitle">Core Music 9 + DIRECTOR</div><div class="summary-sub" id="planDescription"></div></section>
-      <section class="summary-card"><div class="summary-label">Engineering coverage</div><div class="summary-grid"><div class="mini"><strong id="metadataCount">15/15</strong><span>metadata</span></div><div class="mini"><strong id="faceviewCount">15/15</strong><span>faceviews</span></div><div class="mini"><strong id="locationCount">14/15</strong><span>locations</span></div></div><div class="summary-sub">X566 retains the documented source-image gap. No invented replacement image.</div></section>
+      <section class="summary-card"><div class="summary-label">Evidence coverage</div><div class="summary-grid"><div class="mini"><strong id="metadataCount">15/15</strong><span>metadata</span></div><div class="mini"><strong id="faceviewCount">15/15</strong><span>faceviews</span></div><div class="mini"><strong id="locationCount">14/15</strong><span>locations</span></div></div><div class="summary-sub" id="readinessSummary">14 ready · 1 partial · stage inclusion tracked separately</div></section>
       <section class="summary-card"><div class="summary-label">Architecture</div><div class="summary-main">HELIX V EIGHTEEN</div><div class="summary-sub">Historical staged plan preserved from the sourcing package. Supplier alternatives remain evidence, not silent replacements.</div></section>
     </div>
   </section>
   <section id="infoView" class="info-view hidden"></section>
 </main>
 <aside class="inspector">
-  <div class="inspect-hero"><div class="inspect-num" id="inspectNum">01</div><div><div class="inspect-title" id="inspectTitle">Loading coverage…</div><div class="inspect-sub" id="inspectSub">Tesla endpoint</div><div class="inspect-stage" id="inspectStage">PLAN</div></div></div>
+  <div class="inspect-hero"><div class="inspect-num" id="inspectNum">SPK01</div><div><div class="inspect-title" id="inspectTitle">Loading coverage…</div><div class="inspect-sub" id="inspectSub">Project target</div><div class="inspect-stage" id="inspectStage">PLAN</div></div></div>
   <div class="inspect-tabs"><button class="inspect-tab active" data-inspect="component">COMPONENT</button><button class="inspect-tab" data-inspect="wiring">WIRING</button><button class="inspect-tab" data-inspect="upgrade">UPGRADE</button></div>
   <div class="inspect-body" id="inspectBody"></div>
 </aside>
