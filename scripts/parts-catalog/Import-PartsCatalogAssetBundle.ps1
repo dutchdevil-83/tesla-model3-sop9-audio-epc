@@ -182,12 +182,18 @@ param(
             Get-ChildItem -LiteralPath $selectedSource -File | Where-Object { $_.Extension -match '\.(png|svg|json|jpg|jpeg)$' } | ForEach-Object {
                 Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $docsCapture $_.Name) -Force
             }
-            foreach ($name in @('audio-speakers.png', 'epc-crossref.json')) {
+
+            $stableAssets = @('audio-speakers.svg', 'audio-speakers.png', 'epc-crossref.json')
+            foreach ($name in $stableAssets) {
                 $src = Join-Path $sourceDest "selected\audio-speakers\$name"
-                if (Test-Path -LiteralPath $src -PathType Leaf) {
-                    Copy-Item -LiteralPath $src -Destination (Join-Path $docsStable $name) -Force
+                if (-not (Test-Path -LiteralPath $src -PathType Leaf)) {
+                    throw "Required stable Parts Catalog asset missing from selected bundle: $name"
                 }
+                Copy-Item -LiteralPath $src -Destination (Join-Path $docsStable $name) -Force
             }
+        }
+        else {
+            throw 'Unable to locate selected Audio Speakers assets for -PublishToDocs.'
         }
     }
 
