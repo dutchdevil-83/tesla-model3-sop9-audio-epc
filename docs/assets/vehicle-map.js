@@ -1,9 +1,10 @@
 /* Tesla Parts Catalog Audio Speakers map. Original numbered artwork remains the primary visual. */
 (()=>{
-  const LOCAL_IMAGE='assets/tesla-parts/audio-speakers/audio-speakers.svg';
-  const HAR_IMAGE='https://epc.tesla.com/resources/images/Model3/Highland/NL/Audio%20Speakers%20TI-6789_41ee8600-5062-4d1f-acb9-99e40abe74d0.png';
+  const CANONICAL_SVG='assets/tesla-parts/audio-speakers/audio-speakers.svg';
+  const SOURCE_PNG_FALLBACK='https://epc.tesla.com/resources/images/Model3/Highland/NL/Audio%20Speakers%20TI-6789_41ee8600-5062-4d1f-acb9-99e40abe74d0.png';
   const CROSSREF='assets/tesla-parts/audio-speakers/epc-crossref.json';
-  const IMAGE_SHA='86330aae2440487a7cfa524b4b7adc793c87ee45806644cf69f491148d1faf29';
+  const SVG_SHA='043e4161ca010de424e97939df669638c458b6ea0287a1e9cc049cd3b5684909';
+  const SOURCE_PNG_SHA='86330aae2440487a7cfa524b4b7adc793c87ee45806644cf69f491148d1faf29';
 
   const pan=document.querySelector('#pan');
   const schematic=document.querySelector('#schematic');
@@ -20,14 +21,14 @@
   shell.className='vehicle-map-shell';
   shell.innerHTML=`
     <div id="vehicleMap" class="vehicle-map" role="group" aria-label="Tesla Parts Catalog Audio Speakers vehicle illustration">
-      <img id="epcVehicleImage" src="${LOCAL_IMAGE}" alt="Tesla Parts Catalog Model 3 Highland Audio Speakers illustration with original numbered callouts">
+      <img id="epcVehicleImage" src="${CANONICAL_SVG}" alt="Tesla Parts Catalog Model 3 Highland Audio Speakers illustration with original numbered callouts">
       <div id="epcCallouts" class="epc-callouts" aria-label="Clickable Tesla Parts Catalog callouts"></div>
     </div>`;
   pan.insertBefore(shell,schematic);
 
   const source=document.createElement('div');
   source.className='vehicle-map-source';
-  source.innerHTML=`<b>Tesla Parts Catalog · Audio Speakers</b><span>Exact showcase artwork recovered from the supplied HAR.</span><code>SHA-256 ${IMAGE_SHA.slice(0,16)}…</code>`;
+  source.innerHTML=`<b>Tesla Parts Catalog · Audio Speakers</b><span>Canonical interactive SVG recovered from the supplied HAR.</span><code>SVG SHA-256 ${SVG_SHA.slice(0,16)}…</code>`;
   viewport.appendChild(source);
 
   const detail=document.createElement('section');
@@ -40,9 +41,10 @@
   image.addEventListener('error',()=>{
     if(imageFallbackUsed) return;
     imageFallbackUsed=true;
-    image.src=HAR_IMAGE;
+    image.src=SOURCE_PNG_FALLBACK;
     source.classList.add('remote-fallback');
-    source.querySelector('span').textContent='Exact HAR-referenced artwork. Local repo copy is not present yet; using the captured source URL.';
+    source.querySelector('span').textContent='Canonical local SVG failed to load; using the captured Tesla source PNG fallback.';
+    source.querySelector('code').textContent=`PNG SHA-256 ${SOURCE_PNG_SHA.slice(0,16)}…`;
   });
 
   const originalSetView=window.setView;
@@ -143,4 +145,3 @@
   let attempts=0;
   const ready=setInterval(()=>{attempts++;if(Array.isArray(components)&&components.length===15){clearInterval(ready);renderCallouts();showVehicleMap();}else if(attempts>200)clearInterval(ready);},25);
 })();
-
