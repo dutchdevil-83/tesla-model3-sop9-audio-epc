@@ -79,7 +79,7 @@ require(len(epc.get("parts", [])) >= 10, "EPC cross-reference lost captured part
 actual_svg_hash = hashlib.sha256(EPC_SVG.read_bytes()).hexdigest()
 require(actual_svg_hash == EXPECTED_EPC_SVG_SHA256, f"canonical Parts Catalog SVG hash mismatch: {actual_svg_hash}")
 
-# The PNG is retained as source-image fallback/provenance when materialized.
+# The local PNG is retained as source-image provenance only; runtime fallback remains the captured remote URL.
 if EPC_PNG.is_file():
     actual_png_hash = hashlib.sha256(EPC_PNG.read_bytes()).hexdigest()
     require(actual_png_hash == EXPECTED_EPC_PNG_SHA256, f"local Parts Catalog PNG hash mismatch: {actual_png_hash}")
@@ -119,7 +119,7 @@ print("  Tesla EPC callouts   : 18 original callout circles")
 print("  EPC target mapping   : SPK01-SPK15 covered")
 print("  primary view         : Parts Catalog Audio Speakers")
 print("  Parts Catalog SVG    : canonical local asset + hash pinned")
-print(f"  source PNG fallback  : {'local + hash pinned' if EPC_PNG.is_file() else 'remote HAR source URL + hash pinned'}")
+print(f"  PNG provenance       : {'local copy + hash pinned' if EPC_PNG.is_file() else 'remote source hash pinned; local copy not materialized'}")
 print("  location images      : 14/15 (X566 documented gap)")
 print("  Service schematics   : audio_lhd.svg + audio_premium_amp.svg")
 print("  custom vehicle asset : not used")

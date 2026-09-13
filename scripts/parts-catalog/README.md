@@ -36,7 +36,7 @@ asset-manifest.json
 selected/
   audio-speakers/
     audio-speakers.svg       # canonical Parts Catalog interactive/vector source
-    audio-speakers.png       # exact Parts Catalog source-image fallback/provenance
+    audio-speakers.png       # captured source-image provenance; not a local runtime fallback
     system-group.json        # exact system-group response with VIN-like values redacted
     epc-crossref.json        # parsed callouts + parts + internal SPK cross-reference
     parts/<part-number>/...  # thumbnails actually present in the HAR
@@ -90,14 +90,14 @@ This creates two web locations:
 ```text
 docs/assets/tesla-parts/audio-speakers/
     audio-speakers.svg       # canonical UI asset
-    audio-speakers.png       # captured source-image fallback/provenance
+    audio-speakers.png       # captured source-image provenance; not consumed by the UI
     epc-crossref.json
 
 docs/assets/tesla-parts/captures/<capture>/
     ...versioned selected evidence...
 ```
 
-The **stable** `docs/assets/tesla-parts/audio-speakers/audio-speakers.svg` asset is canonical for the main UI. The PNG is retained only as the captured source-image fallback/provenance asset. The versioned capture path preserves traceability.
+The **stable** `docs/assets/tesla-parts/audio-speakers/audio-speakers.svg` asset is canonical for the main UI. The local PNG is retained for captured source-image provenance only; it is not a runtime fallback and is not read by the UI. If the local SVG fails to load, `vehicle-map.js` uses the captured Tesla source URL as its remote fallback. The versioned capture path preserves traceability.
 
 `-PublishToDocs` requires all three stable files (`audio-speakers.svg`, `audio-speakers.png`, and `epc-crossref.json`) so a new capture cannot silently publish an incomplete or contradictory Pages baseline.
 
