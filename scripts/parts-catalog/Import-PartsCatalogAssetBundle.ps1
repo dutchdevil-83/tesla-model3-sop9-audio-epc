@@ -177,23 +177,27 @@ param(
             (Join-Path $sourceDest 'raw\drawings')
         )
         $selectedSource = $candidates | Where-Object { Test-Path -LiteralPath $_ -PathType Container } | Select-Object -First 1
-        if ($selectedSource) {
-            New-Item -ItemType Directory -Path $docsCapture, $docsStable -Force | Out-Null
-            Get-ChildItem -LiteralPath $selectedSource -File | Where-Object { $_.Extension -match '\.(png|svg|json|jpg|jpeg)$' } | ForEach-Object {
-                Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $docsCapture $_.Name) -Force
-            }
-
-            $stableAssets = @('audio-speakers.svg', 'audio-speakers.png', 'epc-crossref.json')
-            foreach ($name in $stableAssets) {
-                $src = Join-Path $sourceDest "selected\audio-speakers\$name"
-                if (-not (Test-Path -LiteralPath $src -PathType Leaf)) {
-                    throw "Required stable Parts Catalog asset missing from selected bundle: $name"
-                }
-                Copy-Item -LiteralPath $src -Destination (Join-Path $docsStable $name) -Force
-            }
-        }
-        else {
+        if (-not $selectedSource) {
             throw 'Unable to locate selected Audio Speakers assets for -PublishToDocs.'
+        }
+
+        # Preflight the complete publication set before touching either docs destination.
+        # A missing required file must not leave docsCapture partially updated.
+        $stableAssets = @('audio-speakers.svg', 'audio-speakers.png', 'epc-crossref.json')
+        $stableSources = foreach ($name in $stableAssets) {
+            $src = Join-Path $sourceDest "selected\audio-speakers\$name"
+            if (-not (Test-Path -LiteralPath $src -PathType Leaf)) {
+                throw "Required stable Parts Catalog asset missing from selected bundle: $name"
+            }
+            [pscustomobject]@{ Name = $name; Path = $src }
+        }
+
+        New-Item -ItemType Directory -Path $docsCapture, $docsStable -Force | Out-Null
+        Get-ChildItem -LiteralPath $selectedSource -File | Where-Object { $_.Extension -match '\.(png|svg|json|jpg|jpeg)$' } | ForEach-Object {
+            Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $docsCapture $_.Name) -Force
+        }
+        foreach ($asset in $stableSources) {
+            Copy-Item -LiteralPath $asset.Path -Destination (Join-Path $docsStable $asset.Name) -Force
         }
     }
 

@@ -48,3 +48,12 @@ jobs:
 
       - name: Validate public audio workspace and repo asset bindings
         run: python3 scripts/validate_docs_workspace.py
+
+  parts-catalog-publication:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate Parts Catalog docs publication preflight
+        shell: pwsh
+        run: ./scripts/parts-catalog/Test-PartsCatalogDocsPublication.ps1
