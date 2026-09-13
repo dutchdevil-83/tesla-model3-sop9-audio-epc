@@ -27,6 +27,22 @@ https://dutchdevil-83.github.io/tesla-model3-sop9-audio-epc/
 - `data/door_damping_v2.2.json` - public structured data for the door-acoustic-treatment comparison.
 - `.nojekyll` - prevents Jekyll processing so the folder is served as static content.
 
+## Identifier and readiness semantics
+
+The workspace keeps two identifier namespaces separate. `Tesla EPC <number>` is
+the original Parts Catalog annotation and may occur more than once in the source
+drawing. `SPK01` through `SPK15` are unique project target IDs. The cross-reference
+preserves the original EPC annotation and records one-to-many mappings without
+renumbering the Tesla source artwork.
+
+The inspector also separates evidence from upgrade-stage inclusion. Metadata,
+connector/faceview, physical location, wiring/route and project mapping are
+shown as independent evidence dimensions. `Documentation readiness` is derived
+from those dimensions, while `IN CURRENT STAGE` and `DEFERRED TO FULL 15` report
+the selected upgrade plan. A source gap such as X566's documented HTTP 403
+location response therefore remains visible as `SOURCE GAP` and produces
+`PARTIAL` readiness rather than an unconditional aggregate `COMPLETE` state.
+
 ## Repository asset loading
 
 Classic Pages publishes only `/docs`; files such as `Target_Assets/core/audio_lhd.svg`, connector location images and `Target_Assets/coverage.json` live outside that publish folder. The workspace therefore resolves those validated assets from the repository's public `raw.githubusercontent.com/.../main/` paths instead of using broken `../Target_Assets/...` links.
