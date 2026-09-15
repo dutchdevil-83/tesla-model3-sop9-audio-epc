@@ -46,8 +46,19 @@ jobs:
           grep -q 'function renderConnector' "$html"
           grep -q 'function renderSuppliers' "$html"
 
+      - name: Check published workspace JavaScript syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check docs/assets/app.js
+          node --check docs/assets/installed-system.js
+          node --check docs/assets/vehicle-map.js
+
       - name: Validate public audio workspace and repo asset bindings
         run: python3 scripts/validate_docs_workspace.py
+
+      - name: Run engineering workspace semantic regressions
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
 
   parts-catalog-publication:
     runs-on: windows-latest
