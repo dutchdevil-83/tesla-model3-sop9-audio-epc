@@ -7,13 +7,21 @@ import unittest
 from collections import Counter
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 APP_JS = (ROOT / "docs/assets/app.js").read_text(encoding="utf-8")
+BUILD_JS = (ROOT / "docs/assets/installed-system.js").read_text(encoding="utf-8")
 MAP_JS = (ROOT / "docs/assets/vehicle-map.js").read_text(encoding="utf-8")
-CSS = "\n".join((ROOT / path).read_text(encoding="utf-8") for path in ("docs/assets/app.css", "docs/assets/vehicle-map.css"))
+APP_CSS = (ROOT / "docs/assets/app.css").read_text(encoding="utf-8")
+MAP_CSS = (ROOT / "docs/assets/vehicle-map.css").read_text(encoding="utf-8")
+BUILD_CSS = (ROOT / "docs/assets/installed-system.css").read_text(encoding="utf-8")
 COVERAGE = json.loads((ROOT / "Target_Assets/coverage.json").read_text(encoding="utf-8-sig"))
 CROSSREF = json.loads((ROOT / "docs/assets/tesla-parts/audio-speakers/epc-crossref.json").read_text(encoding="utf-8"))
+BUILD = json.loads((ROOT / "docs/data/installed-system.json").read_text(encoding="utf-8"))
+
+ESSENTIAL_SELECTORS = (
+    ".searchbox input", ".rail-btn", ".tab", ".stage-select select", ".controlbar button",
+    ".position-chip", ".connector-table", ".inspect-title", ".inspect-sub", ".inspect-tab", ".kv",
+)
 
 
 def evidence_state(value: object) -> str:
@@ -27,17 +35,24 @@ def evidence_state(value: object) -> str:
     return text
 
 
+def target_mapping(target_id: str) -> list[dict[str, object]]:
+    return [
+        {"annotation": annotation, **mapping}
+        for annotation, mapping in CROSSREF["annotationMappings"].items()
+        if target_id in [str(target) for target in mapping.get("targets", [])]
+    ]
+
+
 def readiness_state(item: dict[str, object]) -> str:
-    target_id = str(item["ID"])
-    mapping_present = any(target_id in [str(target) for target in mapping.get("targets", [])] for mapping in CROSSREF["annotationMappings"].values())
+    mappings = target_mapping(str(item["ID"]))
     dimensions = (
         evidence_state(item.get("Metadata")),
         "VERIFIED" if item.get("Connector") and evidence_state(item.get("Faceview")) == "VERIFIED" else "SOURCE GAP",
         evidence_state(item.get("Location")),
         "CAPTURED" if item.get("Cavities / route") else "UNKNOWN",
-        "VERIFIED" if mapping_present else "NOT MAPPED",
+        "MAPPED-WITH-CONFIDENCE" if mappings else "NOT MAPPED",
     )
-    return "PARTIAL" if any(state in {"SOURCE GAP", "UNKNOWN", "NOT MAPPED"} for state in dimensions) else "READY"
+    return "PARTIAL" if any(state in {"SOURCE GAP", "UNKNOWN", "NOT MAPPED", "MAPPED-WITH-CONFIDENCE"} for state in dimensions) else "READY"
 
 
 class EngineeringWorkspaceTests(unittest.TestCase):
@@ -55,8 +70,16 @@ class EngineeringWorkspaceTests(unittest.TestCase):
         self.assertGreater(counts["6"], 1)
         self.assertIn('class="epc-visible-label" aria-hidden="true">EPC ', MAP_JS)
         self.assertIn("Tesla EPC", MAP_JS)
-        self.assertIn("Project target", APP_JS)
-        self.assertIn('class="chip-id">${esc(component.ID)}', APP_JS)
+        self.assertIn("Project target", APP_JS + BUILD_JS)
+
+    def test_mapping_presence_does_not_become_verified(self) -> None:
+        self.assertEqual(target_mapping("SPK08")[0]["confidence"], "location-count-candidate")
+        self.assertEqual(target_mapping("SPK14")[0]["confidence"], "probable-location-pair")
+        self.assertNotIn("return { label: 'VERIFIED', tone: 'verified', annotations", BUILD_JS)
+        self.assertIn("MAPPED - CONFIDENCE RECORDED", BUILD_JS)
+        self.assertIn("mapping.confidence", BUILD_JS)
+        self.assertEqual(readiness_state(next(item for item in COVERAGE if item["ID"] == "SPK08")), "PARTIAL")
+        self.assertEqual(readiness_state(next(item for item in COVERAGE if item["ID"] == "SPK14")), "PARTIAL")
 
     def test_one_to_many_mapping_keeps_counts_separate(self) -> None:
         mapping = CROSSREF["annotationMappings"]["1"]
@@ -68,18 +91,43 @@ class EngineeringWorkspaceTests(unittest.TestCase):
         self.assertIn("Source drawing occurrences", MAP_JS)
         self.assertIn("Mapped project targets", MAP_JS)
         self.assertIn("Tesla part quantity", MAP_JS)
-        self.assertTrue(all(target in {f"SPK{index:02d}" for index in range(1, 16)} for target in mapping["targets"]))
 
-    def test_source_gap_is_partial_and_stage_is_independent(self) -> None:
+    def test_source_gap_and_mapping_confidence_are_independent(self) -> None:
         by_id = {str(item["ID"]): item for item in COVERAGE}
         self.assertEqual(readiness_state(by_id["SPK05"]), "PARTIAL")
-        self.assertEqual(readiness_state(by_id["SPK08"]), "READY")
-        self.assertIn("documentationReadiness", APP_JS)
-        self.assertIn("Documentation readiness", APP_JS)
-        self.assertIn("Current upgrade stage", APP_JS)
-        self.assertIn("DEFERRED TO FULL 15", APP_JS)
-        self.assertNotIn("selected['Engineering status']", APP_JS)
-        self.assertNotIn('selected["Engineering status"]', APP_JS)
+        self.assertIn("documentationReadinessCurrentBuild", BUILD_JS)
+        self.assertIn("Tesla EPC cross-reference", BUILD_JS)
+        self.assertIn("REFERENCE / FUTURE", BUILD_JS)
+        self.assertNotIn("selected['Engineering status']", APP_JS + BUILD_JS)
+
+    def test_raw_pin_identifiers_are_preserved(self) -> None:
+        by_id = {str(item["ID"]): item for item in COVERAGE}
+        self.assertEqual(by_id["SPK01"]["Premium Amp pins"], "X561-7/8")
+        self.assertEqual(by_id["SPK08"]["Premium Amp pins"], "X560-9/10")
+        self.assertEqual(by_id["SPK03"]["Premium Amp pins"], "")
+        self.assertIn("rawEngineeringValue(selected['Premium Amp pins'])", BUILD_JS)
+        self.assertIn("${esc(ampPinsRaw)}", BUILD_JS)
+        self.assertNotIn("stateFromEvidence(selected['Premium Amp pins'])", BUILD_JS)
+
+    def test_current_build_matches_owner_confirmed_hardware(self) -> None:
+        targets = BUILD["targets"]
+        self.assertEqual(BUILD["systemHardware"][0]["model"], "V TWELVE DSP MK2")
+        self.assertEqual(targets["SPK01"]["component"], "HELIX Ci7 W200FM-S3")
+        self.assertEqual(targets["SPK03"]["component"], "HELIX Ci7 T20FM-SC")
+        self.assertEqual(targets["SPK05"]["component"], "HELIX Ci7 M100FM-S3")
+        self.assertEqual(targets["SPK06"]["component"], "HELIX Ci3 C100.2FM-S3 MK2")
+        self.assertEqual(targets["SPK10"]["status"], "OEM STOCK")
+        self.assertEqual(targets["SPK11"]["status"], "OEM STOCK")
+        self.assertEqual(targets["SPK12"]["status"], "NONE / FUTURE")
+        self.assertEqual(targets["SPK13"]["status"], "NONE / FUTURE")
+        self.assertEqual(len(BUILD["subwooferSubsystem"]), 2)
+        self.assertTrue(all(sub["manufacturer"] == "Pioneer" and sub["model"] == "TBD" for sub in BUILD["subwooferSubsystem"]))
+
+    def test_harness_fitment_warning_is_not_silenced(self) -> None:
+        harness = next(item for item in BUILD["systemHardware"] if item["id"] == "HARNESS01")
+        self.assertIn("FITMENT CHECK REQUIRED", harness["status"])
+        self.assertIn("NOT compatible with Model 3 Highland", harness["warning"])
+        self.assertIn("pp-tes-1-7b-highland", harness["references"][1]["url"])
 
     def test_viewer_has_high_range_pointer_navigation_and_svg_source(self) -> None:
         self.assertRegex(APP_JS, r"MAX_ZOOM\s*=\s*16")
@@ -89,8 +137,15 @@ class EngineeringWorkspaceTests(unittest.TestCase):
         self.assertIn("SOURCE_PNG_FALLBACK", MAP_JS)
         self.assertNotIn("schematic.src = SOURCE_PNG_FALLBACK", MAP_JS)
 
-    def test_essential_typography_does_not_return_to_old_small_scale(self) -> None:
-        self.assertIsNone(re.search(r"font-size\s*:\s*(?:8|9|10|11)px", CSS))
+    def test_essential_typography_contract_is_targeted(self) -> None:
+        css = APP_CSS + "\n" + MAP_CSS + "\n" + BUILD_CSS
+        for selector in ESSENTIAL_SELECTORS:
+            match = re.search(re.escape(selector) + r"\s*\{([^}]*)\}", css, re.S)
+            self.assertIsNotNone(match, selector)
+            size = re.search(r"font-size\s*:\s*(\d+)px", match.group(1))
+            if size:
+                self.assertGreaterEqual(int(size.group(1)), 12, selector)
+        self.assertRegex(BUILD_CSS, r"\.reference-links span\s*\{[^}]*font-size\s*:\s*12px")
 
 
 if __name__ == "__main__":
