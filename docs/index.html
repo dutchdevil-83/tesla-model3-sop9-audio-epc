@@ -6,6 +6,7 @@
 <title>Tesla Model 3 SOP9 Audio Engineering Workspace</title>
 <link rel="stylesheet" href="assets/app.css">
 <link rel="stylesheet" href="assets/vehicle-map.css">
+<link rel="stylesheet" href="assets/installed-system.css">
 </head>
 <body>
 <div class="app">
@@ -26,7 +27,7 @@
   <button class="rail-btn" data-view="evidence"><span class="rail-dot"></span><span>Evidence</span></button>
   <div class="rail-rule"></div>
   <div class="rail-label">Plan</div>
-  <div class="rail-summary"><strong id="railStage">Core Music 9 + DIRECTOR</strong><span id="railSummary">9 cabin positions · final DSP retained</span></div>
+  <div class="rail-summary"><strong id="railStage">Current build</strong><span id="railSummary">Purchased hardware + Tesla source evidence</span></div>
   <div class="rail-rule"></div>
   <a class="rail-btn" href="catalog.html"><span class="rail-dot"></span><span>Legacy catalog</span></a>
 </aside>
@@ -39,46 +40,47 @@
     <button class="tab" data-view="evidence">TECHNICAL SOURCES</button>
   </nav>
   <div class="controlbar">
-    <div class="stage-select"><label for="stage">Upgrade stage</label><select id="stage"></select></div>
+    <div class="stage-select"><label for="stage">Build / reference view</label><select id="stage"></select></div>
     <div class="zoom-controls" aria-label="Engineering drawing navigation">
       <button id="fit" type="button">Fit</button><button id="fitWidth" type="button">Fit width</button><button id="zoom100" type="button">100%</button><button id="resetView" type="button">Reset</button>
       <button id="zoomOut" type="button" aria-label="Zoom out">−</button><button id="zoomIn" type="button" aria-label="Zoom in">+</button><output id="zoomLevel" aria-live="polite">100%</output>
     </div>
     <div class="spacer"></div>
-    <div class="metric"><strong id="activeCount">9</strong> / 15 planned positions</div>
-    <div class="metric">hardware <strong id="stageCost">€3,065</strong></div>
+    <div class="metric"><strong id="activeCount">9</strong> / 15 reference positions</div>
+    <div class="metric">hardware <strong id="stageCost">PURCHASED</strong></div>
     <button id="openSource">Open source asset</button>
   </div>
   <section id="workspaceView">
     <article class="workspace">
-      <div class="workspace-head"><strong id="workspaceTitle">Tesla Parts Catalog · Audio Speakers</strong><span class="source-pill">TESLA PARTS CATALOG</span><span class="stage-pill" id="workspaceStage">Core Music 9 + DIRECTOR</span></div>
+      <div class="workspace-head"><strong id="workspaceTitle">Tesla Parts Catalog · Audio Speakers</strong><span class="source-pill">TESLA PARTS CATALOG</span><span class="stage-pill" id="workspaceStage">Current build</span></div>
       <div class="schematic-wrap" id="viewport">
         <div class="schematic-pan" id="pan"><img id="schematic" class="schematic-img" alt="Tesla Service SOP9 audio schematic"></div>
         <div class="schematic-message"><b id="selectedBadge">X567</b><span id="selectedMessage">Front left premium woofer</span></div>
         <div class="zoom" aria-label="Canvas zoom controls"><button id="zMinus" type="button" aria-label="Zoom out">−</button><output id="zLevel" aria-live="polite">100%</output><button id="zPlus" type="button" aria-label="Zoom in">+</button><button id="z100" type="button">100%</button><button id="zFit" type="button">FIT</button></div>
       </div>
       <div class="position-dock">
-        <div class="dock-head"><strong>15 project targets</strong><span>SPK IDs are unique project targets; Tesla EPC callouts use a separate repeated namespace</span><div class="dock-legend"><span class="legend-item"><i class="legend-swatch included"></i>in stage</span><span class="legend-item"><i class="legend-swatch deferred"></i>deferred</span></div></div>
+        <div class="dock-head"><strong>15 Tesla reference targets</strong><span>SPK IDs are unique project targets; installed hardware, OEM-retained speakers and future/absent positions are shown separately from Tesla EPC source evidence.</span><div class="dock-legend"><span class="legend-item"><i class="legend-swatch included"></i>current build</span><span class="legend-item"><i class="legend-swatch deferred"></i>reference / future</span></div></div>
         <div id="positionDock"></div>
       </div>
     </article>
     <div class="summary-strip">
-      <section class="summary-card"><div class="summary-label">Upgrade path</div><div class="summary-main" id="planTitle">Core Music 9 + DIRECTOR</div><div class="summary-sub" id="planDescription"></div></section>
-      <section class="summary-card"><div class="summary-label">Evidence coverage</div><div class="summary-grid"><div class="mini"><strong id="metadataCount">15/15</strong><span>metadata</span></div><div class="mini"><strong id="faceviewCount">15/15</strong><span>faceviews</span></div><div class="mini"><strong id="locationCount">14/15</strong><span>locations</span></div></div><div class="summary-sub" id="readinessSummary">14 ready · 1 partial · stage inclusion tracked separately</div></section>
-      <section class="summary-card"><div class="summary-label">Architecture</div><div class="summary-main">HELIX V EIGHTEEN</div><div class="summary-sub">Historical staged plan preserved from the sourcing package. Supplier alternatives remain evidence, not silent replacements.</div></section>
+      <section class="summary-card"><div class="summary-label">Current build</div><div class="summary-main" id="planTitle">Purchased hardware</div><div class="summary-sub" id="planDescription"></div></section>
+      <section class="summary-card"><div class="summary-label">Evidence coverage</div><div class="summary-grid"><div class="mini"><strong id="metadataCount">15/15</strong><span>metadata</span></div><div class="mini"><strong id="faceviewCount">15/15</strong><span>faceviews</span></div><div class="mini"><strong id="locationCount">14/15</strong><span>locations</span></div></div><div class="summary-sub" id="readinessSummary">Tesla evidence readiness tracked independently from build status</div></section>
+      <section class="summary-card"><div class="summary-label">Architecture</div><div class="summary-main">HELIX V TWELVE DSP MK2</div><div class="summary-sub">12 amplified channels / 14 DSP channels. DIRECTOR for SCP ordered. Rear doors remain OEM; Pioneer trunk subs are separate from parcel-shelf endpoints.</div></section>
     </div>
   </section>
   <section id="infoView" class="info-view hidden"></section>
 </main>
 <aside class="inspector">
-  <div class="inspect-hero"><div class="inspect-num" id="inspectNum">SPK01</div><div><div class="inspect-title" id="inspectTitle">Loading coverage…</div><div class="inspect-sub" id="inspectSub">Project target</div><div class="inspect-stage" id="inspectStage">PLAN</div></div></div>
-  <div class="inspect-tabs"><button class="inspect-tab active" data-inspect="component">COMPONENT</button><button class="inspect-tab" data-inspect="wiring">WIRING</button><button class="inspect-tab" data-inspect="upgrade">UPGRADE</button></div>
+  <div class="inspect-hero"><div class="inspect-num" id="inspectNum">SPK01</div><div><div class="inspect-title" id="inspectTitle">Loading coverage…</div><div class="inspect-sub" id="inspectSub">Project target</div><div class="inspect-stage" id="inspectStage">BUILD</div></div></div>
+  <div class="inspect-tabs"><button class="inspect-tab active" data-inspect="component">COMPONENT</button><button class="inspect-tab" data-inspect="wiring">WIRING</button><button class="inspect-tab" data-inspect="upgrade">BUILD / DOCS</button></div>
   <div class="inspect-body" id="inspectBody"></div>
 </aside>
 </div>
-<footer class="footer"><span class="footer-dot"></span><strong>Parts Catalog Audio Speakers + 241/241 Service source baseline</strong><span>· target metadata 15/15 · target location images 14/15</span><span class="spacer"></span><span>Independent engineering reference · not affiliated with Tesla or equipment manufacturers</span></footer>
+<footer class="footer"><span class="footer-dot"></span><strong>Purchased-build overlay + Tesla Parts Catalog + 241/241 Service source baseline</strong><span>· target metadata 15/15 · target location images 14/15</span><span class="spacer"></span><span>Independent engineering reference · not affiliated with Tesla or equipment manufacturers</span></footer>
 </div>
 <script src="assets/app.js"></script>
+<script src="assets/installed-system.js"></script>
 <script src="assets/vehicle-map.js"></script>
 </body>
 </html>
