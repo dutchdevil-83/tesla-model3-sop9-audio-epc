@@ -19,8 +19,8 @@ CROSSREF = json.loads((ROOT / "docs/assets/tesla-parts/audio-speakers/epc-crossr
 BUILD = json.loads((ROOT / "docs/data/installed-system.json").read_text(encoding="utf-8"))
 
 ESSENTIAL_SELECTORS = (
-    ".searchbox input", ".rail-btn", ".tab", ".stage-select select", ".controlbar button",
-    ".position-chip", ".connector-table", ".inspect-title", ".inspect-sub", ".inspect-tab", ".kv",
+    ".searchbox input", ".rail-btn", ".tab", ".position-chip", ".connector-table",
+    ".inspect-title", ".inspect-sub", ".inspect-tab", ".kv",
 )
 
 
@@ -145,6 +145,9 @@ class EngineeringWorkspaceTests(unittest.TestCase):
             size = re.search(r"font-size\s*:\s*(\d+)px", match.group(1))
             if size:
                 self.assertGreaterEqual(int(size.group(1)), 12, selector)
+        grouped_control_rule = re.search(r"\.stage-select select\s*,\s*\.controlbar button\s*\{([^}]*)\}", css, re.S)
+        self.assertIsNotNone(grouped_control_rule)
+        self.assertRegex(grouped_control_rule.group(1), r"font-size\s*:\s*(?:1[2-9]|[2-9]\d)px")
         self.assertRegex(BUILD_CSS, r"\.reference-links span\s*\{[^}]*font-size\s*:\s*12px")
 
 
