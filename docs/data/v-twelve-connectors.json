@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "updated": "2026-09-16",
   "amplifier": "HELIX V TWELVE DSP MK2",
   "manufacturer": "Audiotec Fischer",
-  "status": "MANUFACTURER CONNECTOR LABELS VERIFIED; CURRENT BUILD TERMINAL PLAN PROPOSED",
+  "status": "MANUFACTURER CONNECTOR LABELS VERIFIED; TESLA SOP9 SOURCE MAP VERIFIED; CURRENT BUILD TERMINAL PLAN PROPOSED",
   "evidence": [
     "Audiotec Fischer official HELIX V TWELVE DSP MK2 manual.",
-    "Owner-supplied photographs of the actual V TWELVE DSP MK2 connector panels dated 2026-09-16."
+    "Owner-supplied photographs of the actual V TWELVE DSP MK2 connector panels dated 2026-09-16.",
+    "Tesla SOP9 source connector/cavity/net assignments from repository Source_Assets/connectors/X171/metadata.json and X175/metadata.json, cross-checked with Source_Assets/core/audio_lhd.svg."
   ],
   "references": [
     {
@@ -83,7 +84,8 @@
     ]
   },
   "currentBuildTerminalPlan": {
-    "status": "PROPOSED TERMINAL ASSIGNMENT - DO NOT ENERGIZE UNTIL PP-TES TESLA-CAVITY CONTINUITY IS VERIFIED",
+    "status": "PROPOSED TERMINAL ASSIGNMENT - TESLA SOP9 SOURCE MAP VERIFIED; DO NOT ENERGIZE UNTIL M141318 IS REWORKED TO THAT MAP AND FINAL CONTINUITY QC PASSES",
+    "verificationBoundary": "Tesla SOP9 channel functions and X171/X175 source cavities are already verified from the repository electrical reference. The remaining task is adapting/checking the older M141318 harness routing, not discovering Tesla pin functions.",
     "designRule": "Keep the seven direct PP-TES channels symmetrical from HIGHLEVEL INPUT A-G to OUTPUT A-G. Use H/I for DSP-derived tweeters, reserve J/K for the two Pioneer trunk subwoofers pending electrical specifications, and leave L spare.",
     "highlevelInputs": [
       {"channel": "A", "harnessLabel": "Front Low Left", "role": "front-left door woofer source", "target": "SPK01", "state": "PLANNED"},
