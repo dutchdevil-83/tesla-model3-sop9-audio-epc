@@ -50,6 +50,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          node --check docs/assets/workflow.js
           node --check docs/assets/app.js
           node --check docs/assets/installed-system.js
           node --check docs/assets/harness-map.js
