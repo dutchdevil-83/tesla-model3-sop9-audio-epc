@@ -1,6 +1,6 @@
 /* PP-TES logical channel overlay.
- * Logical roles are store-confirmed and sleeve-label/photo backed.
- * Tesla connector cavity mapping remains pending continuity verification.
+ * Tesla SOP9 source roles/cavities come from the repository electrical reference.
+ * The older M141318 harness routing must be repinned/reworked to those verified functions.
  */
 (() => {
   const baseRenderInspector = renderInspector;
@@ -35,13 +35,20 @@
     return values.length ? values.map(value => `<code>${esc(value)}</code>`).join('<span class="harness-plus"> / </span>') : '<span class="harness-muted">not assigned</span>';
   }
 
+  function sop9Pair(channel) {
+    const source = channel.teslaSop9;
+    if (!source) return '<span class="harness-muted">not recorded</span>';
+    return `<code>${esc(source.sourceConnector)}-${esc(source.positiveCavity)} + (${esc(source.positiveNet)})</code><span class="harness-plus"> / </span><code>${esc(source.sourceConnector)}-${esc(source.negativeCavity)} - (${esc(source.negativeNet)})</code>`;
+  }
+
   function channelCard(channel, targetId) {
     const relation = relationship(channel, targetId);
     return `<article class="harness-channel-card">
       <div class="harness-channel-head"><strong>${esc(channel.label)}</strong><span>${esc(relation.label)}</span></div>
       <div class="harness-kv"><span>OEM logical source</span><b>${esc(channel.sourceRole)}</b></div>
+      <div class="harness-kv"><span>Tesla SOP9 source</span><b>${sop9Pair(channel)}</b></div>
       <div class="harness-kv"><span>IN to V TWELVE</span><b>${sleevePair(channel.inputSleeves)}</b></div>
-      <div class="harness-kv"><span>OUT to vehicle</span><b>${channel.directTarget === targetId ? sleevePair(channel.outputSleeves) : '<span class="harness-muted">dedicated DSP output route still to assign</span>'}</b></div>
+      <div class="harness-kv"><span>OUT to vehicle</span><b>${channel.directTarget === targetId ? sleevePair(channel.outputSleeves) : '<span class="harness-muted">dedicated DSP output route</span>'}</b></div>
       <div class="harness-kv"><span>Observed wire family</span><b>${esc(channel.observedWireFamily || 'not recorded')}</b></div>
       <p>${esc(relation.detail)}</p>
       <div class="harness-verification">${esc(channel.verification)}</div>
@@ -50,27 +57,37 @@
 
   function fullTopology(map) {
     return `<section class="inspector-section harness-topology">
-      <h3>7-channel PP-TES logical topology</h3>
+      <h3>7-channel PP-TES / SOP9 topology</h3>
       <div class="harness-table-wrap"><table class="harness-table">
-        <thead><tr><th>Harness label</th><th>Tesla source role</th><th>Direct target</th><th>DSP-derived</th><th>State</th></tr></thead>
+        <thead><tr><th>Harness label</th><th>Tesla source role</th><th>SOP9 source pair</th><th>Direct target</th><th>DSP-derived</th></tr></thead>
         <tbody>${(map.channels || []).map(channel => `<tr>
           <td><strong>${esc(channel.label)}</strong></td>
           <td>${esc(channel.sourceRole)}</td>
+          <td>${sop9Pair(channel)}</td>
           <td>${esc(channel.directTarget || 'none')}</td>
           <td>${esc((channel.derivedTargets || []).join(', ') || 'none')}</td>
-          <td>${esc(channel.verification)}</td>
         </tr>`).join('')}</tbody>
       </table></div>
       <div class="harness-direction"><b>IN</b> ${esc(map.directionSemantics?.IN || '')}<br><b>OUT</b> ${esc(map.directionSemantics?.OUT || '')}</div>
     </section>`;
   }
 
-  function verificationBanner(map) {
-    const check = map.teslaCavityVerification || {};
+  function sourceVerificationBanner(map) {
+    const source = map.sop9SourceVerification || {};
+    return `<div class="harness-source-verified">
+      <strong>Tesla SOP9 source map: ${esc(source.status || 'UNKNOWN')}</strong>
+      <span>${esc(source.scope || '')}</span>
+      <small>${esc(source.source || '')}</small>
+    </div>`;
+  }
+
+  function reworkBanner(map) {
+    const rework = map.ryzenHarnessRework || {};
+    if (!rework.status) return '';
     return `<div class="fitment-warning harness-warning">
-      <strong>${esc(check.status || map.status || 'VERIFICATION PENDING')}</strong>
-      <span>${esc(check.scope || '')}</span>
-      <small>Required before: ${esc(check.requiredBefore || 'cutting or energizing')}</small>
+      <strong>M141318 custom-harness work: ${esc(rework.status)}</strong>
+      <span>${esc(rework.scope || '')}</span>
+      <small>${esc(rework.verificationBoundary || '')} ${esc(rework.finalQc || '')}</small>
     </div>`;
   }
 
@@ -100,11 +117,11 @@
       : `<section class="inspector-section"><h3>MATCH breakout -> V TWELVE</h3><div class="harness-empty">No direct seven-channel PP-TES logical source is assigned to ${esc(selected.ID)} in the current build.</div></section>`;
 
     if (inspectTab === 'wiring') {
-      section.innerHTML = `${relevantMarkup}${verificationBanner(map)}${fullTopology(map)}${selected.ID === 'SPK12' || selected.ID === 'SPK13' ? optionalWoofer(map) : ''}`;
+      section.innerHTML = `${sourceVerificationBanner(map)}${relevantMarkup}${reworkBanner(map)}${fullTopology(map)}${selected.ID === 'SPK12' || selected.ID === 'SPK13' ? optionalWoofer(map) : ''}`;
     } else if (inspectTab === 'upgrade') {
-      section.innerHTML = `${verificationBanner(map)}${relevantMarkup}${optionalWoofer(map)}`;
+      section.innerHTML = `${sourceVerificationBanner(map)}${reworkBanner(map)}${relevantMarkup}${optionalWoofer(map)}`;
     } else {
-      section.innerHTML = `${relevantMarkup}${verificationBanner(map)}`;
+      section.innerHTML = `${sourceVerificationBanner(map)}${relevantMarkup}`;
     }
     body.appendChild(section);
   }
