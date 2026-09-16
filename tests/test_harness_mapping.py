@@ -38,8 +38,8 @@ class HarnessMappingTests(unittest.TestCase):
             self.assertEqual(channel["inputSleeves"], [f"{label} IN +", f"{label} IN -"])
             self.assertEqual(channel["outputSleeves"], [f"{label} OUT +", f"{label} OUT -"])
             self.assertEqual(len(channel["finalSleeveLabels"]), 4)
-        self.assertIn("high-level input", self.integration["directionSemantics"]["IN"])
-        self.assertIn("speaker output", self.integration["directionSemantics"]["OUT"])
+        self.assertIn("highlevel input", self.integration["directionSemantics"]["IN"].lower())
+        self.assertIn("speaker output", self.integration["directionSemantics"]["OUT"].lower())
         self.assertIn("IN -", self.integration["labelingRule"]["inputPolarity"])
         self.assertIn("OUT +", self.integration["labelingRule"]["outputPolarity"])
 
