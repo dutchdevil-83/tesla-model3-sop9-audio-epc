@@ -7,13 +7,17 @@
 .harness-kv span { color: var(--muted); }
 .harness-kv b { min-width: 0; overflow-wrap: anywhere; }
 .harness-channel-card p, .harness-topology p { margin: 8px 0; font-size: 13px; color: #566170; line-height: 1.45; }
-.harness-channel-card code, .harness-sleeves code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; background: #f0f3f6; padding: 2px 4px; border-radius: 3px; white-space: normal; }
+.harness-channel-card code, .harness-sleeves code, .harness-table code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; background: #f0f3f6; padding: 2px 4px; border-radius: 3px; white-space: normal; }
 .harness-plus { color: var(--muted); font-weight: 500; }
 .harness-muted, .harness-empty { color: var(--muted); font-size: 13px; font-weight: 500; }
 .harness-warning { margin: 12px 16px; }
 .harness-warning small { display: block; margin-top: 5px; font-size: 12px; }
+.harness-source-verified { margin: 12px 16px; padding: 11px 12px; border: 1px solid #abd5b8; border-radius: 6px; background: #f3fbf5; color: #195c31; display: grid; gap: 4px; }
+.harness-source-verified strong { font-size: 13px; }
+.harness-source-verified span { font-size: 13px; color: #315d40; }
+.harness-source-verified small { font-size: 12px; color: #557060; overflow-wrap: anywhere; }
 .harness-table-wrap { overflow-x: auto; }
-.harness-table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: 12px; }
+.harness-table { width: 100%; min-width: 820px; border-collapse: collapse; font-size: 12px; }
 .harness-table th, .harness-table td { text-align: left; vertical-align: top; padding: 7px 6px; border-bottom: 1px solid var(--line2); }
 .harness-table th { color: var(--muted); text-transform: uppercase; font-size: 12px; }
 .harness-direction { margin-top: 10px; padding: 9px; background: #f7f9fb; border-radius: 5px; font-size: 13px; line-height: 1.55; }
