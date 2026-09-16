@@ -123,7 +123,7 @@
   function verifiedPioneerSubwooferCards() {
     const subs = installedSystem?.subwooferSubsystem || [];
     if (!subs.length) return '';
-    return `<section class="inspector-section"><h3>Trunk subwoofer subsystem</h3>${subs.map(sub => `<div class="sub-card"><b>${esc(sub.id)} - ${esc(sub.manufacturer)} ${esc(sub.model)}</b><span>${esc(sub.status)}</span><small>${esc(sub.location)} - ${esc(sub.note)}</small></div>`).join('')}<div class="engineering-note warning">Known donor system: Pioneer TS-WX1220AH. Two single 0.6 Ω 12-inch drivers. Do not power them from V TWELVE speaker outputs. Use LINE OUTPUT M/N as processed signal to the original or another suitable external subwoofer amplifier.</div></section>`;
+    return `<section class="inspector-section"><h3>Trunk subwoofer subsystem</h3>${subs.map(sub => `<div class="sub-card"><b>${esc(sub.id)} - ${esc(sub.donorSystem || `${sub.manufacturer} ${sub.model}`)}</b><span>${esc(sub.status)}</span><small>${esc(sub.location)} - ${esc(sub.note)}</small></div>`).join('')}<div class="engineering-note warning">Known donor system: Pioneer TS-WX1220AH. Two single 0.6 Ω 12-inch drivers. Do not power them from V TWELVE speaker outputs. Use LINE OUTPUT M/N as processed signal to the original or another suitable external subwoofer amplifier.</div></section>`;
   }
 
   if (typeof subwooferCards === 'function') {
