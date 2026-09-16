@@ -74,10 +74,14 @@ class VTwelveConnectorTests(unittest.TestCase):
         self.assertEqual(outputs["K"]["target"], "SUB02")
         self.assertEqual(outputs["L"]["state"], "SPARE")
 
-    def test_plan_is_not_presented_as_factory_or_verified_vehicle_wiring(self) -> None:
+    def test_plan_separates_verified_sop9_source_from_proposed_amplifier_assignment(self) -> None:
         plan = DATA["currentBuildTerminalPlan"]
         self.assertIn("PROPOSED", plan["status"])
+        self.assertIn("SOP9 SOURCE MAP VERIFIED", plan["status"])
+        self.assertIn("M141318", plan["status"])
         self.assertIn("DO NOT ENERGIZE", plan["status"])
+        self.assertNotIn("TESLA-CAVITY CONTINUITY IS VERIFIED", plan["status"])
+        self.assertIn("already verified", plan["verificationBoundary"])
         self.assertIn("installation-plan decisions", UI)
         self.assertIn("Factory connector labels", UI)
 
