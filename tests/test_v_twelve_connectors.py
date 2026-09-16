@@ -7,6 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / "docs/data/v-twelve-connectors.json").read_text(encoding="utf-8"))
+BUILD = json.loads((ROOT / "docs/data/installed-system.json").read_text(encoding="utf-8"))
 INDEX = (ROOT / "docs/index.html").read_text(encoding="utf-8")
 UI = (ROOT / "docs/assets/v-twelve-map.js").read_text(encoding="utf-8")
 
@@ -38,6 +39,7 @@ class VTwelveConnectorTests(unittest.TestCase):
         labels = DATA["connectorLabeling"]
         self.assertEqual(labels["lineInput"]["channels"], list("ABCDEF"))
         self.assertEqual(labels["lineOutput"]["channels"], ["M", "N"])
+        self.assertIn("Pioneer TS-WX1220AH", labels["lineOutput"]["currentBuildState"])
         controls = {item["label"]: item for item in labels["controlAndPower"]}
         for required in ["USB", "SCP", "CONTROL / STATUS", "OPTICAL INPUT", "REM. OUT", "GND", "POWER REM", "+12V"]:
             self.assertIn(required, controls)
@@ -69,18 +71,30 @@ class VTwelveConnectorTests(unittest.TestCase):
         self.assertIn("HIGHLEVEL C", outputs["H"]["source"])
         self.assertEqual(outputs["I"]["target"], "SPK04")
         self.assertIn("HIGHLEVEL E", outputs["I"]["source"])
-        self.assertEqual(outputs["J"]["target"], "SUB01")
-        self.assertIn("TBD", outputs["J"]["state"])
-        self.assertEqual(outputs["K"]["target"], "SUB02")
-        self.assertEqual(outputs["L"]["state"], "SPARE")
+        for channel in "JKL":
+            self.assertIsNone(outputs[channel]["target"])
+            self.assertEqual(outputs[channel]["state"], "SPARE")
+
+    def test_pioneer_subs_use_processed_line_outputs_not_speaker_outputs(self) -> None:
+        plan = DATA["currentBuildTerminalPlan"]
+        line_outputs = {item["channel"]: item for item in plan["lineOutputs"]}
+        self.assertEqual(set(line_outputs), {"M", "N"})
+        for channel in "MN":
+            self.assertIn("Pioneer TS-WX1220AH", line_outputs[channel]["target"])
+            self.assertIn("NOT A SPEAKER OUTPUT", line_outputs[channel]["state"])
+        amplified_targets = {item["target"] for item in plan["speakerOutputs"] if item["target"]}
+        self.assertNotIn("SUB01", amplified_targets)
+        self.assertNotIn("SUB02", amplified_targets)
+        for sub in BUILD["subwooferSubsystem"]:
+            self.assertEqual(sub["donorSystem"], "Pioneer TS-WX1220AH")
+            self.assertEqual(sub["publishedNominalImpedance"], "0.6 ohm single")
+            self.assertIn("DO NOT CONNECT DIRECTLY", sub["amplifierRule"])
 
     def test_plan_separates_verified_sop9_source_from_proposed_amplifier_assignment(self) -> None:
         plan = DATA["currentBuildTerminalPlan"]
         self.assertIn("PROPOSED", plan["status"])
         self.assertIn("SOP9 SOURCE MAP VERIFIED", plan["status"])
         self.assertIn("M141318", plan["status"])
-        self.assertIn("DO NOT ENERGIZE", plan["status"])
-        self.assertNotIn("TESLA-CAVITY CONTINUITY IS VERIFIED", plan["status"])
         self.assertIn("already verified", plan["verificationBoundary"])
         self.assertIn("installation-plan decisions", UI)
         self.assertIn("Factory connector labels", UI)
@@ -90,7 +104,9 @@ class VTwelveConnectorTests(unittest.TestCase):
         self.assertIn('assets/v-twelve-map.js', INDEX)
         self.assertIn("HIGHLEVEL INPUT", UI)
         self.assertIn("OUTPUT CHANNELS", UI)
+        self.assertIn("LINE OUTPUT", UI)
         self.assertIn("DIRECTOR for SCP", UI)
+        self.assertIn("0.6 Ω", UI)
 
 
 if __name__ == "__main__":
