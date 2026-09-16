@@ -47,7 +47,7 @@
       "label": "LINE OUTPUT",
       "channels": ["M", "N"],
       "purpose": "2 processed RCA outputs for an external amplifier",
-      "currentBuildState": "PIONEER TS-WX1220AH SUB SIGNAL FEED - M/N feed an external/original Pioneer subwoofer amplifier; never connect the 0.6-ohm donor drivers directly to these RCA sockets or to V TWELVE speaker outputs."
+      "currentBuildState": "Pioneer TS-WX1220AH SUB SIGNAL FEED - M/N feed an external/original Pioneer subwoofer amplifier; never connect the 0.6-ohm donor drivers directly to these RCA sockets or to V TWELVE speaker outputs."
     },
     "controlAndPower": [
       {"label": "USB", "purpose": "DSP PC-Tool connection"},
@@ -62,7 +62,7 @@
   },
   "currentBuildTerminalPlan": {
     "status": "PROPOSED TERMINAL ASSIGNMENT - TESLA SOP9 SOURCE MAP VERIFIED; M141318 MUST BE REWORKED TO THAT MAP BEFORE CONNECTION",
-    "verificationBoundary": "Tesla SOP9 channel functions and X171/X175 source cavities are verified from the repository electrical reference. The remaining task is adapting the older M141318 harness routing and checking the finished harness.",
+    "verificationBoundary": "Tesla SOP9 channel functions and X171/X175 source cavities are verified from the repository electrical reference; these source functions are already verified. The remaining task is adapting the older M141318 harness routing and checking the finished harness.",
     "designRule": "Use HIGHLEVEL A-G for the seven Tesla standard-audio source channels; keep amplified outputs A-G aligned with their direct speaker returns; use H/I for the two full-active tweeters; J/K/L remain spare. LINE OUTPUT M/N carry processed low-frequency signal to the external/original Pioneer TS-WX1220AH amplifier.",
     "highlevelInputs": [
       {"channel": "A", "harnessLabel": "Front Low Left", "role": "front-left door woofer source", "target": "SPK01", "state": "PLANNED"},
