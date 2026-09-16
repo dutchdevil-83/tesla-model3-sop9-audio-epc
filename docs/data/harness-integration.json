@@ -12,7 +12,7 @@
     "Owner-supplied photos show labelled IN +/-, OUT +/- conductors for Front Low Left, Front Low Right, Front Left, Center, Front Right, Rear Left and Rear Right."
   ],
   "directionSemantics": {
-    "IN": "Tesla OEM speaker-level source -> HELIX V TWELVE DSP MK2 high-level input",
+    "IN": "Tesla OEM speaker-level source -> HELIX V TWELVE DSP MK2 highlevel input (high-level input)",
     "OUT": "HELIX V TWELVE DSP MK2 amplified speaker output -> vehicle-side speaker return"
   },
   "labelingRule": {
