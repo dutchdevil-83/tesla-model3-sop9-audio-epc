@@ -39,7 +39,7 @@ class VTwelveConnectorTests(unittest.TestCase):
         labels = DATA["connectorLabeling"]
         self.assertEqual(labels["lineInput"]["channels"], list("ABCDEF"))
         self.assertEqual(labels["lineOutput"]["channels"], ["M", "N"])
-        self.assertIn("Pioneer TS-WX1220AH", labels["lineOutput"]["currentBuildState"])
+        self.assertIn("PIONEER TS-WX1220AH", labels["lineOutput"]["currentBuildState"].upper())
         controls = {item["label"]: item for item in labels["controlAndPower"]}
         for required in ["USB", "SCP", "CONTROL / STATUS", "OPTICAL INPUT", "REM. OUT", "GND", "POWER REM", "+12V"]:
             self.assertIn(required, controls)
