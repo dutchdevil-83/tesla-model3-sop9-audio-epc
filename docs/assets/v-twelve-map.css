@@ -1,0 +1,26 @@
+.vt-map-section { border-top: 1px solid var(--line); }
+.vt-target-map, .vt-factory-map, .vt-assignment-overview { margin-top: 12px; }
+.vt-terminal-row { margin: 8px 0; padding: 10px; border: 1px solid var(--line); border-radius: 7px; background: #fbfcfd; display: grid; grid-template-columns: 118px minmax(0,1fr); gap: 5px 9px; }
+.vt-terminal-row > span { color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; }
+.vt-terminal-row > b { font-size: 13px; overflow-wrap: anywhere; }
+.vt-terminal-row small { grid-column: 2; color: #566170; font-size: 12px; line-height: 1.45; }
+.vt-terminal-row em { grid-column: 2; font-size: 12px; font-style: normal; font-weight: 760; color: var(--amber); }
+.vt-terminal-row code, .vt-table code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; background: #f0f3f6; padding: 2px 4px; border-radius: 3px; font-size: 12px; }
+.vt-arrow { color: var(--muted); font-weight: 500; }
+.vt-plan-state { margin-top: 8px; padding: 9px 10px; border-radius: 5px; background: #fff8e8; border: 1px solid #eed99b; font-size: 12px; font-weight: 760; color: #765500; }
+.vt-connector-card { margin: 8px 0; padding: 10px; border: 1px solid var(--line); border-radius: 7px; background: #fff; }
+.vt-connector-card.vt-secondary { background: #f8fafc; }
+.vt-connector-title { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; margin-bottom: 7px; }
+.vt-connector-title strong { font-size: 14px; }
+.vt-connector-title span { color: var(--muted); font-size: 12px; }
+.vt-grid-row { display: grid; grid-template-columns: 90px minmax(0,1fr); gap: 8px; padding: 5px 0; border-top: 1px solid var(--line2); font-size: 12px; }
+.vt-grid-row:first-of-type { border-top: 0; }
+.vt-grid-row span { color: var(--muted); font-weight: 700; }
+.vt-grid-row b { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; overflow-wrap: anywhere; }
+.vt-table td:first-child { white-space: nowrap; }
+@media (max-width: 1100px) {
+  .vt-terminal-row { grid-template-columns: 1fr; }
+  .vt-terminal-row small, .vt-terminal-row em { grid-column: 1; }
+  .vt-grid-row { grid-template-columns: 1fr; gap: 2px; }
+  .vt-connector-title { flex-direction: column; align-items: flex-start; }
+}

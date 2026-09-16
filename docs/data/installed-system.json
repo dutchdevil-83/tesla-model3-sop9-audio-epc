@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-09-16",
+  "vehicle": {
+    "model": "Tesla Model 3 Highland",
+    "modelYear": 2026,
+    "variant": "Premium Long Range RWD",
+    "driveSide": "LHD",
+    "audioBaseline": "Current vehicle fitment tracked against the repository Tesla Service and Parts Catalog evidence"
+  },
+  "build": {
+    "name": "Purchased / current build",
+    "status": "HARDWARE ACQUIRED",
+    "notes": [
+      "Front and center speakers are mapped to the exact HELIX models purchased on 2026-09-15.",
+      "Rear door speakers remain the original Tesla speakers for now.",
+      "Parcel-shelf speakers are not installed in this vehicle and remain FUTURE/NONE.",
+      "The exact donor subwoofer system is Pioneer TS-WX1220AH. Its two original 30 cm / 12-inch drivers will be reused in the trunk as a separate subwoofer subsystem; they are deliberately not relabeled as parcel-shelf speakers.",
+      "For this European build, the current working basis is 2 ohm per donor woofer: Pioneer Europe lists the dual TS-WX1220AH at 2 ohm / 1000 W nominal and the single-driver TS-WX1210AH sibling at 2 ohm / 500 W nominal. The current single-amplifier plan drives the two donor woofers independently from V TWELVE outputs J and K. Verify loose-driver DCR before first energization."
+    ]
+  },
+  "systemHardware": [
+    {
+      "id": "AMP01",
+      "category": "DSP amplifier",
+      "manufacturer": "HELIX",
+      "model": "V TWELVE DSP MK2",
+      "status": "PURCHASED",
+      "receipt": "Helix V Twelve DSP MK2 Installer",
+      "specs": {
+        "amplifiedChannels": 12,
+        "dspChannels": 14,
+        "power4Ohm": "12 x 75 W RMS",
+        "power2Ohm": "12 x 120 W RMS",
+        "maxPerChannel2Ohm": "up to 160 W RMS",
+        "speakerOutputs": 12,
+        "processedRcaOutputs": 2,
+        "controlPort": "SCP"
+      },
+      "references": [
+        {"label": "Official product page", "url": "https://www.audiotec-fischer.de/en/helix/amplifiers/v-twelve-dsp-mk2"},
+        {"label": "Official user manual PDF", "url": "https://www.audiotec-fischer.de/media/pdf/d3/17/06/HELIX-V-TWELVE-DSP_MK2_148x210mm_02-12-21_web.pdf"},
+        {"label": "DSP PC-Tool downloads", "url": "https://www.audiotec-fischer.de/en/tools/dsp-pc-tool/downloads/"}
+      ]
+    },
+    {
+      "id": "CTRL01",
+      "category": "DSP controller",
+      "manufacturer": "Audiotec Fischer",
+      "model": "DIRECTOR for SCP",
+      "status": "ORDERED ONLINE",
+      "specs": {"display": "2.8 inch touchscreen", "connection": "Smart Control Port (SCP)", "compatibleAmplifier": "HELIX V TWELVE DSP MK2"},
+      "references": [
+        {"label": "Official DIRECTOR page and compatibility table", "url": "https://www.audiotec-fischer.de/en/brax/accessories/director-display-remote-control"}
+      ]
+    },
+    {
+      "id": "HARNESS01",
+      "category": "Tesla integration harness",
+      "manufacturer": "MATCH",
+      "model": "PP-TES 1.7B Ryzen",
+      "status": "PURCHASED - FITMENT CHECK REQUIRED - CUSTOM SOP9 REWORK",
+      "receipt": "Match PP-TES 1.7B Ryzen",
+      "warning": "Audiotec Fischer states that PP-TES 1.7B Ryzen M141318 is NOT compatible with Model 3 Highland as a plug-and-play harness. This project deliberately reuses it as a donor/interposer: repin/re-route it to the verified SOP9 X171/X175 functions and speaker returns documented in this repository before connecting the V TWELVE.",
+      "references": [
+        {"label": "Official PP-TES 1.7B Ryzen page", "url": "https://www.audiotec-fischer.de/en/match/adaptors-harnesses/pp-tes-1-7b-ryzen"},
+        {"label": "Official PP-TES 1.7B Highland page", "url": "https://www.audiotec-fischer.de/en/match/adaptors-harnesses/pp-tes-1-7b-highland"}
+      ]
+    }
+  ],
+  "targets": {
+    "SPK01": {"status": "PURCHASED", "component": "HELIX Ci7 W200FM-S3", "role": "Front left door 200 mm woofer", "adapter": "FM200TES3 Tesla Model 3 FlexMount200 adapter", "quantityBasis": "one of purchased pair", "productRef": "CI7_W200", "serviceRefs": ["TESLA_FRONT_WOOFER", "TESLA_FRONT_DOOR_TRIM"]},
+    "SPK02": {"status": "PURCHASED", "component": "HELIX Ci7 W200FM-S3", "role": "Front right door 200 mm woofer", "adapter": "FM200TES3 Tesla Model 3 FlexMount200 adapter", "quantityBasis": "one of purchased pair", "productRef": "CI7_W200", "serviceRefs": ["TESLA_FRONT_WOOFER", "TESLA_FRONT_DOOR_TRIM"]},
+    "SPK03": {"status": "ORDERED / PURCHASED SYSTEM", "component": "HELIX Ci7 T20FM-SC", "role": "Front left door tweeter", "adapter": "HELIX CFMK20 TES.1 (ordered online)", "quantityBasis": "one of purchased pair", "productRef": "CI7_T20", "serviceRefs": ["TESLA_FRONT_TWEETER"]},
+    "SPK04": {"status": "ORDERED / PURCHASED SYSTEM", "component": "HELIX Ci7 T20FM-SC", "role": "Front right door tweeter", "adapter": "HELIX CFMK20 TES.1 (ordered online)", "quantityBasis": "one of purchased pair", "productRef": "CI7_T20", "serviceRefs": ["TESLA_FRONT_TWEETER"]},
+    "SPK05": {"status": "PURCHASED", "component": "HELIX Ci7 M100FM-S3", "role": "Instrument panel left 100 mm midrange", "adapter": "HELIX CFMK100 BMW.1", "quantityBasis": "one of purchased pair", "productRef": "CI7_M100", "serviceRefs": ["TESLA_DASH_SIDE", "TESLA_DASH_GRILLE"]},
+    "SPK06": {"status": "PURCHASED", "component": "HELIX Ci3 C100.2FM-S3 MK2", "role": "Instrument panel center 100 mm coaxial", "adapter": "HELIX CFMK100 BMW.1", "quantityBasis": "one physical speaker from the purchased 0.5-pair line", "productRef": "CI3_C100", "serviceRefs": ["TESLA_DASH_CENTER", "TESLA_DASH_GRILLE"]},
+    "SPK07": {"status": "PURCHASED", "component": "HELIX Ci7 M100FM-S3", "role": "Instrument panel right 100 mm midrange", "adapter": "HELIX CFMK100 BMW.1", "quantityBasis": "one of purchased pair", "productRef": "CI7_M100", "serviceRefs": ["TESLA_DASH_SIDE", "TESLA_DASH_GRILLE"]},
+    "SPK08": {"status": "NOT IN CURRENT BUILD", "component": null, "role": "PAUDIO-only front left 80 mm reference endpoint", "adapter": null, "note": "No 80 mm replacement was purchased. Keep this Tesla PAUDIO reference separate from the current physical build.", "serviceRefs": ["TESLA_FRONT_DOOR_TRIM"]},
+    "SPK09": {"status": "NOT IN CURRENT BUILD", "component": null, "role": "PAUDIO-only front right 80 mm reference endpoint", "adapter": null, "note": "No 80 mm replacement was purchased. Keep this Tesla PAUDIO reference separate from the current physical build.", "serviceRefs": ["TESLA_FRONT_DOOR_TRIM"]},
+    "SPK10": {"status": "OEM STOCK", "component": "Tesla original rear door speaker", "role": "Rear left door speaker", "adapter": null, "note": "No aftermarket rear speaker purchased yet; retain original Tesla speaker.", "serviceRefs": ["TESLA_REAR_DOOR_TRIM", "TESLA_REAR_DOOR_HARNESS"]},
+    "SPK11": {"status": "OEM STOCK", "component": "Tesla original rear door speaker", "role": "Rear right door speaker", "adapter": null, "note": "No aftermarket rear speaker purchased yet; retain original Tesla speaker.", "serviceRefs": ["TESLA_REAR_DOOR_TRIM", "TESLA_REAR_DOOR_HARNESS"]},
+    "SPK12": {"status": "NONE / FUTURE", "component": null, "role": "Parcel shelf left Tesla reference endpoint", "adapter": null, "note": "No parcel-shelf speaker is installed in the current car. The trunk Pioneer subwoofer is tracked separately and must not be wired as if it were X588.", "serviceRefs": ["TESLA_PARCEL_WOOFER"]},
+    "SPK13": {"status": "NONE / FUTURE", "component": null, "role": "Parcel shelf right Tesla reference endpoint", "adapter": null, "note": "No parcel-shelf speaker is installed in the current car. The trunk Pioneer subwoofer is tracked separately and must not be wired as if it were X593.", "serviceRefs": ["TESLA_PARCEL_WOOFER"]},
+    "SPK14": {"status": "NOT IN CURRENT BUILD", "component": null, "role": "PAUDIO-only headliner left reference endpoint", "adapter": null, "note": "No headliner replacement was purchased. Preserve as Tesla PAUDIO reference/future endpoint unless physical fitment is confirmed.", "serviceRefs": ["TESLA_HEADLINER"]},
+    "SPK15": {"status": "NOT IN CURRENT BUILD", "component": null, "role": "PAUDIO-only headliner right reference endpoint", "adapter": null, "note": "No headliner replacement was purchased. Preserve as Tesla PAUDIO reference/future endpoint unless physical fitment is confirmed.", "serviceRefs": ["TESLA_HEADLINER"]}
+  },
+  "subwooferSubsystem": [
+    {"id": "SUB01", "status": "REUSE - DONOR SYSTEM IDENTIFIED", "manufacturer": "Pioneer", "model": "TBD", "donorSystem": "Pioneer TS-WX1220AH", "driver": "30 cm / 12-inch donor woofer", "publishedNominalImpedance": "2 ohm EU working basis; verify loose-driver DCR before energizing", "location": "Trunk / rear cargo area", "amplifierRule": "CURRENT PLAN: DIRECT V TWELVE OUTPUT J, ONE WOOFER PER CHANNEL", "note": "Pioneer amplifier is not reused and no external subwoofer amplifier is used. Current plan is direct V TWELVE J connection at the 2-ohm European working basis, approximately 120 W RMS. This is intentionally power-limited versus the Pioneer system capability."},
+    {"id": "SUB02", "status": "REUSE - DONOR SYSTEM IDENTIFIED", "manufacturer": "Pioneer", "model": "TBD", "donorSystem": "Pioneer TS-WX1220AH", "driver": "30 cm / 12-inch donor woofer", "publishedNominalImpedance": "2 ohm EU working basis; verify loose-driver DCR before energizing", "location": "Trunk / rear cargo area", "amplifierRule": "CURRENT PLAN: DIRECT V TWELVE OUTPUT K, ONE WOOFER PER CHANNEL", "note": "Pioneer amplifier is not reused and no external subwoofer amplifier is used. Current plan is direct V TWELVE K connection at the 2-ohm European working basis, approximately 120 W RMS. This is intentionally power-limited versus the Pioneer system capability."}
+  ],
+  "pioneerDonorSystem": {
+    "model": "Pioneer TS-WX1220AH",
+    "configuration": "2 x 30 cm / 12-inch bass-reflex active subwoofer system",
+    "europeanImpedance": "2 ohm",
+    "europeanNominalInputPower": "1000 W complete dual-driver system",
+    "singleDriverSibling": "Pioneer TS-WX1210AH: 2 ohm / 500 W nominal",
+    "currentProjectWorkingBasis": "2 ohm per donor woofer; verify loose-driver DCR before first energization",
+    "originalAmplifier": "600 W RMS / 1200 W peak Class-D; not reused in this build",
+    "frequencyResponse": "20 Hz - 2.9 kHz",
+    "references": [
+      {"label": "Pioneer Europe NL TS-WX1220AH page", "url": "https://pioneer-car.eu/nl/nl/ts-wx1220ah/ts-wx1220ah"},
+      {"label": "Pioneer Europe ES TS-WX1220AH page (2 ohm field)", "url": "https://pioneer-car.eu/es/es/ts-wx1220ah/ts-wx1220ah"},
+      {"label": "Pioneer Europe ES TS-WX1210AH page (2 ohm / 500 W single sibling)", "url": "https://pioneer-car.eu/es/es/ts-wx1210ah/ts-wx1210ah"},
+      {"label": "Pioneer Europe installation manual", "url": "https://pioneer-car.eu/asset/installation_manuals/UPLOAD_ID_28783/bb886d2a0df764bbfca7a2d7de1562b67e31f364/"},
+      {"label": "Repository donor documentation", "path": "Reference_Assets/Pioneer/TS_WX1220AH/Pioneer_TS-WX1220AH_Donor_Documentation.md"}
+    ]
+  },
+  "products": {
+    "CI7_W200": {"name": "HELIX Ci7 W200FM-S3", "status": "PURCHASED", "specs": ["200 mm woofer", "3 ohm", "150 W RMS / 225 W max", "35-2500 Hz", "65.8 mm installation depth"], "references": [{"label": "Official product page", "url": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-w200fm-s3"}, {"label": "Official manual PDF", "url": "https://www.audiotec-fischer.de/media/pdf/ef/d1/9e/BA_HELIX_COMPOSE_i7_Woofer_02-03-2023.pdf"}]},
+    "CI7_M100": {"name": "HELIX Ci7 M100FM-S3", "status": "PURCHASED", "specs": ["100 mm midrange", "3 ohm", "100 W RMS / 150 W max", "110-7000 Hz", "26.9 mm installation depth"], "references": [{"label": "Official product page", "url": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-m100fm-s3"}, {"label": "Official manual PDF", "url": "https://www.audiotec-fischer.de/media/pdf/94/64/b2/HELIX_COMPOSE_i7_Midrange-18-04-2023.pdf"}]},
+    "CI7_T20": {"name": "HELIX Ci7 T20FM-SC", "status": "PURCHASED + ADAPTER ORDERED", "specs": ["20 mm silk-dome tweeter", "4 ohm", "1500-30000 Hz", "minimum high-pass: >4000 Hz @ 6 dB/oct, >3000 Hz @ 12 dB/oct, >2500 Hz @ 24 dB/oct"], "references": [{"label": "Official product page", "url": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-t20fm-sc?number=CI21001"}, {"label": "Official manual PDF", "url": "https://www.audiotec-fischer.de/media/pdf/6c/39/d5/BA_HELIX_COMPOSE_i7_Tweeter_13-06-2023.pdf"}, {"label": "Official CFMK20 TES.1 reference", "url": "https://www.audiotec-fischer.de/en/helix/speakers/compose/flexmounts/"}]},
+    "CI3_C100": {"name": "HELIX Ci3 C100.2FM-S3 MK2", "status": "PURCHASED", "specs": ["100 mm 2-way coaxial", "3 ohm", "80 W RMS / 120 W max", "100-25000 Hz", "30 mm installation depth"], "references": [{"label": "Official product page", "url": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i3/ci3-c100-2fm-s3-mk2"}, {"label": "Official manual PDF", "url": "https://www.audiotec-fischer.de/media/pdf/a3/76/0a/HELIX_COMPOSE_i3_MK2_Speaker-Systems_22-04-2025.pdf"}]}
+  },
+  "adaptersAndMaterials": [
+    {"name": "FM200TES3 Tesla Model 3 FlexMount200 adapter", "status": "PURCHASED", "source": "Car-Hifi Store Bunde soundXTREME package / installer-specific adapter"},
+    {"name": "HELIX CFMK20 TES.1", "status": "ORDERED ONLINE", "sourceUrl": "https://www.audiotec-fischer.de/en/helix/speakers/compose/flexmounts/"},
+    {"name": "HELIX CFMK100 BMW.1", "status": "PURCHASED", "quantityNote": "Receipt quantity 1.5 packages = 3 rings; official package contains 2 rings.", "sourceUrl": "https://www.audiotec-fischer.de/en/helix/speakers/compose/flexmounts/cfmk100-bmw-1"},
+    {"name": "STP Diamond Bomb Matte", "status": "PURCHASED", "use": "vibration damping"},
+    {"name": "STP Black Gold 0.375 m2", "status": "PURCHASED x4", "use": "vibration damping"},
+    {"name": "STP Bromo", "status": "PURCHASED x4", "use": "sound absorption / barrier layer", "sourceUrl": "https://standartplast.com/catalog/special-line/stp-bromo/"},
+    {"name": "STP Accent 6", "status": "PURCHASED x2", "use": "sound absorption / thermal layer"}
+  ],
+  "excludedReceiptItems": [
+    {"name": "Subwoofer Gehaeuse Tesla dual", "status": "NOT PURCHASED"},
+    {"name": "HELIX Impact IK S10DVC2", "status": "NOT PURCHASED", "quantity": 2}
+  ],
+  "teslaService": {
+    "TESLA_SERVICE_INDEX": {"label": "2024+ Model 3 Service Manual - Audio System", "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/", "summary": "Official Tesla Service Manual index. Audio procedures are under section 2121."},
+    "TESLA_LV_POWER": {"label": "LV Power - Disconnect and Connect", "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-C392D1B4-3007-45A4-A469-1B92676863F1.html", "summary": "Use the official sequence whenever the job requires LV isolation. Tesla warns that step order matters and requires discharge time before service."},
+    "TESLA_FRONT_WOOFER": {"label": "Speaker - Front Door - LH - Remove and Replace", "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-5AFA9E52-4D99-4A5B-89E9-E26169739794.html", "summary": "Front woofer procedure. Remove reflector, tweeter, puddle light and front door trim; disconnect speaker; remove four bolts. Installation torque: 4 Nm. RH is the mirrored counterpart."},
+    "TESLA_FRONT_TWEETER": {"label": "Tweeter - Front Door - LH - Remove and Replace", "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-0D39177D-4A28-4584-ABA1-9044BBB78830.html", "summary": "Release the tweeter assembly clips, disconnect electrical connectors, release the retaining clip and replace the tweeter. RH is the mirrored counterpart."},
+    "TESLA_FRONT_DOOR_TRIM": {"label": "Panel - Door Trim - Front - LH - Remove and Install", "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-F9653397-0726-4AEA-B94F-18DA2F87A727.html", "summary": "Front door trim prerequisite: reflector, three T30 fasteners, tweeter and puddle lamp, perimeter clips, manual release cable and harness. Reinstall fasteners at 6 Nm."},
+    "TESLA_DASH_SIDE": {"label": "Speaker - Dash - LH - Remove and Replace", "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-D6383B23-95A2-4242-934D-B2B9AA05E486.html", "summary": "Remove IP end caps, upper A-pillar trims and instrument-panel speaker grille; remove three T20 screws and disconnect speaker. Installation torque: 2.3 Nm. RH is mirrored."},
+    "TESLA_DASH_CENTER": {"label": "Speaker - Dash - Center - Remove and Replace", "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-9A1683FB-E8B3-4AD2-AC0E-49635F4005C1.html", "summary": "Remove IP end caps, upper A-pillar trims and speaker grille; remove three screws and disconnect center speaker. Installation torque: 2.3 Nm."},
+    "TESLA_DASH_GRILLE": {"label": "Speaker Grille - Instrument Panel - Remove and Replace", "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-B758635D-DF4B-45B6-832A-556D1934E1C9.html", "summary": "Instrument-panel grille/trim removal includes IP end caps and upper A-pillar trims. Follow Tesla cautions for clips, guide tabs and ambient-light harnesses."},
+    "TESLA_REAR_DOOR_TRIM": {"label": "Panel - Door Trim - Rear - LH - Remove and Replace", "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-CF21961E-CAFE-4F29-BA33-F2D7819C91B5.html", "summary": "Rear door trim access. Two T30 fasteners, puddle light and perimeter clips; reinstall trim fasteners at 6 Nm. RH is mirrored."},
+    "TESLA_REAR_DOOR_HARNESS": {"label": "Harness - Rear Door Trim - LH - Remove and Replace", "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-62DE003E-6466-4C2B-8D1B-B745F44886CD.html", "summary": "Rear trim harness procedure covering access after rear door trim/NVH-pad removal and the trim-panel electrical connectors."},
+    "TESLA_PARCEL_WOOFER": {"label": "Woofer - Parcel Shelf - Remove and Replace", "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-718B0D62-7368-411D-B07C-671F9135AD02.html", "summary": "Reference procedure only for this build because parcel-shelf woofers are not fitted. Package tray removal precedes connector and four-bolt woofer removal. Installation torque: 4 Nm."},
+    "TESLA_HEADLINER": {"label": "Speaker - Headliner - LH - Remove and Replace", "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-1BC138E1-E653-4361-BE75-99F7B11C1589.html", "summary": "Reference procedure for PAUDIO headliner speaker. Requires substantial headliner/trim access. Three speaker bolts install at 0.5 Nm. RH is mirrored."}
+  },
+  "installerReferences": [
+    {"label": "Car-Hifi Store Bunde - Tesla Model 3 SR Highland soundXTREME", "url": "https://www.carhifi-store-buende.de/tesla-model-3-sr-highland-soundxtreme", "note": "Installer package reference for the active front/center architecture and custom Tesla integration hardware."}
+  ]
+}

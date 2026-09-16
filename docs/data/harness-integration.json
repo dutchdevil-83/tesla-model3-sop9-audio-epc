@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 4,
+  "updated": "2026-09-16",
+  "mode": "CUSTOM VEHICLE-SIDE BREAKOUT / RETURN",
+  "sourceHarness": "MATCH PP-TES 1.7B Ryzen M141318",
+  "amplifier": "HELIX V TWELVE DSP MK2",
+  "status": "TESLA SOP9 FUNCTIONS/COLORS VERIFIED; FINAL AMPLIFIER-SIDE LABEL PLAN DEFINED",
+  "evidence": [
+    "Tesla SOP9 connector metadata in this repository defines the standard-audio MCU source channels, exact source cavities and wire colors on X171 and X175.",
+    "Tesla SOP9 speaker connector metadata in this repository defines the final speaker-side connector and polarity colors for the front woofers, three dashboard speakers and rear door speakers.",
+    "Car-Hifi Store Bunde confirmed that Front Left, Center and Front Right are the three instrument-panel speakers behind the windshield.",
+    "Owner-supplied photos show labelled IN +/-, OUT +/- conductors for Front Low Left, Front Low Right, Front Left, Center, Front Right, Rear Left and Rear Right, plus Optional Woofer 1 +/- and Optional Woofer 2 +/-."
+  ],
+  "directionSemantics": {
+    "IN": "Tesla OEM speaker-level source -> HELIX V TWELVE DSP MK2 HIGHLEVEL INPUT",
+    "OUT": "HELIX V TWELVE DSP MK2 amplified OUTPUT CHANNEL -> vehicle-side speaker return"
+  },
+  "labelingRule": {
+    "summary": "Do not rename the seven logical functions merely because the donor harness is the Ryzen version. Keep/reapply the speaker-function labels shown below, but route each pair to the verified SOP9 Tesla circuit and add the V TWELVE A-G channel identifier.",
+    "inputPolarity": "On the V TWELVE HIGHLEVEL INPUT connector, each channel is printed -X +X. Connect sleeve IN - to -X and sleeve IN + to +X.",
+    "outputPolarity": "On the V TWELVE OUTPUT CHANNELS connector, each channel is printed +X -X. Connect sleeve OUT + to +X and sleeve OUT - to -X.",
+    "critical": "The old M141318 printed sleeve name is only trusted after that conductor pair has been traced/re-routed to the SOP9 circuit listed here. Tesla SOP9 circuit identity comes from Tesla data, not from the old sleeve."
+  },
+  "sop9SourceVerification": {
+    "status": "VERIFIED",
+    "source": "Repository Tesla SOP9 electrical reference: Source_Assets/connectors/X171/metadata.json and Source_Assets/connectors/X175/metadata.json, cross-checked with Source_Assets/core/audio_lhd.svg",
+    "scope": "Seven standard-audio source functions used by the PP-TES breakout labels."
+  },
+  "channels": [
+    {
+      "id": "SRC01",
+      "label": "Front Low Left",
+      "vTwelveChannel": "A",
+      "observedHarnessWireFamily": "orange",
+      "sourceRole": "Front-left door woofer source",
+      "directTarget": "SPK01",
+      "derivedTargets": [],
+      "finalSleeveLabels": ["VT-A Front Low Left IN +", "VT-A Front Low Left IN -", "VT-A Front Low Left OUT +", "VT-A Front Low Left OUT -"],
+      "inputSleeves": ["Front Low Left IN +", "Front Low Left IN -"],
+      "outputSleeves": ["Front Low Left OUT +", "Front Low Left OUT -"],
+      "teslaSop9": {"sourceConnector": "X171", "positiveCavity": "6", "positiveNet": "AMP2_2P", "positiveWireColor": "YE", "negativeCavity": "5", "negativeNet": "AMP2_2N", "negativeWireColor": "BU"},
+      "speakerSide": {"connector": "X568", "device": "Speaker Front Left Door Base", "positiveCavity": "1", "positiveWireColor": "YE", "negativeCavity": "2", "negativeWireColor": "BU"},
+      "verification": "TESLA SOP9 SOURCE + SPEAKER RETURN VERIFIED"
+    },
+    {
+      "id": "SRC02",
+      "label": "Front Low Right",
+      "vTwelveChannel": "B",
+      "observedHarnessWireFamily": "brown",
+      "sourceRole": "Front-right door woofer source",
+      "directTarget": "SPK02",
+      "derivedTargets": [],
+      "finalSleeveLabels": ["VT-B Front Low Right IN +", "VT-B Front Low Right IN -", "VT-B Front Low Right OUT +", "VT-B Front Low Right OUT -"],
+      "inputSleeves": ["Front Low Right IN +", "Front Low Right IN -"],
+      "outputSleeves": ["Front Low Right OUT +", "Front Low Right OUT -"],
+      "teslaSop9": {"sourceConnector": "X171", "positiveCavity": "2", "positiveNet": "AMP2_1P", "positiveWireColor": "YE/WH", "negativeCavity": "1", "negativeNet": "AMP2_1N", "negativeWireColor": "BU/WH"},
+      "speakerSide": {"connector": "X578", "device": "Speaker Front Right Door Base", "positiveCavity": "1", "positiveWireColor": "YE", "negativeCavity": "2", "negativeWireColor": "BU"},
+      "verification": "TESLA SOP9 SOURCE + SPEAKER RETURN VERIFIED"
+    },
+    {
+      "id": "SRC03",
+      "label": "Front Left",
+      "vTwelveChannel": "C",
+      "observedHarnessWireFamily": "white",
+      "sourceRole": "Left instrument-panel speaker behind windshield",
+      "directTarget": "SPK05",
+      "derivedTargets": ["SPK03"],
+      "derivedNote": "SPK03 left tweeter uses V TWELVE output H and is DSP-derived from HIGHLEVEL C. It is not the Front Left OUT pair.",
+      "finalSleeveLabels": ["VT-C Front Left DASH IN +", "VT-C Front Left DASH IN -", "VT-C Front Left DASH OUT +", "VT-C Front Left DASH OUT -"],
+      "inputSleeves": ["Front Left IN +", "Front Left IN -"],
+      "outputSleeves": ["Front Left OUT +", "Front Left OUT -"],
+      "teslaSop9": {"sourceConnector": "X175", "positiveCavity": "10", "positiveNet": "AMP3_1_P", "positiveWireColor": "YE", "negativeCavity": "9", "negativeNet": "AMP3_1_N", "negativeWireColor": "VT"},
+      "speakerSide": {"connector": "X566", "device": "Speaker IP Left", "positiveCavity": "1", "positiveWireColor": "YE", "negativeCavity": "2", "negativeWireColor": "VT"},
+      "verification": "TESLA SOP9 SOURCE + SPEAKER RETURN VERIFIED"
+    },
+    {
+      "id": "SRC04",
+      "label": "Center",
+      "vTwelveChannel": "D",
+      "observedHarnessWireFamily": "blue",
+      "sourceRole": "Center instrument-panel speaker behind windshield",
+      "directTarget": "SPK06",
+      "derivedTargets": [],
+      "finalSleeveLabels": ["VT-D Center DASH IN +", "VT-D Center DASH IN -", "VT-D Center DASH OUT +", "VT-D Center DASH OUT -"],
+      "inputSleeves": ["Center IN +", "Center IN -"],
+      "outputSleeves": ["Center OUT +", "Center OUT -"],
+      "teslaSop9": {"sourceConnector": "X171", "positiveCavity": "7", "positiveNet": "AMP2_4P", "positiveWireColor": "GY", "negativeCavity": "8", "negativeNet": "AMP2_4N", "negativeWireColor": "BU"},
+      "speakerSide": {"connector": "X595", "device": "Speaker IP Center", "positiveCavity": "1", "positiveWireColor": "GY", "negativeCavity": "2", "negativeWireColor": "BU"},
+      "verification": "TESLA SOP9 SOURCE + SPEAKER RETURN VERIFIED"
+    },
+    {
+      "id": "SRC05",
+      "label": "Front Right",
+      "vTwelveChannel": "E",
+      "observedHarnessWireFamily": "grey",
+      "sourceRole": "Right instrument-panel speaker behind windshield",
+      "directTarget": "SPK07",
+      "derivedTargets": ["SPK04"],
+      "derivedNote": "SPK04 right tweeter uses V TWELVE output I and is DSP-derived from HIGHLEVEL E. It is not the Front Right OUT pair.",
+      "finalSleeveLabels": ["VT-E Front Right DASH IN +", "VT-E Front Right DASH IN -", "VT-E Front Right DASH OUT +", "VT-E Front Right DASH OUT -"],
+      "inputSleeves": ["Front Right IN +", "Front Right IN -"],
+      "outputSleeves": ["Front Right OUT +", "Front Right OUT -"],
+      "teslaSop9": {"sourceConnector": "X175", "positiveCavity": "4", "positiveNet": "AMP3_3_P", "positiveWireColor": "TN", "negativeCavity": "3", "negativeNet": "AMP3_3_N", "negativeWireColor": "BK"},
+      "speakerSide": {"connector": "X576", "device": "Speaker IP Right", "positiveCavity": "1", "positiveWireColor": "TN", "negativeCavity": "2", "negativeWireColor": "BK"},
+      "verification": "TESLA SOP9 SOURCE + SPEAKER RETURN VERIFIED"
+    },
+    {
+      "id": "SRC06",
+      "label": "Rear Left",
+      "vTwelveChannel": "F",
+      "observedHarnessWireFamily": "green",
+      "sourceRole": "Rear-left door speaker source / return",
+      "directTarget": "SPK10",
+      "derivedTargets": [],
+      "finalSleeveLabels": ["VT-F Rear Left IN +", "VT-F Rear Left IN -", "VT-F Rear Left OUT +", "VT-F Rear Left OUT -"],
+      "inputSleeves": ["Rear Left IN +", "Rear Left IN -"],
+      "outputSleeves": ["Rear Left OUT +", "Rear Left OUT -"],
+      "teslaSop9": {"sourceConnector": "X175", "positiveCavity": "13", "positiveNet": "AMP3_2_P", "positiveWireColor": "RD", "negativeCavity": "14", "negativeNet": "AMP3_2_N", "negativeWireColor": "BK"},
+      "speakerSide": {"connector": "X586", "device": "Speaker Rear Left Door", "positiveCavity": "1", "positiveWireColor": "RD", "negativeCavity": "2", "negativeWireColor": "BK"},
+      "verification": "TESLA SOP9 SOURCE + SPEAKER RETURN VERIFIED"
+    },
+    {
+      "id": "SRC07",
+      "label": "Rear Right",
+      "vTwelveChannel": "G",
+      "observedHarnessWireFamily": "purple",
+      "sourceRole": "Rear-right door speaker source / return",
+      "directTarget": "SPK11",
+      "derivedTargets": [],
+      "finalSleeveLabels": ["VT-G Rear Right IN +", "VT-G Rear Right IN -", "VT-G Rear Right OUT +", "VT-G Rear Right OUT -"],
+      "inputSleeves": ["Rear Right IN +", "Rear Right IN -"],
+      "outputSleeves": ["Rear Right OUT +", "Rear Right OUT -"],
+      "teslaSop9": {"sourceConnector": "X171", "positiveCavity": "3", "positiveNet": "AMP2_3P", "positiveWireColor": "RD/WH", "negativeCavity": "4", "negativeNet": "AMP2_3N", "negativeWireColor": "BK"},
+      "speakerSide": {"connector": "X591", "device": "Speaker Rear Right Door", "positiveCavity": "1", "positiveWireColor": "RD", "negativeCavity": "2", "negativeWireColor": "BK", "note": "Positive color changes from RD/WH at the MCU source segment to RD at the rear-door speaker segment."},
+      "verification": "TESLA SOP9 SOURCE + SPEAKER RETURN VERIFIED"
+    }
+  ],
+  "derivedOutputs": [
+    {"vTwelveOutput": "H", "target": "SPK03", "role": "Left front door tweeter", "source": "DSP-derived from HIGHLEVEL C / Front Left dash", "speakerConnector": "X565", "positiveWireColor": "VT", "negativeWireColor": "BU", "finalLabels": ["VT-H Left Tweeter OUT +", "VT-H Left Tweeter OUT -"]},
+    {"vTwelveOutput": "I", "target": "SPK04", "role": "Right front door tweeter", "source": "DSP-derived from HIGHLEVEL E / Front Right dash", "speakerConnector": "X575", "positiveWireColor": "VT", "negativeWireColor": "BU", "finalLabels": ["VT-I Right Tweeter OUT +", "VT-I Right Tweeter OUT -"]}
+  ],
+  "subwooferOutputs": [
+    {"vTwelveOutput": "J", "target": "SUB01", "role": "Pioneer TS-WX1220AH donor woofer 1", "harnessLead": "Optional Woofer 1 +/-", "source": "DSP mono low-frequency mix", "finalLabels": ["VT-J Pioneer Woofer 1 OUT +", "VT-J Pioneer Woofer 1 OUT -"], "workingBasis": "2 ohm European product-family basis; verify loose-driver DCR before energizing", "powerBasis": "approximately 120 W RMS from V TWELVE at 2 ohm"},
+    {"vTwelveOutput": "K", "target": "SUB02", "role": "Pioneer TS-WX1220AH donor woofer 2", "harnessLead": "Optional Woofer 2 +/-", "source": "DSP mono low-frequency mix", "finalLabels": ["VT-K Pioneer Woofer 2 OUT +", "VT-K Pioneer Woofer 2 OUT -"], "workingBasis": "2 ohm European product-family basis; verify loose-driver DCR before energizing", "powerBasis": "approximately 120 W RMS from V TWELVE at 2 ohm"}
+  ],
+  "optionalWooferLead": {
+    "labels": ["Optional Woofer 1 +", "Optional Woofer 1 -", "Optional Woofer 2 +", "Optional Woofer 2 -"],
+    "status": "USED FOR DIRECT V TWELVE J/K SUBWOOFER OUTPUTS IN CURRENT PLAN",
+    "plannedUse": "Optional Woofer 1 +/- becomes V TWELVE J -> SUB01; Optional Woofer 2 +/- becomes V TWELVE K -> SUB02. Each woofer is independent; no bridge, series or parallel connection is used.",
+    "workingBasis": "European TS-WX1220AH / TS-WX1210AH product data supports a 2-ohm working basis; verify each loose driver's DCR before first energization.",
+    "warning": "These leads are not Tesla X588/X593 parcel-shelf channels."
+  },
+  "ryzenHarnessRework": {
+    "status": "SOP9 REPIN / RE-ROUTE REQUIRED",
+    "scope": "Trace the M141318 conductors by the verified SOP9 source and speaker-side wire colors above, then route them so each logical sleeve pair serves the matching SOP9 function. Do not rely on the old Ryzen cavity position alone.",
+    "verificationBoundary": "Tesla SOP9 functions, polarities and wire colors are verified. The remaining checks are that the modified physical M141318 conductors land on the intended circuits and that each loose Pioneer donor woofer is consistent with the 2-ohm European working basis before energization.",
+    "finalQc": "Continuity-check the completed modified harness and measure each loose Pioneer donor woofer DCR before plugging in or energizing the V TWELVE."
+  }
+}
