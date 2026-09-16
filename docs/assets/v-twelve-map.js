@@ -48,11 +48,11 @@
       </div>
       <div class="vt-connector-card vt-secondary">
         <div class="vt-grid-row"><span>LINE INPUT</span><b>A-F RCA · unused in current PP-TES plan</b></div>
-        <div class="vt-grid-row"><span>LINE OUTPUT</span><b>M / N RCA · reserved</b></div>
+        <div class="vt-grid-row"><span>LINE OUTPUT</span><b>M / N RCA · processed Pioneer TS-WX1220AH sub signal to external/original sub amplifier</b></div>
         <div class="vt-grid-row"><span>SCP</span><b>DIRECTOR for SCP</b></div>
         <div class="vt-grid-row"><span>POWER</span><b>GND · POWER REM · +12V</b></div>
       </div>
-      <div class="engineering-note">Factory labels above are physical HELIX connector labels. The A-L speaker assignments below are the current installation plan and can still be changed in DSP PC-Tool / wiring before installation.</div>
+      <div class="engineering-note">Factory labels above are physical HELIX connector labels. The A-L speaker assignments below are the current installation plan. Pioneer TS-WX1220AH donor drivers are not V TWELVE speaker-output loads.</div>
     </section>`;
   }
 
@@ -86,6 +86,20 @@
     </section>`;
   }
 
+  function lineOutputTable() {
+    const plan = terminalPlan();
+    const outputs = plan?.lineOutputs || [];
+    if (!outputs.length) return '';
+    return `<section class="inspector-section vt-assignment-overview">
+      <h3>Processed subwoofer signal</h3>
+      <div class="harness-table-wrap"><table class="harness-table vt-table">
+        <thead><tr><th>LINE OUT</th><th>Destination</th><th>Signal</th><th>State</th></tr></thead>
+        <tbody>${outputs.map(output => `<tr><td><strong>${esc(output.channel)}</strong> RCA</td><td>${esc(output.target)}</td><td>${esc(output.source)} · ${esc(output.role)}</td><td>${esc(output.state)}</td></tr>`).join('')}</tbody>
+      </table></div>
+      <div class="engineering-note warning">Pioneer TS-WX1220AH uses two single 0.6 Ω donor drivers. Do not connect either driver directly to V TWELVE OUTPUT J/K/L. LINE OUTPUT M/N provide DSP signal only; an appropriate Pioneer/external subwoofer amplifier remains the power stage.</div>
+    </section>`;
+  }
+
   function fullAssignmentTable() {
     const plan = terminalPlan();
     if (!plan) return '';
@@ -102,8 +116,18 @@
           <td>${esc(output.state)}</td>
         </tr>`).join('')}</tbody>
       </table></div>
-      <div class="engineering-note warning">J/K are reserved only. Do not connect the Pioneer subwoofers until model, impedance and voice-coil configuration are known and the resulting V TWELVE load is verified.</div>
+      <div class="engineering-note warning">Amplified outputs J/K/L are spare. The Pioneer TS-WX1220AH donor drivers are approximately 0.6 Ω each and are below the V TWELVE amplified-channel load range.</div>
     </section>`;
+  }
+
+  function verifiedPioneerSubwooferCards() {
+    const subs = installedSystem?.subwooferSubsystem || [];
+    if (!subs.length) return '';
+    return `<section class="inspector-section"><h3>Trunk subwoofer subsystem</h3>${subs.map(sub => `<div class="sub-card"><b>${esc(sub.id)} - ${esc(sub.manufacturer)} ${esc(sub.model)}</b><span>${esc(sub.status)}</span><small>${esc(sub.location)} - ${esc(sub.note)}</small></div>`).join('')}<div class="engineering-note warning">Known donor system: Pioneer TS-WX1220AH. Two single 0.6 Ω 12-inch drivers. Do not power them from V TWELVE speaker outputs. Use LINE OUTPUT M/N as processed signal to the original or another suitable external subwoofer amplifier.</div></section>`;
+  }
+
+  if (typeof subwooferCards === 'function') {
+    subwooferCards = verifiedPioneerSubwooferCards;
   }
 
   function appendVTwelveMap() {
@@ -114,9 +138,9 @@
     wrapper.className = 'vt-map-section';
 
     if (inspectTab === 'wiring') {
-      wrapper.innerHTML = `${targetTerminalCard(selected.ID)}${factoryConnectorSummary()}`;
+      wrapper.innerHTML = `${targetTerminalCard(selected.ID)}${lineOutputTable()}${factoryConnectorSummary()}`;
     } else if (inspectTab === 'upgrade') {
-      wrapper.innerHTML = `${targetTerminalCard(selected.ID)}${fullAssignmentTable()}${factoryConnectorSummary()}`;
+      wrapper.innerHTML = `${targetTerminalCard(selected.ID)}${fullAssignmentTable()}${lineOutputTable()}${factoryConnectorSummary()}`;
     } else {
       wrapper.innerHTML = targetTerminalCard(selected.ID);
     }
