@@ -20,16 +20,40 @@ https://dutchdevil-83.github.io/tesla-model3-sop9-audio-epc/
 
 ## Contents
 
-- `index.html` - vehicle-centered Tesla Model 3 SOP9 audio engineering workspace.
-- `assets/app.css` - workspace presentation.
-- `assets/app.js` - Tesla endpoint navigation, source switching, connector evidence and inspector behavior.
+- `index.html` - default landscape-first **Installation Workflow**, optimized for iPad landscape and in-car use.
+- `engineering.html` - the preserved source-focused Tesla Parts Catalog / Service engineering workspace.
+- `assets/workflow.css` / `assets/workflow.js` - seven-step workflow layout, navigation, collapsible details and data-driven install guidance.
+- `assets/app.css` / `assets/app.js` - engineering workspace presentation, Tesla endpoint navigation, source switching and inspector behavior.
 - `assets/installed-system.js` - owner-confirmed purchased-build overlay, exact hardware mapping, service references and build state.
 - `assets/harness-map.js` / `data/harness-integration.json` - exact SOP9 source/speaker colors, M141318 sleeve labels and V TWELVE A-G mapping.
 - `assets/v-twelve-map.js` / `data/v-twelve-connectors.json` - exact V TWELVE factory connector labels and A-L speaker-output plan including direct J/K subwoofer outputs.
 - `data/installed-system.json` - current physical build, purchased/ordered hardware, identified Pioneer donor subsystem and official documentation links.
 - `catalog.html` - loader for the current self-contained interactive EPC HTML stored at repository root.
-- `data/door_damping_v2.2.json` - public structured data for the door-acoustic-treatment comparison.
 - `.nojekyll` - prevents Jekyll processing so the folder is served as static content.
+
+## Installation Workflow
+
+The root Pages URL now opens a seven-step landscape workflow rather than the engineering inspector. The step model mirrors the approved mockup:
+
+1. Overview
+2. Prepare
+3. Remove
+4. Install
+5. Configure
+6. Test
+7. Enjoy
+
+The workflow has a horizontal numbered timeline, a persistent step rail, Previous/Next controls, wide tables/cards and collapsible detail sections. At landscape widths the page keeps the header, timeline and navigation visible while the active step content scrolls independently. Portrait/narrow layouts fall back to horizontal step navigation.
+
+The workflow does not duplicate or invent wiring facts. It loads the canonical `installed-system.json`, `harness-integration.json` and `v-twelve-connectors.json` files already used by the engineering workspace. Quick Access links open the preserved engineering views for Tesla Service wiring, connector evidence and technical sources.
+
+The verified V TWELVE MK2 connector model is shown directly in the Install step:
+
+- `HIGHLEVEL INPUT`: A-L, physically `-X +X`.
+- `LINE INPUT`: RCA **A-F**. This is the official six-input V TWELVE MK2 layout; A-D was an earlier shorthand and is not used as the connector truth.
+- amplified `OUTPUT CHANNELS`: A-L, physically `+X -X`.
+- `LINE OUTPUT`: M/N.
+- `USB`, `SCP`, `OPTICAL INPUT`, `REM. OUT`, `GND`, `POWER REM`, `+12V` and `CONTROL / STATUS` are exposed in the connector map.
 
 ## Current physical build
 
@@ -91,7 +115,7 @@ Current speaker outputs are A-G direct cabin channels, H/I tweeters, **J/K the t
 
 ## Official documentation model
 
-The repository stores structured links, specifications and concise engineering summaries from official manufacturer/Tesla sources. It does **not** vendor full third-party copyrighted manuals or Tesla service pages. The side panel links directly to the official source so the latest procedure/manual remains authoritative.
+The repository stores structured links, specifications and concise engineering summaries from official manufacturer/Tesla sources. It does **not** vendor full third-party copyrighted manuals or Tesla service pages. The workflow and engineering inspector link directly to the official source so the latest procedure/manual remains authoritative.
 
 Each relevant target can expose:
 
@@ -118,8 +142,8 @@ EPC mapping existence is not promoted to `VERIFIED`. The original cross-referenc
 
 ## Repository asset loading
 
-Classic Pages publishes only `/docs`; files such as `Target_Assets/core/audio_lhd.svg`, connector location images and `Target_Assets/coverage.json` live outside that publish folder. The workspace therefore resolves those validated assets from the repository's public `raw.githubusercontent.com/.../main/` paths instead of using broken `../Target_Assets/...` links.
+Classic Pages publishes only `/docs`; files such as `Target_Assets/core/audio_lhd.svg`, connector location images and `Target_Assets/coverage.json` live outside that publish folder. The engineering workspace therefore resolves those validated assets from the repository's public `raw.githubusercontent.com/.../main/` paths instead of using broken `../Target_Assets/...` links. The Installation Workflow itself only consumes JSON published inside `/docs/data`.
 
-`scripts/validate_docs_workspace.py` and focused unit tests are executed by the repository validation workflow. They protect the Tesla source baseline, exact SOP9 channel mapping/colors, target namespace, Parts Catalog hashes, current-build mapping, V TWELVE connector labels, direct Pioneer J/K routing and explicit source gaps.
+`scripts/validate_docs_workspace.py` and focused unit tests are executed by the repository validation workflow. They protect the Tesla source baseline, exact SOP9 channel mapping/colors, target namespace, Parts Catalog hashes, current-build mapping, V TWELVE connector labels, direct Pioneer J/K routing and explicit source gaps. `tests/test_installation_workflow.py` additionally locks the seven-step navigation, iPad landscape contract, front/dash mapping, OEM rear/shelf-future state and connector labels.
 
 The public workspace may show engineering decisions and sourcing references. It must not imply affiliation with Tesla or any audio-equipment manufacturer.

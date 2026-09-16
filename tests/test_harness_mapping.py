@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BUILD = json.loads((ROOT / "docs/data/installed-system.json").read_text(encoding="utf-8"))
 HARNESS = json.loads((ROOT / "docs/data/harness-integration.json").read_text(encoding="utf-8"))
 HARNESS_JS = (ROOT / "docs/assets/harness-map.js").read_text(encoding="utf-8")
-INDEX = (ROOT / "docs/index.html").read_text(encoding="utf-8")
+ENGINEERING = (ROOT / "docs/engineering.html").read_text(encoding="utf-8")
 
 
 class HarnessMappingTests(unittest.TestCase):
@@ -118,9 +118,9 @@ class HarnessMappingTests(unittest.TestCase):
         self.assertEqual(BUILD["targets"]["SPK12"]["status"], "NONE / FUTURE")
         self.assertEqual(BUILD["targets"]["SPK13"]["status"], "NONE / FUTURE")
 
-    def test_harness_ui_is_loaded_and_exposes_verified_sop9_colors(self) -> None:
-        self.assertIn('assets/harness-map.js', INDEX)
-        self.assertIn('assets/harness-map.css', INDEX)
+    def test_harness_ui_is_loaded_on_engineering_workspace(self) -> None:
+        self.assertIn('assets/harness-map.js', ENGINEERING)
+        self.assertIn('assets/harness-map.css', ENGINEERING)
         self.assertIn("data/harness-integration.json", HARNESS_JS)
         self.assertIn("channelsForTarget", HARNESS_JS)
         self.assertIn("DIRECT HARNESS CHANNEL", HARNESS_JS)

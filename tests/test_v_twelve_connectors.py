@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / "docs/data/v-twelve-connectors.json").read_text(encoding="utf-8"))
 BUILD = json.loads((ROOT / "docs/data/installed-system.json").read_text(encoding="utf-8"))
-INDEX = (ROOT / "docs/index.html").read_text(encoding="utf-8")
+ENGINEERING = (ROOT / "docs/engineering.html").read_text(encoding="utf-8")
 UI = (ROOT / "docs/assets/v-twelve-map.js").read_text(encoding="utf-8")
 
 
@@ -105,9 +105,9 @@ class VTwelveConnectorTests(unittest.TestCase):
         self.assertIn("installation-plan decisions", UI)
         self.assertIn("Factory connector labels", UI)
 
-    def test_workspace_loads_v_twelve_assets(self) -> None:
-        self.assertIn('assets/v-twelve-map.css', INDEX)
-        self.assertIn('assets/v-twelve-map.js', INDEX)
+    def test_workspace_loads_v_twelve_assets_on_engineering_page(self) -> None:
+        self.assertIn('assets/v-twelve-map.css', ENGINEERING)
+        self.assertIn('assets/v-twelve-map.js', ENGINEERING)
         self.assertIn("HIGHLEVEL INPUT", UI)
         self.assertIn("OUTPUT CHANNELS", UI)
         self.assertIn("LINE OUTPUT", UI)
