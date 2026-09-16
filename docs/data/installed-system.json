@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 1,
   "updated": "2026-09-16",
   "vehicle": {
     "model": "Tesla Model 3 Highland",
@@ -15,8 +15,8 @@
       "Front and center speakers are mapped to the exact HELIX models purchased on 2026-09-15.",
       "Rear door speakers remain the original Tesla speakers for now.",
       "Parcel-shelf speakers are not installed in this vehicle and remain FUTURE/NONE.",
-      "Two original 30 cm / 12-inch Pioneer TS-WX1220AH donor drivers will be reused in the trunk as a separate subwoofer subsystem; they are deliberately not relabeled as parcel-shelf speakers.",
-      "Pioneer documents the TS-WX1220AH as two single 0.6 ohm drivers. These are below the HELIX V TWELVE DSP MK2 2-ohm amplified-output load range and therefore must not be connected directly to V TWELVE speaker outputs. Use a suitable external subwoofer amplifier / the original Pioneer amplifier architecture after the final sub-amplifier and power strategy is confirmed."
+      "The exact donor subwoofer system is Pioneer TS-WX1220AH. Its two original 30 cm / 12-inch drivers will be reused in the trunk as a separate subwoofer subsystem; they are deliberately not relabeled as parcel-shelf speakers.",
+      "Pioneer documents the TS-WX1220AH donor configuration as two single 0.6 ohm drivers. The loose donor woofer itself does not have a separate published model/SKU in the captured documentation, so each individual driver model field remains TBD while donorSystem is exact. These loads must not be connected directly to V TWELVE amplified outputs."
     ]
   },
   "systemHardware": [
@@ -59,9 +59,9 @@
       "category": "Tesla integration harness",
       "manufacturer": "MATCH",
       "model": "PP-TES 1.7B Ryzen",
-      "status": "PURCHASED - CUSTOM SOP9 REWORK REQUIRED",
+      "status": "PURCHASED - FITMENT CHECK REQUIRED - CUSTOM SOP9 REWORK",
       "receipt": "Match PP-TES 1.7B Ryzen",
-      "warning": "The supplied M141318 PP-TES 1.7B Ryzen was designed for pre-Highland Model 3. The repository contains the authoritative SOP9 X171/X175 mapping. Re-route/repin the donor harness so its amplifier-side channel pairs follow the SOP9 functions before connection to the V TWELVE.",
+      "warning": "Audiotec Fischer states that PP-TES 1.7B Ryzen M141318 is NOT compatible with Model 3 Highland as a plug-and-play harness. This project deliberately reuses it as a donor/interposer: repin/re-route it to the verified SOP9 X171/X175 functions and speaker returns documented in this repository before connecting the V TWELVE.",
       "references": [
         {"label": "Official PP-TES 1.7B Ryzen page", "url": "https://www.audiotec-fischer.de/en/match/adaptors-harnesses/pp-tes-1-7b-ryzen"},
         {"label": "Official PP-TES 1.7B Highland page", "url": "https://www.audiotec-fischer.de/en/match/adaptors-harnesses/pp-tes-1-7b-highland"}
@@ -86,8 +86,8 @@
     "SPK15": {"status": "NOT IN CURRENT BUILD", "component": null, "role": "PAUDIO-only headliner right reference endpoint", "adapter": null, "note": "No headliner replacement was purchased. Preserve as Tesla PAUDIO reference/future endpoint unless physical fitment is confirmed.", "serviceRefs": ["TESLA_HEADLINER"]}
   },
   "subwooferSubsystem": [
-    {"id": "SUB01", "status": "REUSE - IDENTIFIED", "manufacturer": "Pioneer", "model": "TS-WX1220AH donor driver 1", "donorSystem": "Pioneer TS-WX1220AH", "driver": "30 cm / 12-inch single-voice-coil woofer", "publishedNominalImpedance": "0.6 ohm single", "location": "Trunk / rear cargo area", "amplifierRule": "DO NOT CONNECT DIRECTLY TO V TWELVE AMPLIFIED OUTPUT", "note": "Original driver from the Pioneer TS-WX1220AH active dual-sub system. Pioneer publishes SINGLE 0.6 ohm x2 for the donor system. Use the original Pioneer amplifier or another external subwoofer amplifier designed for the resulting load; V TWELVE speaker outputs are not the subwoofer power stage."},
-    {"id": "SUB02", "status": "REUSE - IDENTIFIED", "manufacturer": "Pioneer", "model": "TS-WX1220AH donor driver 2", "donorSystem": "Pioneer TS-WX1220AH", "driver": "30 cm / 12-inch single-voice-coil woofer", "publishedNominalImpedance": "0.6 ohm single", "location": "Trunk / rear cargo area", "amplifierRule": "DO NOT CONNECT DIRECTLY TO V TWELVE AMPLIFIED OUTPUT", "note": "Original driver from the Pioneer TS-WX1220AH active dual-sub system. Pioneer publishes SINGLE 0.6 ohm x2 for the donor system. Use the original Pioneer amplifier or another external subwoofer amplifier designed for the resulting load; V TWELVE speaker outputs are not the subwoofer power stage."}
+    {"id": "SUB01", "status": "REUSE - DONOR SYSTEM IDENTIFIED", "manufacturer": "Pioneer", "model": "TBD", "donorSystem": "Pioneer TS-WX1220AH", "driver": "30 cm / 12-inch single-voice-coil donor woofer", "publishedNominalImpedance": "0.6 ohm single", "location": "Trunk / rear cargo area", "amplifierRule": "DO NOT CONNECT DIRECTLY TO V TWELVE AMPLIFIED OUTPUT", "note": "Donor system is exactly Pioneer TS-WX1220AH. The loose woofer has no separate published SKU in the captured documentation. Use the original Pioneer amplifier or another external subwoofer amplifier designed for the resulting load; V TWELVE LINE OUTPUT M/N provide processed signal, not speaker power."},
+    {"id": "SUB02", "status": "REUSE - DONOR SYSTEM IDENTIFIED", "manufacturer": "Pioneer", "model": "TBD", "donorSystem": "Pioneer TS-WX1220AH", "driver": "30 cm / 12-inch single-voice-coil donor woofer", "publishedNominalImpedance": "0.6 ohm single", "location": "Trunk / rear cargo area", "amplifierRule": "DO NOT CONNECT DIRECTLY TO V TWELVE AMPLIFIED OUTPUT", "note": "Donor system is exactly Pioneer TS-WX1220AH. The loose woofer has no separate published SKU in the captured documentation. Use the original Pioneer amplifier or another external subwoofer amplifier designed for the resulting load; V TWELVE LINE OUTPUT M/N provide processed signal, not speaker power."}
   ],
   "pioneerDonorSystem": {
     "model": "Pioneer TS-WX1220AH",
