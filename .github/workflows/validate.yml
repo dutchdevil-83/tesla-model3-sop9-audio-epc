@@ -52,6 +52,7 @@ jobs:
           set -euo pipefail
           node --check docs/assets/app.js
           node --check docs/assets/installed-system.js
+          node --check docs/assets/harness-map.js
           node --check docs/assets/vehicle-map.js
 
       - name: Validate public audio workspace and repo asset bindings
