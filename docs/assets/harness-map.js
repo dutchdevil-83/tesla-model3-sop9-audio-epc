@@ -1,12 +1,13 @@
 /* PP-TES logical channel overlay.
- * The logical roles are store-confirmed and sleeve-label/photo backed.
+ * Logical roles are store-confirmed and sleeve-label/photo backed.
  * Tesla connector cavity mapping remains pending continuity verification.
  */
 (() => {
   const baseRenderInspector = renderInspector;
+  let harnessIntegration = null;
 
   function integration() {
-    return installedSystem?.harnessIntegration || null;
+    return harnessIntegration;
   }
 
   function channelsForTarget(targetId) {
@@ -112,4 +113,15 @@
     baseRenderInspector();
     appendHarnessMapping();
   };
+
+  fetch('data/harness-integration.json', { cache: 'no-store' })
+    .then(response => {
+      if (!response.ok) throw new Error(`harness-integration HTTP ${response.status}`);
+      return response.json();
+    })
+    .then(data => {
+      harnessIntegration = data;
+      if (selected) renderInspector();
+    })
+    .catch(error => console.error('harness integration load failed', error));
 })();
