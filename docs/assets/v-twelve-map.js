@@ -48,11 +48,11 @@
       </div>
       <div class="vt-connector-card vt-secondary">
         <div class="vt-grid-row"><span>LINE INPUT</span><b>A-F RCA · unused in current PP-TES plan</b></div>
-        <div class="vt-grid-row"><span>LINE OUTPUT</span><b>M / N RCA · processed Pioneer TS-WX1220AH sub signal to external/original sub amplifier</b></div>
+        <div class="vt-grid-row"><span>LINE OUTPUT</span><b>M / N RCA · reserved / unused in current single-amplifier plan</b></div>
         <div class="vt-grid-row"><span>SCP</span><b>DIRECTOR for SCP</b></div>
         <div class="vt-grid-row"><span>POWER</span><b>GND · POWER REM · +12V</b></div>
       </div>
-      <div class="engineering-note">Factory labels above are physical HELIX connector labels. The A-L speaker assignments below are the current installation plan. Pioneer TS-WX1220AH donor drivers are not V TWELVE speaker-output loads.</div>
+      <div class="engineering-note">Factory labels above are physical HELIX connector labels. Current project assignments use J and K as independent amplified outputs for the two Pioneer TS-WX1220AH donor woofers. No external subwoofer amplifier is used.</div>
     </section>`;
   }
 
@@ -91,12 +91,12 @@
     const outputs = plan?.lineOutputs || [];
     if (!outputs.length) return '';
     return `<section class="inspector-section vt-assignment-overview">
-      <h3>Processed subwoofer signal</h3>
+      <h3>Processed line outputs</h3>
       <div class="harness-table-wrap"><table class="harness-table vt-table">
         <thead><tr><th>LINE OUT</th><th>Destination</th><th>Signal</th><th>State</th></tr></thead>
-        <tbody>${outputs.map(output => `<tr><td><strong>${esc(output.channel)}</strong> RCA</td><td>${esc(output.target)}</td><td>${esc(output.source)} · ${esc(output.role)}</td><td>${esc(output.state)}</td></tr>`).join('')}</tbody>
+        <tbody>${outputs.map(output => `<tr><td><strong>${esc(output.channel)}</strong> RCA</td><td>${esc(output.target || 'reserved')}</td><td>${esc(output.source)} · ${esc(output.role)}</td><td>${esc(output.state)}</td></tr>`).join('')}</tbody>
       </table></div>
-      <div class="engineering-note warning">Pioneer TS-WX1220AH uses two single 0.6 Ω donor drivers. Do not connect either driver directly to V TWELVE OUTPUT J/K/L. LINE OUTPUT M/N provide DSP signal only; an appropriate Pioneer/external subwoofer amplifier remains the power stage.</div>
+      <div class="engineering-note">M/N are reserved in the current single-amplifier build. The two Pioneer donor woofers are powered directly and independently by V TWELVE outputs J and K.</div>
     </section>`;
   }
 
@@ -116,14 +116,14 @@
           <td>${esc(output.state)}</td>
         </tr>`).join('')}</tbody>
       </table></div>
-      <div class="engineering-note warning">Amplified outputs J/K/L are spare. The Pioneer TS-WX1220AH donor drivers are approximately 0.6 Ω each and are below the V TWELVE amplified-channel load range.</div>
+      <div class="engineering-note warning">Outputs J and K directly power Pioneer donor woofers 1 and 2, one woofer per channel, on the European 2 Ω working basis. V TWELVE provides approximately 120 W RMS per 2 Ω channel, so this is deliberately power-limited. Verify each loose woofer's DCR before first energization. Output L remains spare.</div>
     </section>`;
   }
 
   function verifiedPioneerSubwooferCards() {
     const subs = installedSystem?.subwooferSubsystem || [];
     if (!subs.length) return '';
-    return `<section class="inspector-section"><h3>Trunk subwoofer subsystem</h3>${subs.map(sub => `<div class="sub-card"><b>${esc(sub.id)} - ${esc(sub.donorSystem || `${sub.manufacturer} ${sub.model}`)}</b><span>${esc(sub.status)}</span><small>${esc(sub.location)} - ${esc(sub.note)}</small></div>`).join('')}<div class="engineering-note warning">Known donor system: Pioneer TS-WX1220AH. Two single 0.6 Ω 12-inch drivers. Do not power them from V TWELVE speaker outputs. Use LINE OUTPUT M/N as processed signal to the original or another suitable external subwoofer amplifier.</div></section>`;
+    return `<section class="inspector-section"><h3>Trunk subwoofer subsystem</h3>${subs.map(sub => `<div class="sub-card"><b>${esc(sub.id)} - ${esc(sub.donorSystem || `${sub.manufacturer} ${sub.model}`)}</b><span>${esc(sub.status)}</span><small>${esc(sub.location)} - ${esc(sub.note)}</small></div>`).join('')}<div class="engineering-note warning">European Pioneer working basis: 2 Ω. Current plan: SUB01 on V TWELVE J and SUB02 on K, independently. No bridging and no external sub amplifier. Verify loose-driver DCR before first power-up.</div></section>`;
   }
 
   if (typeof subwooferCards === 'function') {

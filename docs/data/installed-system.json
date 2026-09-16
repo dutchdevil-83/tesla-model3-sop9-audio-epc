@@ -16,7 +16,7 @@
       "Rear door speakers remain the original Tesla speakers for now.",
       "Parcel-shelf speakers are not installed in this vehicle and remain FUTURE/NONE.",
       "The exact donor subwoofer system is Pioneer TS-WX1220AH. Its two original 30 cm / 12-inch drivers will be reused in the trunk as a separate subwoofer subsystem; they are deliberately not relabeled as parcel-shelf speakers.",
-      "Pioneer documents the TS-WX1220AH donor configuration as two single 0.6 ohm drivers. The loose donor woofer itself does not have a separate published model/SKU in the captured documentation, so each individual driver model field remains TBD while donorSystem is exact. These loads must not be connected directly to V TWELVE amplified outputs."
+      "For this European build, the current working basis is 2 ohm per donor woofer: Pioneer Europe lists the dual TS-WX1220AH at 2 ohm / 1000 W nominal and the single-driver TS-WX1210AH sibling at 2 ohm / 500 W nominal. The current single-amplifier plan drives the two donor woofers independently from V TWELVE outputs J and K. Verify loose-driver DCR before first energization."
     ]
   },
   "systemHardware": [
@@ -86,19 +86,22 @@
     "SPK15": {"status": "NOT IN CURRENT BUILD", "component": null, "role": "PAUDIO-only headliner right reference endpoint", "adapter": null, "note": "No headliner replacement was purchased. Preserve as Tesla PAUDIO reference/future endpoint unless physical fitment is confirmed.", "serviceRefs": ["TESLA_HEADLINER"]}
   },
   "subwooferSubsystem": [
-    {"id": "SUB01", "status": "REUSE - DONOR SYSTEM IDENTIFIED", "manufacturer": "Pioneer", "model": "TBD", "donorSystem": "Pioneer TS-WX1220AH", "driver": "30 cm / 12-inch single-voice-coil donor woofer", "publishedNominalImpedance": "0.6 ohm single", "location": "Trunk / rear cargo area", "amplifierRule": "DO NOT CONNECT DIRECTLY TO V TWELVE AMPLIFIED OUTPUT", "note": "Donor system is exactly Pioneer TS-WX1220AH. The loose woofer has no separate published SKU in the captured documentation. Use the original Pioneer amplifier or another external subwoofer amplifier designed for the resulting load; V TWELVE LINE OUTPUT M/N provide processed signal, not speaker power."},
-    {"id": "SUB02", "status": "REUSE - DONOR SYSTEM IDENTIFIED", "manufacturer": "Pioneer", "model": "TBD", "donorSystem": "Pioneer TS-WX1220AH", "driver": "30 cm / 12-inch single-voice-coil donor woofer", "publishedNominalImpedance": "0.6 ohm single", "location": "Trunk / rear cargo area", "amplifierRule": "DO NOT CONNECT DIRECTLY TO V TWELVE AMPLIFIED OUTPUT", "note": "Donor system is exactly Pioneer TS-WX1220AH. The loose woofer has no separate published SKU in the captured documentation. Use the original Pioneer amplifier or another external subwoofer amplifier designed for the resulting load; V TWELVE LINE OUTPUT M/N provide processed signal, not speaker power."}
+    {"id": "SUB01", "status": "REUSE - DONOR SYSTEM IDENTIFIED", "manufacturer": "Pioneer", "model": "TBD", "donorSystem": "Pioneer TS-WX1220AH", "driver": "30 cm / 12-inch donor woofer", "publishedNominalImpedance": "2 ohm EU working basis; verify loose-driver DCR before energizing", "location": "Trunk / rear cargo area", "amplifierRule": "CURRENT PLAN: DIRECT V TWELVE OUTPUT J, ONE WOOFER PER CHANNEL", "note": "Pioneer amplifier is not reused and no external subwoofer amplifier is used. Current plan is direct V TWELVE J connection at the 2-ohm European working basis, approximately 120 W RMS. This is intentionally power-limited versus the Pioneer system capability."},
+    {"id": "SUB02", "status": "REUSE - DONOR SYSTEM IDENTIFIED", "manufacturer": "Pioneer", "model": "TBD", "donorSystem": "Pioneer TS-WX1220AH", "driver": "30 cm / 12-inch donor woofer", "publishedNominalImpedance": "2 ohm EU working basis; verify loose-driver DCR before energizing", "location": "Trunk / rear cargo area", "amplifierRule": "CURRENT PLAN: DIRECT V TWELVE OUTPUT K, ONE WOOFER PER CHANNEL", "note": "Pioneer amplifier is not reused and no external subwoofer amplifier is used. Current plan is direct V TWELVE K connection at the 2-ohm European working basis, approximately 120 W RMS. This is intentionally power-limited versus the Pioneer system capability."}
   ],
   "pioneerDonorSystem": {
     "model": "Pioneer TS-WX1220AH",
     "configuration": "2 x 30 cm / 12-inch bass-reflex active subwoofer system",
-    "drivers": "2 x single 0.6 ohm woofer",
-    "publishedSystemPower": "1000 W RMS / 3000 W maximum speaker-system rating",
-    "originalAmplifier": "600 W RMS / 1200 W peak Class-D",
-    "frequencyResponse": "20 Hz - 2.9 kHz (-20 dB)",
-    "powerSupply": "14.4 V nominal; 10.8 V - 15.1 V allowable",
+    "europeanImpedance": "2 ohm",
+    "europeanNominalInputPower": "1000 W complete dual-driver system",
+    "singleDriverSibling": "Pioneer TS-WX1210AH: 2 ohm / 500 W nominal",
+    "currentProjectWorkingBasis": "2 ohm per donor woofer; verify loose-driver DCR before first energization",
+    "originalAmplifier": "600 W RMS / 1200 W peak Class-D; not reused in this build",
+    "frequencyResponse": "20 Hz - 2.9 kHz",
     "references": [
-      {"label": "Pioneer Europe product page", "url": "https://pioneer-car.eu/ts-wx1220ah/ts-wx1220ah"},
+      {"label": "Pioneer Europe NL TS-WX1220AH page", "url": "https://pioneer-car.eu/nl/nl/ts-wx1220ah/ts-wx1220ah"},
+      {"label": "Pioneer Europe ES TS-WX1220AH page (2 ohm field)", "url": "https://pioneer-car.eu/es/es/ts-wx1220ah/ts-wx1220ah"},
+      {"label": "Pioneer Europe ES TS-WX1210AH page (2 ohm / 500 W single sibling)", "url": "https://pioneer-car.eu/es/es/ts-wx1210ah/ts-wx1210ah"},
       {"label": "Pioneer Europe installation manual", "url": "https://pioneer-car.eu/asset/installation_manuals/UPLOAD_ID_28783/bb886d2a0df764bbfca7a2d7de1562b67e31f364/"},
       {"label": "Repository donor documentation", "path": "Reference_Assets/Pioneer/TS_WX1220AH/Pioneer_TS-WX1220AH_Donor_Documentation.md"}
     ]

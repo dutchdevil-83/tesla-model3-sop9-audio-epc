@@ -39,11 +39,12 @@ class VTwelveConnectorTests(unittest.TestCase):
         labels = DATA["connectorLabeling"]
         self.assertEqual(labels["lineInput"]["channels"], list("ABCDEF"))
         self.assertEqual(labels["lineOutput"]["channels"], ["M", "N"])
-        self.assertIn("PIONEER TS-WX1220AH", labels["lineOutput"]["currentBuildState"].upper())
+        self.assertIn("RESERVED / UNUSED", labels["lineOutput"]["currentBuildState"])
         controls = {item["label"]: item for item in labels["controlAndPower"]}
         for required in ["USB", "SCP", "CONTROL / STATUS", "OPTICAL INPUT", "REM. OUT", "GND", "POWER REM", "+12V"]:
             self.assertIn(required, controls)
         self.assertEqual(controls["SCP"]["currentBuildUse"], "DIRECTOR for SCP")
+        self.assertIn("no external subwoofer amplifier", controls["REM. OUT"]["currentBuildState"])
 
     def test_current_build_input_plan_maps_seven_pp_tes_channels_to_a_through_g(self) -> None:
         plan = DATA["currentBuildTerminalPlan"]
@@ -58,7 +59,7 @@ class VTwelveConnectorTests(unittest.TestCase):
         for channel in "HIJKL":
             self.assertEqual(inputs[channel]["state"], "SPARE")
 
-    def test_output_plan_preserves_direct_channels_and_derives_tweeters(self) -> None:
+    def test_output_plan_preserves_direct_channels_derives_tweeters_and_drives_subs(self) -> None:
         outputs = {item["channel"]: item for item in DATA["currentBuildTerminalPlan"]["speakerOutputs"]}
         self.assertEqual(outputs["A"]["target"], "SPK01")
         self.assertEqual(outputs["B"]["target"], "SPK02")
@@ -71,24 +72,29 @@ class VTwelveConnectorTests(unittest.TestCase):
         self.assertIn("HIGHLEVEL C", outputs["H"]["source"])
         self.assertEqual(outputs["I"]["target"], "SPK04")
         self.assertIn("HIGHLEVEL E", outputs["I"]["source"])
-        for channel in "JKL":
-            self.assertIsNone(outputs[channel]["target"])
-            self.assertEqual(outputs[channel]["state"], "SPARE")
+        self.assertEqual(outputs["J"]["target"], "SUB01")
+        self.assertEqual(outputs["K"]["target"], "SUB02")
+        self.assertIn("2 OHM EU WORKING BASIS", outputs["J"]["state"])
+        self.assertIn("120 W RMS", outputs["K"]["state"])
+        self.assertIsNone(outputs["L"]["target"])
+        self.assertEqual(outputs["L"]["state"], "SPARE")
 
-    def test_pioneer_subs_use_processed_line_outputs_not_speaker_outputs(self) -> None:
-        plan = DATA["currentBuildTerminalPlan"]
-        line_outputs = {item["channel"]: item for item in plan["lineOutputs"]}
-        self.assertEqual(set(line_outputs), {"M", "N"})
-        for channel in "MN":
-            self.assertIn("Pioneer TS-WX1220AH", line_outputs[channel]["target"])
-            self.assertIn("NOT A SPEAKER OUTPUT", line_outputs[channel]["state"])
-        amplified_targets = {item["target"] for item in plan["speakerOutputs"] if item["target"]}
-        self.assertNotIn("SUB01", amplified_targets)
-        self.assertNotIn("SUB02", amplified_targets)
+    def test_european_pioneer_working_basis_and_single_amplifier_architecture(self) -> None:
+        donor = BUILD["pioneerDonorSystem"]
+        self.assertEqual(donor["model"], "Pioneer TS-WX1220AH")
+        self.assertEqual(donor["europeanImpedance"], "2 ohm")
+        self.assertIn("1000 W", donor["europeanNominalInputPower"])
+        self.assertIn("TS-WX1210AH", donor["singleDriverSibling"])
+        self.assertIn("2 ohm", donor["singleDriverSibling"])
         for sub in BUILD["subwooferSubsystem"]:
             self.assertEqual(sub["donorSystem"], "Pioneer TS-WX1220AH")
-            self.assertEqual(sub["publishedNominalImpedance"], "0.6 ohm single")
-            self.assertIn("DO NOT CONNECT DIRECTLY", sub["amplifierRule"])
+            self.assertIn("2 ohm EU working basis", sub["publishedNominalImpedance"])
+            self.assertIn("DIRECT V TWELVE OUTPUT", sub["amplifierRule"])
+        line_outputs = {item["channel"]: item for item in DATA["currentBuildTerminalPlan"]["lineOutputs"]}
+        self.assertEqual(set(line_outputs), {"M", "N"})
+        self.assertTrue(all(item["state"] == "RESERVED / UNUSED" for item in line_outputs.values()))
+        self.assertNotIn("external/original Pioneer", json.dumps(DATA))
+        self.assertNotIn("0.6", json.dumps(DATA) + json.dumps(BUILD))
 
     def test_plan_separates_verified_sop9_source_from_proposed_amplifier_assignment(self) -> None:
         plan = DATA["currentBuildTerminalPlan"]
@@ -106,7 +112,9 @@ class VTwelveConnectorTests(unittest.TestCase):
         self.assertIn("OUTPUT CHANNELS", UI)
         self.assertIn("LINE OUTPUT", UI)
         self.assertIn("DIRECTOR for SCP", UI)
-        self.assertIn("0.6 Ω", UI)
+        self.assertIn("2 Ω", UI)
+        self.assertIn("outputs J and K", UI)
+        self.assertNotIn("0.6 Ω", UI)
 
 
 if __name__ == "__main__":

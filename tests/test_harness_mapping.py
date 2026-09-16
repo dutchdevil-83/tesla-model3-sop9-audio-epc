@@ -99,13 +99,22 @@ class HarnessMappingTests(unittest.TestCase):
         self.assertIn("REPIN", rework["status"])
         self.assertIn("verified", rework["verificationBoundary"].lower())
         self.assertIn("continuity", rework["finalQc"].lower())
+        self.assertIn("DCR", rework["finalQc"])
         self.assertNotIn("teslaCavityVerification", self.integration)
 
-    def test_optional_woofer_lead_is_not_a_v_twelve_sub_power_output(self) -> None:
+    def test_optional_woofer_leads_drive_current_pioneer_subs(self) -> None:
         woofer = self.integration["optionalWooferLead"]
-        self.assertIn("NOT USED AS V TWELVE SPEAKER OUTPUT", woofer["status"])
-        self.assertIn("LINE OUTPUT M/N", woofer["plannedUse"])
+        self.assertIn("USED FOR DIRECT V TWELVE J/K", woofer["status"])
+        self.assertIn("V TWELVE J -> SUB01", woofer["plannedUse"])
+        self.assertIn("V TWELVE K -> SUB02", woofer["plannedUse"])
+        self.assertIn("no bridge, series or parallel", woofer["plannedUse"])
         self.assertIn("X588/X593", woofer["warning"])
+        outputs = {item["vTwelveOutput"]: item for item in self.integration["subwooferOutputs"]}
+        self.assertEqual(outputs["J"]["target"], "SUB01")
+        self.assertEqual(outputs["K"]["target"], "SUB02")
+        self.assertIn("Optional Woofer 1", outputs["J"]["harnessLead"])
+        self.assertIn("Optional Woofer 2", outputs["K"]["harnessLead"])
+        self.assertIn("2 ohm", outputs["J"]["workingBasis"])
         self.assertEqual(BUILD["targets"]["SPK12"]["status"], "NONE / FUTURE")
         self.assertEqual(BUILD["targets"]["SPK13"]["status"], "NONE / FUTURE")
 

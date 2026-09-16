@@ -25,7 +25,7 @@ https://dutchdevil-83.github.io/tesla-model3-sop9-audio-epc/
 - `assets/app.js` - Tesla endpoint navigation, source switching, connector evidence and inspector behavior.
 - `assets/installed-system.js` - owner-confirmed purchased-build overlay, exact hardware mapping, service references and build state.
 - `assets/harness-map.js` / `data/harness-integration.json` - exact SOP9 source/speaker colors, M141318 sleeve labels and V TWELVE A-G mapping.
-- `assets/v-twelve-map.js` / `data/v-twelve-connectors.json` - exact V TWELVE factory connector labels, A-L speaker-output plan and M/N processed subwoofer signal routing.
+- `assets/v-twelve-map.js` / `data/v-twelve-connectors.json` - exact V TWELVE factory connector labels and A-L speaker-output plan including direct J/K subwoofer outputs.
 - `data/installed-system.json` - current physical build, purchased/ordered hardware, identified Pioneer donor subsystem and official documentation links.
 - `catalog.html` - loader for the current self-contained interactive EPC HTML stored at repository root.
 - `data/door_damping_v2.2.json` - public structured data for the door-acoustic-treatment comparison.
@@ -37,7 +37,7 @@ The published workspace distinguishes the **actual current car build** from the 
 
 Current owner-confirmed state:
 
-- HELIX V TWELVE DSP MK2 is the DSP amplifier.
+- HELIX V TWELVE DSP MK2 is the only audio power amplifier in the current plan.
 - DIRECTOR for SCP is ordered.
 - Front door woofers: HELIX Ci7 W200FM-S3.
 - Front door tweeters: HELIX Ci7 T20FM-SC with CFMK20 TES.1 adapters ordered.
@@ -45,8 +45,10 @@ Current owner-confirmed state:
 - Dash center: one HELIX Ci3 C100.2FM-S3 MK2.
 - Rear door speakers remain the original Tesla speakers.
 - Parcel-shelf speakers are absent and are shown as `NONE / FUTURE`.
-- The trunk subsystem reuses the two original 30 cm / 12-inch drivers from a **Pioneer TS-WX1220AH** active dual-subwoofer system. Pioneer publishes the donor-driver configuration as **single 0.6 ohm x2**.
-- The Pioneer drivers are below the V TWELVE amplified-channel load range and therefore **must not be connected directly to V TWELVE OUTPUT J/K/L**. V TWELVE `LINE OUTPUT M/N` are used as processed signal outputs to the original or another suitable external subwoofer amplifier.
+- The trunk subsystem reuses the two original 30 cm / 12-inch drivers from a **European Pioneer TS-WX1220AH** active dual-subwoofer system.
+- Pioneer Europe lists TS-WX1220AH at **2 ohm / 1000 W nominal total** and its single-driver TS-WX1210AH sibling at **2 ohm / 500 W nominal**. The current project uses 2 ohm per loose donor driver as the working basis and requires DCR verification before first energization.
+- V TWELVE **OUTPUT J -> SUB01** and **OUTPUT K -> SUB02**, one woofer per channel. At 2 ohm the V TWELVE is rated approximately **120 W RMS per channel**, so this current arrangement is deliberately power-limited.
+- No external subwoofer amplifier and no original Pioneer amplifier are used. `LINE OUTPUT M/N` remain reserved/unused.
 
 ## PP-TES Ryzen donor harness and verified SOP9 map
 
@@ -70,7 +72,9 @@ On the V TWELVE `HIGHLEVEL INPUT`, each channel is physically labelled `-X +X`: 
 
 The tweeters are separate full-active outputs: V TWELVE H -> X565 (`VT` + / `BU` -) and V TWELVE I -> X575 (`VT` + / `BU` -), DSP-derived from high-level inputs C and E respectively.
 
-Continuity testing of the finished M141318 is final physical QC. It is not needed to discover the Tesla SOP9 functions, which are already defined by the repository source data.
+The photographed `Optional Woofer 1 +/-` lead is assigned to V TWELVE J / SUB01 and `Optional Woofer 2 +/-` to V TWELVE K / SUB02. These are output leads in the current project and are **not** Tesla X588/X593 parcel-shelf channels.
+
+Continuity testing of the finished M141318 is final physical QC. It is not needed to discover the Tesla SOP9 functions, which are already defined by the repository source data. Measure the two loose Pioneer donor drivers before first power-up as a separate subwoofer-load QC step.
 
 ## HELIX V TWELVE connector plan
 
@@ -79,11 +83,11 @@ Factory connector labels are kept separate from our installation assignment:
 - `HIGHLEVEL INPUT`: A-L, physically `-X +X`.
 - amplified `OUTPUT CHANNELS`: A-L, physically `+X -X`.
 - `LINE INPUT`: RCA A-F, unused for the current PP-TES speaker-level source path.
-- `LINE OUTPUT`: RCA M/N, processed low-frequency signal to the Pioneer/external subwoofer amplifier.
+- `LINE OUTPUT`: RCA M/N, reserved/unused in the current single-amplifier architecture.
 - `SCP`: DIRECTOR for SCP.
 - `GND`, `POWER REM`, `+12V`, `REM. OUT`, `OPTICAL INPUT`, `USB` and `CONTROL / STATUS` are recorded exactly from the amplifier/manual and owner photographs.
 
-Current speaker outputs are A-G direct channels, H/I tweeters, and J/K/L spare. This A-L assignment is a project wiring decision, not a HELIX factory definition.
+Current speaker outputs are A-G direct cabin channels, H/I tweeters, **J/K the two Pioneer donor woofers**, and L spare. This A-L assignment is a project wiring decision, not a HELIX factory definition.
 
 ## Official documentation model
 
@@ -116,6 +120,6 @@ EPC mapping existence is not promoted to `VERIFIED`. The original cross-referenc
 
 Classic Pages publishes only `/docs`; files such as `Target_Assets/core/audio_lhd.svg`, connector location images and `Target_Assets/coverage.json` live outside that publish folder. The workspace therefore resolves those validated assets from the repository's public `raw.githubusercontent.com/.../main/` paths instead of using broken `../Target_Assets/...` links.
 
-`scripts/validate_docs_workspace.py` and focused unit tests are executed by the repository validation workflow. They protect the Tesla source baseline, exact SOP9 channel mapping/colors, target namespace, Parts Catalog hashes, current-build mapping, V TWELVE connector labels, safe Pioneer routing and explicit source gaps.
+`scripts/validate_docs_workspace.py` and focused unit tests are executed by the repository validation workflow. They protect the Tesla source baseline, exact SOP9 channel mapping/colors, target namespace, Parts Catalog hashes, current-build mapping, V TWELVE connector labels, direct Pioneer J/K routing and explicit source gaps.
 
 The public workspace may show engineering decisions and sourcing references. It must not imply affiliation with Tesla or any audio-equipment manufacturer.
