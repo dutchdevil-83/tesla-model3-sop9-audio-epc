@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "updated": "2026-09-15",
+  "schemaVersion": 2,
+  "updated": "2026-09-16",
   "vehicle": {
     "model": "Tesla Model 3 Highland",
     "modelYear": 2026,
@@ -15,8 +15,8 @@
       "Front and center speakers are mapped to the exact HELIX models purchased on 2026-09-15.",
       "Rear door speakers remain the original Tesla speakers for now.",
       "Parcel-shelf speakers are not installed in this vehicle and remain FUTURE/NONE.",
-      "Two existing Pioneer subwoofers will be reused in the trunk as a separate subwoofer subsystem; they are deliberately not relabeled as parcel-shelf speakers.",
-      "Exact Pioneer model, impedance and voice-coil configuration are still required before a final subwoofer output/channel wiring plan can be marked verified."
+      "Two original 30 cm / 12-inch Pioneer TS-WX1220AH donor drivers will be reused in the trunk as a separate subwoofer subsystem; they are deliberately not relabeled as parcel-shelf speakers.",
+      "Pioneer documents the TS-WX1220AH as two single 0.6 ohm drivers. These are below the HELIX V TWELVE DSP MK2 2-ohm amplified-output load range and therefore must not be connected directly to V TWELVE speaker outputs. Use a suitable external subwoofer amplifier / the original Pioneer amplifier architecture after the final sub-amplifier and power strategy is confirmed."
     ]
   },
   "systemHardware": [
@@ -59,9 +59,9 @@
       "category": "Tesla integration harness",
       "manufacturer": "MATCH",
       "model": "PP-TES 1.7B Ryzen",
-      "status": "PURCHASED - FITMENT CHECK REQUIRED",
+      "status": "PURCHASED - CUSTOM SOP9 REWORK REQUIRED",
       "receipt": "Match PP-TES 1.7B Ryzen",
-      "warning": "The receipt names PP-TES 1.7B Ryzen. Audiotec Fischer explicitly lists that version for Model 3 MY 03/2022-09/2023 and says it is NOT compatible with Model 3 Highland. The Highland-specific product is PP-TES 1.7B Highland (M141320). Verify the physical harness label/part number supplied by the installer before connecting it. Do not treat this harness as verified until that check is complete.",
+      "warning": "The supplied M141318 PP-TES 1.7B Ryzen was designed for pre-Highland Model 3. The repository contains the authoritative SOP9 X171/X175 mapping. Re-route/repin the donor harness so its amplifier-side channel pairs follow the SOP9 functions before connection to the V TWELVE.",
       "references": [
         {"label": "Official PP-TES 1.7B Ryzen page", "url": "https://www.audiotec-fischer.de/en/match/adaptors-harnesses/pp-tes-1-7b-ryzen"},
         {"label": "Official PP-TES 1.7B Highland page", "url": "https://www.audiotec-fischer.de/en/match/adaptors-harnesses/pp-tes-1-7b-highland"}
@@ -86,9 +86,23 @@
     "SPK15": {"status": "NOT IN CURRENT BUILD", "component": null, "role": "PAUDIO-only headliner right reference endpoint", "adapter": null, "note": "No headliner replacement was purchased. Preserve as Tesla PAUDIO reference/future endpoint unless physical fitment is confirmed.", "serviceRefs": ["TESLA_HEADLINER"]}
   },
   "subwooferSubsystem": [
-    {"id": "SUB01", "status": "REUSE - MODEL TBD", "manufacturer": "Pioneer", "model": "TBD", "location": "Trunk / rear cargo area", "note": "Existing Pioneer subwoofer. Exact model, nominal impedance and voice-coil configuration are required before assigning an amplifier channel or crossover."},
-    {"id": "SUB02", "status": "REUSE - MODEL TBD", "manufacturer": "Pioneer", "model": "TBD", "location": "Trunk / rear cargo area", "note": "Existing Pioneer subwoofer. Exact model, nominal impedance and voice-coil configuration are required before assigning an amplifier channel or crossover."}
+    {"id": "SUB01", "status": "REUSE - IDENTIFIED", "manufacturer": "Pioneer", "model": "TS-WX1220AH donor driver 1", "donorSystem": "Pioneer TS-WX1220AH", "driver": "30 cm / 12-inch single-voice-coil woofer", "publishedNominalImpedance": "0.6 ohm single", "location": "Trunk / rear cargo area", "amplifierRule": "DO NOT CONNECT DIRECTLY TO V TWELVE AMPLIFIED OUTPUT", "note": "Original driver from the Pioneer TS-WX1220AH active dual-sub system. Pioneer publishes SINGLE 0.6 ohm x2 for the donor system. Use the original Pioneer amplifier or another external subwoofer amplifier designed for the resulting load; V TWELVE speaker outputs are not the subwoofer power stage."},
+    {"id": "SUB02", "status": "REUSE - IDENTIFIED", "manufacturer": "Pioneer", "model": "TS-WX1220AH donor driver 2", "donorSystem": "Pioneer TS-WX1220AH", "driver": "30 cm / 12-inch single-voice-coil woofer", "publishedNominalImpedance": "0.6 ohm single", "location": "Trunk / rear cargo area", "amplifierRule": "DO NOT CONNECT DIRECTLY TO V TWELVE AMPLIFIED OUTPUT", "note": "Original driver from the Pioneer TS-WX1220AH active dual-sub system. Pioneer publishes SINGLE 0.6 ohm x2 for the donor system. Use the original Pioneer amplifier or another external subwoofer amplifier designed for the resulting load; V TWELVE speaker outputs are not the subwoofer power stage."}
   ],
+  "pioneerDonorSystem": {
+    "model": "Pioneer TS-WX1220AH",
+    "configuration": "2 x 30 cm / 12-inch bass-reflex active subwoofer system",
+    "drivers": "2 x single 0.6 ohm woofer",
+    "publishedSystemPower": "1000 W RMS / 3000 W maximum speaker-system rating",
+    "originalAmplifier": "600 W RMS / 1200 W peak Class-D",
+    "frequencyResponse": "20 Hz - 2.9 kHz (-20 dB)",
+    "powerSupply": "14.4 V nominal; 10.8 V - 15.1 V allowable",
+    "references": [
+      {"label": "Pioneer Europe product page", "url": "https://pioneer-car.eu/ts-wx1220ah/ts-wx1220ah"},
+      {"label": "Pioneer Europe installation manual", "url": "https://pioneer-car.eu/asset/installation_manuals/UPLOAD_ID_28783/bb886d2a0df764bbfca7a2d7de1562b67e31f364/"},
+      {"label": "Repository donor documentation", "path": "Reference_Assets/Pioneer/TS_WX1220AH/Pioneer_TS-WX1220AH_Donor_Documentation.md"}
+    ]
+  },
   "products": {
     "CI7_W200": {"name": "HELIX Ci7 W200FM-S3", "status": "PURCHASED", "specs": ["200 mm woofer", "3 ohm", "150 W RMS / 225 W max", "35-2500 Hz", "65.8 mm installation depth"], "references": [{"label": "Official product page", "url": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-w200fm-s3"}, {"label": "Official manual PDF", "url": "https://www.audiotec-fischer.de/media/pdf/ef/d1/9e/BA_HELIX_COMPOSE_i7_Woofer_02-03-2023.pdf"}]},
     "CI7_M100": {"name": "HELIX Ci7 M100FM-S3", "status": "PURCHASED", "specs": ["100 mm midrange", "3 ohm", "100 W RMS / 150 W max", "110-7000 Hz", "26.9 mm installation depth"], "references": [{"label": "Official product page", "url": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-m100fm-s3"}, {"label": "Official manual PDF", "url": "https://www.audiotec-fischer.de/media/pdf/94/64/b2/HELIX_COMPOSE_i7_Midrange-18-04-2023.pdf"}]},
