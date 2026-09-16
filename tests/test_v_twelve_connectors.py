@@ -95,7 +95,7 @@ class VTwelveConnectorTests(unittest.TestCase):
         self.assertIn("PROPOSED", plan["status"])
         self.assertIn("SOP9 SOURCE MAP VERIFIED", plan["status"])
         self.assertIn("M141318", plan["status"])
-        self.assertIn("already verified", plan["verificationBoundary"])
+        self.assertIn("are verified", plan["verificationBoundary"])
         self.assertIn("installation-plan decisions", UI)
         self.assertIn("Factory connector labels", UI)
 
