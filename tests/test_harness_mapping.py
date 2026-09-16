@@ -7,13 +7,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = json.loads((ROOT / "docs/data/installed-system.json").read_text(encoding="utf-8"))
+HARNESS = json.loads((ROOT / "docs/data/harness-integration.json").read_text(encoding="utf-8"))
 HARNESS_JS = (ROOT / "docs/assets/harness-map.js").read_text(encoding="utf-8")
 INDEX = (ROOT / "docs/index.html").read_text(encoding="utf-8")
 
 
 class HarnessMappingTests(unittest.TestCase):
     def setUp(self) -> None:
-        self.integration = BUILD["harnessIntegration"]
+        self.integration = HARNESS
         self.channels = {channel["label"]: channel for channel in self.integration["channels"]}
 
     def test_seven_store_confirmed_logical_channels_are_recorded(self) -> None:
@@ -61,6 +62,7 @@ class HarnessMappingTests(unittest.TestCase):
     def test_harness_ui_is_loaded_and_uses_target_specific_mapping(self) -> None:
         self.assertIn('assets/harness-map.js', INDEX)
         self.assertIn('assets/harness-map.css', INDEX)
+        self.assertIn("data/harness-integration.json", HARNESS_JS)
         self.assertIn("channelsForTarget", HARNESS_JS)
         self.assertIn("DIRECT HARNESS CHANNEL", HARNESS_JS)
         self.assertIn("DSP-DERIVED OUTPUT", HARNESS_JS)
