@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-09-16",
+  "mode": "CUSTOM VEHICLE-SIDE BREAKOUT / RETURN",
+  "sourceHarness": "MATCH PP-TES 1.7B Ryzen",
+  "amplifier": "HELIX V TWELVE DSP MK2",
+  "status": "LOGICAL CHANNEL MAP CONFIRMED; TESLA CAVITY CONTINUITY PENDING",
+  "evidence": [
+    "Car-Hifi Store Bunde confirmed that Front Left, Center and Front Right are the three instrument-panel speakers behind the windshield.",
+    "Owner-supplied photos show labelled IN +/-, OUT +/- conductors for Front Low Left, Front Low Right, Front Left, Center, Front Right, Rear Left and Rear Right.",
+    "Owner-supplied photos also show Optional Woofer 1/2 +/- leads.",
+    "Observed wire-family colors are photographic observations only and are not substitutes for continuity testing or Tesla cavity identification."
+  ],
+  "directionSemantics": {
+    "IN": "Tesla OEM speaker-level source -> HELIX V TWELVE DSP MK2 high-level input",
+    "OUT": "HELIX V TWELVE DSP MK2 amplified speaker output -> vehicle-side speaker return"
+  },
+  "rules": [
+    "Do not treat PP-TES 1.7B Ryzen as a plug-and-play Highland harness.",
+    "Do not cut or energize until every labelled IN/OUT conductor is continuity-mapped to the two Tesla 16-way connector cavities.",
+    "Keep source-channel identity separate from final V TWELVE physical terminal numbers until the continuity map is complete.",
+    "Front tweeters are planned as DSP-derived outputs from the corresponding Front Left / Front Right dash source channels; they are not separate labelled PP-TES source channels.",
+    "Optional Woofer 1/2 leads are not Tesla parcel-shelf channels and remain separate from X588/X593."
+  ],
+  "channels": [
+    {
+      "id": "SRC01",
+      "label": "Front Low Left",
+      "observedWireFamily": "orange",
+      "sourceRole": "Front-left door low-frequency / woofer source",
+      "directTarget": "SPK01",
+      "derivedTargets": [],
+      "inputSleeves": ["Front Low Left IN +", "Front Low Left IN -"],
+      "outputSleeves": ["Front Low Left OUT +", "Front Low Left OUT -"],
+      "verification": "STORE-CONFIRMED LOGICAL ROLE; TESLA CAVITY PENDING"
+    },
+    {
+      "id": "SRC02",
+      "label": "Front Low Right",
+      "observedWireFamily": "brown",
+      "sourceRole": "Front-right door low-frequency / woofer source",
+      "directTarget": "SPK02",
+      "derivedTargets": [],
+      "inputSleeves": ["Front Low Right IN +", "Front Low Right IN -"],
+      "outputSleeves": ["Front Low Right OUT +", "Front Low Right OUT -"],
+      "verification": "STORE-CONFIRMED LOGICAL ROLE; TESLA CAVITY PENDING"
+    },
+    {
+      "id": "SRC03",
+      "label": "Front Left",
+      "observedWireFamily": "white",
+      "sourceRole": "Left instrument-panel speaker behind windshield",
+      "directTarget": "SPK05",
+      "derivedTargets": ["SPK03"],
+      "derivedNote": "SPK03 left tweeter is planned as a dedicated DSP high-pass output derived from this source. The final V TWELVE output terminal and tweeter return route remain to be assigned.",
+      "inputSleeves": ["Front Left IN +", "Front Left IN -"],
+      "outputSleeves": ["Front Left OUT +", "Front Left OUT -"],
+      "verification": "STORE-CONFIRMED LOGICAL ROLE; TESLA CAVITY PENDING"
+    },
+    {
+      "id": "SRC04",
+      "label": "Center",
+      "observedWireFamily": "blue",
+      "sourceRole": "Center instrument-panel speaker behind windshield",
+      "directTarget": "SPK06",
+      "derivedTargets": [],
+      "inputSleeves": ["Center IN +", "Center IN -"],
+      "outputSleeves": ["Center OUT +", "Center OUT -"],
+      "verification": "STORE-CONFIRMED LOGICAL ROLE; TESLA CAVITY PENDING"
+    },
+    {
+      "id": "SRC05",
+      "label": "Front Right",
+      "observedWireFamily": "grey",
+      "sourceRole": "Right instrument-panel speaker behind windshield",
+      "directTarget": "SPK07",
+      "derivedTargets": ["SPK04"],
+      "derivedNote": "SPK04 right tweeter is planned as a dedicated DSP high-pass output derived from this source. The final V TWELVE output terminal and tweeter return route remain to be assigned.",
+      "inputSleeves": ["Front Right IN +", "Front Right IN -"],
+      "outputSleeves": ["Front Right OUT +", "Front Right OUT -"],
+      "verification": "STORE-CONFIRMED LOGICAL ROLE; TESLA CAVITY PENDING"
+    },
+    {
+      "id": "SRC06",
+      "label": "Rear Left",
+      "observedWireFamily": "green",
+      "sourceRole": "Rear-left door speaker source / return",
+      "directTarget": "SPK10",
+      "derivedTargets": [],
+      "inputSleeves": ["Rear Left IN +", "Rear Left IN -"],
+      "outputSleeves": ["Rear Left OUT +", "Rear Left OUT -"],
+      "verification": "STORE-CONFIRMED LOGICAL ROLE; TESLA CAVITY PENDING"
+    },
+    {
+      "id": "SRC07",
+      "label": "Rear Right",
+      "observedWireFamily": "purple",
+      "sourceRole": "Rear-right door speaker source / return",
+      "directTarget": "SPK11",
+      "derivedTargets": [],
+      "inputSleeves": ["Rear Right IN +", "Rear Right IN -"],
+      "outputSleeves": ["Rear Right OUT +", "Rear Right OUT -"],
+      "verification": "STORE-CONFIRMED LOGICAL ROLE; TESLA CAVITY PENDING"
+    }
+  ],
+  "optionalWooferLead": {
+    "labels": ["Optional Woofer 1 +", "Optional Woofer 1 -", "Optional Woofer 2 +", "Optional Woofer 2 -"],
+    "status": "OUTPUT LEAD ONLY - NOT A TESLA SOURCE CHANNEL",
+    "plannedUse": "Potential connection path for the two reused Pioneer trunk subwoofers after model, nominal impedance and voice-coil configuration are confirmed.",
+    "warning": "Do not identify these wires as X588/X593 parcel-shelf speaker wiring. The current vehicle has no parcel-shelf speakers installed."
+  },
+  "teslaCavityVerification": {
+    "status": "PENDING",
+    "requiredBefore": "CUTTING OR ENERGIZING",
+    "scope": "Continuity-map each labelled IN/OUT conductor to both Tesla 16-way connector cavity numbers, then compare those cavity functions with the SOP9 electrical reference.",
+    "resultPolicy": "Only after continuity verification may a Tesla cavity/function be marked VERIFIED. Until then the page keeps logical-channel mapping separate from cavity-level mapping."
+  }
+}
