@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "updated": "2026-09-16",
   "amplifier": "HELIX V TWELVE DSP MK2",
   "manufacturer": "Audiotec Fischer",
@@ -7,17 +7,13 @@
   "evidence": [
     "Audiotec Fischer official HELIX V TWELVE DSP MK2 manual.",
     "Owner-supplied photographs of the actual V TWELVE DSP MK2 connector panels dated 2026-09-16.",
-    "Tesla SOP9 source connector/cavity/net assignments from repository Source_Assets/connectors/X171/metadata.json and X175/metadata.json, cross-checked with Source_Assets/core/audio_lhd.svg."
+    "Tesla SOP9 source connector/cavity/net assignments from repository Source_Assets/connectors/X171/metadata.json and X175/metadata.json, cross-checked with Source_Assets/core/audio_lhd.svg.",
+    "Pioneer TS-WX1220AH official documentation identifies two single 0.6-ohm donor drivers; these are below the V TWELVE amplified-output load range and are therefore routed through an external subwoofer amplifier rather than V TWELVE speaker outputs."
   ],
   "references": [
-    {
-      "label": "Official HELIX V TWELVE DSP MK2 product page",
-      "url": "https://www.audiotec-fischer.de/en/helix/amplifiers/v-twelve-dsp-mk2"
-    },
-    {
-      "label": "Official HELIX V TWELVE DSP MK2 manual PDF",
-      "url": "https://www.audiotec-fischer.de/media/pdf/d3/17/06/HELIX-V-TWELVE-DSP_MK2_148x210mm_02-12-21_web.pdf"
-    }
+    {"label": "Official HELIX V TWELVE DSP MK2 product page", "url": "https://www.audiotec-fischer.de/en/helix/amplifiers/v-twelve-dsp-mk2"},
+    {"label": "Official HELIX V TWELVE DSP MK2 manual PDF", "url": "https://www.audiotec-fischer.de/media/pdf/d3/17/06/HELIX-V-TWELVE-DSP_MK2_148x210mm_02-12-21_web.pdf"},
+    {"label": "Pioneer TS-WX1220AH official product page", "url": "https://pioneer-car.eu/ts-wx1220ah/ts-wx1220ah"}
   ],
   "connectorLabeling": {
     "highlevelInput": {
@@ -26,26 +22,15 @@
       "channels": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"],
       "polarityOrderPerChannel": ["-", "+"],
       "rows": [
-        {
-          "row": "upper",
-          "channels": ["A", "B", "C", "D", "E", "F"],
-          "terminals": ["-A", "+A", "-B", "+B", "-C", "+C", "-D", "+D", "-E", "+E", "-F", "+F"]
-        },
-        {
-          "row": "lower",
-          "channels": ["G", "H", "I", "J", "K", "L"],
-          "terminals": ["-G", "+G", "-H", "+H", "-I", "+I", "-J", "+J", "-K", "+K", "-L", "+L"]
-        }
+        {"row": "upper", "channels": ["A", "B", "C", "D", "E", "F"], "terminals": ["-A", "+A", "-B", "+B", "-C", "+C", "-D", "+D", "-E", "+E", "-F", "+F"]},
+        {"row": "lower", "channels": ["G", "H", "I", "J", "K", "L"], "terminals": ["-G", "+G", "-H", "+H", "-I", "+I", "-J", "+J", "-K", "+K", "-L", "+L"]}
       ]
     },
     "lineInput": {
       "label": "LINE INPUT",
       "purpose": "6 RCA low-level inputs",
       "channels": ["A", "B", "C", "D", "E", "F"],
-      "layout": {
-        "upper": ["A", "C", "E"],
-        "lower": ["B", "D", "F"]
-      },
+      "layout": {"upper": ["A", "C", "E"], "lower": ["B", "D", "F"]},
       "currentBuildState": "UNUSED - PP-TES source uses HIGHLEVEL INPUT"
     },
     "speakerOutput": {
@@ -54,39 +39,31 @@
       "channels": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"],
       "polarityOrderPerChannel": ["+", "-"],
       "blocks": [
-        {
-          "block": "A-F",
-          "upper": ["+A", "-A", "+B", "-B", "+C", "-C"],
-          "lower": ["+D", "-D", "+E", "-E", "+F", "-F"]
-        },
-        {
-          "block": "G-L",
-          "upper": ["+G", "-G", "+H", "-H", "+I", "-I"],
-          "lower": ["+J", "-J", "+K", "-K", "+L", "-L"]
-        }
+        {"block": "A-F", "upper": ["+A", "-A", "+B", "-B", "+C", "-C"], "lower": ["+D", "-D", "+E", "-E", "+F", "-F"]},
+        {"block": "G-L", "upper": ["+G", "-G", "+H", "-H", "+I", "-I"], "lower": ["+J", "-J", "+K", "-K", "+L", "-L"]}
       ]
     },
     "lineOutput": {
       "label": "LINE OUTPUT",
       "channels": ["M", "N"],
-      "purpose": "processed RCA outputs for external amplifiers",
-      "currentBuildState": "UNUSED / RESERVED"
+      "purpose": "2 processed RCA outputs for an external amplifier",
+      "currentBuildState": "PIONEER TS-WX1220AH SUB SIGNAL FEED - M/N feed an external/original Pioneer subwoofer amplifier; never connect the 0.6-ohm donor drivers directly to these RCA sockets or to V TWELVE speaker outputs."
     },
     "controlAndPower": [
       {"label": "USB", "purpose": "DSP PC-Tool connection"},
       {"label": "SCP", "purpose": "Smart Control Port", "currentBuildUse": "DIRECTOR for SCP"},
       {"label": "CONTROL / STATUS", "purpose": "control button and status LED"},
       {"label": "OPTICAL INPUT", "purpose": "digital stereo SPDIF input", "currentBuildState": "UNUSED"},
-      {"label": "REM. OUT", "purpose": "remote output for external amplifiers", "currentBuildState": "UNUSED / RESERVED"},
+      {"label": "REM. OUT", "purpose": "remote output for external amplifiers", "currentBuildState": "Candidate remote turn-on for Pioneer/external subwoofer amplifier after final power/wake design is confirmed"},
       {"label": "GND", "purpose": "amplifier ground"},
       {"label": "POWER REM", "purpose": "remote turn-on input"},
       {"label": "+12V", "purpose": "amplifier positive power supply"}
     ]
   },
   "currentBuildTerminalPlan": {
-    "status": "PROPOSED TERMINAL ASSIGNMENT - TESLA SOP9 SOURCE MAP VERIFIED; DO NOT ENERGIZE UNTIL M141318 IS REWORKED TO THAT MAP AND FINAL CONTINUITY QC PASSES",
-    "verificationBoundary": "Tesla SOP9 channel functions and X171/X175 source cavities are already verified from the repository electrical reference. The remaining task is adapting/checking the older M141318 harness routing, not discovering Tesla pin functions.",
-    "designRule": "Keep the seven direct PP-TES channels symmetrical from HIGHLEVEL INPUT A-G to OUTPUT A-G. Use H/I for DSP-derived tweeters, reserve J/K for the two Pioneer trunk subwoofers pending electrical specifications, and leave L spare.",
+    "status": "PROPOSED TERMINAL ASSIGNMENT - TESLA SOP9 SOURCE MAP VERIFIED; M141318 MUST BE REWORKED TO THAT MAP BEFORE CONNECTION",
+    "verificationBoundary": "Tesla SOP9 channel functions and X171/X175 source cavities are verified from the repository electrical reference. The remaining task is adapting the older M141318 harness routing and checking the finished harness.",
+    "designRule": "Use HIGHLEVEL A-G for the seven Tesla standard-audio source channels; keep amplified outputs A-G aligned with their direct speaker returns; use H/I for the two full-active tweeters; J/K/L remain spare. LINE OUTPUT M/N carry processed low-frequency signal to the external/original Pioneer TS-WX1220AH amplifier.",
     "highlevelInputs": [
       {"channel": "A", "harnessLabel": "Front Low Left", "role": "front-left door woofer source", "target": "SPK01", "state": "PLANNED"},
       {"channel": "B", "harnessLabel": "Front Low Right", "role": "front-right door woofer source", "target": "SPK02", "state": "PLANNED"},
@@ -109,11 +86,15 @@
       {"channel": "E", "target": "SPK07", "role": "HELIX Ci7 M100FM-S3 right dash midrange", "source": "HIGHLEVEL E / Front Right", "state": "PLANNED"},
       {"channel": "F", "target": "SPK10", "role": "Tesla OEM rear-left door speaker", "source": "HIGHLEVEL F / Rear Left", "state": "PLANNED"},
       {"channel": "G", "target": "SPK11", "role": "Tesla OEM rear-right door speaker", "source": "HIGHLEVEL G / Rear Right", "state": "PLANNED"},
-      {"channel": "H", "target": "SPK03", "role": "HELIX Ci7 T20FM-SC left tweeter", "source": "DSP-derived from HIGHLEVEL C / Front Left", "state": "PLANNED - CROSSOVER REQUIRED"},
-      {"channel": "I", "target": "SPK04", "role": "HELIX Ci7 T20FM-SC right tweeter", "source": "DSP-derived from HIGHLEVEL E / Front Right", "state": "PLANNED - CROSSOVER REQUIRED"},
-      {"channel": "J", "target": "SUB01", "role": "Pioneer trunk subwoofer 1", "source": "DSP low-frequency mix", "state": "RESERVED - PIONEER MODEL / IMPEDANCE / VOICE COIL TBD"},
-      {"channel": "K", "target": "SUB02", "role": "Pioneer trunk subwoofer 2", "source": "DSP low-frequency mix", "state": "RESERVED - PIONEER MODEL / IMPEDANCE / VOICE COIL TBD"},
+      {"channel": "H", "target": "SPK03", "role": "HELIX Ci7 T20FM-SC left tweeter", "source": "DSP-derived from HIGHLEVEL C / Front Left", "state": "PLANNED - HIGH-PASS / LEVEL LIMIT REQUIRED"},
+      {"channel": "I", "target": "SPK04", "role": "HELIX Ci7 T20FM-SC right tweeter", "source": "DSP-derived from HIGHLEVEL E / Front Right", "state": "PLANNED - HIGH-PASS / LEVEL LIMIT REQUIRED"},
+      {"channel": "J", "target": null, "role": "spare amplified channel", "source": null, "state": "SPARE"},
+      {"channel": "K", "target": null, "role": "spare amplified channel", "source": null, "state": "SPARE"},
       {"channel": "L", "target": null, "role": "spare amplified channel", "source": null, "state": "SPARE"}
+    ],
+    "lineOutputs": [
+      {"channel": "M", "target": "Pioneer TS-WX1220AH external/original amplifier", "role": "processed subwoofer signal", "source": "DSP low-frequency mix", "state": "PLANNED RCA SIGNAL - NOT A SPEAKER OUTPUT"},
+      {"channel": "N", "target": "Pioneer TS-WX1220AH external/original amplifier", "role": "processed subwoofer signal", "source": "DSP low-frequency mix", "state": "PLANNED RCA SIGNAL - NOT A SPEAKER OUTPUT"}
     ]
   }
 }
