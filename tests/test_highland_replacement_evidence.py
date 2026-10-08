@@ -37,7 +37,7 @@ class HighlandReplacementEvidenceTests(unittest.TestCase):
 
     def test_historical_old_colours_are_not_misrepresented_as_measured(self) -> None:
         self.assertIn("NOT VERIFIED", DATA["channels"][0]["oldRyzen"]["actualDSPConnection"])
-        self.assertIn("actual existing terminal", MANUAL.lower() if False else DATA["sourceEvidence"]["old"].lower())
+        self.assertIn("actual old dsp terminal", DATA["sourceEvidence"]["old"].lower())
         self.assertIn("actual", HTML)
         self.assertIn("Not observed", HTML)
 
@@ -54,7 +54,7 @@ class HighlandReplacementEvidenceTests(unittest.TestCase):
         self.assertFalse(DATA["channels"][0]["replacement"].get("newPlugCavityVerified", False))
         for x in DATA["channels"]:
             self.assertIn("NOT VERIFIED", x["tesla"]["newPlugCavityStatus"])
-        self.assertIn("NOT yet verified", MANUAL.lower().replace("not yet verified", "NOT yet verified") if False else HTML)
+        self.assertIn("exact replacement connector cavities", HTML)
 
     def test_tweeter_outputs_fail_closed_and_manufacturer_hp(self) -> None:
         outputs = {o["channel"]: o for o in DSP["currentBuildTerminalPlan"]["speakerOutputs"]}
