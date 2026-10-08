@@ -49,8 +49,8 @@ class VTwelveConnectorTests(unittest.TestCase):
     def test_current_build_input_plan_maps_seven_pp_tes_channels_to_a_through_g(self) -> None:
         plan = DATA["currentBuildTerminalPlan"]
         inputs = {item["channel"]: item for item in plan["highlevelInputs"]}
-        self.assertEqual(inputs["A"]["harnessLabel"], "Front Low Left")
-        self.assertEqual(inputs["B"]["harnessLabel"], "Front Low Right")
+        self.assertEqual(inputs["A"]["harnessLabel"], "Front Low/TW Left")
+        self.assertEqual(inputs["B"]["harnessLabel"], "Front Low/TW Right")
         self.assertEqual(inputs["C"]["harnessLabel"], "Front Left")
         self.assertEqual(inputs["D"]["harnessLabel"], "Center")
         self.assertEqual(inputs["E"]["harnessLabel"], "Front Right")
@@ -69,13 +69,13 @@ class VTwelveConnectorTests(unittest.TestCase):
         self.assertEqual(outputs["F"]["target"], "SPK10")
         self.assertEqual(outputs["G"]["target"], "SPK11")
         self.assertEqual(outputs["H"]["target"], "SPK03")
-        self.assertIn("HIGHLEVEL C", outputs["H"]["source"])
+        self.assertIn("VCP Front L Full", outputs["H"]["source"])
         self.assertEqual(outputs["I"]["target"], "SPK04")
-        self.assertIn("HIGHLEVEL E", outputs["I"]["source"])
+        self.assertIn("VCP Front R Full", outputs["I"]["source"])
         self.assertEqual(outputs["J"]["target"], "SUB01")
         self.assertEqual(outputs["K"]["target"], "SUB02")
-        self.assertIn("2 OHM EU WORKING BASIS", outputs["J"]["state"])
-        self.assertIn("120 W RMS", outputs["K"]["state"])
+        self.assertIn("2 OHM NOMINAL WORKING BASIS", outputs["J"]["state"])
+        self.assertIn("2 OHM NOMINAL WORKING BASIS", outputs["K"]["state"])
         self.assertIsNone(outputs["L"]["target"])
         self.assertEqual(outputs["L"]["state"], "SPARE")
 
@@ -100,8 +100,12 @@ class VTwelveConnectorTests(unittest.TestCase):
         plan = DATA["currentBuildTerminalPlan"]
         self.assertIn("PROPOSED", plan["status"])
         self.assertIn("SOP9 SOURCE MAP VERIFIED", plan["status"])
-        self.assertIn("M141318", plan["status"])
-        self.assertIn("are verified", plan["verificationBoundary"])
+        self.assertIn("HARNESS CONTINUITY", plan["status"])
+        self.assertIn("have NOT been metered", plan["verificationBoundary"])
+        self.assertTrue(plan["virtualRoutingRequired"])
+        self.assertIn("virtual Subwoofer 1(K)", plan["subwooferRemoteRule"])
+        self.assertIn("2 ohm minimum", plan["speakerOutputMinimumImpedance"])
+        self.assertIn("MUTED/DISCONNECTED", {x["channel"]: x for x in plan["speakerOutputs"]}["H"]["state"])
         self.assertIn("installation-plan decisions", UI)
         self.assertIn("Factory connector labels", UI)
 
