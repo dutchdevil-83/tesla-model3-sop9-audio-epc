@@ -1,6 +1,5 @@
-/* PP-TES logical channel overlay.
- * Tesla SOP9 source roles/cavities/colors come from the repository electrical reference.
- * The older M141318 harness is repinned/re-routed to those verified functions.
+/* Replacement Highland harness overlay. OEM SOP9 source data is independent
+ * from the photographed replacement wire sleeves. No new cavity verification implied.
  */
 (() => {
   const baseRenderInspector = renderInspector;
@@ -59,7 +58,7 @@
       <div class="harness-kv"><span>IN to V TWELVE</span><b>${sleevePair(channel.inputSleeves)}</b></div>
       <div class="harness-kv"><span>OUT to vehicle</span><b>${direct ? sleevePair(channel.outputSleeves) : '<span class="harness-muted">dedicated DSP output route</span>'}</b></div>
       <div class="harness-kv"><span>Recommended final sleeves</span><b>${sleevePair(channel.finalSleeveLabels)}</b></div>
-      <div class="harness-kv"><span>Observed M141318 wire family</span><b>${esc(channel.observedHarnessWireFamily || 'not recorded')}</b></div>
+      <div class="harness-kv"><span>Historical planned Ryzen wire family</span><b>${esc(channel.observedHarnessWireFamily || 'not recorded')}</b></div>
       <p>${esc(relation.detail)}</p>
       <div class="harness-verification">${esc(channel.verification)}</div>
     </article>`;
@@ -67,7 +66,7 @@
 
   function fullTopology(map) {
     return `<section class="inspector-section harness-topology">
-      <h3>7-channel PP-TES / SOP9 / V TWELVE topology</h3>
+      <h3>7-channel Highland replacement / SOP9 / V TWELVE topology</h3>
       <div class="harness-table-wrap"><table class="harness-table">
         <thead><tr><th>V TWELVE</th><th>Harness function</th><th>SOP9 source pair</th><th>Speaker return</th><th>Target</th></tr></thead>
         <tbody>${(map.channels || []).map(channel => `<tr>
@@ -92,6 +91,7 @@
       <div class="harness-kv"><span>DSP source</span><b>${esc(item.source)}</b></div>
       <div class="harness-kv"><span>Speaker connector</span><b><code>${esc(item.speakerConnector)} +${esc(item.positiveWireColor)} / -${esc(item.negativeWireColor)}</code></b></div>
       <div class="harness-kv"><span>Final sleeve</span><b>${sleevePair(item.finalLabels)}</b></div>
+      <div class="engineering-note warning">${esc(item.status || "MUTED/DISCONNECTED UNTIL INDEPENDENT TWEETER ISOLATION")}</div>
     </div>`).join('')}</section>`;
   }
 
@@ -108,7 +108,7 @@
     const rework = map.ryzenHarnessRework || {};
     if (!rework.status) return '';
     return `<div class="fitment-warning harness-warning">
-      <strong>M141318 custom-harness work: ${esc(rework.status)}</strong>
+      <strong>Highland replacement harness gate: ${esc(rework.status)}</strong>
       <span>${esc(rework.scope || '')}</span>
       <small>${esc(rework.verificationBoundary || '')} ${esc(rework.finalQc || '')}</small>
     </div>`;

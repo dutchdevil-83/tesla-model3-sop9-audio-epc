@@ -2,8 +2,10 @@
 
 Engineering, sourcing and installation reference for a **Tesla Model 3 Highland 2026 Premium Long Range RWD / SOP9 / LHD** audio upgrade.
 
-Current engineering baseline: **v2.2.0** (2026-09-10)  
-Current interactive EPC baseline: **v2.1.0**
+**Current installed planning baseline: 2026-10-08.** Received new Highland replacement audio harness (expected MATCH M141320, part label unverified). V TWELVE DSP MK2 remains in use; old Ryzen M141318 is faulty/superseded. Wiring and DSP VCP tuning are NOT commissioned. [Read the new manual](docs/HIGHLAND-REPLACEMENT-DSP-MANUAL.md) and [interactive connector inspector](docs/dsp-wiring.html). 
+
+Historical engineering workbook baseline: **v2.2.0** (2026-09-10)  
+Historical interactive EPC baseline: **v2.1.0**
 
 ## Project scope
 
@@ -18,7 +20,7 @@ Current interactive EPC baseline: **v2.1.0**
 - Manufacturer documentation/reference indexes
 - QA, provenance and checksums
 
-## Current MB Car Audio architecture
+## Historical MB Car Audio architecture (not installed)
 
 | Function | Component / decision |
 | --- | --- |

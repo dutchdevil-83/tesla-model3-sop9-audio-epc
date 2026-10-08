@@ -115,8 +115,8 @@ require("Do not use X588/X593" in build_js, "trunk subwoofer subsystem must stay
 amp = next((item for item in build.get("systemHardware", []) if item.get("id") == "AMP01"), None)
 harness = next((item for item in build.get("systemHardware", []) if item.get("id") == "HARNESS01"), None)
 require(amp and amp.get("model") == "V TWELVE DSP MK2", "current DSP amplifier must be HELIX V TWELVE DSP MK2")
-require(harness and "FITMENT CHECK REQUIRED" in harness.get("status", ""), "PP-TES Ryzen harness must retain explicit Highland fitment warning")
-require("NOT compatible with Model 3 Highland" in harness.get("warning", ""), "Ryzen vs Highland compatibility warning was removed")
+require(harness and "M141320" in harness.get("status", ""), "new Highland harness expected M141320 must be marked photo-unconfirmed")
+require("Ryzen repinning advice is SUPERSEDED" in harness.get("warning", ""), "obsolete Ryzen repinning warning was not superseded")
 
 # Raw technical identifiers must never be humanized.
 coverage_by_id = {str(item.get("ID")): item for item in coverage}

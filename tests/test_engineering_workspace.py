@@ -125,9 +125,10 @@ class EngineeringWorkspaceTests(unittest.TestCase):
 
     def test_harness_fitment_warning_is_not_silenced(self) -> None:
         harness = next(item for item in BUILD["systemHardware"] if item["id"] == "HARNESS01")
-        self.assertIn("FITMENT CHECK REQUIRED", harness["status"])
-        self.assertIn("NOT compatible with Model 3 Highland", harness["warning"])
-        self.assertIn("pp-tes-1-7b-highland", harness["references"][1]["url"])
+        self.assertIn("M141320 NOT PHOTO-CONFIRMED", harness["status"])
+        self.assertIn("Ryzen repinning advice is SUPERSEDED", harness["warning"])
+        self.assertIn("pp-tes-1-7b-highland", harness["references"][0]["url"])
+        self.assertIn("pp-tes-1-7b-ryzen", harness["references"][1]["url"])
 
     def test_viewer_has_high_range_pointer_navigation_and_svg_source(self) -> None:
         self.assertRegex(APP_JS, r"MAX_ZOOM\s*=\s*16")

@@ -25,7 +25,7 @@ https://dutchdevil-83.github.io/tesla-model3-sop9-audio-epc/
 - `assets/workflow.css` / `assets/workflow.js` - seven-step workflow layout, navigation, collapsible details and data-driven install guidance.
 - `assets/app.css` / `assets/app.js` - engineering workspace presentation, Tesla endpoint navigation, source switching and inspector behavior.
 - `assets/installed-system.js` - owner-confirmed purchased-build overlay, exact hardware mapping, service references and build state.
-- `assets/harness-map.js` / `data/harness-integration.json` - exact SOP9 source/speaker colors, M141318 sleeve labels and V TWELVE A-G mapping.
+- `assets/harness-map.js` / `data/harness-integration.json` - exact SOP9 OEM source/speaker references plus 2026 Highland replacement sleeve labels; actual new physical cavities remain unverified.
 - `assets/v-twelve-map.js` / `data/v-twelve-connectors.json` - exact V TWELVE factory connector labels and A-L speaker-output plan including direct J/K subwoofer outputs.
 - `data/installed-system.json` - current physical build, purchased/ordered hardware, identified Pioneer donor subsystem and official documentation links.
 - `catalog.html` - loader for the current self-contained interactive EPC HTML stored at repository root.
@@ -74,44 +74,22 @@ Current owner-confirmed state:
 - V TWELVE **OUTPUT J -> SUB01** and **OUTPUT K -> SUB02**, one woofer per channel. At 2 ohm the V TWELVE is rated approximately **120 W RMS per channel**, so this current arrangement is deliberately power-limited.
 - No external subwoofer amplifier and no original Pioneer amplifier are used. `LINE OUTPUT M/N` remain reserved/unused.
 
-## PP-TES Ryzen donor harness and verified SOP9 map
+## Replacement harness: 2026-10-08 (SUPERSEDES old Ryzen repin plan)
 
-The purchased donor harness is `MATCH PP-TES 1.7B Ryzen` (M141318). Audiotec Fischer does not publish that older product as plug-and-play compatible with Model 3 Highland. In this build it is deliberately used as a custom vehicle-side breakout/return harness and its amplifier-side conductors are terminated directly to the V TWELVE.
+The earlier M141318 Ryzen guide and seven-channel repin plan below have been **superseded**, not silently retroactively made correct. Audiotec Fischer specifies MATCH **M141318** for pre-Highland Ryzen Model 3 (through 09/2023), and MATCH **M141320** for Highland (from 10/2023). The received replacement's exact printed product/part identity remains to be confirmed against its actual label.
 
-The Tesla-side electrical meaning is **not pending**. The repository SOP9 electrical reference defines the source cavities, nets and wire colors, while the speaker connector metadata defines the speaker-side return colors.
+- Read **[HIGHLAND-REPLACEMENT-DSP-MANUAL.md](HIGHLAND-REPLACEMENT-DSP-MANUAL.md)** for all seven source/return sleeve names, differences, safety checks and starting DSP filters.
+- Use the **[interactive old/new DSP connector and VCP inspector](dsp-wiring.html)**. This shows physical HELIX -X/+X inputs and +X/-X outputs, actual new colours, historical planned old colours and an editable field to record old currently installed wires (unknown until recorded).
+- Machine-readable source: **[replacement-harness-2026-10-08.json](data/replacement-harness-2026-10-08.json)**. It explicitly distinguishes photographed new lead sleeves from unproven new connector cavities.
+- The previous **Front Low Left/Right** labels are **Front Low/TW Left/Right** on the new cable. The seven broad colour families appear consistent with the old engineering map; individual new plug cavity positions remain unverified.
+- DSP **VCP** is required for both physical Pioneer J/K channels to track DIRECTOR SubRC: VCP virtual Subwoofer 1 (K) -> physical J, virtual Subwoofer 2 (L) -> physical K.
+- **H/I tweeter outputs remain MUTED / DISCONNECTED** until separate wiring, crossover protection and load isolation from front woofer A/B are physically proved. Never directly parallel a 3-ohm HELIX woofer and a 4-ohm HELIX tweeter on a V TWELVE output.
 
-| V TWELVE | Function | SOP9 source | Speaker-side return |
-| --- | --- | --- | --- |
-| A | Front Low Left | X171-6 `YE` + / X171-5 `BU` - | X568 `YE` + / `BU` - |
-| B | Front Low Right | X171-2 `YE/WH` + / X171-1 `BU/WH` - | X578 `YE` + / `BU` - |
-| C | Front Left DASH | X175-10 `YE` + / X175-9 `VT` - | X566 `YE` + / `VT` - |
-| D | Center DASH | X171-7 `GY` + / X171-8 `BU` - | X595 `GY` + / `BU` - |
-| E | Front Right DASH | X175-4 `TN` + / X175-3 `BK` - | X576 `TN` + / `BK` - |
-| F | Rear Left | X175-13 `RD` + / X175-14 `BK` - | X586 `RD` + / `BK` - |
-| G | Rear Right | X171-3 `RD/WH` + / X171-4 `BK` - | X591 `RD` + / `BK` - |
+### HELIX terminal meanings
 
-The seven logical names should be **kept**, not renamed merely because the donor harness came from a Ryzen car. Instead, repin/re-route the M141318 so each labelled conductor serves the SOP9 circuit shown above, then add the V TWELVE channel to the sleeve. Example: `VT-A Front Low Left IN +` and `VT-A Front Low Left OUT +`.
-
-On the V TWELVE `HIGHLEVEL INPUT`, each channel is physically labelled `-X +X`: connect sleeve `IN -` to `-X` and `IN +` to `+X`. On `OUTPUT CHANNELS`, each channel is physically labelled `+X -X`: connect sleeve `OUT +` to `+X` and sleeve `OUT -` to `-X`.
-
-The tweeters are separate full-active outputs: V TWELVE H -> X565 (`VT` + / `BU` -) and V TWELVE I -> X575 (`VT` + / `BU` -), DSP-derived from high-level inputs C and E respectively.
-
-The photographed `Optional Woofer 1 +/-` lead is assigned to V TWELVE J / SUB01 and `Optional Woofer 2 +/-` to V TWELVE K / SUB02. These are output leads in the current project and are **not** Tesla X588/X593 parcel-shelf channels.
-
-Continuity testing of the finished M141318 is final physical QC. It is not needed to discover the Tesla SOP9 functions, which are already defined by the repository source data. Measure the two loose Pioneer donor drivers before first power-up as a separate subwoofer-load QC step.
-
-## HELIX V TWELVE connector plan
-
-Factory connector labels are kept separate from our installation assignment:
-
-- `HIGHLEVEL INPUT`: A-L, physically `-X +X`.
-- amplified `OUTPUT CHANNELS`: A-L, physically `+X -X`.
-- `LINE INPUT`: RCA A-F, unused for the current PP-TES speaker-level source path.
-- `LINE OUTPUT`: RCA M/N, reserved/unused in the current single-amplifier architecture.
-- `SCP`: DIRECTOR for SCP.
-- `GND`, `POWER REM`, `+12V`, `REM. OUT`, `OPTICAL INPUT`, `USB` and `CONTROL / STATUS` are recorded exactly from the amplifier/manual and owner photographs.
-
-Current speaker outputs are A-G direct cabin channels, H/I tweeters, **J/K the two Pioneer donor woofers**, and L spare. This A-L assignment is a project wiring decision, not a HELIX factory definition.
+- HIGHLEVEL INPUT A-L is labelled -X / +X. OUTPUT CHANNELS A-L is labelled +X / -X. LINE INPUT A-F and LINE OUTPUT M/N remain unused in this configuration.
+- Tesla X171/X175 OEM source cavity/net references are separately documented in the existing SOP9 metadata. They do not prove how a newly received physical white plug is pinned.
+- The original 2026-09-16 Ryzen project plan is a historical design assumption, not evidence of the actual old DSP connections. Do not attempt to repin the new Highland harness using the old Ryzen cavity map.
 
 ## Official documentation model
 
