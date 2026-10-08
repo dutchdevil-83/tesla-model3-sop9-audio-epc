@@ -20,7 +20,7 @@ class HarnessMappingTests(unittest.TestCase):
     def test_seven_logical_channels_are_recorded(self) -> None:
         self.assertEqual(
             list(self.channels),
-            ["Front Low Left", "Front Low Right", "Front Left", "Center", "Front Right", "Rear Left", "Rear Right"],
+            ["Front Low/TW Left", "Front Low/TW Right", "Front Left", "Center", "Front Right", "Rear Left", "Rear Right"],
         )
         targets = ["SPK01", "SPK02", "SPK05", "SPK06", "SPK07", "SPK10", "SPK11"]
         self.assertEqual([channel["directTarget"] for channel in self.integration["channels"]], targets)
@@ -30,8 +30,8 @@ class HarnessMappingTests(unittest.TestCase):
         self.assertIn("instrument-panel", self.channels["Front Left"]["sourceRole"])
         self.assertIn("instrument-panel", self.channels["Center"]["sourceRole"])
         self.assertIn("instrument-panel", self.channels["Front Right"]["sourceRole"])
-        self.assertEqual(self.channels["Front Left"]["derivedTargets"], ["SPK03"])
-        self.assertEqual(self.channels["Front Right"]["derivedTargets"], ["SPK04"])
+        self.assertEqual(self.channels["Front Left"]["derivedTargets"], [])
+        self.assertEqual(self.channels["Front Right"]["derivedTargets"], [])
 
     def test_in_out_sleeves_keep_polarity_and_direction(self) -> None:
         for label, channel in self.channels.items():
@@ -49,14 +49,14 @@ class HarnessMappingTests(unittest.TestCase):
         self.assertIn("X171", source["source"])
         self.assertIn("X175", source["source"])
         for channel in self.integration["channels"]:
-            self.assertEqual(channel["verification"], "TESLA SOP9 SOURCE + SPEAKER RETURN VERIFIED")
+            self.assertIn("REPLACEMENT PHYSICAL ROUTING PENDING", channel["verification"])
             self.assertIn(channel["teslaSop9"]["sourceConnector"], {"X171", "X175"})
             self.assertTrue(channel["speakerSide"]["connector"].startswith("X"))
 
     def test_exact_sop9_source_connector_pairs_and_colors(self) -> None:
         expected = {
-            "Front Low Left": ("X171", "6", "AMP2_2P", "YE", "5", "AMP2_2N", "BU"),
-            "Front Low Right": ("X171", "2", "AMP2_1P", "YE/WH", "1", "AMP2_1N", "BU/WH"),
+            "Front Low/TW Left": ("X171", "6", "AMP2_2P", "YE", "5", "AMP2_2N", "BU"),
+            "Front Low/TW Right": ("X171", "2", "AMP2_1P", "YE/WH", "1", "AMP2_1N", "BU/WH"),
             "Front Left": ("X175", "10", "AMP3_1_P", "YE", "9", "AMP3_1_N", "VT"),
             "Center": ("X171", "7", "AMP2_4P", "GY", "8", "AMP2_4N", "BU"),
             "Front Right": ("X175", "4", "AMP3_3_P", "TN", "3", "AMP3_3_N", "BK"),
@@ -73,8 +73,8 @@ class HarnessMappingTests(unittest.TestCase):
 
     def test_exact_speaker_side_connectors_and_colors(self) -> None:
         expected = {
-            "Front Low Left": ("X568", "YE", "BU"),
-            "Front Low Right": ("X578", "YE", "BU"),
+            "Front Low/TW Left": ("X568", "YE", "BU"),
+            "Front Low/TW Right": ("X578", "YE", "BU"),
             "Front Left": ("X566", "YE", "VT"),
             "Center": ("X595", "GY", "BU"),
             "Front Right": ("X576", "TN", "BK"),
@@ -96,18 +96,18 @@ class HarnessMappingTests(unittest.TestCase):
 
     def test_ryzen_harness_rework_is_separate_from_verified_tesla_map(self) -> None:
         rework = self.integration["ryzenHarnessRework"]
-        self.assertIn("REPIN", rework["status"])
+        self.assertIn("REPLACEMENT QC REQUIRED", rework["status"])
         self.assertIn("verified", rework["verificationBoundary"].lower())
         self.assertIn("continuity", rework["finalQc"].lower())
-        self.assertIn("DCR", rework["finalQc"])
+        self.assertIn("load", rework["finalQc"].lower())
         self.assertNotIn("teslaCavityVerification", self.integration)
 
     def test_optional_woofer_leads_drive_current_pioneer_subs(self) -> None:
         woofer = self.integration["optionalWooferLead"]
-        self.assertIn("USED FOR DIRECT V TWELVE J/K", woofer["status"])
-        self.assertIn("V TWELVE J -> SUB01", woofer["plannedUse"])
-        self.assertIn("V TWELVE K -> SUB02", woofer["plannedUse"])
-        self.assertIn("no bridge, series or parallel", woofer["plannedUse"])
+        self.assertIn("NOT VERIFIED", woofer["status"])
+        self.assertIn("J/K separate", woofer["plannedUse"])
+        self.assertIn("independent", woofer["plannedUse"])
+        self.assertIn("old", woofer["plannedUse"])
         self.assertIn("X588/X593", woofer["warning"])
         outputs = {item["vTwelveOutput"]: item for item in self.integration["subwooferOutputs"]}
         self.assertEqual(outputs["J"]["target"], "SUB01")
@@ -117,6 +117,16 @@ class HarnessMappingTests(unittest.TestCase):
         self.assertIn("2 ohm", outputs["J"]["workingBasis"])
         self.assertEqual(BUILD["targets"]["SPK12"]["status"], "NONE / FUTURE")
         self.assertEqual(BUILD["targets"]["SPK13"]["status"], "NONE / FUTURE")
+
+    def test_replacement_photo_evidence_is_explicitly_gated(self) -> None:
+        self.assertEqual(self.integration["updated"], "2026-10-08")
+        self.assertIn("Highland replacement", self.integration["sourceHarness"])
+        self.assertIn("old", self.integration["evidence"][1].lower())
+        for item in self.integration["channels"]:
+            self.assertFalse(item["newConnectorCavitiesVerified"])
+            self.assertEqual(len(item["photoEvidence"]), 2)
+            self.assertIn(item["label"] + " IN +", item["inputSleeves"])
+        self.assertIn("not validated", self.integration["ryzenHarnessRework"]["verificationBoundary"])
 
     def test_harness_ui_is_loaded_on_engineering_workspace(self) -> None:
         self.assertIn('assets/harness-map.js', ENGINEERING)
