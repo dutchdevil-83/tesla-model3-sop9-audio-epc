@@ -91,6 +91,7 @@
       <div class="harness-kv"><span>DSP source</span><b>${esc(item.source)}</b></div>
       <div class="harness-kv"><span>Speaker connector</span><b><code>${esc(item.speakerConnector)} +${esc(item.positiveWireColor)} / -${esc(item.negativeWireColor)}</code></b></div>
       <div class="harness-kv"><span>Final sleeve</span><b>${sleevePair(item.finalLabels)}</b></div>
+      <div class="engineering-note warning">${esc(item.status || "MUTED/DISCONNECTED UNTIL INDEPENDENT TWEETER ISOLATION")}</div>
     </div>`).join('')}</section>`;
   }
 
