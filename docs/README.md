@@ -25,7 +25,7 @@ https://dutchdevil-83.github.io/tesla-model3-sop9-audio-epc/
 - `assets/workflow.css` / `assets/workflow.js` - seven-step workflow layout, navigation, collapsible details and data-driven install guidance.
 - `assets/app.css` / `assets/app.js` - engineering workspace presentation, Tesla endpoint navigation, source switching and inspector behavior.
 - `assets/installed-system.js` - owner-confirmed purchased-build overlay, exact hardware mapping, service references and build state.
-- `assets/harness-map.js` / `data/harness-integration.json` - exact SOP9 source/speaker colors, M141318 sleeve labels and V TWELVE A-G mapping.
+- `assets/harness-map.js` / `data/harness-integration.json` - exact SOP9 OEM source/speaker references plus 2026 Highland replacement sleeve labels; actual new physical cavities remain unverified.
 - `assets/v-twelve-map.js` / `data/v-twelve-connectors.json` - exact V TWELVE factory connector labels and A-L speaker-output plan including direct J/K subwoofer outputs.
 - `data/installed-system.json` - current physical build, purchased/ordered hardware, identified Pioneer donor subsystem and official documentation links.
 - `catalog.html` - loader for the current self-contained interactive EPC HTML stored at repository root.
