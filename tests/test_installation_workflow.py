@@ -45,9 +45,9 @@ class InstallationWorkflowTests(unittest.TestCase):
     def test_front_dash_mapping_is_not_confused_with_door_woofers(self) -> None:
         channels = {item['vTwelveChannel']: item for item in HARNESS['channels']}
         self.assertEqual(channels['A']['directTarget'], 'SPK01')
-        self.assertIn('door woofer', channels['A']['sourceRole'])
+        self.assertIn('low / tweeter', channels['A']['sourceRole'])
         self.assertEqual(channels['B']['directTarget'], 'SPK02')
-        self.assertIn('door woofer', channels['B']['sourceRole'])
+        self.assertIn('low / tweeter', channels['B']['sourceRole'])
         self.assertEqual(channels['C']['directTarget'], 'SPK05')
         self.assertIn('instrument-panel', channels['C']['sourceRole'])
         self.assertEqual(channels['D']['directTarget'], 'SPK06')
