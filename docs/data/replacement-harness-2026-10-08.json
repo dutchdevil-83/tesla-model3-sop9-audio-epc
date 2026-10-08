@@ -12,13 +12,13 @@
     "comparisonSummary": "Seven channel colour families coincide with the earlier documented plan. The verified difference is a replacement physical harness, newer Low/TW labels and the intended Highland application, NOT proven changed colours or proven repinning."
   },
   "oldHarness": {
-    "name": "MATCH PP-TES 1.7B Ryzen M141318",
+    "name": "MATCH PP-TES 1.7B Ryzen M141318 (old faulty, incompatible with Model 3 Highland per manufacturer)",
     "status": "FAULT REPORTED; REPLACE",
     "failureEvidence": "One dashboard speaker remained audible with DSP off in earlier installation. That symptom alone does not identify the exact faulty wire or short."
   },
   "newHarness": {
-    "name": "Bünde replacement advertised for Highland",
-    "partNumber": "NOT PRESENT IN PHOTOS / UNVERIFIED",
+    "name": "Bünde supplied Highland replacement - manufacturer family PP-TES 1.7B Highland, expected order number M141320",
+    "partNumber": "NOT READABLE ON RECEIVED PHOTOS; EXPECTED M141320",
     "status": "RECEIVED - PHOTOS CONFIRM LABELS, CONNECTION PENDING ELECTRICAL VERIFICATION",
     "photos": [
       "IMG_4132.jpeg",
@@ -30,7 +30,9 @@
       "IMG_4126.jpeg",
       "IMG_4133.jpeg",
       "IMG_4134.jpeg"
-    ]
+    ],
+    "expectedManufacturerPartNumber": "M141320 (manufacturer product family; identity of received sample not readable in photographs)",
+    "supplierConnectionNotice": "Photos show seven labelled channel pairs and two white housing ends; the actual product label M141320 is not visible. Manufacturer Highland spec M141320 includes a 5m optional 2x2-ohm sub cable, but whether this returned/replacement sample has intact optional leads is unverified."
   },
   "polarityRule": "HIGHLEVEL INPUT positions are -X then +X; OUTPUT CHANNELS positions are +X then -X. Follow printed HELIX label on the actual unit, not presumed viewer left/right.",
   "channels": [
@@ -508,7 +510,9 @@
     "In DSP PC-Tool enable VCP, route sources by function, run ISA then configure crossovers and save setup under a new slot.",
     "Low-volume channel sweep A-G, then conditional H/I, then J/K; stop if unexpected speaker plays or DSP off still yields output.",
     "Verify DIRECTOR SubRC affects BOTH physical J and K; this requires VCP routing virtual Subwoofer 1/2. Without VCP only physical K/L are manufacturer-tied to SubRC.",
-    "Never connect bare 3-ohm woofer and 4-ohm tweeter directly in parallel; this would go below the amplifier's 2-ohm minimum and overdrive the tweeter."
+    "Never connect bare 3-ohm woofer and 4-ohm tweeter directly in parallel; this would go below the amplifier's 2-ohm minimum and overdrive the tweeter.",
+    "Verify right dashboard/superhorn bypass: any speaker continuing to sound when all DSP outputs are disconnected indicates an unintended or untouched OEM path; isolate/trace it, do not compensate by DSP equalizer.",
+    "Record received replacement harness manufacturer's label/part number; M141320 is the official Highland product family, not proof of the actual received item's identity."
   ],
   "sourceUrls": {
     "amp": "https://www.audiotec-fischer.de/en/helix/amplifiers/v-twelve-dsp-mk2",
@@ -520,8 +524,33 @@
     "mid": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-m100fm-s3",
     "center": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i3/ci3-c100-2fm-s3-mk2",
     "ampManual": "https://www.audiotec-fischer.de/media/pdf/d3/17/06/HELIX-V-TWELVE-DSP_MK2_148x210mm_02-12-21_web.pdf",
-    "dcMenu": "https://www.audiotec-fischer.de/en/knowledge-base/dsp-pc-tool/dcm/"
+    "dcMenu": "https://www.audiotec-fischer.de/en/knowledge-base/dsp-pc-tool/dcm/",
+    "oldHarness": "https://www.audiotec-fischer.de/en/match/adaptors-harnesses/pp-tes-1-7b-ryzen",
+    "newHarness": "https://www.audiotec-fischer.de/en/match/adaptors-harnesses/pp-tes-1-7b-highland"
   },
   "subwooferRemoteControl": "CRITICAL: With VCP ON, remote SubRC follows virtual channels Subwoofer 1 (K) and Subwoofer 2 (L) to physical outputs J/K; with VCP OFF the manufacturer's manual states SubRC tied only to physical K/L, so physical J would not follow remote sub volume. Enable VCP and verify both J/K respond to DIRECTOR.",
-  "speakerLoadSafety": "Manufacturer HELIX Ci7 W200FM-S3 is 3 ohm; Ci7 T20FM-SC is 4 ohm. Never connect bare woofer and tweeter directly in parallel to one output: nominal resultant is below the V TWELVE 2-ohm minimum and tweeter is unprotected. A passive crossover must be verified and total load checked before shared operation. Preferred installation is distinct A/B woofers and H/I tweeters."
+  "speakerLoadSafety": "Manufacturer HELIX Ci7 W200FM-S3 is 3 ohm; Ci7 T20FM-SC is 4 ohm. Never connect bare woofer and tweeter directly in parallel to one output: nominal resultant is below the V TWELVE 2-ohm minimum and tweeter is unprotected. A passive crossover must be verified and total load checked before shared operation. Preferred installation is distinct A/B woofers and H/I tweeters.",
+  "manufacturerComparison": {
+    "previous": {
+      "manufacturer": "MATCH",
+      "name": "PP-TES 1.7B Ryzen",
+      "orderNumber": "M141318",
+      "model3Years": "MY 03/2022–09/2023",
+      "highlandCompatible": false
+    },
+    "replacementFamily": {
+      "manufacturer": "MATCH",
+      "name": "PP-TES 1.7B Highland",
+      "orderNumber": "M141320",
+      "model3Years": "Highland MY 10/2023+",
+      "highlandCompatible": true,
+      "actualReceivedPartIdentityVerified": false
+    },
+    "manufacturerBothTargetAmplifier": "MATCH UP 10DSP; HELIX V TWELVE DSP MK2 still requires correct amplifier-side termination and independent power supply."
+  },
+  "previousFaultSymptoms": [
+    "Earlier report: right dash speaker continued playing with DSP powered off, consistent with but not proving an unwanted OEM bypass/pass-through or return mismatch.",
+    "Earlier observation: one tweeter still played with seven A–G amplified output leads disconnected; investigate independent OEM feed and whether A/B actually feeds both woofer/tweeter.",
+    "Only amplifier-side Molex on previous Ryzen harness had been removed; Tesla-side plugs had not been modified."
+  ]
 }
