@@ -229,7 +229,7 @@ function install() {
     </tr>`;
   }).join('');
   const derived = [
-    ...state.harness.derivedOutputs.map(item => ({ channel:item.vTwelveOutput, target:item.target, role:item.role, source:item.source, state:'PLANNED' })),
+    ...state.harness.derivedOutputs.map(item => ({ channel:item.vTwelveOutput, target:item.target, role:item.role, source:item.source, state:item.status || 'MUTED - TWEETER ISOLATION REQUIRED' })),
     ...state.harness.subwooferOutputs.map(item => ({ channel:item.vTwelveOutput, target:item.target, role:item.role, source:item.source, state:item.workingBasis }))
   ];
   return `<section class="step-layout">
