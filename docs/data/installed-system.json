@@ -75,7 +75,7 @@
       "category": "Tesla integration harness",
       "manufacturer": "Car-Hifi Store Bünde supplied replacement",
       "model": "Highland replacement integration harness (supplier PN not established)",
-      "status": "RECEIVED - PHOTO LABELS/COLORS VERIFIED - CONNECTOR CONTINUITY NOT YET MEASURED",
+      "status": "RECEIVED - PHOTO LABELS/COLORS VERIFIED - CONNECTOR CONTINUITY NOT YET MEASURED - EXPECTED HIGHLAND ORDER M141320 NOT PHOTO-CONFIRMED",
       "receipt": "Received 2026-10-08 after faulty MATCH PP-TES 1.7B Ryzen M141318; old cable returned separately",
       "warning": "The replacement harness has newly photographed colour/label groups. This does not prove its white connector cavities mate with verified SOP9 X171/X175 circuits or that low/tweeter feeds are safe. Do not connect power before unplugged continuity, correct polarity, no output backfeed, and front woofer/tweeter load-isolation checks. Ryzen repinning advice is SUPERSEDED.",
       "references": [
@@ -88,8 +88,10 @@
           "url": "https://www.audiotec-fischer.de/en/match/adaptors-harnesses/pp-tes-1-7b-ryzen"
         }
       ],
-      "previousHarness": "MATCH PP-TES 1.7B Ryzen M141318 (fault reported)",
-      "replacementHarnessDetails": "data/replacement-harness-2026-10-08.json"
+      "previousHarness": "MATCH PP-TES 1.7B Ryzen M141318; old factory target model3 2022–09/2023 (not Highland)",
+      "replacementHarnessDetails": "data/replacement-harness-2026-10-08.json",
+      "expectedManufacturerPartNumber": "M141320 (official Highland harness order number; not yet verified as received sample)",
+      "historicalSymptoms": "Right front dash remained audible with DSP off; one tweeter previously played with seven DSP A-G speaker output leads disconnected. Trace OEM bypass before powering again."
     }
   ],
   "targets": {
