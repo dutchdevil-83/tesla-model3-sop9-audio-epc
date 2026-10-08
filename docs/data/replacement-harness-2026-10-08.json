@@ -1,0 +1,520 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-10-08",
+  "vehicle": "Tesla Model 3 Highland SOP9, 2026 Premium LR RWD LHD",
+  "amplifier": "HELIX V TWELVE DSP MK2",
+  "sourceEvidence": {
+    "old": "2026-09-16 repo harness-integration.json describes MATCH PP-TES 1.7B Ryzen/M141318 and its intended A-G colour families. Actual old DSP terminal positions and current +/- tracers were not photographed in this submission.",
+    "new": "User replacement harness photographs IMG_4126.jpeg to IMG_4134.jpeg, 2026-10-08, label sleeves and wire colours as supplied.",
+    "tesla": "Source_Assets/connectors/X171 and X175 metadata; these establish Tesla OEM nets but are NOT a continuity check of the NEW harness pins.",
+    "manufacturer": "HELIX V TWELVE DSP MK2 manual, DSP PC-Tool VCP/ISA knowledge base and HELIX COMPOSE speaker specification pages.",
+    "physicalConnectorNote": "The two white replacement plug faces are photographed but connector numbering, mating orientation, cavity-to-wire continuity and in-car fit have not been verified. Do not derive a pin count or pin map from perspective photos.",
+    "comparisonSummary": "Seven channel colour families coincide with the earlier documented plan. The verified difference is a replacement physical harness, newer Low/TW labels and the intended Highland application, NOT proven changed colours or proven repinning."
+  },
+  "oldHarness": {
+    "name": "MATCH PP-TES 1.7B Ryzen M141318",
+    "status": "FAULT REPORTED; REPLACE",
+    "failureEvidence": "One dashboard speaker remained audible with DSP off in earlier installation. That symptom alone does not identify the exact faulty wire or short."
+  },
+  "newHarness": {
+    "name": "Bünde replacement advertised for Highland",
+    "partNumber": "NOT PRESENT IN PHOTOS / UNVERIFIED",
+    "status": "RECEIVED - PHOTOS CONFIRM LABELS, CONNECTION PENDING ELECTRICAL VERIFICATION",
+    "photos": [
+      "IMG_4132.jpeg",
+      "IMG_4131.jpeg",
+      "IMG_4130.jpeg",
+      "IMG_4129.jpeg",
+      "IMG_4128.jpeg",
+      "IMG_4127.jpeg",
+      "IMG_4126.jpeg",
+      "IMG_4133.jpeg",
+      "IMG_4134.jpeg"
+    ]
+  },
+  "polarityRule": "HIGHLEVEL INPUT positions are -X then +X; OUTPUT CHANNELS positions are +X then -X. Follow printed HELIX label on the actual unit, not presumed viewer left/right.",
+  "channels": [
+    {
+      "channel": "A",
+      "oldRyzen": {
+        "label": "Front Low Left",
+        "documentedColourFamily": "orange",
+        "actualDSPConnection": "NOT VERIFIED BY OLD-HARNESS TERMINAL PHOTOS",
+        "oldTeslaSidePinout": "DO NOT REUSE: not confirmed for this Highland"
+      },
+      "replacement": {
+        "label": "Front Low/TW Left",
+        "inputPlus": "Front Low/TW Left IN +",
+        "inputMinus": "Front Low/TW Left IN -",
+        "outputPlus": "Front Low/TW Left OUT +",
+        "outputMinus": "Front Low/TW Left OUT -",
+        "wirePlus": "orange",
+        "wireMinus": "orange/black",
+        "photos": [
+          "IMG_4127.jpeg",
+          "IMG_4129.jpeg"
+        ],
+        "photoConfidence": "SLEEVE LABEL + COLOUR CONFIRMED; STRIPE/PAIR POLARITY MUST BE TRACED WITH METER"
+      },
+      "dsp": {
+        "inputMinus": "-A",
+        "inputPlus": "+A",
+        "outputPlus": "+A",
+        "outputMinus": "-A"
+      },
+      "tesla": {
+        "source": "X171:6(+YE)/5(-BU)",
+        "returnConnector": "X568",
+        "sourceStatus": "REPOSITORY SOP9 ELECTRICAL REFERENCE",
+        "newPlugCavityStatus": "NOT VERIFIED FROM PHOTOGRAPH"
+      },
+      "target": "SPK01",
+      "role": "Front-left 200 mm woofer and possibly OEM tweeter branch"
+    },
+    {
+      "channel": "B",
+      "oldRyzen": {
+        "label": "Front Low Right",
+        "documentedColourFamily": "brown",
+        "actualDSPConnection": "NOT VERIFIED BY OLD-HARNESS TERMINAL PHOTOS",
+        "oldTeslaSidePinout": "DO NOT REUSE: not confirmed for this Highland"
+      },
+      "replacement": {
+        "label": "Front Low/TW Right",
+        "inputPlus": "Front Low/TW Right IN +",
+        "inputMinus": "Front Low/TW Right IN -",
+        "outputPlus": "Front Low/TW Right OUT +",
+        "outputMinus": "Front Low/TW Right OUT -",
+        "wirePlus": "brown",
+        "wireMinus": "brown/black",
+        "photos": [
+          "IMG_4127.jpeg",
+          "IMG_4129.jpeg"
+        ],
+        "photoConfidence": "SLEEVE LABEL + COLOUR CONFIRMED; STRIPE/PAIR POLARITY MUST BE TRACED WITH METER"
+      },
+      "dsp": {
+        "inputMinus": "-B",
+        "inputPlus": "+B",
+        "outputPlus": "+B",
+        "outputMinus": "-B"
+      },
+      "tesla": {
+        "source": "X171:2(+YE/WH)/1(-BU/WH)",
+        "returnConnector": "X578",
+        "sourceStatus": "REPOSITORY SOP9 ELECTRICAL REFERENCE",
+        "newPlugCavityStatus": "NOT VERIFIED FROM PHOTOGRAPH"
+      },
+      "target": "SPK02",
+      "role": "Front-right 200 mm woofer and possibly OEM tweeter branch"
+    },
+    {
+      "channel": "C",
+      "oldRyzen": {
+        "label": "Front Left",
+        "documentedColourFamily": "white",
+        "actualDSPConnection": "NOT VERIFIED BY OLD-HARNESS TERMINAL PHOTOS",
+        "oldTeslaSidePinout": "DO NOT REUSE: not confirmed for this Highland"
+      },
+      "replacement": {
+        "label": "Front Left",
+        "inputPlus": "Front Left IN +",
+        "inputMinus": "Front Left IN -",
+        "outputPlus": "Front Left OUT +",
+        "outputMinus": "Front Left OUT -",
+        "wirePlus": "white",
+        "wireMinus": "white/black",
+        "photos": [
+          "IMG_4126.jpeg",
+          "IMG_4131.jpeg"
+        ],
+        "photoConfidence": "SLEEVE LABEL + COLOUR CONFIRMED; STRIPE/PAIR POLARITY MUST BE TRACED WITH METER"
+      },
+      "dsp": {
+        "inputMinus": "-C",
+        "inputPlus": "+C",
+        "outputPlus": "+C",
+        "outputMinus": "-C"
+      },
+      "tesla": {
+        "source": "X175:10(+YE)/9(-VT)",
+        "returnConnector": "X566",
+        "sourceStatus": "REPOSITORY SOP9 ELECTRICAL REFERENCE",
+        "newPlugCavityStatus": "NOT VERIFIED FROM PHOTOGRAPH"
+      },
+      "target": "SPK05",
+      "role": "Left dashboard midrange"
+    },
+    {
+      "channel": "D",
+      "oldRyzen": {
+        "label": "Center",
+        "documentedColourFamily": "blue",
+        "actualDSPConnection": "NOT VERIFIED BY OLD-HARNESS TERMINAL PHOTOS",
+        "oldTeslaSidePinout": "DO NOT REUSE: not confirmed for this Highland"
+      },
+      "replacement": {
+        "label": "Center",
+        "inputPlus": "Center IN +",
+        "inputMinus": "Center IN -",
+        "outputPlus": "Center OUT +",
+        "outputMinus": "Center OUT -",
+        "wirePlus": "blue",
+        "wireMinus": "blue/black",
+        "photos": [
+          "IMG_4126.jpeg",
+          "IMG_4131.jpeg"
+        ],
+        "photoConfidence": "SLEEVE LABEL + COLOUR CONFIRMED; STRIPE/PAIR POLARITY MUST BE TRACED WITH METER"
+      },
+      "dsp": {
+        "inputMinus": "-D",
+        "inputPlus": "+D",
+        "outputPlus": "+D",
+        "outputMinus": "-D"
+      },
+      "tesla": {
+        "source": "X171:7(+GY)/8(-BU)",
+        "returnConnector": "X595",
+        "sourceStatus": "REPOSITORY SOP9 ELECTRICAL REFERENCE",
+        "newPlugCavityStatus": "NOT VERIFIED FROM PHOTOGRAPH"
+      },
+      "target": "SPK06",
+      "role": "Centre dashboard coaxial"
+    },
+    {
+      "channel": "E",
+      "oldRyzen": {
+        "label": "Front Right",
+        "documentedColourFamily": "grey",
+        "actualDSPConnection": "NOT VERIFIED BY OLD-HARNESS TERMINAL PHOTOS",
+        "oldTeslaSidePinout": "DO NOT REUSE: not confirmed for this Highland"
+      },
+      "replacement": {
+        "label": "Front Right",
+        "inputPlus": "Front Right IN +",
+        "inputMinus": "Front Right IN -",
+        "outputPlus": "Front Right OUT +",
+        "outputMinus": "Front Right OUT -",
+        "wirePlus": "grey",
+        "wireMinus": "grey/black",
+        "photos": [
+          "IMG_4126.jpeg",
+          "IMG_4131.jpeg"
+        ],
+        "photoConfidence": "SLEEVE LABEL + COLOUR CONFIRMED; STRIPE/PAIR POLARITY MUST BE TRACED WITH METER"
+      },
+      "dsp": {
+        "inputMinus": "-E",
+        "inputPlus": "+E",
+        "outputPlus": "+E",
+        "outputMinus": "-E"
+      },
+      "tesla": {
+        "source": "X175:4(+TN)/3(-BK)",
+        "returnConnector": "X576",
+        "sourceStatus": "REPOSITORY SOP9 ELECTRICAL REFERENCE",
+        "newPlugCavityStatus": "NOT VERIFIED FROM PHOTOGRAPH"
+      },
+      "target": "SPK07",
+      "role": "Right dashboard midrange"
+    },
+    {
+      "channel": "F",
+      "oldRyzen": {
+        "label": "Rear Left",
+        "documentedColourFamily": "green",
+        "actualDSPConnection": "NOT VERIFIED BY OLD-HARNESS TERMINAL PHOTOS",
+        "oldTeslaSidePinout": "DO NOT REUSE: not confirmed for this Highland"
+      },
+      "replacement": {
+        "label": "Rear Left",
+        "inputPlus": "Rear Left IN +",
+        "inputMinus": "Rear Left IN -",
+        "outputPlus": "Rear Left OUT +",
+        "outputMinus": "Rear Left OUT -",
+        "wirePlus": "green",
+        "wireMinus": "green/black",
+        "photos": [
+          "IMG_4128.jpeg",
+          "IMG_4130.jpeg"
+        ],
+        "photoConfidence": "SLEEVE LABEL + COLOUR CONFIRMED; STRIPE/PAIR POLARITY MUST BE TRACED WITH METER"
+      },
+      "dsp": {
+        "inputMinus": "-F",
+        "inputPlus": "+F",
+        "outputPlus": "+F",
+        "outputMinus": "-F"
+      },
+      "tesla": {
+        "source": "X175:13(+RD)/14(-BK)",
+        "returnConnector": "X586",
+        "sourceStatus": "REPOSITORY SOP9 ELECTRICAL REFERENCE",
+        "newPlugCavityStatus": "NOT VERIFIED FROM PHOTOGRAPH"
+      },
+      "target": "SPK10",
+      "role": "OEM rear left door"
+    },
+    {
+      "channel": "G",
+      "oldRyzen": {
+        "label": "Rear Right",
+        "documentedColourFamily": "purple",
+        "actualDSPConnection": "NOT VERIFIED BY OLD-HARNESS TERMINAL PHOTOS",
+        "oldTeslaSidePinout": "DO NOT REUSE: not confirmed for this Highland"
+      },
+      "replacement": {
+        "label": "Rear Right",
+        "inputPlus": "Rear Right IN +",
+        "inputMinus": "Rear Right IN -",
+        "outputPlus": "Rear Right OUT +",
+        "outputMinus": "Rear Right OUT -",
+        "wirePlus": "purple",
+        "wireMinus": "purple/black",
+        "photos": [
+          "IMG_4128.jpeg",
+          "IMG_4130.jpeg"
+        ],
+        "photoConfidence": "SLEEVE LABEL + COLOUR CONFIRMED; STRIPE/PAIR POLARITY MUST BE TRACED WITH METER"
+      },
+      "dsp": {
+        "inputMinus": "-G",
+        "inputPlus": "+G",
+        "outputPlus": "+G",
+        "outputMinus": "-G"
+      },
+      "tesla": {
+        "source": "X171:3(+RD/WH)/4(-BK)",
+        "returnConnector": "X591",
+        "sourceStatus": "REPOSITORY SOP9 ELECTRICAL REFERENCE",
+        "newPlugCavityStatus": "NOT VERIFIED FROM PHOTOGRAPH"
+      },
+      "target": "SPK11",
+      "role": "OEM rear right door"
+    }
+  ],
+  "nonHarnessChannels": [
+    {
+      "channel": "H",
+      "use": "Left HELIX Ci7 T20FM-SC tweeter",
+      "state": "MUTED/DISCONNECTED until isolated dedicated wiring from SPK03 is proven",
+      "source": "VCP Front L Full reconstructed from A+C; NEVER simultaneously connect amp H to an OEM branch still powered by A"
+    },
+    {
+      "channel": "I",
+      "use": "Right HELIX Ci7 T20FM-SC tweeter",
+      "state": "MUTED/DISCONNECTED until isolated dedicated wiring from SPK04 is proven",
+      "source": "VCP Front R Full reconstructed from B+E; NEVER simultaneously connect amp I to an OEM branch still powered by B"
+    },
+    {
+      "channel": "J",
+      "use": "SUB01 Pioneer 12-inch donor driver",
+      "state": "Independent amplified speaker lead, 2-ohm nominal working basis pending DCR verification",
+      "source": "VCP Subwoofer 1 mono mix"
+    },
+    {
+      "channel": "K",
+      "use": "SUB02 Pioneer 12-inch donor driver",
+      "state": "Independent amplified speaker lead, 2-ohm nominal working basis pending DCR verification",
+      "source": "VCP Subwoofer 2 mono mix"
+    },
+    {
+      "channel": "L",
+      "use": "SPARE",
+      "state": "Do not wire",
+      "source": null
+    }
+  ],
+  "virtualInputs": [
+    {
+      "virtual": "A / Front L Full",
+      "inputs": "HIGHLEVEL A (Left Low/TW) + C (Left Dash)",
+      "note": "Combine only if ISA verifies complementarity, magnitude, polarity and relative delay; not blind 100% summing. If one is already full range, route that input alone."
+    },
+    {
+      "virtual": "B / Front R Full",
+      "inputs": "HIGHLEVEL B (Right Low/TW) + E (Right Dash)",
+      "note": "Same calibrated reconstruction process as left."
+    },
+    {
+      "virtual": "C / Rear L Full",
+      "inputs": "HIGHLEVEL F",
+      "note": "Rear input signal; no unnecessary front-channel mixing."
+    },
+    {
+      "virtual": "D / Rear R Full",
+      "inputs": "HIGHLEVEL G",
+      "note": "Rear input signal."
+    },
+    {
+      "virtual": "E / Front Center Full",
+      "inputs": "HIGHLEVEL D",
+      "note": "Keep dedicated mono centre source; no L+R mix unless measured/required."
+    },
+    {
+      "virtual": "K / Subwoofer 1",
+      "inputs": "Calibrated 50/50 Front L/R Full mono or measured lowband A+B",
+      "note": "Apply headroom reduction for summed channels, verify no phase cancellation. Do not copy independently EQed lowband blindly."
+    },
+    {
+      "virtual": "L / Subwoofer 2",
+      "inputs": "Same calibrated mono as virtual K",
+      "note": "Independent output J/K, NOT a bridged or parallel speaker connection."
+    }
+  ],
+  "routingPresets": {
+    "factorySharedLowTw": {
+      "title": "SHARED OEM low/tweeter return; provisional only",
+      "gate": "DO NOT POWER until passive tweeter high-pass protection, load and no other connected amplifier output are confirmed by meter/physical inspection.",
+      "outputs": [
+        {
+          "ch": "A/B",
+          "path": "Front L/R Full",
+          "speaker": "Shared front low+TW",
+          "hp": "65-80 Hz LR24 provisional",
+          "lp": "OFF unless external measured passive 2-way crossover handles treble; cannot independently lowpass woofer",
+          "level": "Start -12 dB",
+          "safety": "One amplifier channel drives both drivers if genuinely shared; passive crossover is essential."
+        },
+        {
+          "ch": "C/E",
+          "path": "Front L/R Full",
+          "speaker": "Dashboard 100 mm mids",
+          "hp": "250 Hz LR24",
+          "lp": "3.5 kHz LR24",
+          "level": "Start -12 dB"
+        },
+        {
+          "ch": "D",
+          "path": "Center Full",
+          "speaker": "Centre coax 100 mm",
+          "hp": "180 Hz LR24",
+          "lp": "OFF (integrated tweeter crossover)",
+          "level": "Start -12 dB"
+        },
+        {
+          "ch": "F/G",
+          "path": "Rear L/R Full",
+          "speaker": "OEM rear doors",
+          "hp": "100 Hz LR24 provisional; adjust after driver check",
+          "lp": "OFF",
+          "level": "Start -12 dB"
+        },
+        {
+          "ch": "H/I",
+          "path": "OFF",
+          "speaker": "Tweeter outputs",
+          "hp": "MUTE",
+          "lp": "MUTE",
+          "level": "Disconnected until independent wiring confirmed"
+        },
+        {
+          "ch": "J/K",
+          "path": "Mono sub mix",
+          "speaker": "Pioneer donors",
+          "hp": "25-30 Hz LR24 conditional on enclosure",
+          "lp": "75-80 Hz LR24",
+          "level": "Start -12 dB after impedance check"
+        },
+        {
+          "ch": "L",
+          "path": "OFF",
+          "speaker": "Spare",
+          "hp": "MUTE",
+          "lp": "MUTE",
+          "level": "MUTE"
+        }
+      ]
+    },
+    "physicallyIsolatedActive": {
+      "title": "TRUE ACTIVE after isolated tweeter pairs and verified speaker wiring",
+      "gate": "Enable H/I only after verifying each tweeter pair is completely isolated from amplifier outputs A/B, and 24 dB/oct HP protects the tweeters BEFORE any test.",
+      "outputs": [
+        {
+          "ch": "A/B",
+          "path": "Front L/R Full",
+          "speaker": "Ci7 W200FM-S3 left/right",
+          "hp": "55-65 Hz LR24",
+          "lp": "250 Hz LR24",
+          "level": "Start -12 dB"
+        },
+        {
+          "ch": "C/E",
+          "path": "Front L/R Full",
+          "speaker": "Ci7 M100FM-S3 left/right",
+          "hp": "250 Hz LR24",
+          "lp": "3.5 kHz LR24",
+          "level": "Start -12 dB"
+        },
+        {
+          "ch": "D",
+          "path": "Center Full",
+          "speaker": "Ci3 C100.2FM-S3 MK2 centre coax",
+          "hp": "180 Hz LR24",
+          "lp": "OFF",
+          "level": "Start -12 dB"
+        },
+        {
+          "ch": "F/G",
+          "path": "Rear L/R Full",
+          "speaker": "Tesla OEM rear speakers",
+          "hp": "100 Hz LR24 provisional",
+          "lp": "OFF",
+          "level": "Start -12 dB"
+        },
+        {
+          "ch": "H/I",
+          "path": "Front L/R Full",
+          "speaker": "Ci7 T20FM-SC left/right isolated",
+          "hp": "3.5 kHz LR24 (manufacturer minimum >2.5 kHz at 24 dB/oct)",
+          "lp": "OFF",
+          "level": "Start -18 dB; enable last"
+        },
+        {
+          "ch": "J/K",
+          "path": "Mono sub mix",
+          "speaker": "Independent Pioneer donor subwoofers",
+          "hp": "25-30 Hz LR24 conditional on enclosure",
+          "lp": "75-80 Hz LR24",
+          "level": "Start -12 dB after impedance check"
+        },
+        {
+          "ch": "L",
+          "path": "OFF",
+          "speaker": "Spare",
+          "hp": "MUTE",
+          "lp": "MUTE",
+          "level": "MUTE"
+        }
+      ]
+    }
+  },
+  "eqAndMeasurements": {
+    "inputEq": "Start flat; use ISA correlated pink noise to measure each Tesla channel and merged A+C / B+E before setting summation level, polarity, delay and InputEQ. Correct source filtering, never assume original full-range.",
+    "virtualEq": "Flat (0 dB), no boosts at commissioning; group EQ only after measuring.",
+    "outputEq": "0 dB / no preset boosts; measure with calibrated mic + RTA then cut peaks; tune polarity/time alignment at listening position.",
+    "gain": "Start attenuated at least -12 dB; H/I -18 dB and muted until isolated and protective HP stored. Check system headroom and gain without clipping.",
+    "status": "PROVISIONAL STARTING VALUES, NOT A MEASURED FINAL DSP FILE"
+  },
+  "safetyChecks": [
+    "Archive existing DSP PC-Tool setup before rewiring. Disconnect/isolate 16V LV per Tesla procedure before harness work.",
+    "Continuity-test new connector pin-to-conductor-to-return for all seven +/- channels; verify Tesla X171/X175 pin numbers from OEM diagrams without trusting connector view orientation.",
+    "No speaker OUT must connect to another amplifier OUT or backfeed OEM source IN; inspect existing right dash bypass symptom.",
+    "Disconnect both separate H/I tweeter power outputs until physically verified isolated wiring and HP filters are active.",
+    "Confirm passive tweeter crossover exists in any shared A/B speaker branch; otherwise do not energize.",
+    "Measure each Pioneer driver's DCR/impedance and check separate +/− leads; do not bridge J/K.",
+    "In DSP PC-Tool enable VCP, route sources by function, run ISA then configure crossovers and save setup under a new slot.",
+    "Low-volume channel sweep A-G, then conditional H/I, then J/K; stop if unexpected speaker plays or DSP off still yields output."
+  ],
+  "sourceUrls": {
+    "amp": "https://www.audiotec-fischer.de/en/helix/amplifiers/v-twelve-dsp-mk2",
+    "vcp": "https://www.audiotec-fischer.de/en/knowledge-base/DSP-PC-Tool/vcp/",
+    "io": "https://www.audiotec-fischer.de/en/knowledge-base/DSP-PC-Tool/io/",
+    "isa": "https://www.audiotec-fischer.de/en/knowledge-base/DSP-PC-Tool/isa/",
+    "tweeter": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-t20fm-sc",
+    "woofer": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-w200fm-s3",
+    "mid": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-m100fm-s3",
+    "center": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i3/ci3-c100-2fm-s3-mk2"
+  }
+}
