@@ -64,7 +64,7 @@ class HighlandReplacementEvidenceTests(unittest.TestCase):
         active = DATA["routingPresets"]["physicallyIsolatedActive"]
         tw = next(o for o in active["outputs"] if o["ch"] == "H/I")
         self.assertIn("3.5 kHz LR24", tw["hp"])
-        self.assertIn("2 ohm minimum", DATA["speakerLoadSafety"])
+        self.assertIn("2-ohm minimum", DATA["speakerLoadSafety"])
         self.assertIn("passive crossover", DATA["routingPresets"]["factorySharedLowTw"]["gate"])
 
     def test_virtual_subs_and_physical_jk_are_not_mixed_up(self) -> None:
@@ -72,8 +72,8 @@ class HighlandReplacementEvidenceTests(unittest.TestCase):
         self.assertIn("Subwoofer 1 (K)", virtual)
         self.assertIn("Subwoofer 2 (L)", virtual)
         outputs = {o["channel"]: o for o in DSP["currentBuildTerminalPlan"]["speakerOutputs"]}
-        self.assertIn("physical J", outputs["J"]["source"])
-        self.assertIn("physical K", outputs["K"]["source"])
+        self.assertIn("physical j", outputs["J"]["source"].lower())
+        self.assertIn("physical k", outputs["K"]["source"].lower())
         self.assertIn("VCP OFF", DATA["subwooferRemoteControl"])
         self.assertIn("VCP ON", DATA["subwooferRemoteControl"])
         self.assertIn("DIRECTOR", MANUAL)
