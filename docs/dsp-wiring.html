@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101f30"><title>HELIX V TWELVE | Highland wiring and VCP</title>
+<style>
+:root{font:15px system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:#e6eef6;background:#0b1624}
+*{box-sizing:border-box}body{margin:0;background:#0b1624}button,input,select{font:inherit}a{color:#7ac3ff}main{max-width:1450px;margin:auto;padding:18px 20px 40px}
+header{background:#12243a;border-bottom:1px solid #30465f;padding:14px 22px}header .brand{font-size:1.25rem;font-weight:800;letter-spacing:.06em}header small{color:#a8c4d9}
+h1{font-size:1.55rem;margin:10px 0 8px}h2{font-size:1.18rem}h3{font-size:1rem;margin:0 0 10px}p{line-height:1.48;color:#c3d3df}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}nav button,.chip{border:1px solid #49657c;color:#e6eef6;background:#223851;border-radius:8px;padding:10px 14px;cursor:pointer}
+nav button[aria-selected=true],.chip.sel{background:#1775a6;border-color:#79c9ed}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #f5c95d;outline-offset:3px}
+section.panel{background:#13253a;border:1px solid #30475c;border-radius:12px;padding:17px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:minmax(0,2.2fr) minmax(300px,1fr);gap:14px}.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.notice{padding:13px 15px;background:#3b3020;border-left:4px solid #ffbf59;color:#fff0d2;margin:12px 0;border-radius:5px}
+.danger{padding:13px 15px;background:#42242a;border-left:4px solid #fa8087;color:#ffe3e6;margin:12px 0;border-radius:5px}
+.ok{padding:12px;background:#173c39;border-left:4px solid #65d1b3;color:#d9fff2;margin:12px 0}
+.subtle{color:#93aec3}.mono,code{font-family:ui-monospace,Consolas,monospace}code{color:#ffe6ad}
+table{border-collapse:collapse;width:100%;min-width:780px;font-size:.93rem}th{text-align:left;color:#a8c8dd;background:#1c354d}th,td{padding:10px;border-bottom:1px solid #324e62;vertical-align:top}td small{color:#b5cde1;display:block;margin-top:4px}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}label{display:block;margin-bottom:7px;color:#c4d4e3}
+select,input{background:#0a1b2e;color:#f1f7fa;border:1px solid #4b6880;border-radius:7px;padding:10px;min-height:41px}
+select{max-width:100%}.channels{display:flex;flex-wrap:wrap;gap:7px;margin:13px 0}.channels button{min-width:50px}
+.conn{background:#26374a;border:2px solid #718a9a;padding:12px;border-radius:13px;margin:12px 0 18px}
+.conn .head{font-size:.9rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:9px;color:#e3f6fc;font-weight:800}
+.connrow{display:flex;flex-wrap:wrap;gap:8px}.connrow + .connrow{margin-top:8px}
+.pair{display:flex;gap:3px;padding:8px;background:#111f2b;border:1px solid #597389;border-radius:8px;cursor:pointer;flex:1 1 100px;min-width:88px;justify-content:center}
+.pair.sel{background:#1d5070;border-color:#93deff}.terminal{font-weight:800;font-size:.9rem;color:#eaf6ff}
+table .colors{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.swatch{width:18px;height:18px;border-radius:4px;border:1px solid #d1dfec;display:inline-block;vertical-align:middle;margin-right:6px}
+.tag{display:inline-block;border:1px solid #5b7890;border-radius:7px;padding:3px 7px;font-size:.77rem;margin:2px 2px 2px 0}
+.tag.caution{color:#ffe8af;border-color:#bd8c51}.tag.pass{color:#9debd9;border-color:#3ca58e}.tag.stop{color:#ffb5b9;border-color:#d67079}
+.detail{line-height:1.6}.detail b{color:#fff}.line{padding:6px 0;border-bottom:1px solid #31495b}
+.field{display:flex;gap:7px;align-items:center;margin-bottom:10px}.field input{max-width:180px;flex:1}.field span{min-width:30px}
+.step{padding:10px 0;border-bottom:1px solid #31495b}.step input{width:20px;height:20px;vertical-align:middle;margin:0 10px 0 0}
+aside{font-size:.9rem}footer{color:#b1cada;padding:20px;font-size:.85rem}
+.hidden{display:none !important}button.secondary{background:#13304c;color:#fff;border:1px solid #6889a3;border-radius:7px;padding:9px 12px;cursor:pointer}
+@media(max-width:900px){.grid,.cols{grid-template-columns:1fr}main{padding:12px}header{padding:12px}h1{font-size:1.32rem}.pair{flex:1 1 83px}}
+@media print{header,nav,.channels,#oldInputFields,#export{display:none!important}body{background:#fff;color:#000}.panel,.conn{background:#fff!important;color:#000}p,.subtle{color:#222}}
+</style></head>
+<body><header><div class="brand">TESLA SOP9 · AUDIO ENGINEERING</div><small>Independent project · 2026 Highland replacement harness · HELIX V TWELVE DSP MK2</small>
+<div style="margin-top:7px"><a href="index.html">Installation workflow</a> · <a href="engineering.html">Engineering workspace</a> · <a href="data/replacement-harness-2026-10-08.json">Wiring data JSON</a></div></header>
+<main>
+<h1>DSP connector, old Ryzen versus replacement Highland harness</h1>
+<div class="danger"><strong>Inspection status: NOT APPROVED FOR FIRST POWER-UP.</strong> The new conductor sleeve labels and colours are photographed; exact replacement connector cavities, the currently attached Ryzen DSP terminals and the front woofer/tweeter electrical split are not measured. Do not energize or cut/repin based solely on this diagram.</div>
+<nav role="tablist" aria-label="Engineering views">
+<button data-tab="connections" aria-selected="true">DSP connector map</button>
+<button data-tab="differences" aria-selected="false">Old vs new colours</button>
+<button data-tab="vcp" aria-selected="false">DSP / Virtual Channels</button>
+<button data-tab="checklist" aria-selected="false">Installation checks</button>
+</nav>
+<div id="status" role="status" class="subtle">Loading local repository evidence…</div>
+<section id="connections" class="tabview panel">
+<div class="grid"><div>
+<h2>Physical HELIX terminals</h2><p>Read connector markings on the <strong>amplifier</strong>, not a mirrored plug picture. Each button chooses a logical channel. Source input order is <code>-X +X</code>; amplified output order is <code>+X -X</code>.</p>
+<div class="conn"><div class="head">Highlevel input A–L</div><div id="inputRows"></div></div>
+<div class="conn"><div class="head">Amplified output channels A–L</div><div id="outputRows"></div></div>
+<div class="notice">LINE INPUT RCA A–F unused; LINE OUTPUT M/N reserved. H/I need independent, isolated tweeter wiring. J/K need independent subwoofer runs. L is spare. No old optional subwoofer leads have been established in the new cable photos.</div>
+</div><div>
+<h2 id="selectionTitle">Select a channel</h2><div id="selectedDetail" class="detail"></div>
+<aside id="oldInputFields"><h3>Record actual faulty Ryzen wires at DSP</h3><p>This is intentionally blank until photographed or measured. Previous documentation listed colour <em>families</em>, not proven terminal positions.</p>
+<div class="field"><span>IN +</span><input id="oldInPlus" placeholder="Not observed" aria-label="Old actual input positive colour"></div>
+<div class="field"><span>IN −</span><input id="oldInMinus" placeholder="Not observed" aria-label="Old actual input negative colour"></div>
+<div class="field"><span>OUT +</span><input id="oldOutPlus" placeholder="Not observed" aria-label="Old actual output positive colour"></div>
+<div class="field"><span>OUT −</span><input id="oldOutMinus" placeholder="Not observed" aria-label="Old actual output negative colour"></div>
+<button class="secondary" id="saveOld" type="button">Save observations on this device</button>
+</aside>
+</div></div></section>
+<section id="differences" class="tabview panel hidden">
+<h2>Confirmed difference versus unverified history</h2><p>Old colour families come from the previous engineering plan and are <strong>not</strong> confirmed photographs of the existing DSP terminals. The new label polarity and conductor families come from the newly supplied harness photos.</p><div class="tablewrap" id="comparison"></div>
+<div class="notice">There is no evidence that the seven colour families actually changed. The principal confirmed differences are the replacement cable, Highland-specific intended application and changed front low/TW sleeve wording. Whether the <strong>internal plug pinout</strong> differs remains to be established with an unpowered continuity test.</div></section>
+<section id="vcp" class="tabview panel hidden">
+<h2>Recommended DSP PC-Tool setup: gated commissioning</h2>
+<div class="cols">
+<div><label for="scenario">Speaker topology (<strong>not</strong> a software connection)</label>
+<select id="scenario"><option value="unknown">Unknown / not tested: outputs muted</option><option value="factorySharedLowTw">Shared Low/TW, passive crossover physically verified</option><option value="physicallyIsolatedActive">Independent active tweeters, proven isolated</option></select></div>
+<div><div class="tag caution">Provisional commissioning guidance</div><div class="tag stop">No AFPX file or live DSP changes made</div></div>
+</div>
+<div id="scenarioGate" class="danger"></div>
+<h3>Main to Virtual Routing</h3><p>Enable VCP in DCM. Use ISA to measure individual Tesla inputs and their combined frequency responses before calculating the front L/R full-range virtual feeds. Virtual names below are DSP PC-Tool signal functions, not physical output letters.</p>
+<div class="tablewrap" id="vcpTable"></div>
+<h3>Virtual to Output Routing and crossover starting points</h3><p>HP = high-pass; LP = low-pass; LR24 = Linkwitz–Riley 24 dB/oct. The values below are <strong>starting estimates</strong>, never measured acoustic crossover settings. Protect all tweeters before enabling any output.</p>
+<div class="tablewrap" id="filterTable"></div>
+<div class="notice"><strong>Subwoofer remote gotcha:</strong> VCP OFF ties SubRC to <em>physical</em> K/L. VCP ON assigns SubRC by <em>virtual</em> Subwoofer 1 (K) / Subwoofer 2 (L) to any routed physical outputs. For your planned J/K subwoofer channels, VCP MUST be on, and DIRECTOR must control both in a real test.</div>
+<h3>Equalizer, frequency response and level</h3>
+<div class="cols">
+<section><h3>Input EQ / ISA</h3><p>Start EQ flat. Measure highlevel A/B/C/D/E/F/G individually using ISA, then measured A+C and B+E. Align overlap in amplitude and phase before calibrated summation; do not apply equal 100% to arbitrary overlapping bands.</p><p>If low/TW and dash are already full-range, select the appropriate sole source instead of summing. Do not try to recreate entirely absent frequencies with EQ boosts.</p></section>
+<section><h3>Virtual and output EQ</h3><p>Start Virtual EQ and Output EQ at 0 dB. Keep all sound effects OFF during the baseline: RealCenter, Augmented Bass, loudness and rear attenuation until routing is proven. Apply HP/LP filters to speaker <strong>outputs</strong>, not just virtual groups.</p><p>Start channel gains at -12 dB, with H/I at -18 dB and muted until protected. Measure with RTA/microphone before finalizing EQ, phase, time alignment, or boosts.</p></section>
+</div><p><a href="https://www.audiotec-fischer.de/en/knowledge-base/DSP-PC-Tool/io/" target="_blank" rel="noopener">Official IO/VCP routing</a> · <a href="https://www.audiotec-fischer.de/en/knowledge-base/DSP-PC-Tool/isa/" target="_blank" rel="noopener">Official ISA</a> · <a href="https://www.audiotec-fischer.de/en/knowledge-base/DSP-PC-Tool/dcm/" target="_blank" rel="noopener">Official DCM/gain</a> · <a href="https://www.audiotec-fischer.de/media/pdf/d3/17/06/HELIX-V-TWELVE-DSP_MK2_148x210mm_02-12-21_web.pdf" target="_blank" rel="noopener">Official V TWELVE manual</a></p>
+</section>
+<section id="checklist" class="tabview panel hidden"><h2>Before the first powered DSP test</h2><p>Checklist is local to this browser. Checking a box records what <em>you verified</em> and does not prove the circuit or alter the DSP. Do not energize merely because the software shows green.</p><div id="checkItems"></div>
+<button class="secondary" id="export" type="button">Export observed old colours and checklist as JSON</button>
+</section>
+<footer>Engineering evidence revision 2026-10-08 · Source photos IMG_4126…IMG_4134 supplied by owner · <a href="https://github.com/dutchdevil-83/tesla-model3-sop9-audio-epc">Project repository</a>. This site does not program the amplifier.</footer>
+</main>
+<script>
+(function(){
+'use strict';
+var current='A',data=null,legacy={},checks={}, scenario='unknown', store='tesla-highland-replacement-audio-20261008';
+function loadState(){try {var s=JSON.parse(localStorage.getItem(store)||'{}');legacy=s.legacy||{};checks=s.checks||{};scenario=s.scenario||'unknown';}catch(e){legacy={};checks={};}}
+function saveState(){try{localStorage.setItem(store,JSON.stringify({legacy:legacy,checks:checks,scenario:scenario}));}catch(e){}}
+function el(id){return document.getElementById(id)}
+function node(tag,txt,cls){var x=document.createElement(tag);if(txt!==undefined)x.textContent=txt;if(cls)x.className=cls;return x}
+function clear(x){while(x.firstChild)x.removeChild(x.firstChild)}
+function textCell(tr,txt){var c=node('td',txt);tr.appendChild(c);return c}
+function table(host,heads,rows){clear(host);var t=node('table');var thead=node('thead'),hr=node('tr');heads.forEach(function(h){hr.appendChild(node('th',h))});thead.appendChild(hr);t.appendChild(thead);var tb=node('tbody');rows.forEach(function(row){var tr=node('tr');row.forEach(function(cell){textCell(tr,cell===null?'':String(cell))});tb.appendChild(tr)});t.appendChild(tb);host.appendChild(t);}
+function colorValue(n){var k=(n||'').split('/')[0].toLowerCase();return ({orange:'#f4852d',brown:'#8c5d48',green:'#169b70',purple:'#8d62c8',blue:'#2686d6',grey:'#778b93',gray:'#778b93',white:'#f2f0e4',black:'#18222d'})[k]||'#6d8295'}
+function swatch(name){var s=node('span','', 'swatch');if(name.indexOf('/black')>=0){s.style.background='repeating-linear-gradient(130deg,'+colorValue(name)+ ' 0 6px,#152028 6px 11px)';}else{s.style.background=colorValue(name)}return s}
+function displayPair(x,plus,minus){x.appendChild(swatch(plus));x.appendChild(node('span','+'+plus+' / '));x.appendChild(swatch(minus));x.appendChild(node('span','-'+minus));}
+function pairButton(ch,isInput){var b=node('button',undefined,'pair');b.type='button';b.dataset.ch=ch;b.setAttribute('aria-label', (isInput?'Highlevel input ':'Amplified output ')+ch);b.addEventListener('click',function(){select(ch)});var first=isInput?'-':'+',second=isInput?'+':'-';b.appendChild(node('span',first+ch,'terminal'));b.appendChild(node('span',second+ch,'terminal'));return b}
+function row(host,channels,isInput){var r=node('div',undefined,'connrow');channels.split('').forEach(function(ch){r.appendChild(pairButton(ch,isInput))});host.appendChild(r)}
+function buildConnectors(){row(el('inputRows'),'ABCDEF',true);row(el('inputRows'),'GHIJKL',true);row(el('outputRows'),'ABC',false);row(el('outputRows'),'DEF',false);row(el('outputRows'),'GHI',false);row(el('outputRows'),'JKL',false)}
+function getChannel(ch){return data.channels.find(function(x){return x.channel===ch})}
+function select(ch){current=ch;document.querySelectorAll('.pair').forEach(function(x){x.classList.toggle('sel',x.dataset.ch===ch);x.setAttribute('aria-pressed',x.dataset.ch===ch?'true':'false')});renderDetail();}
+function line(host,label,value){var d=node('div',undefined,'line');var strong=node('b',label+': ');d.appendChild(strong);d.appendChild(node('span',value));host.appendChild(d)}
+function renderDetail(){
+var c=getChannel(current),h=el('selectedDetail');clear(h);el('selectionTitle').textContent='Channel '+current+' · '+(c?c.replacement.label:'No harness lead');
+if(!c){
+var n=data.nonHarnessChannels.find(function(x){return x.channel===current});
+line(h,'Highlevel input','SPARE / not connected');line(h,'Amplified output',n?n.use:'Spare');
+line(h,'State',n?n.state:'SPARE');line(h,'Source',n&&n.source||'Unassigned');
+el('oldInputFields').classList.add('hidden');return;
+}
+el('oldInputFields').classList.remove('hidden');
+line(h,'HELIX input',c.dsp.inputMinus+' / '+c.dsp.inputPlus+' (Tesla source)');
+line(h,'HELIX output',c.dsp.outputPlus+' / '+c.dsp.outputMinus+' (speaker return)');
+line(h,'New sleeve IN',c.replacement.inputPlus+' / '+c.replacement.inputMinus);
+line(h,'New sleeve OUT',c.replacement.outputPlus+' / '+c.replacement.outputMinus);
+var cs=node('div',undefined,'line');cs.appendChild(node('b','New photographed colour: '));displayPair(cs,c.replacement.wirePlus,c.replacement.wireMinus);h.appendChild(cs);
+line(h,'Earlier Ryzen planned sleeve',c.oldRyzen.label+'; colour family '+c.oldRyzen.documentedColourFamily);
+line(h,'Old physical DSP wires','UNKNOWN unless you record them below');
+line(h,'Tesla MCU source net',c.tesla.source);
+line(h,'Return circuit',c.tesla.returnConnector+' / '+c.target);
+line(h,'Purpose',c.role);
+line(h,'Replacement cavity numbers','UNVERIFIED · meter before power-up');
+if(current==='A'||current==='B'){h.appendChild(node('div','Shared low/tweeter indicated by new sleeve; does NOT verify electrical commoning, crossover protection or load. Keep H/I muted until proven isolated.','danger'));}
+var x=legacy[current]||{};['oldInPlus','oldInMinus','oldOutPlus','oldOutMinus'].forEach(function(id){el(id).value=x[id]||''});
+}
+function compare(){var rows=data.channels.map(function(x){var old=legacy[x.channel]||{};var actual=[old.oldInPlus,old.oldInMinus,old.oldOutPlus,old.oldOutMinus].filter(Boolean).join(' / ')||'NOT RECORDED';return [x.channel,x.oldRyzen.label,x.oldRyzen.documentedColourFamily+' family, DSP terminals unverified',actual,x.replacement.label,x.replacement.wirePlus+' (+), '+x.replacement.wireMinus+' (-)',x.tesla.source]});table(el('comparison'),['HELIX','Old Ryzen sleeve','Old plan colours','Actual faulty old DSP wires (user-recorded)','New Highland sleeve','New observed conductors','Tesla source reference (NOT new plug cavities)'],rows)}
+function vcp(){var rows=data.virtualInputs.map(function(x){return[x.virtual,x.inputs,x.note]});table(el('vcpTable'),['Virtual channel name','Measured inputs / proposed sources','Configuration gate'],rows);var sc=data.routingPresets[scenario];var gate=el('scenarioGate');
+gate.textContent=sc?sc.gate:'STOP: topology unknown. Leave all amplified outputs muted or disconnected until correct source/returns and safe speaker loads are proven. No electrical circuit has been tested by this page.';
+var out=sc?sc.outputs:data.routingPresets.physicallyIsolatedActive.outputs.map(function(x){return Object.assign({},x,{level:'MUTED - connection gate not passed',hp:x.ch==='H/I'?'Protective HP must be saved; keep muted':x.hp,lp:x.lp})});
+table(el('filterTable'),['Physical OUT','Virtual source','Speaker/load','HP','LP','Initial level / state'],out.map(function(x){return[x.ch,x.path,x.speaker,x.hp,x.lp,x.level]}));}
+function initChecklist(){clear(el('checkItems'));data.safetyChecks.forEach(function(msg,i){var div=node('div',undefined,'step');var label=node('label');var cb=node('input');cb.type='checkbox';cb.checked=!!checks[i];cb.addEventListener('change',function(){checks[i]=cb.checked;saveState()});label.appendChild(cb);label.appendChild(node('span',msg));div.appendChild(label);el('checkItems').appendChild(div)})}
+function tabs(){document.querySelectorAll('nav [data-tab]').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('nav [data-tab]').forEach(function(other){var yes=other===b;other.setAttribute('aria-selected',yes?'true':'false');el(other.dataset.tab).classList.toggle('hidden',!yes)});})})}
+function init(){loadState();tabs();buildConnectors();el('scenario').value=scenario;el('scenario').addEventListener('change',function(){scenario=this.value;saveState();vcp()});
+el('saveOld').addEventListener('click',function(){var o={};['oldInPlus','oldInMinus','oldOutPlus','oldOutMinus'].forEach(function(id){o[id]=el(id).value.trim()});legacy[current]=o;saveState();compare();el('status').textContent='Old wire observations saved in this browser only.'});
+el('export').addEventListener('click',function(){var s=JSON.stringify({recordedAt:new Date().toISOString(),sourceRevision:data.updated,legacy:legacy,checks:checks,scenario:scenario},null,2);var blob=new Blob([s],{type:'application/json'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download='tesla-old-cable-observations-20261008.json';a.click();setTimeout(function(){URL.revokeObjectURL(url)},2000)});
+fetch('data/replacement-harness-2026-10-08.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(function(j){data=j;el('status').textContent='Photographed conductor evidence loaded. Green is NOT a power-up approval.';select('A');compare();vcp();initChecklist()}).catch(function(e){el('status').textContent='Could not load verified harness data: '+e.message+'. Serve this page from GitHub Pages or a local HTTP server, not file://.';});}
+init();
+})();
+</script></body></html>
