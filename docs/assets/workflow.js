@@ -149,23 +149,23 @@ function prepare() {
     <div class="wide-grid">
       <article class="workflow-card"><div class="card-head"><h3>Tools & Checks</h3></div><div class="card-body sequence-list">
         ${[
-          ['Photograph every OEM connector before unplugging it', 'Keep connector IDs and wire colors visible in the photo.'],
-          ['Identify the M141318 donor harness', 'It is a donor/interposer only; it is not plug-and-play for Highland.'],
-          ['Label A-G before repinning', 'Apply the final VT-A through VT-G sleeve labels from the verified SOP9 map.'],
-          ['Continuity-check the finished harness', 'No channel may rely only on an old Ryzen sleeve label.'],
+          ['Photograph every OEM connector before unplugging it', 'Include connector orientation, numbering and actual existing DSP termination in the photograph.'],
+          ['Identify old and new harness', 'Remove faulty MATCH PP-TES 1.7B Ryzen M141318; use received Highland replacement only after its pin mapping is metered.'],
+          ['Record new Highland IN/OUT A-G', 'Use the new photographed Front Low/TW and dash sleeves, not the old Ryzen repin assumptions.'],
+          ['Continuity-check the replacement harness', 'Verify every new plug cavity to each source IN and speaker OUT; do not trust colour or fit alone.'],
           ['Measure both Pioneer donor woofers', 'Record loose-driver DCR before J/K are connected or energized.'],
-          ['Confirm V TWELVE terminal polarity', 'HIGHLEVEL is -X/+X. OUTPUT CHANNELS are +X/-X.']
+          ['Confirm HELIX polarity and output isolation', 'HIGHLEVEL is -X/+X; OUTPUT CHANNELS are +X/-X. H/I must not short to shared A/B tweeters.']
         ].map((row, i) => `<div class="sequence-item"><span class="sequence-num">${i + 1}</span><div><strong>${esc(row[0])}</strong><span>${esc(row[1])}</span></div></div>`).join('')}
       </div></article>
       <article class="workflow-card important-card"><div class="card-head"><h3>Do not skip</h3></div><div class="card-body check-list">
         <div class="check-item critical"><i>!</i><span>Follow Tesla's official low-voltage isolation procedure whenever the work requires LV disconnection.</span></div>
-        <div class="check-item critical"><i>!</i><span>The PP-TES 1.7B Ryzen harness must be repinned/re-routed to the verified SOP9 circuits before connection.</span></div>
-        <div class="check-item"><i>✓</i><span>Keep the original Tesla rear door speakers connected to F/G returns.</span></div>
+        <div class="check-item critical"><i>!</i><span>The faulty Ryzen harness must be replaced, not reused. Verify every Highland replacement cavity and IN/OUT pair by continuity before connection.</span></div>
+        <div class="check-item"><i>✓</i><span>Keep original Tesla rear door speakers on F/G only after verifying correct source-to-return isolation.</span></div>
         <div class="check-item"><i>✓</i><span>Leave shelf endpoints X588/X593 unused.</span></div>
       </div></article>
     </div>
     <div class="step-details">
-      ${details('Harness verification boundary', `<p>${esc(state.harness.ryzenHarnessRework.verificationBoundary)}</p><p><strong>Final QC:</strong> ${esc(state.harness.ryzenHarnessRework.finalQc)}</p>`, true)}
+      ${details('Replacement harness verification boundary', `<p>${esc(state.harness.ryzenHarnessRework.verificationBoundary)}</p><p><strong>Final QC:</strong> ${esc(state.harness.ryzenHarnessRework.finalQc)}</p>`, true)}
       ${details('Tesla safety procedure', serviceRefs(['TESLA_LV_POWER']))}
       ${details('HELIX connector reference', officialRefs())}
     </div>
@@ -225,7 +225,7 @@ function install() {
       <td class="raw-code">${esc(sourcePair(channel))}</td>
       <td class="raw-code">${esc(returnPair(channel))}</td>
       <td><b>${esc(channel.directTarget)}</b><small>${esc(target.component || channel.sourceRole)}</small></td>
-      <td class="state-good">VERIFIED SOP9 MAP</td>
+      <td class="state-good">OEM NET DOCUMENTED · PLUG PENDING QC</td>
     </tr>`;
   }).join('');
   const derived = [
@@ -233,13 +233,13 @@ function install() {
     ...state.harness.subwooferOutputs.map(item => ({ channel:item.vTwelveOutput, target:item.target, role:item.role, source:item.source, state:item.workingBasis }))
   ];
   return `<section class="step-layout">
-    <div class="step-titlebar"><div><h2>Install hardware & wiring</h2><p>Tesla-side source/return map, V TWELVE terminal assignment, and speaker-side return are shown together.</p></div><span class="step-status">A-G VERIFIED SOURCE MAP</span></div>
+    <div class="step-titlebar"><div><h2>Install hardware & wiring</h2><p>Tesla-side source/return map, V TWELVE terminal assignment, and speaker-side return are shown together.</p></div><span class="step-status">A-G OEM NETS · NEW PLUGS PENDING QC</span></div>
     <article class="workflow-card"><div class="card-head"><h3>Tesla SOP9 → HELIX A-G → speaker return</h3></div><div class="card-body"><div class="workflow-table-wrap"><table class="workflow-table"><thead><tr><th>HELIX</th><th>Tesla source (+ / -)</th><th>Speaker return (+ / -)</th><th>Target</th><th>State</th></tr></thead><tbody>${rows}</tbody></table></div></div></article>
-    <article class="workflow-card"><div class="card-head"><h3>Full-active / subwoofer outputs</h3></div><div class="card-body"><div class="workflow-table-wrap"><table class="workflow-table"><thead><tr><th>Output</th><th>Target</th><th>Role</th><th>Signal basis</th><th>State</th></tr></thead><tbody>${derived.map(item => `<tr><td><b>${esc(item.channel)}</b></td><td>${esc(item.target)}</td><td>${esc(item.role)}</td><td>${esc(item.source)}</td><td class="${statusClass(item.state)}">${esc(item.state)}</td></tr>`).join('')}<tr><td><b>L</b></td><td>-</td><td>Spare amplified channel</td><td>-</td><td class="state-future">SPARE</td></tr><tr><td><b>M/N</b></td><td>-</td><td>Processed line outputs</td><td>DSP</td><td class="state-future">RESERVED / UNUSED</td></tr></tbody></table></div></div></article>
-    <article class="workflow-card"><div class="card-head"><h3>V TWELVE Connector Labeling</h3></div><div class="card-body">${connectorMap()}</div></article>
+    <article class="workflow-card"><div class="card-head"><h3>Conditional active tweeters / separate Pioneer subs</h3></div><div class="card-body"><div class="workflow-table-wrap"><table class="workflow-table"><thead><tr><th>Output</th><th>Target</th><th>Role</th><th>Signal basis</th><th>State</th></tr></thead><tbody>${derived.map(item => `<tr><td><b>${esc(item.channel)}</b></td><td>${esc(item.target)}</td><td>${esc(item.role)}</td><td>${esc(item.source)}</td><td class="${statusClass(item.state)}">${esc(item.state)}</td></tr>`).join('')}<tr><td><b>L</b></td><td>-</td><td>Spare amplified channel</td><td>-</td><td class="state-future">SPARE</td></tr><tr><td><b>M/N</b></td><td>-</td><td>Processed line outputs</td><td>DSP</td><td class="state-future">RESERVED / UNUSED</td></tr></tbody></table></div></div></article>
+    <p><a href="dsp-wiring.html" style="color:#82d3ff;font-weight:700">Open new Highland replacement wiring, old-vs-new colour comparison and DSP connector inspector</a></p><article class="workflow-card"><div class="card-head"><h3>V TWELVE Connector Labeling</h3></div><div class="card-body">${connectorMap()}</div></article>
     <div class="step-details">
       ${details('Critical polarity rule', `<p><strong>HIGHLEVEL INPUT:</strong> ${esc(state.harness.labelingRule.inputPolarity)}</p><p><strong>OUTPUT CHANNELS:</strong> ${esc(state.harness.labelingRule.outputPolarity)}</p>`, true)}
-      ${details('Harness repin / reroute warning', `<div class="warning-box">${esc(state.harness.ryzenHarnessRework.scope)}</div>`)}
+      ${details('Replacement harness cavity / isolation warning', `<div class="warning-box">${esc(state.harness.ryzenHarnessRework.scope)}</div>`)}
       ${details('Official HELIX / Pioneer references', officialRefs())}
     </div>
     ${quickBar()}
@@ -250,16 +250,16 @@ function configure() {
   const outputs = state.vtwelve.currentBuildTerminalPlan.speakerOutputs;
   const tweeterSpecs = state.installed.products?.CI7_T20?.specs || [];
   return `<section class="step-layout">
-    <div class="step-titlebar"><div><h2>Configure DSP</h2><p>Keep routing explicit. Final crossover, gain, delay and EQ values are set during commissioning after physical verification.</p></div><span class="step-status">DSP PC-TOOL</span></div>
-    <article class="workflow-card"><div class="card-head"><h3>Output roles A-L</h3></div><div class="card-body"><div class="info-grid">${outputs.map(item => `<div class="info-tile"><strong>${esc(item.channel)} · ${esc(item.target || 'Spare')}</strong><span>${esc(item.role)}</span><span class="${statusClass(item.state)}">${esc(item.state)}</span></div>`).join('')}</div></div></article>
+    <div class="step-titlebar"><div><h2>Configure DSP</h2><p>Use VCP to rebuild the front full-range inputs. The dedicated DSP wiring page provides gated starter filters; final EQ needs measurement.</p></div><span class="step-status">DSP PC-TOOL</span></div>
+    <p><a href="dsp-wiring.html" style="color:#82d3ff;font-weight:700">Open NEW interactive replacement cable / DSP connector / VCP settings</a></p><article class="workflow-card"><div class="card-head"><h3>Output roles A-L</h3></div><div class="card-body"><div class="info-grid">${outputs.map(item => `<div class="info-tile"><strong>${esc(item.channel)} · ${esc(item.target || 'Spare')}</strong><span>${esc(item.role)}</span><span class="${statusClass(item.state)}">${esc(item.state)}</span></div>`).join('')}</div></div></article>
     <div class="wide-grid">
       <article class="workflow-card"><div class="card-head"><h3>Configuration order</h3></div><div class="card-body sequence-list">${[
-        ['Input routing', 'Map HIGHLEVEL A-G to the verified Tesla SOP9 source functions.'],
-        ['Direct speaker outputs', 'Keep A-G aligned with their direct speaker returns.'],
-        ['Tweeters', 'H = left tweeter from C; I = right tweeter from E. Apply a protective high-pass before any full-level test.'],
-        ['Subwoofers', 'J/K use the DSP mono low-frequency mix, one Pioneer woofer per channel.'],
+        ['Enable Virtual Channel Processing in DCM', 'Main to Virtual: measure A+C and B+E with ISA before reconstructing Front L/R Full. Route D to Front Center, F/G to Rear L/R.'],
+        ['Virtual to Output Routing', 'Front L Full to A/C/(H only if isolated); Front R Full to B/E/(I only if isolated); center D, rear F/G; confirm output pair polarity.'],
+        ['Tweeters', 'H/I stay muted and unconnected until their wires are isolated from A/B. Route from VCP Front L/R Full and apply protective >2.5 kHz LR24 high-pass; starting point 3.5 kHz.'],
+        ['Subwoofer remote control', 'Enable VCP; route virtual Subwoofer 1 (K) to physical J and Subwoofer 2 (L) to physical K. Verify DIRECTOR SubRC adjusts both.'],
         ['Unused channels', 'L stays spare. M/N remain reserved/unused.'],
-        ['Tuning', 'Set final crossover, level, time alignment and EQ only after physical verification and polarity checks.']
+        ['Tuning', 'Use gated starter filters from the dedicated DSP wiring page. Input/Virtual/Output EQ flat before ISA/RTA; verify phase/delay and prevent clipping.']
       ].map((row,i) => `<div class="sequence-item"><span class="sequence-num">${i+1}</span><div><strong>${esc(row[0])}</strong><span>${esc(row[1])}</span></div></div>`).join('')}</div></article>
       <article class="workflow-card important-card"><div class="card-head"><h3>Tweeter manufacturer limits</h3></div><div class="card-body check-list">${tweeterSpecs.map(spec => `<div class="check-item"><i>✓</i><span>${esc(spec)}</span></div>`).join('')}<div class="check-item critical"><i>!</i><span>Do not run H/I full-range during commissioning.</span></div></div></article>
     </div>
@@ -270,12 +270,12 @@ function configure() {
 
 function testStep() {
   const checks = [
-    ['Harness continuity', 'Check each A-G IN pair and corresponding A-G OUT return before plugging in the amplifier.'],
-    ['Pioneer DCR', 'Measure each loose TS-WX1220AH donor woofer. Stop if the measured load does not match the expected 2 Ω working basis.'],
+    ['Harness continuity', 'Check every replacement cavity and A-G IN vs OUT pair, plus isolation from OEM source, before connecting the DSP.'],
+    ['Pioneer DCR', 'Measure each loose TS-WX1220AH donor woofer and verify independent added leads J/K before energizing.'],
     ['Polarity', 'Verify HIGHLEVEL -/+ orientation and OUTPUT +/- orientation at the V TWELVE.'],
-    ['First power-up', 'Start at low master volume with protective DSP filters enabled.'],
+    ['First power-up', 'Only after unplugged continuity, load and shared-tweeter gate pass; start low volume with H/I muted and protective filters saved.'],
     ['Channel-by-channel', 'Confirm A through K one at a time. Listen for wrong location, inversion, rubbing, trim buzz or unexpected output.'],
-    ['Tweeters H/I', 'Confirm protective high-pass is active before raising level.'],
+    ['Tweeters H/I', 'Connect/enable only if fully isolated from A/B with a stored LR24 high-pass >2.5 kHz and volume attenuated; otherwise leave MUTED.'],
     ['Reassembly gate', 'Only reinstall trim after all channels, polarity and mechanical fit checks pass.']
   ];
   return `<section class="step-layout">
