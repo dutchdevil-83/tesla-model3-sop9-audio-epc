@@ -328,45 +328,45 @@
   ],
   "virtualInputs": [
     {
-      "virtual": "A / Front L Full",
-      "inputs": "HIGHLEVEL A (Left Low/TW) + C (Left Dash)",
-      "note": "Combine only if ISA verifies complementarity, magnitude, polarity and relative delay; not blind 100% summing. If one is already full range, route that input alone."
+      "virtual": "Front L Full",
+      "inputs": "HIGHLEVEL A (Front Low/TW Left) and C (Front Left dash)",
+      "note": "Measure A and C separately with ISA. Determine whether complementary frequency bands exist. Only sum calibrated bands with time/phase and level matched; if either is full range use that input alone. No preset 100% summation."
     },
     {
-      "virtual": "B / Front R Full",
-      "inputs": "HIGHLEVEL B (Right Low/TW) + E (Right Dash)",
-      "note": "Same calibrated reconstruction process as left."
+      "virtual": "Front R Full",
+      "inputs": "HIGHLEVEL B (Front Low/TW Right) and E (Front Right dash)",
+      "note": "Mirror Front L measurements; left/right levels and phase verified."
     },
     {
-      "virtual": "C / Rear L Full",
-      "inputs": "HIGHLEVEL F",
-      "note": "Rear input signal; no unnecessary front-channel mixing."
+      "virtual": "Front Center Full",
+      "inputs": "HIGHLEVEL D (Center)",
+      "note": "Dedicated center input; no automatic L/R downmix."
     },
     {
-      "virtual": "D / Rear R Full",
-      "inputs": "HIGHLEVEL G",
-      "note": "Rear input signal."
+      "virtual": "Rear L Full",
+      "inputs": "HIGHLEVEL F (Rear Left)",
+      "note": "Keep OEM rear channel independently routed."
     },
     {
-      "virtual": "E / Front Center Full",
-      "inputs": "HIGHLEVEL D",
-      "note": "Keep dedicated mono centre source; no L+R mix unless measured/required."
+      "virtual": "Rear R Full",
+      "inputs": "HIGHLEVEL G (Rear Right)",
+      "note": "Keep OEM rear channel independently routed."
     },
     {
-      "virtual": "K / Subwoofer 1",
-      "inputs": "Calibrated 50/50 Front L/R Full mono or measured lowband A+B",
-      "note": "Apply headroom reduction for summed channels, verify no phase cancellation. Do not copy independently EQed lowband blindly."
+      "virtual": "Subwoofer 1 (K)",
+      "inputs": "Verified reconstructed Front L/R Full mono, or measured suitable LF sources A/B",
+      "note": "Manufacturer VCP Subwoofer 1, not physical output K. Use calibrated L/R mix with gain/headroom and phase checks; SubRC controlled when VCP active."
     },
     {
-      "virtual": "L / Subwoofer 2",
-      "inputs": "Same calibrated mono as virtual K",
-      "note": "Independent output J/K, NOT a bridged or parallel speaker connection."
+      "virtual": "Subwoofer 2 (L)",
+      "inputs": "Same verified mono mix as Subwoofer 1",
+      "note": "Manufacturer VCP Subwoofer 2, not physical output L. Send to physical output K via Virtual to Output matrix, not by letter matching."
     }
   ],
   "routingPresets": {
     "factorySharedLowTw": {
       "title": "SHARED OEM low/tweeter return; provisional only",
-      "gate": "DO NOT POWER until passive tweeter high-pass protection, load and no other connected amplifier output are confirmed by meter/physical inspection.",
+      "gate": "STOP: DO NOT POWER until independent electrical proof of a properly designed passive crossover, no direct woofer+tweeter parallel connection, combined amplifier load ≥2 Ω under operating conditions and no second DSP output tied to the tweeter. This mode is a diagnostic conditional example, not an approval to use a shared branch.",
       "outputs": [
         {
           "ch": "A/B",
@@ -375,7 +375,7 @@
           "hp": "65-80 Hz LR24 provisional",
           "lp": "OFF unless external measured passive 2-way crossover handles treble; cannot independently lowpass woofer",
           "level": "Start -12 dB",
-          "safety": "One amplifier channel drives both drivers if genuinely shared; passive crossover is essential."
+          "safety": "Without an adequately designed passive crossover the combined 3 Ω woofer + 4 Ω tweeter network falls below the amplifier's 2 Ω minimum and damages an unfiltered tweeter. NEVER directly parallel."
         },
         {
           "ch": "C/E",
@@ -429,7 +429,7 @@
     },
     "physicallyIsolatedActive": {
       "title": "TRUE ACTIVE after isolated tweeter pairs and verified speaker wiring",
-      "gate": "Enable H/I only after verifying each tweeter pair is completely isolated from amplifier outputs A/B, and 24 dB/oct HP protects the tweeters BEFORE any test.",
+      "gate": "Preferred configuration: enable H/I only after independent speaker wiring is metered isolated from A/B, firmware stores LR24 HP >2.5kHz, and -18dB attenuation is verified. Speaker connections must be independent.",
       "outputs": [
         {
           "ch": "A/B",
@@ -467,7 +467,7 @@
           "ch": "H/I",
           "path": "Front L/R Full",
           "speaker": "Ci7 T20FM-SC left/right isolated",
-          "hp": "3.5 kHz LR24 (manufacturer minimum >2.5 kHz at 24 dB/oct)",
+          "hp": "3.5 kHz LR24 initial, manufacturer allows >2.5 kHz for 24 dB/oct; do not bypass",
           "lp": "OFF",
           "level": "Start -18 dB; enable last"
         },
@@ -495,7 +495,8 @@
     "virtualEq": "Flat (0 dB), no boosts at commissioning; group EQ only after measuring.",
     "outputEq": "0 dB / no preset boosts; measure with calibrated mic + RTA then cut peaks; tune polarity/time alignment at listening position.",
     "gain": "Start attenuated at least -12 dB; H/I -18 dB and muted until isolated and protective HP stored. Check system headroom and gain without clipping.",
-    "status": "PROVISIONAL STARTING VALUES, NOT A MEASURED FINAL DSP FILE"
+    "status": "PROVISIONAL STARTING VALUES, NOT A MEASURED FINAL DSP FILE",
+    "signalSummation": "Input EQ cannot restore full missing bands from one high/low Tesla source. Use ISA/AISA plus input phase/time tools to confirm useful complementary signals, align and avoid cancellation. If measured bands overlap, reduce summation gain for headroom. Do NOT use arbitrary 50/50 before verification."
   },
   "safetyChecks": [
     "Archive existing DSP PC-Tool setup before rewiring. Disconnect/isolate 16V LV per Tesla procedure before harness work.",
@@ -505,7 +506,9 @@
     "Confirm passive tweeter crossover exists in any shared A/B speaker branch; otherwise do not energize.",
     "Measure each Pioneer driver's DCR/impedance and check separate +/− leads; do not bridge J/K.",
     "In DSP PC-Tool enable VCP, route sources by function, run ISA then configure crossovers and save setup under a new slot.",
-    "Low-volume channel sweep A-G, then conditional H/I, then J/K; stop if unexpected speaker plays or DSP off still yields output."
+    "Low-volume channel sweep A-G, then conditional H/I, then J/K; stop if unexpected speaker plays or DSP off still yields output.",
+    "Verify DIRECTOR SubRC affects BOTH physical J and K; this requires VCP routing virtual Subwoofer 1/2. Without VCP only physical K/L are manufacturer-tied to SubRC.",
+    "Never connect bare 3-ohm woofer and 4-ohm tweeter directly in parallel; this would go below the amplifier's 2-ohm minimum and overdrive the tweeter."
   ],
   "sourceUrls": {
     "amp": "https://www.audiotec-fischer.de/en/helix/amplifiers/v-twelve-dsp-mk2",
@@ -515,6 +518,10 @@
     "tweeter": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-t20fm-sc",
     "woofer": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-w200fm-s3",
     "mid": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-m100fm-s3",
-    "center": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i3/ci3-c100-2fm-s3-mk2"
-  }
+    "center": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i3/ci3-c100-2fm-s3-mk2",
+    "ampManual": "https://www.audiotec-fischer.de/media/pdf/d3/17/06/HELIX-V-TWELVE-DSP_MK2_148x210mm_02-12-21_web.pdf",
+    "dcMenu": "https://www.audiotec-fischer.de/en/knowledge-base/dsp-pc-tool/dcm/"
+  },
+  "subwooferRemoteControl": "CRITICAL: With VCP ON, remote SubRC follows virtual channels Subwoofer 1 (K) and Subwoofer 2 (L) to physical outputs J/K; with VCP OFF the manufacturer's manual states SubRC tied only to physical K/L, so physical J would not follow remote sub volume. Enable VCP and verify both J/K respond to DIRECTOR.",
+  "speakerLoadSafety": "Manufacturer HELIX Ci7 W200FM-S3 is 3 ohm; Ci7 T20FM-SC is 4 ohm. Never connect bare woofer and tweeter directly in parallel to one output: nominal resultant is below the V TWELVE 2-ohm minimum and tweeter is unprotected. A passive crossover must be verified and total load checked before shared operation. Preferred installation is distinct A/B woofers and H/I tweeters."
 }
