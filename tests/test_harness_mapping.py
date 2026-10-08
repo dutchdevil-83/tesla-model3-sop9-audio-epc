@@ -106,7 +106,7 @@ class HarnessMappingTests(unittest.TestCase):
         woofer = self.integration["optionalWooferLead"]
         self.assertIn("NOT VERIFIED", woofer["status"])
         self.assertIn("J/K separate", woofer["plannedUse"])
-        self.assertIn("independent", woofer["plannedUse"])
+        self.assertIn("separate", woofer["plannedUse"])
         self.assertIn("old", woofer["plannedUse"])
         self.assertIn("X588/X593", woofer["warning"])
         outputs = {item["vTwelveOutput"]: item for item in self.integration["subwooferOutputs"]}
@@ -138,7 +138,7 @@ class HarnessMappingTests(unittest.TestCase):
         self.assertIn("Tesla SOP9 source", HARNESS_JS)
         self.assertIn("Speaker-side return", HARNESS_JS)
         self.assertIn("Recommended final sleeves", HARNESS_JS)
-        self.assertIn("7-channel PP-TES / SOP9 / V TWELVE topology", HARNESS_JS)
+        self.assertIn("7-channel Highland replacement / SOP9 / V TWELVE topology", HARNESS_JS)
 
 
 if __name__ == "__main__":
