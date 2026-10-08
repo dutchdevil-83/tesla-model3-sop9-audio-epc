@@ -99,7 +99,7 @@ class VTwelveConnectorTests(unittest.TestCase):
     def test_plan_separates_verified_sop9_source_from_proposed_amplifier_assignment(self) -> None:
         plan = DATA["currentBuildTerminalPlan"]
         self.assertIn("PROPOSED", plan["status"])
-        self.assertIn("SOP9 SOURCE MAP VERIFIED", plan["status"])
+        self.assertIn("TESLA OEM SOURCE NETS DOCUMENTED", plan["status"])
         self.assertIn("HARNESS CONTINUITY", plan["status"])
         self.assertIn("have NOT been metered", plan["verificationBoundary"])
         self.assertTrue(plan["virtualRoutingRequired"])
