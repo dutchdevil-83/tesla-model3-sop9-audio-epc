@@ -9,7 +9,8 @@
     "tesla": "Source_Assets/connectors/X171 and X175 metadata; these establish Tesla OEM nets but are NOT a continuity check of the NEW harness pins.",
     "manufacturer": "HELIX V TWELVE DSP MK2 manual, DSP PC-Tool VCP/ISA knowledge base and HELIX COMPOSE speaker specification pages.",
     "physicalConnectorNote": "The two white replacement plug faces are photographed but connector numbering, mating orientation, cavity-to-wire continuity and in-car fit have not been verified. Do not derive a pin count or pin map from perspective photos.",
-    "comparisonSummary": "Seven channel colour families coincide with the earlier documented plan. The verified difference is a replacement physical harness, newer Low/TW labels and the intended Highland application, NOT proven changed colours or proven repinning."
+    "comparisonSummary": "Seven channel colour families coincide with the earlier documented plan. The verified difference is a replacement physical harness, newer Low/TW labels and the intended Highland application, NOT proven changed colours or proven repinning.",
+    "baudio": "Source_Assets/core/audio_lhd.svg individual BAUDIO && LHST/RHST && TWTR wire option codes, not merged connector metadata."
   },
   "oldHarness": {
     "name": "MATCH PP-TES 1.7B Ryzen M141318 (old faulty, incompatible with Model 3 Highland per manufacturer)",
@@ -699,5 +700,9 @@
       "physicalBlocking": "Do not unmute/energize H/I until they are physically isolated from A/B; do not apply separate A/B woofer low-pass to an electrically shared passive Low/TW branch.",
       "measuredLater": "Tesla factory crossover/phase correction, front virtual A+C / B+E signal reconstruction weights, summed sub-source phase/headroom, cabin delay and EQ."
     }
-  }
+  },
+  "vehicleAudioOption": "BAUDIO; PAUDIO source pinouts excluded",
+  "baudioTweeterInterposer": "data/baudio-tweeter-interposer-2026-10-09.json",
+  "baudioFactorySeparateConductorFact": "Tesla BAUDIO wire option codes identify separate body-to-tweeter circuits X033B-1/2->X565 and X053A-5/6->X575. Bünde 'Front Low/TW' labels do not prove physical speaker returns are shared or safely passive crossed.",
+  "baudioPhysicalRequirement": "DO NOT energize H/I until BAUDIO downstream driver wires are completely isolated from both factory source and HELIX woofer A/B. Adapter/pass-through requires in-car connector verification."
 }

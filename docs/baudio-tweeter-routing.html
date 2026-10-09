@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TESLA SOP9 BAUDIO: Reversible Active Tweeter Wiring</title><meta name="theme-color" content="#0b2032">
+<style>
+:root{font:15px/1.5 system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:#091524;color:#e9f3fb}
+*{box-sizing:border-box}body{margin:0}header{background:#132b42;border-bottom:1px solid #375575;padding:18px 20px}
+h1{font-size:1.55rem;line-height:1.2;margin:5px 0 7px}h2{font-size:1.22rem}h3{font-size:1.05rem}p{margin:.5rem 0 1rem;color:#c2d4e4}a{color:#95d5ff}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #ffc965;outline-offset:3px}
+.wrap{max-width:1320px;padding:16px 18px 50px;margin:auto}
+.kicker{font-size:.85rem;font-weight:800;color:#a1dff6;letter-spacing:.08em}.pill{display:inline-block;background:#1b4f57;border:1px solid #479d8d;border-radius:30px;padding:3px 10px;color:#d8fff1;font-size:.8rem}
+.card{border:1px solid #36536d;background:#13283e;border-radius:11px;padding:17px;margin:12px 0}
+.warning{border-left:5px solid #ffcf67;background:#3b301c;padding:13px;border-radius:4px;color:#ffedd0}
+.stop{border-left:5px solid #ff9194;background:#47272b;padding:13px;border-radius:4px;color:#ffedef}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+select,button{font:inherit;border-radius:8px;padding:10px 13px;background:#20445f;color:#fff;border:1px solid #5c91b5;cursor:pointer}button[aria-pressed=true]{background:#0878a7;border-color:#82d4f9}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.tab{display:none}.tab.active{display:block}.sidebar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.tag{font-size:.76rem;letter-spacing:.03em;color:#c5e8fd;background:#1c3e54;border-radius:5px;padding:3px 8px;margin:3px}
+.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:550px}th,td{padding:10px;border-bottom:1px solid #34506a;text-align:left;vertical-align:top}th{color:#b7d8f0;background:#213e59}td{color:#e0ecf5}
+figure{margin:0;background:#0d2034;border:1px solid #37536b;border-radius:10px;overflow:hidden}figure img{display:block;width:100%;aspect-ratio:16/11;object-fit:contain;background:#f5f5f5}figcaption{padding:10px 12px;font-size:.88rem}figcaption strong{display:block}
+small,.muted{color:#a7bbcb}.figure-link{display:inline-block;padding-top:5px}.safety{font-weight:700;color:#ffd5af}
+.fieldrow{display:flex;gap:7px;margin:7px 0}.fieldrow input{flex:1;min-width:0;background:#091a2b;color:#fff;padding:8px;border:1px solid #59778e;border-radius:6px}
+.chk{padding:12px 0;border-bottom:1px solid #38546a;display:flex;gap:10px;align-items:start}.chk input{width:19px;height:19px;margin:2px 0 0;flex:0 0 auto}
+svg.route{width:100%;max-height:300px;background:#102b40;border-radius:9px;display:block}
+code{font-family:ui-monospace,Consolas,monospace;color:#ffe7ab}footer{font-size:.85rem;color:#9ab3c7;padding:10px 0 20px}
+@media(max-width:800px){.grid,.grid3{grid-template-columns:1fr}.wrap{padding:12px}.card{padding:12px}h1{font-size:1.35rem}}
+@media print{header,.tabs,button{display:none!important}.tab{display:block!important}body{background:#fff;color:#111}.card,figure{background:#fff;color:#111;border-color:#bbb}p,small,.muted{color:#333}th,td{color:#111}}
+</style></head><body>
+<header><div class="kicker">TESLA MODEL 3 HIGHLAND · SOP9 · LEFT-HAND DRIVE</div>
+<h1>BAUDIO-only: reversible H/I tweeter wiring</h1><span class="pill">BASE AUDIO / TWTR</span> <span class="tag">PAUDIO excluded</span> <span class="tag">No door-boot wiring required if factory circuit is present</span>
+<p>Original Tesla electrical option-code evidence + original Tesla door and connector location models from this repository. <a href="index.html">Installation workflow</a> · <a href="dsp-wiring.html">DSP input/output</a> · <a href="BAUDIO-TWEETER-ROUTING-MANUAL.md">Detailed manual</a></p></header>
+<main class="wrap">
+<div class="stop"><strong>NOT an instruction to connect the amplifier immediately.</strong> Confirm populated cavities and downstream continuity on your physical BAUDIO car. Both body-controller connectors are multi-circuit connectors with safety-related wiring. A correctly keyed, fully validated interposer must isolate the OEM audio driver from H/I while preserving every other circuit. Keep H/I <strong>MUTED</strong> until verified.</div>
+<div class="sidebar card"><div><strong>Choose factory front door</strong><p id="sideCaption">Loading BAUDIO option-code reference</p></div><div role="group" aria-label="Select front door"><button id="leftBtn" type="button" aria-pressed="true">Left · H</button> <button id="rightBtn" type="button" aria-pressed="false">Right · I</button></div></div>
+<div class="tabs" role="tablist" aria-label="Sections">
+<button data-tab="route" aria-selected="true">Signal route</button><button data-tab="models" aria-selected="false">Tesla 3D models</button><button data-tab="adapter" aria-selected="false">Non-destructive adapter</button><button data-tab="dsp" aria-selected="false">DSP safety preset</button><button data-tab="qc" aria-selected="false">Inspection checklist</button>
+</div>
+<div id="status" role="status" class="muted">Loading evidence data…</div>
+<section id="route" class="tab active card"><h2>Exact BAUDIO connector chain</h2>
+<p><strong>New added wire:</strong> HELIX output to cabin body-controller area. <strong>Existing factory wiring:</strong> cabin body-side connector through the door harness and original tweeter connector. This is an electrical connectivity diagram, not a measured physical cable length.</p>
+<svg class="route" viewBox="0 0 860 285" role="img" aria-label="BAUDIO left or right H/I dedicated tweeter output path, newly added lead to cabin and existing Tesla wiring to tweeter">
+<defs><marker id="arrowFactory" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#68c9e9" stroke-width="1.5"/></marker><marker id="arrowNew" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#ffbf6d" stroke-width="1.5"/></marker></defs>
+<g fill="#203f56" stroke="#65869d" stroke-width="2"><rect x="18" y="85" width="145" height="93" rx="9"/><rect x="226" y="85" width="149" height="93" rx="9"/><rect x="437" y="85" width="157" height="93" rx="9"/><rect x="654" y="85" width="188" height="93" rx="9"/></g>
+<path d="M163 118 H225" stroke="#ffbf6d" stroke-width="6" marker-end="url(#arrowNew)"/>
+<path d="M375 118 H436 M594 118 H653" stroke="#68c9e9" stroke-width="6" marker-end="url(#arrowFactory)"/>
+<g fill="#fff" font-size="17" font-weight="700" text-anchor="middle"><text x="90" y="114">HELIX DSP</text><text id="svgAmp" x="90" y="138">OUT H</text><text id="svgBody" x="302" y="113">X033B</text><text x="302" y="139" font-size="13" id="svgBodyPins">1+/2−</text><text id="svgDoor" x="515" y="113">X922M/F</text><text x="515" y="138" font-size="13">1+ / 12−</text><text id="svgTweeter" x="749" y="113">X565</text><text x="749" y="138" font-size="13">1+ / 2−</text></g>
+<g font-size="13" text-anchor="middle" fill="#ffdeaa"><text x="194" y="67">NEW WIRE</text><text x="194" y="202">OEM audio source</text><text x="194" y="218">MUST be isolated</text></g>
+<g font-size="13" text-anchor="middle" fill="#9be4fe"><text x="516" y="67">EXISTING TESLA DOOR WIRING</text><text x="516" y="202">NO NEW DOOR-BOOT CABLE</text></g>
+<g font-size="13" fill="#d2e6f3"><text x="22" y="252">All shown +/− paths are a floating speaker pair; never share a return with chassis or another amp.</text><text x="22" y="273">The adapter must interrupt the OEM amplifier signal, not merely tap the speaker line.</text></g>
+</svg>
+<div class="tablewrap"><table><thead><tr><th>Connection stage</th><th>Verified connector +</th><th>Verified connector −</th><th>Meaning</th></tr></thead><tbody id="wiringRows"></tbody></table></div>
+<div class="warning" id="excluded">The PAUDIO pin alternative is intentionally excluded.</div>
+<h3>Exact body connector faceview</h3><div class="grid"><figure><img id="faceview" alt="Original Tesla connector terminal faceview showing cavity map"><figcaption><strong id="faceviewTitle">Body controller multiway connector</strong> Verify moulded cavity numbering and mating face orientation. The faceview documents a connector type, not a guarantee of populated positions. <a id="faceviewLink" target="_blank" rel="noopener" href="#">Open source faceview</a></figcaption></figure>
+<div><p id="routeNote"></p><h3>What is not established</h3><p>This repo does not contain a verified installer-added cabin cable path, a confirmed factory source-disconnect point for the present vehicle, or an off-the-shelf pass-through adapter identified by verified mating part number. Those must be resolved at installation.</p><p><a href="https://github.com/dutchdevil-83/tesla-model3-sop9-audio-epc/blob/main/Source_Assets/core/audio_lhd.svg" target="_blank" rel="noopener">Original Tesla SOP9 electrical schematic</a></p></div></div>
+</section>
+<section id="models" class="tab card"><h2>Original Tesla vehicle location models</h2><p>The images below come directly from the archived Tesla source assets. The red arrows in the originals identify specific connectors. They are <strong>not</strong> a visualization of newly installed H/I wires.</p>
+<div class="grid3" id="modelGrid"></div><div class="warning" id="modelLimit">For the left front body controller, a certified driver-footwell 3D route image is not currently identified in the repo. Do not mistake a door harness image for a footwell body controller image.</div>
+</section>
+<section id="adapter" class="tab card"><h2>Recommended reversible installation</h2>
+<p><strong>Best wiring method:</strong> a professionally assembled, correctly keyed cabin-side interposer/breakout at the confirmed BAUDIO body-controller connector. It preserves every unrelated pin with a tested pass-through, disconnects the original audio-source pair from the door-side tweeter circuit, and routes only the downstream tweeter pair to HELIX H or I.</p>
+<div class="grid">
+<div><h3>Factory condition</h3><svg viewBox="0 0 400 155" width="100%" role="img" aria-label="Factory speaker signal from OEM module to tweeter"><rect x="7" y="46" width="132" height="62" rx="8" fill="#31677c"/><rect x="260" y="46" width="132" height="62" rx="8" fill="#31677c"/><path d="M139 77 H260" stroke="#efb659" stroke-width="6"/><text x="72" y="69" fill="white" text-anchor="middle" font-size="14">Tesla OEM</text><text x="72" y="88" fill="white" text-anchor="middle" font-size="14">audio output</text><text x="326" y="69" fill="white" text-anchor="middle" font-size="14">Factory</text><text x="326" y="88" fill="white" text-anchor="middle" font-size="14">tweeter</text><text x="197" y="45" fill="#e4eaf1" text-anchor="middle" font-size="14">stock wiring</text></svg></div>
+<div><h3>Reversible interposer</h3><svg viewBox="0 0 400 155" width="100%" role="img" aria-label="Original audio driver isolated while new HELIX output drives factory tweeter wires"><rect x="7" y="15" width="120" height="43" rx="8" fill="#543840"/><rect x="7" y="94" width="120" height="43" rx="8" fill="#31677c"/><rect x="263" y="53" width="129" height="53" rx="8" fill="#31677c"/><path d="M127 38 H186" stroke="#ff717f" stroke-width="3" stroke-dasharray="8 6"/><path d="M127 115 H185 V80 H262" stroke="#ffbf6d" stroke-width="5"/><text x="67" y="41" fill="white" text-anchor="middle" font-size="12">OEM SOURCE</text><text x="67" y="121" fill="white" text-anchor="middle" font-size="12">HELIX H/I</text><text x="327" y="75" fill="white" text-anchor="middle" font-size="13">Factory wires</text><text x="327" y="91" fill="white" text-anchor="middle" font-size="13">to tweeter</text><text x="225" y="28" fill="#ffc3ce" text-anchor="middle" font-size="12">ISOLATED</text></svg></div>
+</div>
+<div class="stop"><strong>Not a generic splice.</strong> The X033B/X053A housing is shared with window, latch and/or sensor circuits. Do not use random T-taps, insulation-displacement connectors, solder on factory conductors, or an unverified whole-plug adapter. Never drive H/I into a pair still attached to the factory amplifier. If an appropriate non-destructive connector solution is unavailable, leave the factory harness untouched and use an automotive specialist to specify the matching service connector/terminal set.</div>
+<h3>Minimal new materials</h3><p>Two individually identified twisted two-conductor speaker cable runs (choose suitable automotive-rated flexible insulation and conductor cross-section for the real route), correct mating OEM connector or repair-terminal system proven from the actual removed connector, protective sleeve, non-damaging harness fixings and a small documentation label on each end. Cable lengths must be measured from the actual installed HELIX position; no reliable length is established by the Tesla models.</p>
+</section>
+<section id="dsp" class="tab card"><h2>DSP PC-Tool configuration after isolation</h2><p>The crossover values are already selected from your installed HELIX speakers' specifications. You do <strong>not</strong> need a cabin microphone to save their protective filters. You <strong>do</strong> need the OEM source and speaker return isolated before energizing.</p>
+<div class="tablewrap"><table><thead><tr><th>Physical HELIX output</th><th>Speaker</th><th>High-pass</th><th>Low-pass</th><th>Condition</th></tr></thead><tbody>
+<tr><td>A/B</td><td>Ci7 W200FM-S3 door woofers</td><td>65 Hz LR24</td><td>250 Hz LR24</td><td>Only after tweeters are proved disconnected from A/B</td></tr>
+<tr><td>C/E</td><td>Ci7 M100FM-S3 dash midranges</td><td>250 Hz LR24</td><td>3500 Hz LR24</td><td>Individual verified midrange return</td></tr>
+<tr><td>D</td><td>Ci3 C100.2FM-S3 MK2 centre coax</td><td>180 Hz LR24</td><td>OFF</td><td>Preserve internal tweeter crossover</td></tr>
+<tr><td>H/I</td><td>Ci7 T20FM-SC tweeters, isolated BAUDIO wires</td><td><strong>3500 Hz LR24</strong></td><td>OFF</td><td>Keep MUTED until no connection to A/B or OEM output</td></tr>
+<tr><td>J/K</td><td>Separate Pioneer donor subwoofers</td><td>Requires enclosure data</td><td>80 Hz LR24</td><td>Separate system safety checks</td></tr>
+</tbody></table></div>
+<p><strong>VCP:</strong> source reconstruction from measured A+C / B+E when complementary; route Front L Full to A, C and H, and Front R Full to B, E and I. Virtual Subwoofer 1/2 routes to physical J/K if DIRECTOR SubRC must control both. Set Input/Virtual/Output EQ flat at initial commissioning. No EQ or mixing can make an electrically shared A/B tweeter output independent.</p>
+</section>
+<section id="qc" class="tab card"><h2>Physical inspection and sign-off</h2><p>Tick boxes only after personally verifying each condition. State is kept in this browser, never sent to the vehicle or DSP. Even all boxes checked do not certify the adapter.</p><div id="gates"></div><button id="export" type="button">Export checklist + observations (JSON)</button>
+<h3>Measured connector observations</h3><div class="grid"><label>Left connector IDs and adapter part number<div class="fieldrow"><input id="obLeft" placeholder="Actual confirmed markings" autocomplete="off"></div></label><label>Right connector IDs and adapter part number<div class="fieldrow"><input id="obRight" placeholder="Actual confirmed markings" autocomplete="off"></div></label></div>
+</section>
+<footer>Engineering revision 2026-10-09 · Base Audio ONLY · Source is the archived option-coded Tesla SOP9 electrical SVG and original Tesla 3D location views; not an installer-verified modification. <a href="data/baudio-tweeter-interposer-2026-10-09.json">Structured source and caveats</a>.</footer></main>
+<script>
+(function(){
+'use strict';
+var D=null, side='LH', checked={}, notes={}, store='sop9-baudio-tweeter-guide-20261009';
+var RAW='https://raw.githubusercontent.com/dutchdevil-83/tesla-model3-sop9-audio-epc/main/';
+function el(id){return document.getElementById(id)}
+function setText(id,s){el(id).textContent=String(s)}
+function asset(p){return RAW+p}
+function setLink(id,p){el(id).href=asset(p)}
+function stateLoad(){try{var a=JSON.parse(localStorage.getItem(store)||'{}');checked=a.checked||{};notes=a.notes||{};side=a.side||'LH';}catch(e){}}
+function stateSave(){try{localStorage.setItem(store,JSON.stringify({checked:checked,notes:notes,side:side}))}catch(e){}}
+function element(tag,text){var n=document.createElement(tag);if(text!==undefined)n.textContent=String(text);return n}
+function clear(id){el(id).replaceChildren()}
+function render(){
+ if(!D)return;
+ var b=D.sides[side],w=D.exactWireMap.find(function(x){return x.side===side});
+ el('leftBtn').setAttribute('aria-pressed',String(side==='LH'));el('rightBtn').setAttribute('aria-pressed',String(side==='RH'));
+ setText('sideCaption', b.title+' · HELIX output '+b.channel+' · '+b.connectorAtCabin+' ('+b.cabinPlus+' / '+b.cabinMinus+')');
+ setText('svgAmp','OUT '+b.channel);setText('svgBody',b.connectorAtCabin);setText('svgBodyPins',b.cabinPlus+'+ / '+b.cabinMinus+'−');
+ setText('svgDoor',b.inlineMale+'/'+b.inlineFemale);setText('svgTweeter',b.tweeter);
+ var rows=[
+  ['HELIX physical output',b.channel+' (+)',b.channel+' (−)','NEW dedicated amplifier speaker pair'],
+  ['Cabin body-controller connector',b.connectorAtCabin+'-'+b.cabinPlus,b.connectorAtCabin+'-'+b.cabinMinus,'BAUDIO '+b.optionCode],
+  ['Door/body inline mating pair',b.inlineMale+'/'+b.inlineFemale+'-'+b.inlinePlus,b.inlineMale+'/'+b.inlineFemale+'-'+b.inlineMinus,'Existing factory door flex + door trim wiring'],
+  ['Tweeter connector',b.tweeter+'-'+b.tweeterPlus,b.tweeter+'-'+b.tweeterMinus,b.factorySpeaker]
+ ];clear('wiringRows');rows.forEach(function(r){var tr=element('tr');r.forEach(function(t){tr.appendChild(element('td',t))});el('wiringRows').appendChild(tr)});
+ setText('excluded',side==='LH'?'PAUDIO left branch X033A-5/6 is NOT the BAUDIO target. Use the BAUDIO X033B-1/2 schematic route.':'PAUDIO right branch X053A-22/23 is NOT the BAUDIO target. Use the BAUDIO X053A-5/6 schematic route.');
+ el('faceview').src=asset(b.connectorFaceview);setLink('faceviewLink',b.connectorFaceview);
+ setText('faceviewTitle',b.connectorAtCabin+' · Tesla connector faceview');
+ setText('routeNote',b.cabinetNote+' The newly added cable can run from the installed HELIX to the matching cabin-side front footwell harness along accessible interior trim, provided door-hinge, airbag, pedal and sensor routes remain untouched. This is an installer-chosen routing corridor, not a mapped OEM added-wire path.');
+ clear('modelGrid');
+ b.images.forEach(function(m){
+ var fig=element('figure'),im=element('img'),cap=element('figcaption'),strong=element('strong',m.name),link=element('a','Open original 3D model');
+ im.src=asset(m.path);im.alt=m.name+' Tesla factory connector location';im.loading='lazy';link.href=asset(m.path);link.target='_blank';link.rel='noopener';link.className='figure-link';
+ cap.appendChild(strong);cap.appendChild(element('span',m.purpose));cap.appendChild(element('div'));cap.appendChild(link);fig.appendChild(im);fig.appendChild(cap);el('modelGrid').appendChild(fig);
+ });
+ setText('modelLimit',side==='LH'?'The X033B archive image is a LEFT DOOR harness render, not a located cabin body controller image. Use the electrical faceview and the official Tesla lower A-pillar/body controller service procedure for access. No verified new cabin cable path image exists.':'The X053A right-front body controller location image is archived and displayed. It does not show a new H/I cable, or prove that connector X053A is accessible without further trim removal. Follow the official Tesla service procedure.');
+ stateSave();
+}
+function initGates(){D.installationGates.forEach(function(g){
+ var label=element('label'),box=element('input');label.className='chk';box.type='checkbox';box.checked=!!checked[g.id];box.setAttribute('aria-label',g.label);box.addEventListener('change',function(){checked[g.id]=box.checked;stateSave()});label.appendChild(box);label.appendChild(element('span',g.label));el('gates').appendChild(label);
+ });['obLeft','obRight'].forEach(function(k){el(k).value=notes[k]||'';el(k).addEventListener('input',function(){notes[k]=el(k).value;stateSave()})})}
+function init(){stateLoad();el('leftBtn').addEventListener('click',function(){side='LH';render()});el('rightBtn').addEventListener('click',function(){side='RH';render()});
+ document.querySelectorAll('[data-tab]').forEach(function(btn){btn.addEventListener('click',function(){document.querySelectorAll('[data-tab]').forEach(function(q){var yes=btn===q;q.setAttribute('aria-selected',String(yes));el(q.dataset.tab).classList.toggle('active',yes)})})});
+ el('export').addEventListener('click',function(){var str=JSON.stringify({revision:D.revision,vehicle:D.vehicle,exportedAt:new Date().toISOString(),checked:checked,notes:notes},null,2);var blob=new Blob([str],{type:'application/json'}),url=URL.createObjectURL(blob),a=element('a');a.href=url;a.download='sop9-baudio-tweeter-inspection.json';a.click();setTimeout(function(){URL.revokeObjectURL(url)},1000)});
+ fetch('data/baudio-tweeter-interposer-2026-10-09.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(function(x){D=x;setText('status','BAUDIO-only option-code evidence loaded; original Tesla asset references available.');initGates();render()}).catch(function(e){setText('status','Could not load BAUDIO reference: '+e.message)});
+}
+init();
+})();
+</script></body></html>

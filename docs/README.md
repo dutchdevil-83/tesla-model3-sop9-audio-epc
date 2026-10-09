@@ -22,6 +22,8 @@ https://dutchdevil-83.github.io/tesla-model3-sop9-audio-epc/
 
 - `index.html` - default landscape-first **Installation Workflow**, optimized for iPad landscape and in-car use.
 - `engineering.html` - the preserved source-focused Tesla Parts Catalog / Service engineering workspace.
+- `baudio-tweeter-routing.html` - **CURRENT SOP9 BASE AUDIO** 3D vehicle location/connector viewer, X033B 1/2 and X053A 5/6 tweeter connections, reversible H/I adapter instructions.
+- `BAUDIO-TWEETER-ROUTING-MANUAL.md` / `data/baudio-tweeter-interposer-2026-10-09.json` - authoritative BAUDIO-only option-code pin chain and non-destructive commissioning gates; PAUDIO alternative excluded.
 - `assets/workflow.css` / `assets/workflow.js` - seven-step workflow layout, navigation, collapsible details and data-driven install guidance.
 - `assets/app.css` / `assets/app.js` - engineering workspace presentation, Tesla endpoint navigation, source switching and inspector behavior.
 - `assets/installed-system.js` - owner-confirmed purchased-build overlay, exact hardware mapping, service references and build state.
@@ -56,6 +58,8 @@ The verified V TWELVE MK2 connector model is shown directly in the Install step:
 - `USB`, `SCP`, `OPTICAL INPUT`, `REM. OUT`, `GND`, `POWER REM`, `+12V` and `CONTROL / STATUS` are exposed in the connector map.
 
 ## Current physical build
+
+**Electrical matching uses LHD SOP9 BAUDIO.** The Tesla source drawing carries different PAUDIO alternatives; use LH X033B 1+/2- and RH X053A 5+/6- for the dedicated tweeter path, after physical continuity/source isolation. [Open 3D BASE AUDIO guide](baudio-tweeter-routing.html). Historical Premium mapping is reference-only.
 
 The published workspace distinguishes the **actual current car build** from the 15-position Tesla reference architecture.
 

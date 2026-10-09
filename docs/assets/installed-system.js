@@ -140,18 +140,39 @@ function subwooferCards() {
   return `<section class="inspector-section"><h3>Trunk subwoofer subsystem</h3>${subs.map(sub => `<div class="sub-card"><b>${esc(sub.id)} - ${esc(sub.manufacturer)} ${esc(sub.model)}</b><span>${esc(sub.status)}</span><small>${esc(sub.location)} - ${esc(sub.note)}</small></div>`).join('')}<div class="engineering-note warning">Do not use X588/X593 parcel-shelf wiring for these Pioneer subs. Final DSP output and load wiring stays TBD until the exact Pioneer model / impedance / voice-coil configuration is recorded.</div></section>`;
 }
 
+const BAUDIO_CURRENT_END_POINTS = {
+  SPK01: { id: 'X568', part: '1075207-00-A', label: 'Front left BAUDIO door woofer', route: 'X568 1 (+ YE), 2 (- BU) -> X033B 3/4' },
+  SPK02: { id: 'X578', part: '1075207-00-A', label: 'Front right BAUDIO door woofer', route: 'X578 1 (+ YE), 2 (- BU) -> X053B 2/1' },
+  SPK03: { id: 'X565', part: '1015004-00-B', label: 'Front left BAUDIO tweeter', route: 'X565 1 (+ VT), 2 (- BU) -> X922F 1/12 -> X033B 1/2 (BAUDIO)' },
+  SPK04: { id: 'X575', part: '1015004-00-B', label: 'Front right BAUDIO tweeter', route: 'X575 1 (+ VT), 2 (- BU) -> X923F 1/12 -> X053A 5/6 (BAUDIO)' }
+};
+const BAUDIO_SOURCE_FACEVIEWS = {
+  X568: 'Source_Assets/faceviews/yazaki_7283-6443-40.svg',
+  X578: 'Source_Assets/faceviews/yazaki_7283-6443-40.svg',
+  X565: 'Source_Assets/faceviews/delphi_13649797.svg',
+  X575: 'Source_Assets/faceviews/delphi_13649797.svg'
+};
+
 renderInspector = function renderInspectorCurrentBuild() {
   if (!selected) return;
   const evidence = documentationReadiness(selected);
   const target = currentBuildTarget(selected.ID);
   const mapping = projectMappingFor(selected.ID);
   const physical = evidence.dimensions.find(item => item.key === 'physical')?.state || { tone: 'unknown' };
-  const locationOk = physical.tone === 'verified';
-  const ampPinsRaw = rawEngineeringValue(selected['Premium Amp pins']);
+  const baseEndpoint = BAUDIO_CURRENT_END_POINTS[selected.ID] || null;
+  const displayConnector = baseEndpoint?.id || selected.Connector;
+  const locationOk = Boolean(baseEndpoint) || physical.tone === 'verified';
+  const physicalImage = baseEndpoint ? raw('Source_Assets/connectors/' + displayConnector + '/location.jpg') : raw(locationPath(selected));
+  const metadataLink = baseEndpoint ? raw('Source_Assets/connectors/' + displayConnector + '/metadata.json') : raw(metadataPath(selected));
+  const faceviewLink = baseEndpoint ? raw(BAUDIO_SOURCE_FACEVIEWS[displayConnector]) : raw(faceviewPath(selected));
+  const currentRoute = baseEndpoint?.route || rawEngineeringValue(selected['Cavities / route'], 'UNKNOWN');
+  const ampPinsRaw = installedSystem?.vehicleAudioOption?.startsWith('BAUDIO')
+    ? 'NOT APPLICABLE TO BAUDIO: PAUDIO premium amplifier is not present'
+    : rawEngineeringValue(selected['Premium Amp pins']);
 
   $('#inspectNum').textContent = selected.ID;
-  $('#inspectTitle').textContent = selected.Position;
-  $('#inspectSub').textContent = `Project target - ${selected.Connector} - ${selected.Device}`;
+  $('#inspectTitle').textContent = baseEndpoint?.label || selected.Position;
+  $('#inspectSub').textContent = `Current BAUDIO target - ${displayConnector} - ${baseEndpoint?.label || selected.Device}`;
   $('#inspectStage').textContent = evidence.stage.label;
   $$('.inspect-tab').forEach(button => button.classList.toggle('active', button.dataset.inspect === inspectTab));
   const body = $('#inspectBody');
@@ -161,24 +182,24 @@ renderInspector = function renderInspectorCurrentBuild() {
       ${productCard(target)}
       <section class="inspector-section"><h3>Project target identity</h3>
         <div class="kv"><span>Project target</span><b class="target-id">${esc(selected.ID)}</b></div>
-        <div class="kv"><span>Position</span><b>${esc(selected.Position)}</b></div>
+        <div class="kv"><span>Current vehicle speaker</span><b>${esc(baseEndpoint?.label || selected.Position)}</b></div>
         <div class="kv"><span>Physical zone</span><b>${esc(zoneFor(selected))}</b></div>
-        <div class="kv"><span>Tesla endpoint</span><b>${esc(selected.Connector)}</b></div>
-        <div class="kv"><span>Tesla connector PN</span><b>${esc(selected['Tesla connector PN'])}</b></div>
+        <div class="kv"><span>Current BAUDIO endpoint</span><b>${esc(displayConnector)}</b></div>
+        <div class="kv"><span>Current connector PN</span><b>${esc(baseEndpoint?.part || selected['Tesla connector PN'])}</b></div>
       </section>
       <section class="evidence-panel"><h3>Evidence dimensions</h3>${evidence.dimensions.map(renderStateRow).join('')}
         <div class="readiness-card state-${esc(evidence.readiness.tone)}"><div><span>Documentation readiness</span><strong>${esc(evidence.readiness.label)}</strong></div><small>${esc(evidence.readiness.detail)}</small></div>
       </section>
       <section class="inspector-section"><h3>Tesla Service procedures</h3>${renderServiceReferences(target)}</section>
-      <div class="media-title"><span>Physical location evidence</span>${locationOk ? `<a href="${raw(locationPath(selected))}" target="_blank" rel="noreferrer">OPEN</a>` : ''}</div>
-      <div class="media-card">${locationOk ? `<img src="${raw(locationPath(selected))}" alt="${esc(selected.ID)} ${esc(selected.Connector)} physical location">` : `<div class="media-empty">No retrievable location image is recorded.<br>Source state: ${esc(selected.Location)}</div>`}</div>`;
+      <div class="media-title"><span>Physical location evidence</span>${locationOk ? `<a href="${physicalImage}" target="_blank" rel="noreferrer">OPEN</a>` : ''}</div>
+      <div class="media-card">${locationOk ? `<img src="${raw(locationPath(selected))}" alt="${esc(selected.ID)} ${esc(displayConnector)} BAUDIO physical location">` : `<div class="media-empty">No retrievable location image is recorded.<br>Source state: ${esc(selected.Location)}</div>`}</div>`;
   } else if (inspectTab === 'wiring') {
     body.innerHTML = `
       <section class="inspector-section"><h3>Connector / wiring evidence</h3>
         <div class="kv"><span>Project target</span><b class="target-id">${esc(selected.ID)}</b></div>
-        <div class="kv"><span>Connector</span><b>${esc(selected.Connector)}</b></div>
-        <div class="kv"><span>Premium amp pins</span><b class="raw-id">${esc(ampPinsRaw)}</b></div>
-        <div class="kv"><span>Cavities / route</span><b>${esc(rawEngineeringValue(selected['Cavities / route'], 'UNKNOWN'))}</b></div>
+        <div class="kv"><span>Current connector (BAUDIO)</span><b>${esc(displayConnector)}</b></div>
+        <div class="kv"><span>Premium amplifier reference</span><b class="raw-id">${esc(ampPinsRaw)}</b></div>
+        <div class="kv"><span>Cavities / route</span><b>${esc(currentRoute)}</b></div>
         <div class="kv"><span>EPC cross-reference</span><b class="state-${esc(mapping.tone)}">${esc(mapping.label)}</b></div>
         <div class="engineering-note">${esc(mapping.detail)}</div>
       </section>
@@ -186,8 +207,8 @@ renderInspector = function renderInspectorCurrentBuild() {
       ${subwooferCards()}
       <section class="inspector-section"><h3>Service / trim access</h3>${renderServiceReferences(target)}</section>
       <div class="action-row"><button type="button" data-action="faceview">Open connector faceview</button><button type="button" data-action="metadata">Open connector metadata</button></div>`;
-    body.querySelector('[data-action="faceview"]')?.addEventListener('click', () => window.open(raw(faceviewPath(selected)), '_blank', 'noopener,noreferrer'));
-    body.querySelector('[data-action="metadata"]')?.addEventListener('click', () => window.open(raw(metadataPath(selected)), '_blank', 'noopener,noreferrer'));
+    body.querySelector('[data-action="faceview"]')?.addEventListener('click', () => window.open(faceviewLink, '_blank', 'noopener,noreferrer'));
+    body.querySelector('[data-action="metadata"]')?.addEventListener('click', () => window.open(metadataLink, '_blank', 'noopener,noreferrer'));
   } else {
     body.innerHTML = `
       ${productCard(target)}
@@ -219,7 +240,7 @@ function applyInstalledBuild() {
   const architecture = [...document.querySelectorAll('.summary-card')].find(card => card.textContent.includes('Architecture'));
   if (architecture) architecture.innerHTML = '<div class="summary-label">Architecture</div><div class="summary-main">HELIX V TWELVE DSP MK2</div><div class="summary-sub">12 amplified channels / 14 DSP channels. DIRECTOR for SCP ordered. Rear doors remain OEM; Pioneer trunk subs are separate from parcel-shelf endpoints.</div>';
   const vehicle = document.querySelector('.vehicle');
-  if (vehicle) vehicle.textContent = '2026 Premium LR RWD - LHD - current build';
+  if (vehicle) vehicle.textContent = '2026 Premium LR RWD trim / BAUDIO Base Audio / LHD';
 }
 
 fetch('data/installed-system.json', { cache: 'no-store' })
