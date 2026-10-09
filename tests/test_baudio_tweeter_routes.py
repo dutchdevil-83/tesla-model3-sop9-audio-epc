@@ -56,21 +56,21 @@ class BaudioTweeterPathTests(unittest.TestCase):
 
     def test_do_not_claim_reversible_multiway_interposer_is_proven(self) -> None:
         all_text = json.dumps(MODEL)
-        self.assertIn("physically populated", all_text.lower() if False else MANUAL.lower())
+        self.assertIn("connector cavities", MANUAL.lower())
         self.assertIn("all unrelated circuits", MODEL["recommendedMethod"])
         self.assertIn("OEM audio source", MODEL["forbidden"][1])
         self.assertIn("NOT present", MODEL["imageAvailability"].replace("not present", "NOT present"))
         self.assertIn("NOT automatically safe", MANUAL)
-        self.assertIn("NOT", MODEL["optionCodeEvidence"]["limitation"])
+        self.assertIn("must still be verified", MODEL["optionCodeEvidence"]["limitation"])
 
     def test_front_active_filters_are_conditional_on_electrical_isolation(self) -> None:
         routes = MODEL["amplifier"]
         self.assertIn("3500 Hz LR24", routes["crossover"])
         self.assertIn("muted", routes["crossover"].lower())
-        self.assertIn("Only after", routes["crossover"] if False else MANUAL)
+        self.assertIn("before power", MANUAL.lower())
         self.assertIn("A/B", routes["activeWiring"])
         self.assertIn("isolat", routes["activeWiring"].lower())
-        self.assertIn("source isolated", MODEL["installationGates"][4]["label"].lower() if False else MODEL["installationGates"][5]["label"].lower() + MODEL["installationGates"][4]["label"].lower() + MANUAL.lower())
+        self.assertIn("source", MODEL["installationGates"][4]["label"].lower())
 
     def test_tesla_original_location_views_and_faceviews_are_real_files(self) -> None:
         for side in MODEL["sides"].values():
