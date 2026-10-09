@@ -250,7 +250,7 @@ function configure() {
   const outputs = state.vtwelve.currentBuildTerminalPlan.speakerOutputs;
   const tweeterSpecs = state.installed.products?.CI7_T20?.specs || [];
   return `<section class="step-layout">
-    <div class="step-titlebar"><div><h2>Configure DSP</h2><p>Use VCP to rebuild the front full-range inputs. The dedicated DSP wiring page provides gated starter filters; final EQ needs measurement.</p></div><span class="step-status">DSP PC-TOOL</span></div>
+    <div class="step-titlebar"><div><h2>Configure DSP</h2><p>The four HELIX speaker models are known: enter the defined 65/250/3500 Hz LR24 HP/LP preset now. Keep outputs muted until speaker wiring is verified. VCP source reconstruction and acoustic EQ remain separate measurement steps.</p></div><span class="step-status">DSP PC-TOOL</span></div>
     <p><a href="dsp-wiring.html" style="color:#82d3ff;font-weight:700">Open NEW interactive replacement cable / DSP connector / VCP settings</a></p><article class="workflow-card"><div class="card-head"><h3>Output roles A-L</h3></div><div class="card-body"><div class="info-grid">${outputs.map(item => `<div class="info-tile"><strong>${esc(item.channel)} · ${esc(item.target || 'Spare')}</strong><span>${esc(item.role)}</span><span class="${statusClass(item.state)}">${esc(item.state)}</span></div>`).join('')}</div></div></article>
     <div class="wide-grid">
       <article class="workflow-card"><div class="card-head"><h3>Configuration order</h3></div><div class="card-body sequence-list">${[
@@ -259,7 +259,7 @@ function configure() {
         ['Tweeters', 'H/I stay muted and unconnected until their wires are isolated from A/B. Route from VCP Front L/R Full and apply protective >2.5 kHz LR24 high-pass; starting point 3.5 kHz.'],
         ['Subwoofer remote control', 'Enable VCP; route virtual Subwoofer 1 (K) to physical J and Subwoofer 2 (L) to physical K. Verify DIRECTOR SubRC adjusts both.'],
         ['Unused channels', 'L stays spare. M/N remain reserved/unused.'],
-        ['Tuning', 'Use gated starter filters from the dedicated DSP wiring page. Input/Virtual/Output EQ flat before ISA/RTA; verify phase/delay and prevent clipping.']
+        ['Program HELIX speaker crossovers now', 'Active woofer A/B HP65/LP250; dash mid C/E HP250/LP3500; center D HP180/no LP; isolated tweeter H/I HP3500/no LP (LR24). Set all EQ flat, save preset, keep outputs muted.']
       ].map((row,i) => `<div class="sequence-item"><span class="sequence-num">${i+1}</span><div><strong>${esc(row[0])}</strong><span>${esc(row[1])}</span></div></div>`).join('')}</div></article>
       <article class="workflow-card important-card"><div class="card-head"><h3>Tweeter manufacturer limits</h3></div><div class="card-body check-list">${tweeterSpecs.map(spec => `<div class="check-item"><i>✓</i><span>${esc(spec)}</span></div>`).join('')}<div class="check-item critical"><i>!</i><span>Do not run H/I full-range during commissioning.</span></div></div></article>
     </div>
