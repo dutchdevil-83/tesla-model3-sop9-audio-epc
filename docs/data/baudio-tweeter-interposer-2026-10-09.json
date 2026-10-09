@@ -12,7 +12,7 @@
     "rightExcluded": "PAUDIO && RHST && TWTR (X053A-22/23)",
     "limitation": "BAUDIO downstream speaker circuits are verified to named body and door connectors, but the right MCU upstream X171-2/1 option is PAUDIO in raw SVG despite merged metadata listing X051; do not assert it as BAUDIO. No physical filter component or source-to-branch internal controller circuit is shown."
   },
-  "recommendedMethod": "OPTIONAL FULLY ACTIVE AFTER FACTORY SPLIT PROTECTION IDENTIFIED: professionally verified reversible cabin-side breakout to isolate the OEM audio source and front woofer A/B while routing downstream tweeter pair to HELIX H/I. Do NOT claim factory provides separate active audio streams or that a named CAP branch by itself proves passive tweeter protection still exists after replacement.",
+  "recommendedMethod": "OPTIONAL FULLY ACTIVE AFTER FACTORY SPLIT PROTECTION IDENTIFIED: professionally verified reversible cabin-side breakout preserving all unrelated circuits to isolate the OEM audio source and front woofer A/B while routing downstream tweeter pair to HELIX H/I. Do NOT claim factory provides separate active audio streams or that a named CAP branch by itself proves passive tweeter protection still exists after replacement.",
   "amplifier": {
     "device": "HELIX V TWELVE DSP MK2",
     "activeWiring": "Only after independent circuits are verified ISOLATED: physical H drives dedicated left tweeter and physical I drives dedicated right tweeter. Amplified A/B drive ONLY independently verified BAUDIO front woofers. Never tie H into A nor I into B, and never connect H/I to original Tesla source outputs.",
