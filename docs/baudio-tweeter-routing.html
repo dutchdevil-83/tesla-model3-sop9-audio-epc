@@ -28,6 +28,18 @@ code{font-family:ui-monospace,Consolas,monospace;color:#ffe7ab}footer{font-size:
 <h1>BAUDIO-only: reversible H/I tweeter wiring</h1><span class="pill">BASE AUDIO / TWTR</span> <span class="tag">PAUDIO excluded</span> <span class="tag">No door-boot wiring required if factory circuit is present</span>
 <p>Original Tesla electrical option-code evidence + original Tesla door and connector location models from this repository. <a href="index.html">Installation workflow</a> · <a href="dsp-wiring.html">DSP input/output</a> · <a href="BAUDIO-TWEETER-ROUTING-MANUAL.md">Detailed manual</a></p></header>
 <main class="wrap">
+<section class="card" id="factory-signal" aria-label="Verified Tesla BAUDIO source and separation">
+<h2>Factory BAUDIO: one MCU amplified pair per front side, not independent tweeter streams</h2>
+<p>The original Tesla SOP9 LHD option-coded electrical drawing identifies one factory amplified MCU speaker channel for the left front and one for the right front. Woofer and tweeter then have separate labelled downstream pass-through wires at the body-controller interface. <strong>Two downstream connector pairs are not separate original amplifier channels.</strong></p>
+<div class="tablewrap"><table><thead><tr><th>Stage</th><th>LEFT BAUDIO</th><th>RIGHT BAUDIO</th></tr></thead><tbody>
+<tr><td>MCU single amplified pair</td><td>X171-6 (+), X171-5 (−)</td><td>X171-2 (+), X171-1 (−)</td></tr>
+<tr><td>Body-controller incoming pair</td><td>X031-34 (+), X031-33 (−)</td><td>X051-19 (+), X051-35 (−)</td></tr>
+<tr><td>Woofer downstream branch</td><td>X033B-3 (+), X033B-4 (−) → X568</td><td>X053B-2 (+), X053B-1 (−) → X578</td></tr>
+<tr><td>CAP-named tweeter branch</td><td>X033B-1 (+), X033B-2 (−) → X565</td><td>X053A-5 (+), X053A-6 (−) → X575</td></tr>
+</tbody></table></div>
+<div class="warning"><strong>Capacitor physical location NOT documented.</strong> Tesla labels the tweeter branch <code>AUDIO_SPEAKER_CAP_FRONT_DOOR_PASSTHROUGH</code>, but this external harness schematic contains no capacitor symbol, component part number, capacitance or frequency specification. It does NOT locate the filter inside a controller, door loom, or tweeter. Check the original replaced Tesla tweeter and adapter/loom before assuming the HELIX tweeter is passively protected.</div>
+<p>HELIX H/I in the routing tabs below describe <strong>an optional aftermarket conversion to independent active channels</strong>, NOT the existing Tesla BAUDIO amplifier outputs. <a href="BAUDIO-TWEETER-ROUTING-MANUAL.md">Read manufacturer protection and evidence limits</a>.</p>
+</section>
 <div class="stop"><strong>NOT an instruction to connect the amplifier immediately.</strong> Confirm populated cavities and downstream continuity on your physical BAUDIO car. Both body-controller connectors are multi-circuit connectors with safety-related wiring. A correctly keyed, fully validated interposer must isolate the OEM audio driver from H/I while preserving every other circuit. Keep H/I <strong>MUTED</strong> until verified.</div>
 <div class="sidebar card"><div><strong>Choose factory front door</strong><p id="sideCaption">Loading BAUDIO option-code reference</p></div><div role="group" aria-label="Select front door"><button id="leftBtn" type="button" aria-pressed="true">Left · H</button> <button id="rightBtn" type="button" aria-pressed="false">Right · I</button></div></div>
 <div class="tabs" role="tablist" aria-label="Sections">
@@ -35,7 +47,7 @@ code{font-family:ui-monospace,Consolas,monospace;color:#ffe7ab}footer{font-size:
 </div>
 <div id="status" role="status" class="muted">Loading evidence data…</div>
 <section id="route" class="tab active card"><h2>Exact BAUDIO connector chain</h2>
-<p><strong>New added wire:</strong> HELIX output to cabin body-controller area. <strong>Existing factory wiring:</strong> cabin body-side connector through the door harness and original tweeter connector. This is an electrical connectivity diagram, not a measured physical cable length.</p>
+<p><strong>This diagram describes FUTURE aftermarket ACTIVE tweeter wiring, NOT Tesla factory architecture.</strong> Tesla BAUDIO begins with one MCU amplifier pair per front side (X171 outputs shown above). <strong>New added wire:</strong> HELIX output to cabin body-controller area. <strong>Existing factory wiring:</strong> cabin body-side connector through the door harness and original tweeter connector. This is an electrical connectivity diagram, not a measured physical cable length.</p>
 <svg class="route" viewBox="0 0 860 285" role="img" aria-label="BAUDIO left or right H/I dedicated tweeter output path, newly added lead to cabin and existing Tesla wiring to tweeter">
 <defs><marker id="arrowFactory" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#68c9e9" stroke-width="1.5"/></marker><marker id="arrowNew" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#ffbf6d" stroke-width="1.5"/></marker></defs>
 <g fill="#203f56" stroke="#65869d" stroke-width="2"><rect x="18" y="85" width="145" height="93" rx="9"/><rect x="226" y="85" width="149" height="93" rx="9"/><rect x="437" y="85" width="157" height="93" rx="9"/><rect x="654" y="85" width="188" height="93" rx="9"/></g>
@@ -44,7 +56,7 @@ code{font-family:ui-monospace,Consolas,monospace;color:#ffe7ab}footer{font-size:
 <g fill="#fff" font-size="17" font-weight="700" text-anchor="middle"><text x="90" y="114">HELIX DSP</text><text id="svgAmp" x="90" y="138">OUT H</text><text id="svgBody" x="302" y="113">X033B</text><text x="302" y="139" font-size="13" id="svgBodyPins">1+/2−</text><text id="svgDoor" x="515" y="113">X922M/F</text><text x="515" y="138" font-size="13">1+ / 12−</text><text id="svgTweeter" x="749" y="113">X565</text><text x="749" y="138" font-size="13">1+ / 2−</text></g>
 <g font-size="13" text-anchor="middle" fill="#ffdeaa"><text x="194" y="67">NEW WIRE</text><text x="194" y="202">OEM audio source</text><text x="194" y="218">MUST be isolated</text></g>
 <g font-size="13" text-anchor="middle" fill="#9be4fe"><text x="516" y="67">EXISTING TESLA DOOR WIRING</text><text x="516" y="202">NO NEW DOOR-BOOT CABLE</text></g>
-<g font-size="13" fill="#d2e6f3"><text x="22" y="252">All shown +/− paths are a floating speaker pair; never share a return with chassis or another amp.</text><text x="22" y="273">The adapter must interrupt the OEM amplifier signal, not merely tap the speaker line.</text></g>
+<g font-size="13" fill="#d2e6f3"><text x="22" y="252">All shown +/− paths are a floating speaker pair; never share a return with chassis or another amp.</text><text x="22" y="273">The H/I diagram is FUTURE REWIRING. Isolate Tesla original speaker source and A/B first.</text></g>
 </svg>
 <div class="tablewrap"><table><thead><tr><th>Connection stage</th><th>Verified connector +</th><th>Verified connector −</th><th>Meaning</th></tr></thead><tbody id="wiringRows"></tbody></table></div>
 <div class="warning" id="excluded">The PAUDIO pin alternative is intentionally excluded.</div>
