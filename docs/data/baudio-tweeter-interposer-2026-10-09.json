@@ -10,7 +10,7 @@
     "rightSelected": "BAUDIO && RHST && TWTR (X053A-5/6 -> X923M-1/12)",
     "leftExcluded": "LHST && PAUDIO && TWTR (X033A-5/6)",
     "rightExcluded": "PAUDIO && RHST && TWTR (X053A-22/23)",
-    "limitation": "BAUDIO downstream speaker circuits are verified to named body and door connectors, but the right MCU upstream X171-2/1 option is PAUDIO in raw SVG despite merged metadata listing X051; do not assert it as BAUDIO. No physical filter component or source-to-branch internal controller circuit is shown."
+    "limitation": "BAUDIO downstream speaker circuits are verified to named body and door connectors, but the right MCU upstream X171-2/1 option is PAUDIO in raw SVG despite merged metadata listing X051; do not assert it as BAUDIO. No physical filter component or source-to-branch internal controller circuit is shown. Connector cavity population, source pin and source-to-door-tweeter isolation must still be verified in the individual vehicle before any new amplifier wiring is attached."
   },
   "recommendedMethod": "OPTIONAL FULLY ACTIVE AFTER FACTORY SPLIT PROTECTION IDENTIFIED: professionally verified reversible cabin-side breakout preserving all unrelated circuits to isolate the OEM audio source and front woofer A/B while routing downstream tweeter pair to HELIX H/I. Do NOT claim factory provides separate active audio streams or that a named CAP branch by itself proves passive tweeter protection still exists after replacement.",
   "amplifier": {
