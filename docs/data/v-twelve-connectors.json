@@ -440,6 +440,16 @@
     "virtualRoutingRequired": true,
     "subwooferRemoteRule": "VCP OFF = SubRC hardware K/L only; VCP ON = virtual Subwoofer 1(K), Subwoofer 2(L) can feed physical J/K, enabling both to follow DIRECTOR.",
     "speakerOutputMinimumImpedance": "2 ohm minimum per amplifier channel; do not directly parallel 3-ohm Ci7 W200FM-S3 woofer with 4-ohm Ci7 T20FM-SC tweeter.",
-    "initialDSPPreset": "outputs muted until physical continuity/load validation; proposed crossover/gain tables live in replacement-harness-2026-10-08.json"
+    "initialDSPPreset": "HELIX replacement output HP/LP and LR24 slopes DEFINED from manufacturer speaker specs plus documented crossover design choices; program now with outputs muted. Refer to data/replacement-harness-2026-10-08.json speakerSpecificationDspBaseline. OEM input summation, acoustic EQ and sub enclosure-dependent HP remain separate.",
+    "presetStatus": "HELIX HARDWARE CROSSOVER CONFIGURATION READY; PHYSICAL WIRING AND ACOUSTIC ALIGNMENT NOT COMMISSIONED",
+    "initialCrossoverSummary": {
+      "A_B": "65-250 Hz LR24",
+      "C_E": "250-3500 Hz LR24",
+      "D": "180 Hz HP LR24; LP OFF",
+      "H_I": "3500 Hz HP LR24 and MUTED until electrically isolated",
+      "F_G": "100 Hz HP LR24 conservative OEM default",
+      "J_K": "80 Hz LP LR24; subsonic HP pending enclosure documentation",
+      "L": "MUTED"
+    }
   }
 }

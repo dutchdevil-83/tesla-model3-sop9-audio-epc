@@ -430,16 +430,17 @@
       ]
     },
     "physicallyIsolatedActive": {
-      "title": "TRUE ACTIVE after isolated tweeter pairs and verified speaker wiring",
+      "title": "FULL-ACTIVE - SPECIFICATION-BASED DSP PRESET DEFINED (PHYSICAL ISOLATION GATE)",
       "gate": "Preferred configuration: enable H/I only after independent speaker wiring is metered isolated from A/B, firmware stores LR24 HP >2.5kHz, and -18dB attenuation is verified. Speaker connections must be independent.",
       "outputs": [
         {
           "ch": "A/B",
           "path": "Front L/R Full",
           "speaker": "Ci7 W200FM-S3 left/right",
-          "hp": "55-65 Hz LR24",
+          "hp": "65 Hz LR24",
           "lp": "250 Hz LR24",
-          "level": "Start -12 dB"
+          "level": "Start -12 dB",
+          "designStatus": "DESIGN BASELINE DEFINED; independent woofer output required"
         },
         {
           "ch": "C/E",
@@ -447,15 +448,17 @@
           "speaker": "Ci7 M100FM-S3 left/right",
           "hp": "250 Hz LR24",
           "lp": "3.5 kHz LR24",
-          "level": "Start -12 dB"
+          "level": "Start -12 dB",
+          "designStatus": "DESIGN BASELINE DEFINED"
         },
         {
           "ch": "D",
           "path": "Center Full",
           "speaker": "Ci3 C100.2FM-S3 MK2 centre coax",
           "hp": "180 Hz LR24",
-          "lp": "OFF",
-          "level": "Start -12 dB"
+          "lp": "OFF (coaxial tweeter has manufacturer integrated 6 dB HP)",
+          "level": "Start -12 dB",
+          "designStatus": "DESIGN BASELINE DEFINED"
         },
         {
           "ch": "F/G",
@@ -463,23 +466,26 @@
           "speaker": "Tesla OEM rear speakers",
           "hp": "100 Hz LR24 provisional",
           "lp": "OFF",
-          "level": "Start -12 dB"
+          "level": "Start -12 dB",
+          "designStatus": "CONSERVATIVE OEM DEFAULT, not speaker-model-specific"
         },
         {
           "ch": "H/I",
           "path": "Front L/R Full",
           "speaker": "Ci7 T20FM-SC left/right isolated",
-          "hp": "3.5 kHz LR24 initial, manufacturer allows >2.5 kHz for 24 dB/oct; do not bypass",
+          "hp": "3.5 kHz LR24 (manufacturer >2.5 kHz at 24 dB/oct)",
           "lp": "OFF",
-          "level": "Start -18 dB; enable last"
+          "level": "Start -18 dB; enable last",
+          "designStatus": "PROTECTIVE HP PRESET DEFINED; amplifier output remains MUTED until isolated"
         },
         {
           "ch": "J/K",
           "path": "Mono sub mix",
           "speaker": "Independent Pioneer donor subwoofers",
-          "hp": "25-30 Hz LR24 conditional on enclosure",
-          "lp": "75-80 Hz LR24",
-          "level": "Start -12 dB after impedance check"
+          "hp": "UNSET until enclosure/port tuning and donor driver load verified",
+          "lp": "80 Hz LR24",
+          "level": "Start -12 dB after impedance check",
+          "designStatus": "80 Hz LP defined; HP requires bass-reflex enclosure tuning"
         },
         {
           "ch": "L",
@@ -489,15 +495,16 @@
           "lp": "MUTE",
           "level": "MUTE"
         }
-      ]
+      ],
+      "crossoverConfigurationState": "CONFIGURE NOW IN SOFTWARE; NOT YET PERMITTED TO POWER UNVERIFIED CHANNELS"
     }
   },
   "eqAndMeasurements": {
     "inputEq": "Start flat; use ISA correlated pink noise to measure each Tesla channel and merged A+C / B+E before setting summation level, polarity, delay and InputEQ. Correct source filtering, never assume original full-range.",
     "virtualEq": "Flat (0 dB), no boosts at commissioning; group EQ only after measuring.",
-    "outputEq": "0 dB / no preset boosts; measure with calibrated mic + RTA then cut peaks; tune polarity/time alignment at listening position.",
+    "outputEq": "0 dB flat now; do not leave EQ unknown just because cabin measurement is pending. Tune manufacturer-spec based HP/LP now, then later optimize acoustically.",
     "gain": "Start attenuated at least -12 dB; H/I -18 dB and muted until isolated and protective HP stored. Check system headroom and gain without clipping.",
-    "status": "PROVISIONAL STARTING VALUES, NOT A MEASURED FINAL DSP FILE",
+    "status": "HELIX SPEAKER HP/LP PRESET SELECTED AND READY FOR SOFTWARE ENTRY; FINAL SOURCE RECONSTRUCTION AND CABIN ACOUSTIC OPTIMIZATION REMAIN MEASUREMENT-DEPENDENT",
     "signalSummation": "Input EQ cannot restore full missing bands from one high/low Tesla source. Use ISA/AISA plus input phase/time tools to confirm useful complementary signals, align and avoid cancellation. If measured bands overlap, reduce summation gain for headroom. Do NOT use arbitrary 50/50 before verification."
   },
   "safetyChecks": [
@@ -552,5 +559,145 @@
     "Earlier report: right dash speaker continued playing with DSP powered off, consistent with but not proving an unwanted OEM bypass/pass-through or return mismatch.",
     "Earlier observation: one tweeter still played with seven A–G amplified output leads disconnected; investigate independent OEM feed and whether A/B actually feeds both woofer/tweeter.",
     "Only amplifier-side Molex on previous Ryzen harness had been removed; Tesla-side plugs had not been modified."
-  ]
+  ],
+  "documentationReviewed": "2026-10-09",
+  "speakerSpecificationDspBaseline": {
+    "status": "DEFINED AND READY TO ENTER IN DSP PC-TOOL BEFORE ACOUSTIC MEASUREMENT",
+    "notManufacturerPrescribed": "Except Ci7 tweeter minimum high-pass limits, these exact crossover frequencies are project design selections chosen to lie appropriately within manufacturer published operating ranges. They are not factory-recommended absolute crossover values, nor measured acoustic optima.",
+    "liveInstallation": "NOT APPLIED TO AMP; FRONT TWEETER INDEPENDENT WIRING / OTHER LOAD GATES STILL PENDING",
+    "filterType": "Linkwitz-Riley 24 dB/octave (LR24) on every active HP/LP stated",
+    "softwareConfigurationNote": "Program the intended fully-active configuration in DSP PC-Tool offline now; keep channel outputs muted until wiring integrity and tweeter isolation are proven. No need to wait for microphone/ISA measurements to enter these protective HP/LP values.",
+    "manufacturerSpecs": [
+      {
+        "speaker": "HELIX Ci7 W200FM-S3",
+        "targets": [
+          "SPK01",
+          "SPK02"
+        ],
+        "physicalChannels": [
+          "A",
+          "B"
+        ],
+        "impedanceOhm": 3,
+        "publishedRangeHz": [
+          35,
+          2500
+        ],
+        "resonanceHz": 52,
+        "presetHighPassHz": 65,
+        "presetLowPassHz": 250,
+        "filter": "LR24",
+        "basis": "Chosen conservative bass protection near mechanical resonance and useful woofer-to-mid crossover; NOT a manufacturer-specified electrical crossover.",
+        "sourceUrl": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-w200fm-s3"
+      },
+      {
+        "speaker": "HELIX Ci7 M100FM-S3",
+        "targets": [
+          "SPK05",
+          "SPK07"
+        ],
+        "physicalChannels": [
+          "C",
+          "E"
+        ],
+        "impedanceOhm": 3,
+        "publishedRangeHz": [
+          110,
+          7000
+        ],
+        "resonanceHz": 85,
+        "presetHighPassHz": 250,
+        "presetLowPassHz": 3500,
+        "filter": "LR24",
+        "basis": "Chosen to limit 100 mm cone excursion (manufacturer Xmax ±1.3 mm) and meet tweeter transition; not printed as factory crossover.",
+        "sourceUrl": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-m100fm-s3"
+      },
+      {
+        "speaker": "HELIX Ci3 C100.2FM-S3 MK2",
+        "targets": [
+          "SPK06"
+        ],
+        "physicalChannels": [
+          "D"
+        ],
+        "impedanceOhm": 3,
+        "publishedRangeHz": [
+          100,
+          25000
+        ],
+        "resonanceHz": 137,
+        "presetHighPassHz": 180,
+        "presetLowPassHz": null,
+        "filter": "LR24 high-pass only",
+        "basis": "Internal 6 dB high-pass exists for coaxial tweeter; external output is protected from deep bass; no external low-pass needed.",
+        "sourceUrl": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i3/ci3-c100-2fm-s3-mk2"
+      },
+      {
+        "speaker": "HELIX Ci7 T20FM-SC",
+        "targets": [
+          "SPK03",
+          "SPK04"
+        ],
+        "physicalChannels": [
+          "H",
+          "I"
+        ],
+        "impedanceOhm": 4,
+        "publishedRangeHz": [
+          1500,
+          30000
+        ],
+        "resonanceHz": 950,
+        "presetHighPassHz": 3500,
+        "presetLowPassHz": null,
+        "filter": "LR24 high-pass only",
+        "manufacturerHighPassMinimum": "24 dB/oct >2500 Hz, 12 dB/oct >3000 Hz, 6 dB/oct >4000 Hz",
+        "basis": "3.5 kHz LR24 satisfies manufacturer's protective high-pass condition, contingent on independent tweeter wiring.",
+        "sourceUrl": "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-t20fm-sc?number=CI21001"
+      }
+    ],
+    "otherChannels": [
+      {
+        "physicalChannels": [
+          "F",
+          "G"
+        ],
+        "speaker": "Tesla rear OEM",
+        "presetHighPassHz": 100,
+        "presetLowPassHz": null,
+        "filter": "LR24",
+        "status": "CONSERVATIVE SYSTEM DEFAULT; NO REAR OEM MODEL/RESPONSE SPEC CONFIRMED"
+      },
+      {
+        "physicalChannels": [
+          "J",
+          "K"
+        ],
+        "speaker": "Pioneer TS-WX1220AH donor drivers",
+        "presetHighPassHz": null,
+        "presetLowPassHz": 80,
+        "filter": "LR24",
+        "status": "LPF=80 HZ CHOSEN. HPF REQUIRES ENCLOSURE TUNING/DRIVER VALIDATION; previous 25-30 Hz remains an unverified suggestion, not a required setting."
+      },
+      {
+        "physicalChannels": [
+          "L"
+        ],
+        "speaker": "Spare",
+        "status": "MUTED"
+      }
+    ],
+    "initialEqualizer": {
+      "input": "Flat 0 dB (manufacturer speaker specs do not establish Tesla OEM source EQ).",
+      "virtual": "Flat 0 dB (measure ISA input reconstruction later).",
+      "output": "Flat 0 dB all PEQ bands; sound effects off.",
+      "phase": "No arbitrary inversions",
+      "timeAlignment": "Do not import imaginary delays; physical measurements after safe initial output tests."
+    },
+    "separationOfConcerns": {
+      "readyNow": "Full-active HELIX speaker HP/LP crossover frequency and LR24 slopes, output naming, mute state and flat initial EQ in software.",
+      "physicalBlocking": "Do not unmute/energize H/I until they are physically isolated from A/B; do not apply separate A/B woofer low-pass to an electrically shared passive Low/TW branch.",
+      "measuredLater": "Tesla factory crossover/phase correction, front virtual A+C / B+E signal reconstruction weights, summed sub-source phase/headroom, cabin delay and EQ."
+    }
+  }
 }

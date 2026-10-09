@@ -85,25 +85,43 @@ Do not assume the two front sources on each side should be mixed 100% at equal l
 
 **DIRECTOR SubRC warning:** the manufacturer's V TWELVE manual states that without VCP remote sub volume is assigned to **physical K and L**. In the planned build subs use **physical J and K**. Enabling VCP and routing **virtual Subwoofer 1 (K)** and **virtual Subwoofer 2 (L)** into physical J/K is required for the remote volume control to affect both. Test both before completing installation. Virtual K/L are NOT the physical output numbers.
 
-## 5. Starter crossover frequencies, equalizer and levels
+## 5. Defined loudspeaker-specification DSP preset, ready to configure now
 
-All values below are **provisional commissioning starting values**, never a measured completed AFPX DSP file. **HP** = high-pass, **LP** = low-pass, **LR24** = Linkwitz-Riley 24 dB/oct. Keep outputs muted during configuration.
+**DSP crossover design status: DEFINED, not waiting for measurements.** All HELIX replacement speakers and their manufacturer electrical characteristics are known. The frequencies below are a consistent engineering **initial preset** selected from those specifications; the manufacturer explicitly publishes the **Ci7 T20FM-SC tweeter's minimum high-pass frequencies**, but does **not** prescribe the exact woofer-to-mid 250 Hz or mid-to-tweeter 3.5 kHz combinations for this particular Tesla cabin. Those two chosen transitions do not have to wait for acoustic measurements to be programmed.
 
-| Amplified output | Speaker in fully active configuration | HP | LP | Safe initial gain |
-| --- | --- | --- | --- | --- |
-| A/B | Ci7 W200FM-S3 woofers | 55–65 Hz LR24 | 250 Hz LR24 | −12 dB |
-| C/E | Ci7 M100FM-S3 100 mm dash midranges | 250 Hz LR24 | 3.5 kHz LR24 | −12 dB |
-| D | Ci3 C100.2FM-S3 MK2 center coax | 180 Hz LR24 | OFF if built-in coax filter confirmed | −12 dB |
-| F/G | OEM rear-door speakers | 100 Hz LR24 provisional | OFF | −12 dB |
-| H/I | Ci7 T20FM-SC tweeters on **separate isolated wires** | **3.5 kHz LR24, never bypass**, manufacturer's 24 dB/oct minimum >2.5 kHz | OFF | −18 dB and MUTED until verified |
-| J/K | Independent Pioneer TS-WX1220AH donor 12-inch woofers | 25–30 Hz LR24, **enclosure dependent** | 75–80 Hz LR24 | −12 dB and MUTED until DCR/load known |
-| L | Spare | — | — | MUTED |
+**Software can be configured now, even with speakers disconnected.** HP = high-pass, LP = low-pass; filters use Linkwitz–Riley **24 dB/octave (LR24)**. Start all output EQ and virtual EQ bands at **0 dB**. Keep outputs **muted** until the specific physical safety checks in section 3 have passed.
 
-If speakers share A/B through verified *passive* crossovers, the full-active **250 Hz A/B low-pass must not be used** because it would remove the treble for the passive tweeter. Passive crossover design and load set the allowed A/B broad passband.
+| Physical V TWELVE output | Exact replacement speaker / published characteristics | Program HP now | Program LP now | Initial output gain | Readiness |
+| --- | --- | --- | --- | --- | --- |
+| **A / B** | **HELIX Ci7 W200FM-S3** 200 mm door woofer; 3 Ω, 35–2500 Hz, Fs 52 Hz, 150 W RMS | **65 Hz LR24** | **250 Hz LR24** | **−12 dB** | **Defined:** requires separate woofer-only output |
+| **C / E** | **HELIX Ci7 M100FM-S3** 100 mm dashboard mid; 3 Ω, 110–7000 Hz, Fs 85 Hz, 100 W RMS | **250 Hz LR24** | **3500 Hz LR24** | **−12 dB** | **Defined** |
+| **D** | **HELIX Ci3 C100.2FM-S3 MK2** centre coax; 3 Ω, 100–25000 Hz, Fs 137 Hz, internal 6 dB/oct tweeter HP | **180 Hz LR24** | **OFF** | **−12 dB** | **Defined:** retain integrated tweeter crossover |
+| **H / I** | **HELIX Ci7 T20FM-SC** tweeter; 4 Ω, 1500–30000 Hz, Fs 950 Hz; manufacturer requires HP **>2500 Hz at 24 dB/oct** | **3500 Hz LR24** | **OFF** | **−18 dB, MUTED** | **Defined protection, but do NOT connect/unmute before isolation from A/B** |
+| **F / G** | Tesla rear OEM loudspeakers, models not established | **100 Hz LR24** | **OFF** | **−12 dB** | Conservative system default, not manufacturer-specific |
+| **J / K** | Pioneer TS-WX1220AH donor drivers; 2 Ω product-family working basis, donor driver/enclosure properties not fully documented | **Do not select an arbitrary subsonic HP** until enclosure tuning is known; previous 25–30 Hz is only a candidate | **80 Hz LR24** | **−12 dB, MUTED** | LP defined, HP enclosure-dependent |
+| **L** | Spare amplified output | N/A | N/A | MUTED | Defined |
 
-Initial tuning sequence: **Input EQ flat → ISA measurement and amplitude/phase correction → Virtual EQ flat → Output EQ flat → protective filters and output gain → polarity verification → time alignment → cabin RTA/mic measurement → limited corrective EQ**. Do not add bass or treble boosts before measuring crossover summation and clipping. Turn optional Sound FX/RealCenter/Augmented Bass off for first routing and baseline measurements. Set output delays from microphone measurements, not imagined driver distances.
+**Why these settings make sense:** The 65 Hz woofer HP is above its 52 Hz free-air resonance; a 250 Hz crossover is comfortably inside the 35–2500 Hz woofer and 110–7000 Hz midrange operating ranges. The midrange's ±1.3 mm Xmax motivates limiting its bass duties. The 3500 Hz tweeter HP satisfies HELIX's actual stated 24 dB/octave protective condition of above 2500 Hz. The coax retains its built-in tweeter crossover; no additional output LP is required for the one-piece coax.
 
-The Pioneer driver's published 2 Ω nominal product-family figure is still a working basis, not proof of each loose donor-driver's DCR. Keep separate J and K speaker leads (no bridging/series/parallel connection), and verify their continuity. The original older subwoofer 5 m lead may be retained but should be traced before reuse; absence or presence of a new optional lead is not established in the photos.
+**Do not confuse a completed software preset with certified speaker wiring.** The new Highland cable says **Front Low/TW Left/Right**, and physical common woofer/tweeter wiring is still an open circuit-tracing question. If a tweeter remains passively tied to A/B, **do not apply the woofer-only 250 Hz LP while expecting tweeter output from A/B**, and never simultaneously drive that tweeter with H/I. The table is the **independent 3-way active configuration**, not evidence the current harness implements it.
+
+**Manufacturer versus engineering design:** The published frequency ranges, resonance frequencies, impedances and recommended tweeter HP limits are authoritative. The chosen 65/250/3500/180 Hz crossover points and −12/−18 dB startup attenuation are our design choices based on those specifications. They may later be **optimized** from microphone measurements, but are not awaiting measurement to be **defined and entered**.
+
+**EQ and DSP configuration now**
+1. Input EQ: **0 dB flat** as an initial setting; do not invent factory Tesla source corrections.
+2. Main→Virtual: label **Front L Full**, **Front R Full**, **Front Center Full**, **Rear L/R Full**, virtual **Subwoofer 1/2**. Leave A+C/B+E summation proportions as a measurement task because published *speaker* data does not document Tesla OEM input-band processing.
+3. Virtual EQ: **0 dB flat**, RealCenter/Augmented Bass and other extras OFF.
+4. Virtual→Output: the mapping in section 4, with the physical filters above. Save HP/LP filters and mute states before plugging speaker outputs into the amplifier.
+5. Output EQ: all PEQ bands **0 dB**, no boosts; initial output gains as above. Set delays only after measuring the actual installed acoustics.
+6. After electrical validation, perform the remaining acoustic optimization (input summation, relative timing/phase, crossover integration, cabin RTA response and corrective EQ). These steps refine the preset rather than create it.
+
+**Subwoofer exception:** The two Pioneer donor drivers are not among the four HELIX replacement speaker models. Their amplifier source/output routing and **80 Hz LP** can be configured now, but correct subsonic HP depends on the actual enclosure, port tuning and woofer/load configuration. The driver's nominal 2 Ω family rating is not a substitute for measuring the loose donor driver DCR and wiring.
+
+Manufacturer product pages:
+- [Ci7 W200FM-S3: 3 Ω, 35–2500 Hz, Fs 52 Hz](https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-w200fm-s3)
+- [Ci7 M100FM-S3: 3 Ω, 110–7000 Hz, Fs 85 Hz](https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-m100fm-s3)
+- [Ci7 T20FM-SC: 4 Ω, protective HP frequencies](https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-t20fm-sc?number=CI21001)
+- [Ci3 C100.2FM-S3 MK2: 3 Ω, centre coax with internal HP](https://www.audiotec-fischer.de/en/helix/speakers/compose/i3/ci3-c100-2fm-s3-mk2)
 
 ## 6. Acceptance steps
 

@@ -78,7 +78,7 @@ Current owner-confirmed state:
 
 The earlier M141318 Ryzen guide and seven-channel repin plan below have been **superseded**, not silently retroactively made correct. Audiotec Fischer specifies MATCH **M141318** for pre-Highland Ryzen Model 3 (through 09/2023), and MATCH **M141320** for Highland (from 10/2023). The received replacement's exact printed product/part identity remains to be confirmed against its actual label.
 
-- Read **[HIGHLAND-REPLACEMENT-DSP-MANUAL.md](HIGHLAND-REPLACEMENT-DSP-MANUAL.md)** for all seven source/return sleeve names, differences, safety checks and starting DSP filters.
+- Read **[HIGHLAND-REPLACEMENT-DSP-MANUAL.md](HIGHLAND-REPLACEMENT-DSP-MANUAL.md)** for all seven source/return sleeve names, differences, safety checks, and the already-defined specification-based HELIX crossover preset (separate from later cabin-acoustic tuning).
 - Use the **[interactive old/new DSP connector and VCP inspector](dsp-wiring.html)**. This shows physical HELIX -X/+X inputs and +X/-X outputs, actual new colours, historical planned old colours and an editable field to record old currently installed wires (unknown until recorded).
 - Machine-readable source: **[replacement-harness-2026-10-08.json](data/replacement-harness-2026-10-08.json)**. It explicitly distinguishes photographed new lead sleeves from unproven new connector cavities.
 - The previous **Front Low Left/Right** labels are **Front Low/TW Left/Right** on the new cable. The seven broad colour families appear consistent with the old engineering map; individual new plug cavity positions remain unverified.

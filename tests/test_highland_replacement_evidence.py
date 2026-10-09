@@ -67,6 +67,41 @@ class HighlandReplacementEvidenceTests(unittest.TestCase):
         self.assertIn("2-ohm minimum", DATA["speakerLoadSafety"])
         self.assertIn("passive crossover", DATA["routingPresets"]["factorySharedLowTw"]["gate"])
 
+    def test_known_helix_speakers_have_configurable_specific_crossover_settings_now(self) -> None:
+        spec = DATA["speakerSpecificationDspBaseline"]
+        self.assertIn("DEFINED", spec["status"])
+        self.assertIn("NOT APPLIED", spec["liveInstallation"])
+        known = {x["speaker"]: x for x in spec["manufacturerSpecs"]}
+        self.assertEqual(len(known), 4)
+        expected = {
+            "HELIX Ci7 W200FM-S3": (65, 250, ["A", "B"]),
+            "HELIX Ci7 M100FM-S3": (250, 3500, ["C", "E"]),
+            "HELIX Ci3 C100.2FM-S3 MK2": (180, None, ["D"]),
+            "HELIX Ci7 T20FM-SC": (3500, None, ["H", "I"]),
+        }
+        for model, (hp, lp, channels) in expected.items():
+            row = known[model]
+            self.assertEqual(row["presetHighPassHz"], hp)
+            self.assertEqual(row["presetLowPassHz"], lp)
+            self.assertEqual(row["physicalChannels"], channels)
+            self.assertIn("audiotec-fischer.de", row["sourceUrl"])
+        self.assertIn(">2500 Hz", known["HELIX Ci7 T20FM-SC"]["manufacturerHighPassMinimum"])
+        self.assertIn("do NOT connect/unmute", MANUAL)
+        self.assertIn('id="specTable"', HTML)
+        self.assertIn("basis?.manufacturerSpecs", HTML)
+        self.assertIn("DEFINED", (ROOT / "docs/assets/workflow.js").read_text(encoding="utf-8").upper()
+                      + (ROOT / "docs/data/v-twelve-connectors.json").read_text(encoding="utf-8").upper())
+
+    def test_speaker_specs_do_not_authorize_blind_oem_input_eq_or_subsonic_filter(self) -> None:
+        spec = DATA["speakerSpecificationDspBaseline"]
+        self.assertIn("flat", spec["initialEqualizer"]["input"].lower())
+        self.assertIn("notManufacturerPrescribed", spec)
+        subs = next(x for x in spec["otherChannels"] if x["physicalChannels"] == ["J", "K"])
+        self.assertIsNone(subs["presetHighPassHz"])
+        self.assertEqual(subs["presetLowPassHz"], 80)
+        self.assertIn("enclosure", spec["separationOfConcerns"]["measuredLater"].lower()
+                      + spec["otherChannels"][1]["status"].lower())
+
     def test_virtual_subs_and_physical_jk_are_not_mixed_up(self) -> None:
         virtual = {v["virtual"] for v in DATA["virtualInputs"]}
         self.assertIn("Subwoofer 1 (K)", virtual)
