@@ -1,6 +1,8 @@
 # Highland replacement harness and HELIX V TWELVE DSP MK2 commissioning manual
 
-**Revision: 2026-10-08. Status: UNCOMMISSIONED.**  
+**Revision: 2026-10-08. Status: UNCOMMISSIONED.**
+
+**UPDATE 2026-10-09: THIS CAR IS SOP9 BASE AUDIO / BAUDIO, NOT PAUDIO.** This general replacement harness manual contains historical/conditional speaker topologies. For the **correct current vehicle-specific tweeter connector pins** and recommended non-destructive H/I connection using existing factory door conductors, use the [BAUDIO-only routing manual](BAUDIO-TWEETER-ROUTING-MANUAL.md) and [original Tesla 3D interactive viewer](baudio-tweeter-routing.html). The correct BAUDIO body branch is LH X033B-1/2 and RH X053A-5/6. Do NOT use PAUDIO X033A-5/6 or RH X053A-22/23.  
 [Interactive wiring inspector](dsp-wiring.html) | [Photographic evidence JSON](data/replacement-harness-2026-10-08.json) | [Engineering workspace](engineering.html)
 
 > STOP BEFORE POWER-UP. The nine owner-supplied photos confirm seven IN/OUT sleeve labels, wire colours and two white connector housings, not the actual plug cavities or polarity continuity. Nothing in this manual replaces checking the disconnected wire harness with a meter.
