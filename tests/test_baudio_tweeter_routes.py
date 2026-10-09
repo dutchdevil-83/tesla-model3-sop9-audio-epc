@@ -116,7 +116,7 @@ class BaudioTweeterPathTests(unittest.TestCase):
         self.assertIn("X171-2/1 PAUDIO-coded", PAGE)
 
     def test_original_svg_explicitly_distinguishes_right_baudio_from_paudio(self) -> None:
-        tags = re.findall(r'<path\\b[^>]*element_name="wire"[^>]*>', SOURCE)
+        tags = re.findall(r'<path\b[^>]*element_name="wire"[^>]*>', SOURCE)
         selected = {x for x in tags if 'pin_number="X171-2"' in x or 'pin_number="X171-1"' in x
                     or 'pin_number="X051-19"' in x or 'pin_number="X051-35"' in x}
         self.assertEqual(len(selected), 4)
