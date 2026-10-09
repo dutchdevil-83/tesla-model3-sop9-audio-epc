@@ -101,6 +101,31 @@ class BaudioTweeterPathTests(unittest.TestCase):
             self.assertIn(marker, js)
         self.assertIn("Premium LR RWD trim / BAUDIO Base Audio", js)
 
+    def test_common_factory_front_audio_branch_does_not_claim_separate_streams(self) -> None:
+        note = MODEL["factoryAudioSplitClarification"]
+        self.assertIn("separate downstream", note["confirmed"])
+        self.assertIn("NOT CONFIRMED", note["right"]["factoryAmp"])
+        self.assertIn("PAUDIO", note["right"]["factoryAmp"])
+        self.assertIn("LHD && BAUDIO", note["left"]["factoryAmp"])
+        self.assertIn("UNKNOWN", note["physicalFilterLocation"])
+        self.assertIn("does NOT alone prove", note["physicalFilterLocation"])
+        self.assertIn("1079741-00-A", note["teslaEpcPart"]["partNumber"])
+        self.assertIn("not prove", note["teslaEpcPart"]["interpretation"])
+        self.assertIn("does not identify", MANUAL.lower())
+        self.assertIn("The word CAP alone", PAGE)
+        self.assertIn("X171-2/1 PAUDIO-coded", PAGE)
+
+    def test_original_svg_explicitly_distinguishes_right_baudio_from_paudio(self) -> None:
+        tags = re.findall(r'<path\b[^>]*element_name="wire"[^>]*>', SOURCE)
+        selected = {x for x in tags if 'pin_number="X171-2"' in x or 'pin_number="X171-1"' in x
+                    or 'pin_number="X051-19"' in x or 'pin_number="X051-35"' in x}
+        self.assertEqual(len(selected), 4)
+        for item in selected:
+            if 'pin_number="X171-' in item:
+                self.assertIn("LHD &amp;&amp; PAUDIO", item)
+            if 'pin_number="X051-' in item:
+                self.assertIn("LHD &amp;&amp; BAUDIO", item)
+
     @unittest.skipUnless(shutil.which("node"), "Node unavailable for JavaScript syntax validation")
     def test_embedded_baudio_viewer_js_syntax(self) -> None:
         scripts = re.findall(r"<script(?:\s[^>]*)?>(.*?)</script>", PAGE, flags=re.DOTALL)
