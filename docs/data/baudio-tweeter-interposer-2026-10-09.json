@@ -10,7 +10,7 @@
     "rightSelected": "BAUDIO && RHST && TWTR (X053A-5/6 -> X923M-1/12)",
     "leftExcluded": "LHST && PAUDIO && TWTR (X033A-5/6)",
     "rightExcluded": "PAUDIO && RHST && TWTR (X053A-22/23)",
-    "limitation": "Tesla drawing option-code BAUDIO path verified. Correct vehicle year/harness population and connector mating orientation must still be verified in physical car. BAUDIO indicates wiring option not a measurement proving speaker isolation. Separate BAUDIO downstream tweeter conductors do not prove a dedicated factory amplifier or distinct independently DSP-processed stream."
+    "limitation": "BAUDIO downstream speaker circuits are verified to named body and door connectors, but the right MCU upstream X171-2/1 option is PAUDIO in raw SVG despite merged metadata listing X051; do not assert it as BAUDIO. No physical filter component or source-to-branch internal controller circuit is shown."
   },
   "recommendedMethod": "OPTIONAL FULLY ACTIVE AFTER FACTORY SPLIT PROTECTION IDENTIFIED: professionally verified reversible cabin-side breakout to isolate the OEM audio source and front woofer A/B while routing downstream tweeter pair to HELIX H/I. Do NOT claim factory provides separate active audio streams or that a named CAP branch by itself proves passive tweeter protection still exists after replacement.",
   "amplifier": {
@@ -107,7 +107,7 @@
       "tentativeNewCablePath": "V TWELVE -> RH front footwell/lower A-pillar behind standard interior trim -> validated reversible audio-only break at vehicle side of X053A; avoid passenger airbag and HV/LV harness interference."
     }
   },
-  "factoryPathNote": "BAUDIO and PAUDIO paths can share downstream X922/X923 and X565/X575 endpoint pins but change upstream X033/X053 body-controller cavities. Do not infer option from Tesla body connector metadata alone. BAUDIO has one OEM two-wire source per front side; `CAP`-named tweeter branch may have passive filtering, component location unverified.",
+  "factoryPathNote": "BAUDIO option-coded harness confirms separate factory connector wires downstream of controllers but not separate factory-amplified streams. CAP-named tweeter branch location is defined at connector level only; no internal capacitor location shown. PAUDIO alt contacts excluded.",
   "exactWireMap": [
     {
       "side": "LH",
@@ -204,29 +204,36 @@
   "imageAvailability": "OEM door and body controller connector location renders in repository. A validated 3D mesh showing the installer-added V TWELVE-to-under-dashboard cable path is NOT present; the cabin added path in viewer is an engineering proposal only, not Tesla factory routing.",
   "factoryAudioSplitClarification": {
     "sourceOfTruth": "Source_Assets/core/audio_lhd.svg option-coded BAUDIO LHD and associated Source_Assets/connectors/ X171 X031 X051 X033B X053A X053B",
-    "confirmed": "BAUDIO supplies one two-conductor amplified source per front side to body-controller area; separate downstream woofer and tweeter endpoint wire pairs do NOT establish independent Tesla-amplifier DSP channels or separate audio streams.",
+    "confirmed": "Original BAUDIO LHD electrical drawing shows front-woofer input wiring into body-controller circuits and separate downstream woofer and CAP-named tweeter connector pairs. It does not show two independently generated factory audio streams or a capacitor component. Internal controller connections and filter location are outside the scope of this harness schematic.",
     "left": {
-      "factoryAmp": "MCU X171-6 P / X171-5 N (AMP2_2)",
+      "factoryAmp": "MCU X171-6 (+) / X171-5 (-) (AMP2_2), explicitly tagged LHD && BAUDIO in original electrical SVG",
       "upstream": "X936M/F 26/14 -> Body Controller Left X031-34 P / X031-33 N",
       "woofer": "Body Controller Left -> X033B-3 P / X033B-4 N -> base woofer X568-1/2",
       "capNamedTweeter": "Body Controller Left -> X033B-1 P / X033B-2 N (AUDIO_SPEAKER_CAP_FRONT_DOOR_PASSTHROUGH) -> X922M/F-1/12 -> X565-1/2",
-      "dataStatus": "A single OEM electrical source with two labelled downstream destinations; the electrical drawing does not show internal filter components, joins or frequency response."
+      "dataStatus": "BAUDIO source X171-6/5 and X031-34/33 and separately labelled downstream woofer/tweeter connector contacts are proven. Internal controller input-to-output processing or passive circuit not depicted."
     },
     "right": {
-      "factoryAmp": "MCU X171-2 P / X171-1 N (AMP2_1)",
+      "factoryAmp": "NOT CONFIRMED in option-coded BAUDIO source: body-side X051-19 (+) / X051-35 (-) are LHD && BAUDIO; source SVG's X171-2 (+) / X171-1 (-) wire segments are explicitly LHD && PAUDIO. Merged X171 connector metadata lists X051 destination, but this does not resolve original variant-code discrepancy.",
       "upstream": "Body Controller Right X051-19 P / X051-35 N",
       "woofer": "Body Controller Right -> X053B-2 P / X053B-1 N -> base woofer X578-1/2",
       "capNamedTweeter": "Body Controller Right -> X053A-5 P / X053A-6 N (AUDIO_SPEAKER_CAP_FRONT_DOOR_PASSTHROUGH) -> X923M/F-1/12 -> X575-1/2",
-      "dataStatus": "A single OEM electrical source with two labelled downstream destinations; the electrical drawing does not show internal filter components, joins or frequency response."
+      "dataStatus": "BAUDIO body input is proven at X051-19/35; full upstream BAUDIO-specific MCU source pin assignment is not unambiguously proven because option-coded X171-1/2 segments are PAUDIO. Do not assert same MCU pins as BAUDIO until resolved."
     },
-    "physics": "One + and one - from an amplifier cannot carry two independently processed loudspeaker audio streams unless additional encoding/active decoding is present; none is established. With a passive network, the same signal feeds both branches; a series high-pass capacitor attenuates LF into the tweeter and an optional low-pass/driver natural rolloff constrains woofer HF.",
-    "physicalFilterLocation": "NOT VERIFIED. Tesla labels the body-side tweeter branches AUDIO_SPEAKER_CAP_FRONT_DOOR_PASSTHROUGH, suggesting capacitive filtering, but this signal name is not a component-location drawing. Determine whether capacitor is in factory tweeter assembly, factory harness, or a protected body-controller route using inspection and electrical measurements; do not invent a physical module location.",
+    "physics": "A single conventional analogue amplified pair carries one waveform. Two downstream pairs do NOT establish independent loudspeaker streams. A passive crossover might split the spectrum, or internal processing could exist, but no passive/active filter components are identified in this archived factory harness diagram.",
+    "physicalFilterLocation": "UNKNOWN. Label AUDIO_SPEAKER_CAP_FRONT_DOOR_PASSTHROUGH may be related to filtering or part nomenclature, but does NOT alone prove a discrete capacitor, whether filtering occurs inside BCM, on the harness, in the original tweeter, or upstream. Neither electrical harness SVG nor archived EPC speaker list includes capacitor value/symbol/location.",
     "crucialAfterReplacement": "HELIX Ci7 T20FM-SC DOES NOT INCLUDE PASSIVE CROSSOVER IN STANDARD BOX. CFMK20 TES.1 is mechanical mounting ring only. Never assume Tesla OEM filter remains downstream when factory tweeter is replaced. If no verified suitable passive crossover, do NOT energize shared A/B output with bare tweeter.",
     "fullActiveAlternative": "Separate H and I are new HELIX output channels: they require electrical isolation of factory A/B branch and OEM source from downstream tweeter wires at correctly validated cabin-side interposers. This changes the circuit; it is not how the factory supplies separate streams.",
     "manufacturerSources": [
       "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-t20fm-sc?number=CI21001",
       "https://www.audiotec-fischer.de/en/helix/speakers/compose/flexmounts/cfmk20-tes-1",
       "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-fx-uni-2"
-    ]
+    ],
+    "teslaEpcPart": {
+      "partNumber": "1079741-00-A",
+      "description": "AUDIO,SPEAKER,TWEETER,ACTIVE,25MM",
+      "source": "docs/assets/tesla-parts/audio-speakers/epc-crossref.json",
+      "interpretation": "Part catalogue names a speaker family but does not prove component internals, fitted BAUDIO VIN variant or factory crossover placement."
+    },
+    "recommendedEvidence": "Manufacturer internal controller PCB/service circuit drawing or removal/inspection of actual OEM tweeter and wire module is needed for positive capacitor/filter location. No such internal circuit is present in repository."
   }
 }
