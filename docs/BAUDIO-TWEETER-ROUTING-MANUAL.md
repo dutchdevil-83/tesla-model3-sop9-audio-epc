@@ -7,6 +7,30 @@
 
 > WARNING: This plan is BAUDIO-only. The merged connector metadata contains both BAUDIO and PAUDIO variants. The definitive source is the [original Tesla SOP9 LHD electrical SVG](../Source_Assets/core/audio_lhd.svg), which labels individual wire branches by BAUDIO/PAUDIO option code. Physical verification of populated connector cavities, polarity and amplifier isolation is mandatory before power.
 
+## 0. Factory BAUDIO front woofer and tweeter: exact limits of the Tesla schematics
+
+**Correction:** the factory BAUDIO schematic does not identify separate MCU tweeter audio streams. It identifies separate downstream physical branch wires for the woofer and the tweeter at each body-controller connector. These two facts are different. Calling the stock tweeter wiring "independent active audio" was incorrect.
+
+| Circuit | LEFT BAUDIO | RIGHT BAUDIO |
+| --- | --- | --- |
+| MCU front output source | **X171-6 + / X171-5 −** (option **LHD && BAUDIO**) | **Not confirmed for BAUDIO at MCU**. Raw X171-2 + / X171-1 − wire elements are tagged **LHD && PAUDIO**, while X051-19/35 are tagged **LHD && BAUDIO** |
+| Body-controller input wire | **X031-34 + / X031-33 −**, via X936M/F | **X051-19 + / X051-35 −** |
+| Downstream woofer wire | **X033B-3 + / X033B-4 − → X568** | **X053B-2 + / X053B-1 − → X578** |
+| Downstream tweeter wire | **X033B-1 + / X033B-2 − → X922M/F → X565** | **X053A-5 + / X053A-6 − → X923M/F → X575** |
+| Original tweeter wire designation | **AUDIO_SPEAKER_CAP_FRONT_DOOR_PASSTHROUGH** | **AUDIO_SPEAKER_CAP_FRONT_DOOR_PASSTHROUGH** |
+
+**Important variant correction:** the earlier manual erroneously described X171-2/1 as a verified right-side **BAUDIO MCU output**. The raw option-coded SVG marks that wire PAUDIO, while the connector metadata merges variants. A physical right-front output is documented downstream at X051-19/35 but the exact BAUDIO-specific source pin at the MCU is unresolved from this source.
+
+**How does Tesla separate the frequencies?** The archived external harness schematic does **not** describe the processing. It has no capacitor symbol, value, component reference, filter curve or internal body-controller circuit. The word `CAP` in a pin name does not establish where a capacitor lives or even positively identify a separate physical capacitor. A single ordinary analogue two-wire amplifier output is one waveform, not independently adjustable woofer and tweeter streams. A passive high-pass is a plausible mechanism but **not directly established by these Tesla source files**; do not treat it as installed fact.
+
+**Parts evidence:** the archived Tesla Audio Speakers EPC lists **1079741-00-A, AUDIO,SPEAKER,TWEETER,ACTIVE,25MM**. The designation "ACTIVE" is the catalogue's speaker description, **not** a documented filter circuit or capacitor placement, and the EPC entry alone does not confirm that this specific part is fitted to the present BAUDIO VIN. The EPC contains no separate identifiable crossover-capacitor component for this circuit.
+
+**What this means for the replaced HELIX tweeters:** Ci7 T20FM-SC tweeters require high-pass protection. The CFMK20 TES.1 part is a mechanical mounting adapter, not a filter. A factory filter might be lost with a removed original tweeter if it were built into that speaker, or it might remain elsewhere; neither possibility is proven. **Keep any bare tweeter from being powered by full-range A/B** until its actual protective high-pass and total amplifier load have been verified. For dedicated active HELIX outputs H/I, the previously documented **3.5 kHz LR24 high-pass** is ready to save, but H/I can only be connected after the tweeter branches are isolated from the factory drive and A/B.
+
+**Exact location-verification procedure:** inspect the removed original tweeter assembly and its immediate X565/X575 leads for a capacitor or module; compare Tesla part markings and physical components. When all audio power sources are isolated, a qualified technician can measure the disconnected tweeter branch's capacitance/impedance and trace it through successive connector separations. **An ohmmeter reading of "open" is not proof of a series capacitor or its location.** Do not open, cut or depin the body controller to search for a filter.
+
+---
+
 ## 1. Correct BAUDIO wiring, and why the old PAUDIO details were wrong
 
 | Item | BAUDIO: **this vehicle** | PAUDIO: **DO NOT USE** |
@@ -23,7 +47,7 @@ The original SVG marks the LH base branch **BAUDIO && LHST && TWTR** and RH bran
 
 **Right factory wiring:** Cabin body controller door branch X053A-5 (+), X053A-6 (-) to X923M/X923F 1 (+), 12 (-) to tweeter X575 1 (+), 2 (-).
 
-The new Bünde Highland harness printed Front Low/TW Left/Right does NOT prove that the downstream door woofer and tweeter pairs must remain physically connected. SOP9 BAUDIO has independently identifiable tweeter conductors through the door. Measure whether the current amplifier integration coupled these circuits together before attempting to drive H and I independently.
+The new Bünde Highland harness printed Front Low/TW Left/Right refers to a common source-channel family. The BAUDIO harness provides identifiable downstream speaker conductor pairs, but not evidence of two independent factory DSP streams. Measure whether the current amplifier integration coupled these circuits together before attempting to drive H and I independently.
 
 ## 2. Original Tesla vehicle models: exact factory endpoint locations
 
