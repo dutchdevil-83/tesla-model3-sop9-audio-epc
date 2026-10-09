@@ -459,5 +459,14 @@
     "finalQc": "Unpowered pair continuity, isolation, OEM source vs return separation, polarity, speaker load measurements, tweeter shared/active branch determination; stop for a remaining signal when DSP muted."
   },
   "previousHarness": "MATCH PP-TES 1.7B Ryzen M141318, faulty, to be replaced",
-  "replacementEvidence": "data/replacement-harness-2026-10-08.json"
+  "replacementEvidence": "data/replacement-harness-2026-10-08.json",
+  "vehicleAudioVariant": "BASE AUDIO / BAUDIO only",
+  "dedicatedTweeterCableOption": {
+    "status": "BAUDIO STOCK TWEETER WIRES DOCUMENTED; PHYSICAL ISOLATION STILL OPEN",
+    "sourceFile": "data/baudio-tweeter-interposer-2026-10-09.json",
+    "left": "X033B 1+/2- -> X922M/F 1+/12- -> X565 1+/2-",
+    "right": "X053A 5+/6- -> X923M/F 1+/12- -> X575 1+/2-",
+    "excludedPremium": "X033A-5/6 and X053A-22/23",
+    "configuration": "A/B front woofers and H/I tweeters independently active only after reversible cabin-side interposer physically separates original tweeter drive and passes all other body circuits"
+  }
 }
