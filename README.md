@@ -2,6 +2,8 @@
 
 Engineering, sourcing and installation reference for a **Tesla Model 3 Highland 2026 Premium Long Range RWD / SOP9 / LHD** audio upgrade.
 
+**AUDIO HARDWARE OPTION: BASE AUDIO (BAUDIO, NOT PAUDIO).** The vehicle trim name *Premium Long Range* does NOT imply Tesla's PAUDIO audio package. Use [BAUDIO H/I tweeter body-harness routing, Tesla original 3D models and interposer guide](docs/baudio-tweeter-routing.html) and [BAUDIO-only manual](docs/BAUDIO-TWEETER-ROUTING-MANUAL.md). Verified SOP9 BAUDIO schematic targets: LEFT X033B-1/2, RIGHT X053A-5/6; PAUDIO alternative branches must not be used.
+
 **Current installed planning baseline: 2026-10-08.** Received new Highland replacement audio harness (expected MATCH M141320, part label unverified). V TWELVE DSP MK2 remains in use; old Ryzen M141318 is faulty/superseded. Wiring and DSP VCP tuning are NOT commissioned. [Read the new manual](docs/HIGHLAND-REPLACEMENT-DSP-MANUAL.md) and [interactive connector inspector](docs/dsp-wiring.html). 
 
 Historical engineering workbook baseline: **v2.2.0** (2026-09-10)  
