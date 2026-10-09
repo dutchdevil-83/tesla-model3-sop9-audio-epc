@@ -15,7 +15,7 @@
   "recommendedMethod": "Reversible cabin-side connector interposer or professional automotive-grade breakout at the correct body-controller door-harness connector; intercept ONLY the downstream tweeter+/- conductor, leave factory/module tweeter source isolated and preserve all unrelated circuits with fully validated pass-throughs; no new speaker cables through the doors.",
   "amplifier": {
     "device": "HELIX V TWELVE DSP MK2",
-    "activeWiring": "Output H drives independent left tweeter circuit; output I drives independent right tweeter circuit. Outputs A/B drive ONLY their independently verified BAUDIO front woofers; never tie H into A nor I into B.",
+    "activeWiring": "Only after independent circuits are verified ISOLATED: physical H drives dedicated left tweeter and physical I drives dedicated right tweeter. Amplified A/B drive ONLY independently verified BAUDIO front woofers. Never tie H into A nor I into B, and never connect H/I to original Tesla source outputs.",
     "crossover": "H and I: HP 3500 Hz LR24, LP off, starting gain -18 dB, muted until verified; A/B woofer only: HP 65 Hz LR24 and LP 250 Hz LR24 only after physical separation is confirmed.",
     "inputRouting": "Front L Full from ISA verified A+C sources, Front R Full from ISA verified B+E sources; use VCP matching physical speakers only after measurement; initial filters can be set with outputs muted."
   },
