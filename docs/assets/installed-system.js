@@ -171,7 +171,7 @@ renderInspector = function renderInspectorCurrentBuild() {
     : rawEngineeringValue(selected['Premium Amp pins']);
 
   $('#inspectNum').textContent = selected.ID;
-  $('#inspectTitle').textContent = selected.Position;
+  $('#inspectTitle').textContent = baseEndpoint?.label || selected.Position;
   $('#inspectSub').textContent = `Current BAUDIO target - ${displayConnector} - ${baseEndpoint?.label || selected.Device}`;
   $('#inspectStage').textContent = evidence.stage.label;
   $$('.inspect-tab').forEach(button => button.classList.toggle('active', button.dataset.inspect === inspectTab));
@@ -182,7 +182,7 @@ renderInspector = function renderInspectorCurrentBuild() {
       ${productCard(target)}
       <section class="inspector-section"><h3>Project target identity</h3>
         <div class="kv"><span>Project target</span><b class="target-id">${esc(selected.ID)}</b></div>
-        <div class="kv"><span>Position</span><b>${esc(selected.Position)}</b></div>
+        <div class="kv"><span>Current vehicle speaker</span><b>${esc(baseEndpoint?.label || selected.Position)}</b></div>
         <div class="kv"><span>Physical zone</span><b>${esc(zoneFor(selected))}</b></div>
         <div class="kv"><span>Current BAUDIO endpoint</span><b>${esc(displayConnector)}</b></div>
         <div class="kv"><span>Current connector PN</span><b>${esc(baseEndpoint?.part || selected['Tesla connector PN'])}</b></div>
