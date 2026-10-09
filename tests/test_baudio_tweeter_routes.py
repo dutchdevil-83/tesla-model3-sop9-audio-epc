@@ -58,7 +58,7 @@ class BaudioTweeterPathTests(unittest.TestCase):
         all_text = json.dumps(MODEL)
         self.assertIn("connector cavities", MANUAL.lower())
         self.assertIn("all unrelated circuits", MODEL["recommendedMethod"])
-        self.assertIn("OEM audio source", MODEL["forbidden"][1])
+        self.assertIn("factory audio power outputs", MODEL["forbidden"][1])
         self.assertIn("NOT present", MODEL["imageAvailability"].replace("not present", "NOT present"))
         self.assertIn("NOT automatically safe", MANUAL)
         self.assertIn("must still be verified", MODEL["optionCodeEvidence"]["limitation"])
