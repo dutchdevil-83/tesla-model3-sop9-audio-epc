@@ -526,5 +526,20 @@
       "note": "Installer package reference for the active front/center architecture and custom Tesla integration hardware."
     }
   ],
-  "buildRevisionNote": "2026-10-08: new Highland harness received. Audio DSP I/O wiring uncommissioned; both H/I tweeter outputs muted until independent isolation; J/K separate subwoofers conditional."
+  "buildRevisionNote": "2026-10-08: new Highland harness received. Audio DSP I/O wiring uncommissioned; both H/I tweeter outputs muted until independent isolation; J/K separate subwoofers conditional.",
+  "vehicleAudioOption": "BAUDIO (SOP9 Base Audio, LHD) - verified owner configuration",
+  "audioOptionPolicy": "Always filter Source_Assets/core/audio_lhd.svg by BAUDIO before selecting cavity numbers. PAUDIO is excluded from physical wiring in this car.",
+  "baudioTweeterWiring": {
+    "source": "data/baudio-tweeter-interposer-2026-10-09.json",
+    "manual": "BAUDIO-TWEETER-ROUTING-MANUAL.md",
+    "viewer": "baudio-tweeter-routing.html",
+    "left": "X033B-1/2 -> X922M/F-1/12 -> X565-1/2",
+    "right": "X053A-5/6 -> X923M/F-1/12 -> X575-1/2",
+    "status": "FACTORY SCHEMATIC VERIFIED, VEHICLE CONNECTOR CONTINUITY AND AMP ISOLATION PENDING",
+    "incorrectPremiumReferences": [
+      "X033A-5/6",
+      "X053A-22/23",
+      "X567/X577"
+    ]
+  }
 }
