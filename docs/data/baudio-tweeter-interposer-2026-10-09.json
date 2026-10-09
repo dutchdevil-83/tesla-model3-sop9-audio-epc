@@ -10,9 +10,9 @@
     "rightSelected": "BAUDIO && RHST && TWTR (X053A-5/6 -> X923M-1/12)",
     "leftExcluded": "LHST && PAUDIO && TWTR (X033A-5/6)",
     "rightExcluded": "PAUDIO && RHST && TWTR (X053A-22/23)",
-    "limitation": "Tesla drawing option-code BAUDIO path verified. Correct vehicle year/harness population and connector mating orientation must still be verified in physical car. BAUDIO indicates wiring option not a measurement proving speaker isolation."
+    "limitation": "Tesla drawing option-code BAUDIO path verified. Correct vehicle year/harness population and connector mating orientation must still be verified in physical car. BAUDIO indicates wiring option not a measurement proving speaker isolation. Separate BAUDIO downstream tweeter conductors do not prove a dedicated factory amplifier or distinct independently DSP-processed stream."
   },
-  "recommendedMethod": "Reversible cabin-side connector interposer or professional automotive-grade breakout at the correct body-controller door-harness connector; intercept ONLY the downstream tweeter+/- conductor, leave factory/module tweeter source isolated and preserve all unrelated circuits with fully validated pass-throughs; no new speaker cables through the doors.",
+  "recommendedMethod": "OPTIONAL FULLY ACTIVE AFTER FACTORY SPLIT PROTECTION IDENTIFIED: professionally verified reversible cabin-side breakout to isolate the OEM audio source and front woofer A/B while routing downstream tweeter pair to HELIX H/I. Do NOT claim factory provides separate active audio streams or that a named CAP branch by itself proves passive tweeter protection still exists after replacement.",
   "amplifier": {
     "device": "HELIX V TWELVE DSP MK2",
     "activeWiring": "Only after independent circuits are verified ISOLATED: physical H drives dedicated left tweeter and physical I drives dedicated right tweeter. Amplified A/B drive ONLY independently verified BAUDIO front woofers. Never tie H into A nor I into B, and never connect H/I to original Tesla source outputs.",
@@ -107,7 +107,7 @@
       "tentativeNewCablePath": "V TWELVE -> RH front footwell/lower A-pillar behind standard interior trim -> validated reversible audio-only break at vehicle side of X053A; avoid passenger airbag and HV/LV harness interference."
     }
   },
-  "factoryPathNote": "BAUDIO and PAUDIO paths can share downstream X922/X923 and X565/X575 endpoint pins but change upstream X033/X053 body-controller cavities. Do not infer option from Tesla body connector metadata alone.",
+  "factoryPathNote": "BAUDIO and PAUDIO paths can share downstream X922/X923 and X565/X575 endpoint pins but change upstream X033/X053 body-controller cavities. Do not infer option from Tesla body connector metadata alone. BAUDIO has one OEM two-wire source per front side; `CAP`-named tweeter branch may have passive filtering, component location unverified.",
   "exactWireMap": [
     {
       "side": "LH",
@@ -201,5 +201,32 @@
       "label": "Reinstall trims without pinched conductors or cable runs in airbag deployment zones, seat tracks, pedal linkages or door hinges; inspect door electrical/window/pressure sensor diagnostics."
     }
   ],
-  "imageAvailability": "OEM door and body controller connector location renders in repository. A validated 3D mesh showing the installer-added V TWELVE-to-under-dashboard cable path is NOT present; the cabin added path in viewer is an engineering proposal only, not Tesla factory routing."
+  "imageAvailability": "OEM door and body controller connector location renders in repository. A validated 3D mesh showing the installer-added V TWELVE-to-under-dashboard cable path is NOT present; the cabin added path in viewer is an engineering proposal only, not Tesla factory routing.",
+  "factoryAudioSplitClarification": {
+    "sourceOfTruth": "Source_Assets/core/audio_lhd.svg option-coded BAUDIO LHD and associated Source_Assets/connectors/ X171 X031 X051 X033B X053A X053B",
+    "confirmed": "BAUDIO supplies one two-conductor amplified source per front side to body-controller area; separate downstream woofer and tweeter endpoint wire pairs do NOT establish independent Tesla-amplifier DSP channels or separate audio streams.",
+    "left": {
+      "factoryAmp": "MCU X171-6 P / X171-5 N (AMP2_2)",
+      "upstream": "X936M/F 26/14 -> Body Controller Left X031-34 P / X031-33 N",
+      "woofer": "Body Controller Left -> X033B-3 P / X033B-4 N -> base woofer X568-1/2",
+      "capNamedTweeter": "Body Controller Left -> X033B-1 P / X033B-2 N (AUDIO_SPEAKER_CAP_FRONT_DOOR_PASSTHROUGH) -> X922M/F-1/12 -> X565-1/2",
+      "dataStatus": "A single OEM electrical source with two labelled downstream destinations; the electrical drawing does not show internal filter components, joins or frequency response."
+    },
+    "right": {
+      "factoryAmp": "MCU X171-2 P / X171-1 N (AMP2_1)",
+      "upstream": "Body Controller Right X051-19 P / X051-35 N",
+      "woofer": "Body Controller Right -> X053B-2 P / X053B-1 N -> base woofer X578-1/2",
+      "capNamedTweeter": "Body Controller Right -> X053A-5 P / X053A-6 N (AUDIO_SPEAKER_CAP_FRONT_DOOR_PASSTHROUGH) -> X923M/F-1/12 -> X575-1/2",
+      "dataStatus": "A single OEM electrical source with two labelled downstream destinations; the electrical drawing does not show internal filter components, joins or frequency response."
+    },
+    "physics": "One + and one - from an amplifier cannot carry two independently processed loudspeaker audio streams unless additional encoding/active decoding is present; none is established. With a passive network, the same signal feeds both branches; a series high-pass capacitor attenuates LF into the tweeter and an optional low-pass/driver natural rolloff constrains woofer HF.",
+    "physicalFilterLocation": "NOT VERIFIED. Tesla labels the body-side tweeter branches AUDIO_SPEAKER_CAP_FRONT_DOOR_PASSTHROUGH, suggesting capacitive filtering, but this signal name is not a component-location drawing. Determine whether capacitor is in factory tweeter assembly, factory harness, or a protected body-controller route using inspection and electrical measurements; do not invent a physical module location.",
+    "crucialAfterReplacement": "HELIX Ci7 T20FM-SC DOES NOT INCLUDE PASSIVE CROSSOVER IN STANDARD BOX. CFMK20 TES.1 is mechanical mounting ring only. Never assume Tesla OEM filter remains downstream when factory tweeter is replaced. If no verified suitable passive crossover, do NOT energize shared A/B output with bare tweeter.",
+    "fullActiveAlternative": "Separate H and I are new HELIX output channels: they require electrical isolation of factory A/B branch and OEM source from downstream tweeter wires at correctly validated cabin-side interposers. This changes the circuit; it is not how the factory supplies separate streams.",
+    "manufacturerSources": [
+      "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-t20fm-sc?number=CI21001",
+      "https://www.audiotec-fischer.de/en/helix/speakers/compose/flexmounts/cfmk20-tes-1",
+      "https://www.audiotec-fischer.de/en/helix/speakers/compose/i7/ci7-fx-uni-2"
+    ]
+  }
 }
