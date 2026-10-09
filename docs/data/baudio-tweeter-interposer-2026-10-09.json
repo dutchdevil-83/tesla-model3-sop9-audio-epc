@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "revision": "2026-10-09",
+  "vehicle": "Tesla Model 3 Highland SOP9 LHD Base Audio (BAUDIO + TWTR)",
+  "requiredOption": "BAUDIO",
+  "excludedOption": "PAUDIO",
+  "optionCodeEvidence": {
+    "origin": "Source_Assets/core/audio_lhd.svg ORIGINAL Tesla electrical source drawing; individual wire elements have option_code attributes; do not use merged per-connector metadata without checking option_code",
+    "leftSelected": "BAUDIO && LHST && TWTR (X033B-1/2 -> X922M-1/12)",
+    "rightSelected": "BAUDIO && RHST && TWTR (X053A-5/6 -> X923M-1/12)",
+    "leftExcluded": "LHST && PAUDIO && TWTR (X033A-5/6)",
+    "rightExcluded": "PAUDIO && RHST && TWTR (X053A-22/23)",
+    "limitation": "Tesla drawing option-code BAUDIO path verified. Correct vehicle year/harness population and connector mating orientation must still be verified in physical car. BAUDIO indicates wiring option not a measurement proving speaker isolation."
+  },
+  "recommendedMethod": "Reversible cabin-side connector interposer or professional automotive-grade breakout at the correct body-controller door-harness connector; intercept ONLY the downstream tweeter+/- conductor, leave factory/module tweeter source isolated and preserve all unrelated circuits with fully validated pass-throughs; no new speaker cables through the doors.",
+  "amplifier": {
+    "device": "HELIX V TWELVE DSP MK2",
+    "activeWiring": "Output H drives independent left tweeter circuit; output I drives independent right tweeter circuit. Outputs A/B drive ONLY their independently verified BAUDIO front woofers; never tie H into A nor I into B.",
+    "crossover": "H and I: HP 3500 Hz LR24, LP off, starting gain -18 dB, muted until verified; A/B woofer only: HP 65 Hz LR24 and LP 250 Hz LR24 only after physical separation is confirmed.",
+    "inputRouting": "Front L Full from ISA verified A+C sources, Front R Full from ISA verified B+E sources; use VCP matching physical speakers only after measurement; initial filters can be set with outputs muted."
+  },
+  "sides": {
+    "LH": {
+      "title": "LEFT / driver side (LHD)",
+      "channel": "H",
+      "connectorAtCabin": "X033B",
+      "cabinPlus": "1",
+      "cabinMinus": "2",
+      "cabinetNote": "Tesla BAUDIO driver-side Body Controller Left connector, not premium X033A",
+      "optionCode": "BAUDIO && LHST && TWTR",
+      "bodyWirePlus": "VT violet",
+      "bodyWireMinus": "BU blue",
+      "inlineMale": "X922M",
+      "inlineFemale": "X922F",
+      "inlinePlus": "1",
+      "inlineMinus": "12",
+      "tweeter": "X565",
+      "tweeterPlus": "1",
+      "tweeterMinus": "2",
+      "factorySpeaker": "HELIX Ci7 T20FM-SC, SPK03 via CFMK20 TES.1 adapter (physical mating identity must be inspected)",
+      "factoryWoofer": "X568 front left base door woofer; X567 premium alternate, NOT this BAUDIO circuit",
+      "connectorFaceview": "Source_Assets/faceviews/yazaki_7287-1674.svg",
+      "images": [
+        {
+          "name": "Left factory door/tweeter endpoint (X565)",
+          "path": "Source_Assets/connectors/X565/location.jpg",
+          "purpose": "Genuine Tesla rendered door 3D routing to the upper-front tweeter"
+        },
+        {
+          "name": "Left door trim inline (X922M)",
+          "path": "Source_Assets/connectors/X922M/location.jpg",
+          "purpose": "Factory door trim inline connector on LH front door"
+        },
+        {
+          "name": "Left controller reference (X033B)",
+          "path": "Source_Assets/connectors/X033B/location.jpg",
+          "purpose": "NOTE: linked image shows door harness; do not claim it locates the underdash controller"
+        }
+      ],
+      "service": {
+        "controller": "https://service.tesla.com/docs/BodyRepair/Body_Repair_Procedures/Model_3_2024/HTML/en-us/GUID-66D21900-3C14-4485-96F6-727AD1424FBD.html",
+        "tweeter": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-0D39177D-4A28-4584-ABA1-9044BBB78830.html"
+      },
+      "tentativeNewCablePath": "V TWELVE at owner-installed location -> behind secured underdash interior trim along existing cabin harness (not inside any airbag deployment channel) -> LH lower A-pillar/driver footwell -> reversible audio-only break at vehicle side of X033B. Physical route is a proposed accessible interior corridor, not Tesla OEM routing dimension."
+    },
+    "RH": {
+      "title": "RIGHT / passenger side (LHD)",
+      "channel": "I",
+      "connectorAtCabin": "X053A",
+      "cabinPlus": "5",
+      "cabinMinus": "6",
+      "cabinetNote": "Tesla BAUDIO passenger-side Body Controller Right connector. Premium alternative is X053A22/23, DO NOT USE",
+      "optionCode": "BAUDIO && RHST && TWTR",
+      "bodyWirePlus": "VT violet",
+      "bodyWireMinus": "BU blue",
+      "inlineMale": "X923M",
+      "inlineFemale": "X923F",
+      "inlinePlus": "1",
+      "inlineMinus": "12",
+      "tweeter": "X575",
+      "tweeterPlus": "1",
+      "tweeterMinus": "2",
+      "factorySpeaker": "HELIX Ci7 T20FM-SC, SPK04 via CFMK20 TES.1 adapter (physical mating identity must be inspected)",
+      "factoryWoofer": "X578 front right base door woofer; X577 premium alternate, NOT this BAUDIO circuit",
+      "connectorFaceview": "Source_Assets/faceviews/yazaki_7287-1673.svg",
+      "images": [
+        {
+          "name": "Right controller connector reference (X053A)",
+          "path": "Source_Assets/connectors/X053A/location.jpg",
+          "purpose": "Genuine Tesla rendered lower footwell/controller location"
+        },
+        {
+          "name": "Right factory door/tweeter endpoint (X575)",
+          "path": "Source_Assets/connectors/X575/location.jpg",
+          "purpose": "Genuine Tesla rendered door 3D routing to the upper-front tweeter"
+        },
+        {
+          "name": "Right door trim inline (X923M)",
+          "path": "Source_Assets/connectors/X923M/location.jpg",
+          "purpose": "Factory door trim inline connector on RH front door"
+        }
+      ],
+      "service": {
+        "controller": "https://service.tesla.com/docs/BodyRepair/Body_Repair_Procedures/Model_3_2024/HTML/en-us/GUID-0DFBDDB3-FC33-4808-97EB-D2891CEE2C54.html",
+        "tweeter": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-0D39177D-4A28-4584-ABA1-9044BBB78830.html"
+      },
+      "tentativeNewCablePath": "V TWELVE -> RH front footwell/lower A-pillar behind standard interior trim -> validated reversible audio-only break at vehicle side of X053A; avoid passenger airbag and HV/LV harness interference."
+    }
+  },
+  "factoryPathNote": "BAUDIO and PAUDIO paths can share downstream X922/X923 and X565/X575 endpoint pins but change upstream X033/X053 body-controller cavities. Do not infer option from Tesla body connector metadata alone.",
+  "exactWireMap": [
+    {
+      "side": "LH",
+      "option": "BAUDIO && LHST && TWTR",
+      "amp": "HELIX OUT H +/-",
+      "cabinConnector": "X033B",
+      "cabinPlus": 1,
+      "cabinMinus": 2,
+      "doorBridge": "X922M/F",
+      "doorPlus": 1,
+      "doorMinus": 12,
+      "tweeterConnector": "X565",
+      "tweeterPlus": 1,
+      "tweeterMinus": 2,
+      "colors": [
+        "VT",
+        "BU"
+      ],
+      "existingWoofer": "X568"
+    },
+    {
+      "side": "RH",
+      "option": "BAUDIO && RHST && TWTR",
+      "amp": "HELIX OUT I +/-",
+      "cabinConnector": "X053A",
+      "cabinPlus": 5,
+      "cabinMinus": 6,
+      "doorBridge": "X923M/F",
+      "doorPlus": 1,
+      "doorMinus": 12,
+      "tweeterConnector": "X575",
+      "tweeterPlus": 1,
+      "tweeterMinus": 2,
+      "colors": [
+        "VT",
+        "BU"
+      ],
+      "existingWoofer": "X578"
+    }
+  ],
+  "sourceData": {
+    "electrical": "Source_Assets/core/audio_lhd.svg",
+    "leftBody": "Source_Assets/connectors/X033B/metadata.json",
+    "rightBody": "Source_Assets/connectors/X053A/metadata.json",
+    "leftTrim": "Source_Assets/connectors/X922F/metadata.json",
+    "rightTrim": "Source_Assets/connectors/X923F/metadata.json"
+  },
+  "forbidden": [
+    "DO NOT use PAUDIO X033A-5/6 or X053A-22/23 in this BAUDIO circuit.",
+    "DO NOT connect HELIX H/I to Tesla module-side/MCU-side factory audio power outputs; only connect to isolated downstream tweeter wire pairs.",
+    "DO NOT splice into, modify, or drill OEM door gaiter; no new wires through door are required if all existing BAUDIO cavities are physically populated.",
+    "DO NOT disturb/depinn airbag, door pressure sensor, latch or window-control signals; multiway body-controller connectors carry safety-relevant circuits.",
+    "DO NOT treat the new Highland harness sleeve 'Front Low/TW' as proof of an actual electrical parallel joint; use continuity checks.",
+    "DO NOT connect speakers or energize outputs until HP3500 LR24 has been saved, and OEM source isolation and amplifier load and polarity pass QC."
+  ],
+  "installationGates": [
+    {
+      "id": "g1",
+      "label": "Confirm the actual vehicle/build is LHD Highland SOP9 BAUDIO and connectors X033B and X053A correspond to the factory door connectors."
+    },
+    {
+      "id": "g2",
+      "label": "Export/backup existing V TWELVE DSP settings; mute physical H/I and set their 3500 Hz LR24 protective HP."
+    },
+    {
+      "id": "g3",
+      "label": "Follow Tesla LV safe-isolation instructions before disconnecting any multiway body-controller connectors. Do not touch HV/orange cables or SRS hardware."
+    },
+    {
+      "id": "g4",
+      "label": "At X565 and X575, unplug each tweeter and continuity test to *vehicle-side* BAUDIO X033B-1/2 and X053A-5/6, respectively, with vehicle power isolated. Observe contact-face orientation and actual populated cavities."
+    },
+    {
+      "id": "g5",
+      "label": "Use a verified keyed reversible adapter at the correct cabin-side multiway connector, preserve all unrelated functions and insulate OEM audio source to prevent amplifier-to-amplifier backfeeding."
+    },
+    {
+      "id": "g6",
+      "label": "Verify no electrical continuity between H/I tweeter return network and A/B woofer return circuits, OEM amplifier sources, vehicle chassis or each other."
+    },
+    {
+      "id": "g7",
+      "label": "Check both woofer loops X568/X578 remain connected to A/B only, and tweeter loops X565/X575 to H/I only."
+    },
+    {
+      "id": "g8",
+      "label": "With outputs muted, program final physical A/B woofer HP65/LP250 and H/I tweeter HP3500 LP OFF at LR24, initial safe attenuations; only then conduct low-volume channel tests."
+    },
+    {
+      "id": "g9",
+      "label": "Reinstall trims without pinched conductors or cable runs in airbag deployment zones, seat tracks, pedal linkages or door hinges; inspect door electrical/window/pressure sensor diagnostics."
+    }
+  ],
+  "imageAvailability": "OEM door and body controller connector location renders in repository. A validated 3D mesh showing the installer-added V TWELVE-to-under-dashboard cable path is NOT present; the cabin added path in viewer is an engineering proposal only, not Tesla factory routing."
+}
