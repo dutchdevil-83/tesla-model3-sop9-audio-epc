@@ -93,6 +93,14 @@ class BaudioTweeterPathTests(unittest.TestCase):
         self.assertIn("baudio-tweeter-routing.html", (ROOT / "docs/engineering.html").read_text(encoding="utf-8"))
         self.assertIn("baudio-tweeter-routing.html", (ROOT / "docs/dsp-wiring.html").read_text(encoding="utf-8"))
 
+    def test_installed_system_inspector_displays_base_endpoints_not_premium(self) -> None:
+        js = (ROOT / "docs/assets/installed-system.js").read_text(encoding="utf-8")
+        for marker in ("BAUDIO_CURRENT_END_POINTS", "X568", "X578", "X565", "X575",
+                       "X033B 1/2", "X053A 5/6", "NOT APPLICABLE TO BAUDIO",
+                       "Current connector (BAUDIO)", "BAUDIO_SOURCE_FACEVIEWS"):
+            self.assertIn(marker, js)
+        self.assertIn("Premium LR RWD trim / BAUDIO Base Audio", js)
+
     @unittest.skipUnless(shutil.which("node"), "Node unavailable for JavaScript syntax validation")
     def test_embedded_baudio_viewer_js_syntax(self) -> None:
         scripts = re.findall(r"<script(?:\s[^>]*)?>(.*?)</script>", PAGE, flags=re.DOTALL)
