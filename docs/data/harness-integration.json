@@ -13,7 +13,7 @@
   ],
   "directionSemantics": {
     "IN": "Tesla OEM speaker-level source -> HELIX V TWELVE DSP MK2 highlevel input (high-level input)",
-    "OUT": "HELIX V TWELVE DSP MK2 amplified speaker output -> vehicle-side speaker return"
+    "OUT": "HELIX V TWELVE DSP MK2 amplified speaker output channel -> vehicle-side speaker return"
   },
   "labelingRule": {
     "summary": "Do not rename the seven logical functions merely because the donor harness is the Ryzen version. Keep/reapply the speaker-function labels shown below, but route each pair to the verified SOP9 Tesla circuit and add the V TWELVE A-G channel identifier.",
